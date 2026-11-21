@@ -30,7 +30,7 @@
   <script type="module" src="/benchmark/sticky-headers.js"></script>
   <script type="module" src="/benchmark/theme.js"></script>
 </head>
-<body class="benchmark-simple" data-comparison="compact" data-kind="word">
+<body class="benchmark-simple" data-comparison="compact" data-results="loading" data-kind="word">
   <a class="skip-link" href="#scores-panel">Skip to results</a>
   <header class="simple-header">
     <div class="header-start"><a class="simple-brand" href="/"><span class="brand-mark" lang="ne" aria-hidden="true">ने</span>nepalipi</a><nav aria-label="Benchmark navigation"><a href="/">Playground</a><a href="/benchmark.html" aria-current="page">Nepalipi Benchmark</a></nav></div>
@@ -39,7 +39,7 @@
   <main>
     <div class="page-heading"><div><h1>Nepalipi Benchmark</h1><p>Compare Nepali transliteration engines on the same inputs and references.</p></div>
     </div>
-    <div class="comparison-toolbar">
+    <div class="comparison-toolbar" inert>
       <label><span>Test set</span><select id="comparison-set"><button type="button"><selectedcontent></selectedcontent></button></select></label>
       <label id="ranking-filter">Score ranking<select id="comparison-metric"><button type="button"><selectedcontent></selectedcontent></button><option value="first">First match</option><option value="withinThree">Within three</option><option value="withinFive">Within five</option><option value="cer">Character error</option></select></label>
       <label class="checkbox-label"><input id="comparison-history" type="checkbox"> Include older versions</label>
@@ -47,6 +47,7 @@
     <p id="comparison-scope" hidden></p>
     <section id="scores-panel" aria-labelledby="scores-heading" tabindex="-1">
     <div class="panel-heading"><h2 id="scores-heading">Aggregate scores</h2><span id="score-direction">Higher match rates are better</span></div>
+    <p id="benchmark-status" class="benchmark-status" role="status">Loading benchmark results…</p>
     <div class="simple-source-scroll" tabindex="0" role="region" aria-label="Source scores, scroll for more metrics"><table class="source-table" aria-label="Word suggestion comparison">
       <caption><span id="comparison-caption"></span> <span class="word-source"> · Word tests based on <a href="https://aclanthology.org/2023.findings-emnlp.4/">AI4Bharat’s Aksharantar Nepali test set</a>.<span id="public-word-sources" hidden> The full set contains 4,085 unique inputs from Aksharantar and seven additional Wikidata names.</span></span></caption>
       <thead><tr><th scope="col" class="rank-heading">Rank</th><th scope="col">Engine</th><th scope="col">First match</th><th scope="col">Within three</th><th scope="col">Within five</th><th scope="col" class="error-heading">Character error ↓</th></tr></thead>
@@ -80,7 +81,7 @@
       <div class="download-links"><a id="results-json" href="/benchmark/large-comparison-2.4.8-v2.json" download>Results · JSON</a><a id="scores-csv" href="/benchmark/large-comparison-2.4.8-v2.csv" download>Scores · CSV</a></div>
     </div></details>
     <footer><a href="/benchmark-details.html">Sentence tests &amp; engine checks ↗</a><a href="/benchmark-history.html">Archive ↗</a></footer>
-    <noscript>Enable JavaScript to display the saved comparisons. The results are available as <a href="/benchmark/large-comparison-2.4.8-v2.csv">CSV</a>.</noscript>
+    <noscript><style>#benchmark-status { display: none; }</style>Enable JavaScript to display the saved comparisons. The results are available as <a href="/benchmark/large-comparison-2.4.8-v2.csv">CSV</a>.</noscript>
   </main>
 </body>
 </html>

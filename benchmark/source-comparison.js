@@ -7,7 +7,14 @@ const compact=document.body.dataset.comparison==='compact';
 const [{default:data},{default:sentences}]=await Promise.all([
   import(compact?'./large-comparison-2.4.8-v2.js':'./source-comparison-2.4.8-v2.js'),
   compact?import('./long-sentences-2.4.8-v2.js'):Promise.resolve({default:null})
-]);
+]).catch(error=>{
+  const status=$('benchmark-status');
+  if(status){
+    document.body.dataset.results='error';
+    status.textContent='Benchmark results couldn’t load. Refresh the page to try again.';
+  }
+  throw error;
+});
 const suites=sentences?[...data.suites,sentenceSuite(sentences)]:data.suites;
 const withinThree=compact?null:(await import('./within-three-2.4.8-v1.js')).default;
 const providers=()=>(suite().providers??data.providers).filter(p=>!compact||$('comparison-history').checked||!['previous','writer-2.2'].includes(p.id)).map(p=>p.id==='current'?{...p,label:'Nepalipi'}:p);
@@ -160,3 +167,8 @@ $('comparison-set').addEventListener('change',selectSet);
 for(const id of ['comparison-category','comparison-metric'])$(id).addEventListener('change',renderTable);
 $('comparison-word')?.addEventListener('change',renderWord);
 selectSet();
+if(compact){
+  document.body.dataset.results='ready';
+  document.querySelector('.comparison-toolbar').inert=false;
+  $('benchmark-status').hidden=true;
+}
