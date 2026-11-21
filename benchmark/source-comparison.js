@@ -11,7 +11,8 @@ const [{default:data},{default:sentences}]=await Promise.all([
   const status=$('benchmark-status');
   if(status){
     document.body.dataset.results='error';
-    status.textContent='Benchmark results couldn’t load. Refresh the page to try again.';
+    status.textContent='The default scores are shown above. Refresh to try loading the interactive results again.';
+    status.hidden=false;
   }
   throw error;
 });

@@ -58,31 +58,8 @@ input::placeholder { color: var(--muted); opacity: 1; }
 .panel-heading > span { font-size: 12px; color: var(--muted); }
 .word-source a { color: var(--accent); }
 body[data-kind=sentence] .word-source { display: none; }
-.benchmark-status {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  min-height: 92px;
-  margin: 8px 0 0;
-  color: var(--muted);
-  font-size: 14px;
-}
-body[data-results=loading] .benchmark-status::before {
-  content: '';
-  flex: none;
-  width: 18px;
-  height: 18px;
-  border: 2px solid var(--line);
-  border-right-color: var(--accent);
-  border-radius: 50%;
-}
-@media (prefers-reduced-motion: no-preference) {
-  body[data-results=loading] .benchmark-status::before { animation: benchmark-spin .8s linear infinite; }
-}
-@keyframes benchmark-spin { to { transform: rotate(1turn); } }
-body:not([data-results=ready]) :is(#scores-panel .sticky-table, #scores-panel .simple-source-scroll, #words-panel, .source-note) {
-  display: none;
-}
+.benchmark-status { margin: 12px 0 0; color: var(--muted); font-size: 14px; }
+body:not([data-results=ready]) #words-panel { display: none; }
 .simple-source-scroll { overflow: auto; }
 :is(.source-table, .sticky-source-table) { width: 100%; border-collapse: collapse; table-layout: fixed; font-variant-numeric: tabular-nums; text-align: left; }
 .sticky-table { display: grid; grid-template-columns: minmax(0, 1fr); }

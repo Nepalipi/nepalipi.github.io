@@ -30,7 +30,7 @@
   <script type="module" src="/benchmark/sticky-headers.js"></script>
   <script type="module" src="/benchmark/theme.js"></script>
 </head>
-<body class="benchmark-simple" data-comparison="compact" data-results="loading" data-kind="word">
+<body class="benchmark-simple" data-comparison="compact" data-results="preview" data-kind="word">
   <a class="skip-link" href="#scores-panel">Skip to results</a>
   <header class="simple-header">
     <div class="header-start"><a class="simple-brand" href="/"><span class="brand-mark" lang="ne" aria-hidden="true">ने</span>nepalipi</a><nav aria-label="Benchmark navigation"><a href="/">Playground</a><a href="/benchmark.html" aria-current="page">Nepalipi Benchmark</a></nav></div>
@@ -40,18 +40,27 @@
     <div class="page-heading"><div><h1>Nepalipi Benchmark</h1><p>Compare Nepali transliteration engines on the same inputs and references.</p></div>
     </div>
     <div class="comparison-toolbar" inert>
-      <label><span>Test set</span><select id="comparison-set"><button type="button"><selectedcontent></selectedcontent></button></select></label>
+      <label><span>Test set</span><select id="comparison-set"><button type="button"><selectedcontent></selectedcontent></button><option value="balanced-2000">Balanced public sample · 2000 words</option><option value="public-full">Public union: test + 7 validation names · 4092 words</option><option value="frequent-2000">Frequent-word corpus · 2000 words</option><option value="entities-2000">Named entities: test + 7 validation inputs · 2000 words</option><option value="long-sentences">Long everyday sentences · 120 sentences</option></select></label>
       <label id="ranking-filter">Score ranking<select id="comparison-metric"><button type="button"><selectedcontent></selectedcontent></button><option value="first">First match</option><option value="withinThree">Within three</option><option value="withinFive">Within five</option><option value="cer">Character error</option></select></label>
       <label class="checkbox-label"><input id="comparison-history" type="checkbox"> Include older versions</label>
     </div>
     <p id="comparison-scope" hidden></p>
     <section id="scores-panel" aria-labelledby="scores-heading" tabindex="-1">
     <div class="panel-heading"><h2 id="scores-heading">Aggregate scores</h2><span id="score-direction">Higher match rates are better</span></div>
-    <p id="benchmark-status" class="benchmark-status" role="status">Loading benchmark results…</p>
+    <p id="benchmark-status" class="benchmark-status" role="status" hidden></p>
     <div class="simple-source-scroll" tabindex="0" role="region" aria-label="Source scores, scroll for more metrics"><table class="source-table" aria-label="Word suggestion comparison">
-      <caption><span id="comparison-caption"></span> <span class="word-source"> · Word tests based on <a href="https://aclanthology.org/2023.findings-emnlp.4/">AI4Bharat’s Aksharantar Nepali test set</a>.<span id="public-word-sources" hidden> The full set contains 4,085 unique inputs from Aksharantar and seven additional Wikidata names.</span></span></caption>
-      <thead><tr><th scope="col" class="rank-heading">Rank</th><th scope="col">Engine</th><th scope="col">First match</th><th scope="col">Within three</th><th scope="col">Within five</th><th scope="col" class="error-heading">Character error ↓</th></tr></thead>
-      <tbody id="comparison-rows"></tbody>
+      <caption><span id="comparison-caption">2000 words · same inputs and references</span> <span class="word-source"> · Word tests based on <a href="https://aclanthology.org/2023.findings-emnlp.4/">AI4Bharat’s Aksharantar Nepali test set</a>.<span id="public-word-sources" hidden> The full set contains 4,085 unique inputs from Aksharantar and seven additional Wikidata names.</span></span></caption>
+      <thead><tr><th scope="col" class="rank-heading">Rank</th><th scope="col">Engine</th><th scope="col" aria-sort="descending">First match</th><th scope="col">Within three</th><th scope="col">Within five</th><th scope="col" class="error-heading">Character error ↓</th></tr></thead>
+      <!-- Default balanced sample from the frozen benchmark. Replaced when the interactive data is ready. -->
+      <tbody id="comparison-rows">
+        <tr data-source="current"><td class="source-rank">1</td><th scope="row"><strong>Nepalipi</strong><span>2.4.8</span><small><time datetime="2026-11-12T17:45:18.270Z">Observed 12 Nov 2026, 18:45 CET – 12 Nov 2026, 18:45 CET</time></small></th><td data-metric="first" class="ranked-metric"><strong>54.75%</strong><small>1095/2000 words</small></td><td data-metric="withinThree"><strong>68.10%</strong><small>1362/2000 words</small></td><td data-metric="withinFive"><strong>73.30%</strong><small>1466/2000 words</small></td><td data-metric="cer"><strong>13.50%</strong><small>First-output edits / characters</small></td></tr>
+        <tr data-source="google"><td class="source-rank">2</td><th scope="row"><strong>Google Input Tools</strong><span>Saved snapshot</span><small><time datetime="2026-11-12T00:19:55.806Z">Observed 12 Nov 2026, 01:19 CET – 12 Nov 2026, 18:57 CET</time></small></th><td data-metric="first" class="ranked-metric"><strong>34.25%</strong><small>685/2000 words</small></td><td data-metric="withinThree"><strong>47.10%</strong><small>942/2000 words</small></td><td data-metric="withinFive"><strong>50.75%</strong><small>1015/2000 words</small></td><td data-metric="cer"><strong>25.73%</strong><small>First-output edits / characters</small></td></tr>
+        <tr data-source="quillpad"><td class="source-rank">3</td><th scope="row"><strong>Quillpad</strong><span>Saved snapshot</span><small><time datetime="2026-11-12T16:42:08.132388+00:00">Observed 12 Nov 2026, 17:42 CET – 12 Nov 2026, 18:57 CET</time></small></th><td data-metric="first" class="ranked-metric"><strong>33.35%</strong><small>667/2000 words</small></td><td data-metric="withinThree"><strong>42.90%</strong><small>858/2000 words</small></td><td data-metric="withinFive"><strong>43.55%</strong><small>871/2000 words</small></td><td data-metric="cer"><strong>19.75%</strong><small>First-output edits / characters</small></td></tr>
+        <tr data-source="lekhika"><td class="source-rank">4</td><th scope="row"><strong>Lekhika</strong><span>0.2.0</span><small><time datetime="2026-11-12T17:45:17.465493+00:00">Observed 12 Nov 2026, 18:45 CET – 12 Nov 2026, 18:45 CET</time></small></th><td data-metric="first" class="ranked-metric"><strong>13.55%</strong><small>271/2000 words</small></td><td data-metric="withinThree"><strong>13.55%</strong><small>271/2000 words</small></td><td data-metric="withinFive"><strong>13.55%</strong><small>271/2000 words</small></td><td data-metric="cer"><strong>31.26%</strong><small>First-output edits / characters</small></td></tr>
+        <tr data-source="nepali-transliteration"><td class="source-rank">5</td><th scope="row"><strong>Nepali Transliteration</strong><span>0.1.1</span><small><time datetime="2026-11-12T17:45:17.599404+00:00">Observed 12 Nov 2026, 18:45 CET – 12 Nov 2026, 18:45 CET</time></small></th><td data-metric="first" class="ranked-metric"><strong>12.00%</strong><small>240/2000 words</small></td><td data-metric="withinThree"><strong>12.30%</strong><small>246/2000 words</small></td><td data-metric="withinFive"><strong>12.30%</strong><small>246/2000 words</small></td><td data-metric="cer"><strong>34.07%</strong><small>First-output edits / characters</small></td></tr>
+        <tr data-source="nepscript"><td class="source-rank">6</td><th scope="row"><strong>nepscript</strong><span>1.0.18</span><small><time datetime="2026-11-12T17:45:53.204Z">Observed 12 Nov 2026, 18:45 CET – 12 Nov 2026, 18:45 CET</time></small></th><td data-metric="first" class="ranked-metric"><strong>9.00%</strong><small>180/2000 words</small></td><td data-metric="withinThree"><strong>9.00%</strong><small>180/2000 words</small></td><td data-metric="withinFive"><strong>9.00%</strong><small>180/2000 words</small></td><td data-metric="cer"><strong>34.52%</strong><small>First-output edits / characters</small></td></tr>
+        <tr data-source="nepali-unicoder"><td class="source-rank">7</td><th scope="row"><strong>Nepali Unicoder</strong><span>0.2.1</span><small><time datetime="2026-11-12T17:45:18.461291+00:00">Observed 12 Nov 2026, 18:45 CET – 12 Nov 2026, 18:45 CET</time></small></th><td data-metric="first" class="ranked-metric"><strong>7.05%</strong><small>141/2000 words</small></td><td data-metric="withinThree"><strong>7.05%</strong><small>141/2000 words</small></td><td data-metric="withinFive"><strong>7.05%</strong><small>141/2000 words</small></td><td data-metric="cer"><strong>38.71%</strong><small>First-output edits / characters</small></td></tr>
+      </tbody>
     </table></div>
     <p id="comparison-summary" class="comparison-summary" role="status" aria-live="polite"></p>
     </section>
@@ -81,7 +90,7 @@
       <div class="download-links"><a id="results-json" href="/benchmark/large-comparison-2.4.8-v2.json" download>Results · JSON</a><a id="scores-csv" href="/benchmark/large-comparison-2.4.8-v2.csv" download>Scores · CSV</a></div>
     </div></details>
     <footer><a href="/benchmark-details.html">Sentence tests &amp; engine checks ↗</a><a href="/benchmark-history.html">Archive ↗</a></footer>
-    <noscript><style>#benchmark-status { display: none; }</style>Enable JavaScript to display the saved comparisons. The results are available as <a href="/benchmark/large-comparison-2.4.8-v2.csv">CSV</a>.</noscript>
+    <noscript>Enable JavaScript to change the test set and explore individual results. The results are available as <a href="/benchmark/large-comparison-2.4.8-v2.csv">CSV</a>.</noscript>
   </main>
 </body>
 </html>
