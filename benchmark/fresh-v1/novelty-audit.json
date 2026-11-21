@@ -1,0 +1,3527 @@
+{
+  "version": 1,
+  "poolSha256": "f6b98d9a2b38ab4dadc00d56762af81dadc47374cf5ae97bc1755d8d06ec35c6",
+  "engineFreezeSha256": "32c3cedd662274d4d6935d1a20c330256954eaef6894bd87495868518ea9514a",
+  "training": {
+    "rows": 2397414,
+    "sha256": "55f6ca38b30c6fab0b5b8a11eefd2bb2be3cbce633c93a3b03215ec5675810b4",
+    "file": "nep_train.json",
+    "scope": "Every raw training row, including rows excluded by some model builders."
+  },
+  "normalization": {
+    "roman": "Same conservative lowercase/long-vowel/chh/sh/v/w fold as engine normalization.",
+    "native": "Unicode NFC, trim, remove ZWJ/ZWNJ. Any matching accepted variant rejects the entire case."
+  },
+  "novelty": "Both normalized Roman input and every accepted native word must be absent from TRAIN, validation, old public test, seed lexicon and previous test inputs/references/candidate exposures. Subword units and roots are learned and may overlap.",
+  "selection": "Predeclared quotas; SHA-256 order within category; at most one case per lexical/verb family; no fresh engine or Google output consulted.",
+  "summary": {
+    "Household forms": {
+      "pool": 92,
+      "wholeWordUnseen": 33,
+      "requested": 30,
+      "selected": 24,
+      "shortfall": 6
+    },
+    "Verb forms": {
+      "pool": 95,
+      "wholeWordUnseen": 37,
+      "requested": 30,
+      "selected": 25,
+      "shortfall": 5
+    },
+    "Names": {
+      "pool": 128,
+      "wholeWordUnseen": 61,
+      "requested": 40,
+      "selected": 40,
+      "shortfall": 0
+    }
+  },
+  "legacySourceHashes": {
+    "benchmarks/data/aksharantar-validation.jsonl": "9bc1c65df08c5f41eb61ffeaf631bf1bc3820c64ef71ae54b4868c5ac3ea9be7",
+    "benchmarks/data/aksharantar-test.jsonl": "172c759fcbb9faeda0a23765ccd12ad0520fb535a05dca42dd9c9923ee5f554e",
+    "tests/evaluation-cases.json": "fcaceb0227cc277b78e574d3e41bc26e4febb4ce9474386dc7ac95a17a5998be",
+    "benchmarks/data/everyday-typing.json": "f2d2ff889d68f19c87ed8925bbf105bc0c96641056e648b8b9778caaba988695",
+    "public/benchmark/results.json": "881dec14fe90ed5bd4951f5b2c8057a8f4f01aa2e223448c8c35dfddeb203379",
+    "benchmarks/google/everyday-manifest.json": "b43d4e27acad1270a9ad379ac7344c8b912e984791bbf68eedb80a69ed42326c",
+    "benchmarks/google/public-test-manifest.json": "e027ddcd9ef45fcfbd0453101566a0c07f6cf8c9428dbf82e2a8ec81eb8d1129",
+    "benchmarks/google/validation-manifest.json": "3dcfe787552832bc822785bf691ea3cbec0d279d14e0a9d2827604191e023c16",
+    "tests/benchmark.test.js": "18a0eeccd8b7a279587eff54bdd3a822bfba70f58c077cea91b8a5aa4769ba3c",
+    "tests/benchmark_browser_test.py": "06bd528d087a9481cd81e1c83d644215572f5d4b1810eb83cb490d9e818f16c5",
+    "tests/browser_performance_test.py": "6ed2e2fa43742965328ccc9cea1603238be41b8b8c26b6f1acfbd5688b4b0352",
+    "tests/browser_test.py": "48115c77e0f63295ef163fa63e5f17d0fe5ab84a8a1a1b0299302f726c2dda81",
+    "tests/engine.test.js": "c7dd1854e2f38497ee3509ebb2747fc9f820de5e10677972e2b1ed0dc5cb73a3",
+    "tests/transliterate.test.js": "73c9bbc8f1da3430b1f3509a8726275fa91c0eb707751eec33593d81e78b1263"
+  },
+  "rejected": [
+    {
+      "id": "fresh-001",
+      "category": "Household forms",
+      "family": "bedding",
+      "roman": "sirakharu",
+      "references": [
+        "सिरकहरू"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "sirakharu",
+          "record": "nep1181596"
+        },
+        "TRAIN:native_word": {
+          "matched": "सिरकहरू",
+          "record": "nep1181596"
+        }
+      }
+    },
+    {
+      "id": "fresh-003",
+      "category": "Household forms",
+      "family": "bedsheet",
+      "roman": "tannaharu",
+      "references": [
+        "तन्नाहरू"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "tannaharu",
+          "record": "nep1160186"
+        },
+        "TRAIN:native_word": {
+          "matched": "तन्नाहरू",
+          "record": "nep1160186"
+        }
+      }
+    },
+    {
+      "id": "fresh-005",
+      "category": "Household forms",
+      "family": "pillow",
+      "roman": "takiyaharu",
+      "references": [
+        "तकियाहरू"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "takiyaharu",
+          "record": "nep1881229"
+        },
+        "TRAIN:native_word": {
+          "matched": "तकियाहरू",
+          "record": "nep1881229"
+        }
+      }
+    },
+    {
+      "id": "fresh-007",
+      "category": "Household forms",
+      "family": "headrest",
+      "roman": "siraniharu",
+      "references": [
+        "सिरानीहरू"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "siraniharu",
+          "record": "nep1277077"
+        },
+        "TRAIN:native_word": {
+          "matched": "सिरानीहरू",
+          "record": "nep1277077"
+        }
+      }
+    },
+    {
+      "id": "fresh-009",
+      "category": "Household forms",
+      "family": "dishes",
+      "roman": "bhandaharu",
+      "references": [
+        "भाँडाहरू",
+        "भांडाहरू"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "bhandaharu",
+          "record": "nep1645703"
+        },
+        "TRAIN:native_word": {
+          "matched": "भाँडाहरू",
+          "record": "nep1645703"
+        }
+      }
+    },
+    {
+      "id": "fresh-010",
+      "category": "Household forms",
+      "family": "dishes",
+      "roman": "bhandaharuko",
+      "references": [
+        "भाँडाहरूको",
+        "भांडाहरूको"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "bhandaharuko",
+          "record": "nep50158"
+        },
+        "TRAIN:native_word": {
+          "matched": "भाँडाहरूको",
+          "record": "nep50158"
+        }
+      }
+    },
+    {
+      "id": "fresh-011",
+      "category": "Household forms",
+      "family": "plate",
+      "roman": "thaalharu",
+      "references": [
+        "थालहरू"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "thalharu",
+          "record": "nep268499"
+        },
+        "TRAIN:native_word": {
+          "matched": "थालहरू",
+          "record": "nep268499"
+        }
+      }
+    },
+    {
+      "id": "fresh-012",
+      "category": "Household forms",
+      "family": "plate",
+      "roman": "thaalharuko",
+      "references": [
+        "थालहरूको"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "thalharuko",
+          "record": "nep1143089"
+        }
+      }
+    },
+    {
+      "id": "fresh-013",
+      "category": "Household forms",
+      "family": "bowl",
+      "roman": "kachauraharu",
+      "references": [
+        "कचौराहरू"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "kachauraharu",
+          "record": "nep1249695"
+        },
+        "TRAIN:native_word": {
+          "matched": "कचौराहरू",
+          "record": "nep1249695"
+        }
+      }
+    },
+    {
+      "id": "fresh-014",
+      "category": "Household forms",
+      "family": "bowl",
+      "roman": "kachauraharuma",
+      "references": [
+        "कचौराहरूमा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "kachauraharuma",
+          "record": "nep491936"
+        },
+        "TRAIN:native_word": {
+          "matched": "कचौराहरूमा",
+          "record": "nep491936"
+        }
+      }
+    },
+    {
+      "id": "fresh-017",
+      "category": "Household forms",
+      "family": "mug-vessel",
+      "roman": "amkhoraharu",
+      "references": [
+        "अम्खोराहरू"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "amkhoraharu",
+          "record": "nep2388854"
+        },
+        "TRAIN:native_word": {
+          "matched": "अम्खोराहरू",
+          "record": "nep2388854"
+        }
+      }
+    },
+    {
+      "id": "fresh-019",
+      "category": "Household forms",
+      "family": "cupboard",
+      "roman": "darajharuko",
+      "references": [
+        "दराजहरूको"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "darajharuko",
+          "record": "nep1076845"
+        },
+        "TRAIN:native_word": {
+          "matched": "दराजहरूको",
+          "record": "nep1076845"
+        }
+      }
+    },
+    {
+      "id": "fresh-020",
+      "category": "Household forms",
+      "family": "cupboard",
+      "roman": "darajharuma",
+      "references": [
+        "दराजहरूमा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "darajharuma",
+          "record": "nep948116"
+        },
+        "TRAIN:native_word": {
+          "matched": "दराजहरूमा",
+          "record": "nep948116"
+        }
+      }
+    },
+    {
+      "id": "fresh-021",
+      "category": "Household forms",
+      "family": "table",
+      "roman": "tebalharuma",
+      "references": [
+        "टेबलहरूमा"
+      ],
+      "exposure": {
+        "TRAIN:native_word": {
+          "matched": "टेबलहरूमा",
+          "record": "nep2052540"
+        }
+      }
+    },
+    {
+      "id": "fresh-022",
+      "category": "Household forms",
+      "family": "table",
+      "roman": "tebalharuko",
+      "references": [
+        "टेबलहरूको"
+      ],
+      "exposure": {
+        "TRAIN:native_word": {
+          "matched": "टेबलहरूको",
+          "record": "nep84569"
+        },
+        "TRAIN:normalized_roman": {
+          "matched": "tewalharuko",
+          "record": "nep224151"
+        }
+      }
+    },
+    {
+      "id": "fresh-023",
+      "category": "Household forms",
+      "family": "chair",
+      "roman": "kursiharuma",
+      "references": [
+        "कुर्सीहरूमा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "kurshiharuma",
+          "record": "nep1702240"
+        },
+        "TRAIN:native_word": {
+          "matched": "कुर्सीहरूमा",
+          "record": "nep2373146"
+        }
+      }
+    },
+    {
+      "id": "fresh-024",
+      "category": "Household forms",
+      "family": "chair",
+      "roman": "kursiharuko",
+      "references": [
+        "कुर्सीहरूको"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "kursiharuko",
+          "record": "nep997615"
+        },
+        "TRAIN:native_word": {
+          "matched": "कुर्सीहरूको",
+          "record": "nep997615"
+        }
+      }
+    },
+    {
+      "id": "fresh-025",
+      "category": "Household forms",
+      "family": "stool",
+      "roman": "mechharu",
+      "references": [
+        "मेचहरू"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "mechharu",
+          "record": "nep628024"
+        },
+        "TRAIN:native_word": {
+          "matched": "मेचहरू",
+          "record": "nep628024"
+        }
+      }
+    },
+    {
+      "id": "fresh-027",
+      "category": "Household forms",
+      "family": "window",
+      "roman": "jhyalaharubata",
+      "references": [
+        "झ्यालहरूबाट"
+      ],
+      "exposure": {
+        "TRAIN:native_word": {
+          "matched": "झ्यालहरूबाट",
+          "record": "nep2257598"
+        }
+      }
+    },
+    {
+      "id": "fresh-028",
+      "category": "Household forms",
+      "family": "window",
+      "roman": "jhyalaharuma",
+      "references": [
+        "झ्यालहरूमा"
+      ],
+      "exposure": {
+        "TRAIN:native_word": {
+          "matched": "झ्यालहरूमा",
+          "record": "nep168896"
+        }
+      }
+    },
+    {
+      "id": "fresh-029",
+      "category": "Household forms",
+      "family": "door",
+      "roman": "dhokaharulai",
+      "references": [
+        "ढोकाहरूलाई"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "dhokaharulai",
+          "record": "nep384592"
+        },
+        "TRAIN:native_word": {
+          "matched": "ढोकाहरूलाई",
+          "record": "nep384592"
+        }
+      }
+    },
+    {
+      "id": "fresh-030",
+      "category": "Household forms",
+      "family": "door",
+      "roman": "dhokaharubata",
+      "references": [
+        "ढोकाहरूबाट"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "dhokaharubata",
+          "record": "nep1598095"
+        },
+        "TRAIN:native_word": {
+          "matched": "ढोकाहरूबाट",
+          "record": "nep1598095"
+        }
+      }
+    },
+    {
+      "id": "fresh-031",
+      "category": "Household forms",
+      "family": "latch",
+      "roman": "chukulharu",
+      "references": [
+        "चुकुलहरू"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "chukulharu",
+          "record": "nep443138"
+        },
+        "TRAIN:native_word": {
+          "matched": "चुकुलहरू",
+          "record": "nep443138"
+        }
+      }
+    },
+    {
+      "id": "fresh-033",
+      "category": "Household forms",
+      "family": "key",
+      "roman": "chaabiharu",
+      "references": [
+        "चाबीहरू"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "chhawiharu",
+          "record": "nep618821"
+        },
+        "TRAIN:native_word": {
+          "matched": "चाबीहरू",
+          "record": "nep1734843"
+        }
+      }
+    },
+    {
+      "id": "fresh-034",
+      "category": "Household forms",
+      "family": "key",
+      "roman": "chaabiharuko",
+      "references": [
+        "चाबीहरूको"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "chhawiharuko",
+          "record": "nep1315134"
+        }
+      }
+    },
+    {
+      "id": "fresh-035",
+      "category": "Household forms",
+      "family": "light",
+      "roman": "battiharuko",
+      "references": [
+        "बत्तीहरूको"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "battiharuko",
+          "record": "nep1551083"
+        },
+        "TRAIN:native_word": {
+          "matched": "बत्तीहरूको",
+          "record": "nep2059980"
+        }
+      }
+    },
+    {
+      "id": "fresh-036",
+      "category": "Household forms",
+      "family": "light",
+      "roman": "battiharuma",
+      "references": [
+        "बत्तीहरूमा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "battiharuma",
+          "record": "nep235946"
+        },
+        "TRAIN:native_word": {
+          "matched": "बत्तीहरूमा",
+          "record": "nep235946"
+        }
+      }
+    },
+    {
+      "id": "fresh-039",
+      "category": "Household forms",
+      "family": "bulb",
+      "roman": "chimharu",
+      "references": [
+        "चिमहरू"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "chimharu",
+          "record": "nep2017145"
+        },
+        "TRAIN:native_word": {
+          "matched": "चिमहरू",
+          "record": "nep2017145"
+        }
+      }
+    },
+    {
+      "id": "fresh-040",
+      "category": "Household forms",
+      "family": "bulb",
+      "roman": "chimharuko",
+      "references": [
+        "चिमहरूको"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "chimharuko",
+          "record": "nep1689568"
+        },
+        "TRAIN:native_word": {
+          "matched": "चिमहरूको",
+          "record": "nep1689568"
+        }
+      }
+    },
+    {
+      "id": "fresh-041",
+      "category": "Household forms",
+      "family": "bag",
+      "roman": "jholaharulai",
+      "references": [
+        "झोलाहरूलाई"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "jholaharulai",
+          "record": "nep682840"
+        },
+        "TRAIN:native_word": {
+          "matched": "झोलाहरूलाई",
+          "record": "nep682840"
+        }
+      }
+    },
+    {
+      "id": "fresh-042",
+      "category": "Household forms",
+      "family": "bag",
+      "roman": "jholaharubata",
+      "references": [
+        "झोलाहरूबाट"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "jholaharubata",
+          "record": "nep1744770"
+        },
+        "TRAIN:native_word": {
+          "matched": "झोलाहरूबाट",
+          "record": "nep1744770"
+        }
+      }
+    },
+    {
+      "id": "fresh-043",
+      "category": "Household forms",
+      "family": "umbrella",
+      "roman": "chhataharuko",
+      "references": [
+        "छाताहरूको"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "chhataharuko",
+          "record": "nep11353"
+        },
+        "TRAIN:native_word": {
+          "matched": "छाताहरूको",
+          "record": "nep11353"
+        }
+      }
+    },
+    {
+      "id": "fresh-045",
+      "category": "Household forms",
+      "family": "shoe",
+      "roman": "juttaharuma",
+      "references": [
+        "जुत्ताहरूमा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "juttaharuma",
+          "record": "nep450095"
+        },
+        "TRAIN:native_word": {
+          "matched": "जुत्ताहरूमा",
+          "record": "nep450095"
+        }
+      }
+    },
+    {
+      "id": "fresh-046",
+      "category": "Household forms",
+      "family": "shoe",
+      "roman": "juttaharuko",
+      "references": [
+        "जुत्ताहरूको"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "juttaharuko",
+          "record": "nep2060694"
+        },
+        "TRAIN:native_word": {
+          "matched": "जुत्ताहरूको",
+          "record": "nep2060694"
+        }
+      }
+    },
+    {
+      "id": "fresh-047",
+      "category": "Household forms",
+      "family": "slipper",
+      "roman": "chappalharuko",
+      "references": [
+        "चप्पलहरूको"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "chappalharuko",
+          "record": "nep2058551"
+        },
+        "TRAIN:native_word": {
+          "matched": "चप्पलहरूको",
+          "record": "nep2058551"
+        }
+      }
+    },
+    {
+      "id": "fresh-048",
+      "category": "Household forms",
+      "family": "slipper",
+      "roman": "chappalharulai",
+      "references": [
+        "चप्पलहरूलाई"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "chappalharulai",
+          "record": "nep458076"
+        },
+        "TRAIN:native_word": {
+          "matched": "चप्पलहरूलाई",
+          "record": "nep458076"
+        }
+      }
+    },
+    {
+      "id": "fresh-051",
+      "category": "Household forms",
+      "family": "handkerchief",
+      "roman": "rumalharuko",
+      "references": [
+        "रुमालहरूको"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "rumalharuko",
+          "record": "nep1105023"
+        },
+        "TRAIN:native_word": {
+          "matched": "रुमालहरूको",
+          "record": "nep1105023"
+        }
+      }
+    },
+    {
+      "id": "fresh-052",
+      "category": "Household forms",
+      "family": "handkerchief",
+      "roman": "rumalharuma",
+      "references": [
+        "रुमालहरूमा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "rumalharuma",
+          "record": "nep1041224"
+        },
+        "TRAIN:native_word": {
+          "matched": "रुमालहरूमा",
+          "record": "nep1041224"
+        }
+      }
+    },
+    {
+      "id": "fresh-057",
+      "category": "Household forms",
+      "family": "soap",
+      "roman": "sabunharuko",
+      "references": [
+        "साबुनहरूको"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "sabunharuko",
+          "record": "nep230325"
+        },
+        "TRAIN:native_word": {
+          "matched": "साबुनहरूको",
+          "record": "nep230325"
+        }
+      }
+    },
+    {
+      "id": "fresh-059",
+      "category": "Household forms",
+      "family": "brush",
+      "roman": "brashharu",
+      "references": [
+        "ब्रसहरू",
+        "ब्रशहरू"
+      ],
+      "exposure": {
+        "TRAIN:native_word": {
+          "matched": "ब्रशहरू",
+          "record": "nep103778"
+        }
+      }
+    },
+    {
+      "id": "fresh-061",
+      "category": "Household forms",
+      "family": "bucket",
+      "roman": "baltinharuma",
+      "references": [
+        "बाल्टिनहरूमा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "baltinharuma",
+          "record": "nep1800303"
+        },
+        "TRAIN:native_word": {
+          "matched": "बाल्टिनहरूमा",
+          "record": "nep1800303"
+        }
+      }
+    },
+    {
+      "id": "fresh-063",
+      "category": "Household forms",
+      "family": "mug",
+      "roman": "magharuma",
+      "references": [
+        "मगहरूमा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "magharuma",
+          "record": "nep1416733"
+        }
+      }
+    },
+    {
+      "id": "fresh-064",
+      "category": "Household forms",
+      "family": "mug",
+      "roman": "magharuko",
+      "references": [
+        "मगहरूको"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "magharuko",
+          "record": "nep761382"
+        }
+      }
+    },
+    {
+      "id": "fresh-066",
+      "category": "Household forms",
+      "family": "glass",
+      "roman": "gilaasharuma",
+      "references": [
+        "गिलासहरूमा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "gilasharuma",
+          "record": "nep1464807"
+        },
+        "TRAIN:native_word": {
+          "matched": "गिलासहरूमा",
+          "record": "nep1464807"
+        }
+      }
+    },
+    {
+      "id": "fresh-067",
+      "category": "Household forms",
+      "family": "bottle",
+      "roman": "botalharuko",
+      "references": [
+        "बोतलहरूको"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "botalharuko",
+          "record": "nep1269388"
+        },
+        "TRAIN:native_word": {
+          "matched": "बोतलहरूको",
+          "record": "nep1269388"
+        }
+      }
+    },
+    {
+      "id": "fresh-068",
+      "category": "Household forms",
+      "family": "bottle",
+      "roman": "botalharuma",
+      "references": [
+        "बोतलहरूमा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "botalharuma",
+          "record": "nep1974532"
+        },
+        "TRAIN:native_word": {
+          "matched": "बोतलहरूमा",
+          "record": "nep1974532"
+        }
+      }
+    },
+    {
+      "id": "fresh-069",
+      "category": "Household forms",
+      "family": "cradle",
+      "roman": "kokrobata",
+      "references": [
+        "कोक्रोबाट"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "kokrobata",
+          "record": "nep560317"
+        },
+        "TRAIN:native_word": {
+          "matched": "कोक्रोबाट",
+          "record": "nep560317"
+        }
+      }
+    },
+    {
+      "id": "fresh-070",
+      "category": "Household forms",
+      "family": "cradle",
+      "roman": "kokroko",
+      "references": [
+        "कोक्रोको"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "kokroko",
+          "record": "nep787257"
+        },
+        "TRAIN:native_word": {
+          "matched": "कोक्रोको",
+          "record": "nep787257"
+        }
+      }
+    },
+    {
+      "id": "fresh-075",
+      "category": "Household forms",
+      "family": "carrying-strap",
+      "roman": "namlobata",
+      "references": [
+        "नाम्लोबाट"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "namlobata",
+          "record": "nep30134"
+        },
+        "TRAIN:native_word": {
+          "matched": "नाम्लोबाट",
+          "record": "nep30134"
+        }
+      }
+    },
+    {
+      "id": "fresh-077",
+      "category": "Household forms",
+      "family": "winnowing-tray",
+      "roman": "nanglobata",
+      "references": [
+        "नाङ्लोबाट"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "nanglobata",
+          "record": "nep1595783"
+        },
+        "TRAIN:native_word": {
+          "matched": "नाङ्लोबाट",
+          "record": "nep1595783"
+        }
+      }
+    },
+    {
+      "id": "fresh-078",
+      "category": "Household forms",
+      "family": "winnowing-tray",
+      "roman": "nangloko",
+      "references": [
+        "नाङ्लोको"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "nangloko",
+          "record": "nep67136"
+        },
+        "TRAIN:native_word": {
+          "matched": "नाङ्लोको",
+          "record": "nep67136"
+        }
+      }
+    },
+    {
+      "id": "fresh-079",
+      "category": "Household forms",
+      "family": "grain-bin",
+      "roman": "bhakaribata",
+      "references": [
+        "भकारीबाट"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "bhakariwata",
+          "record": "nep1295624"
+        },
+        "TRAIN:native_word": {
+          "matched": "भकारीबाट",
+          "record": "nep1466471"
+        }
+      }
+    },
+    {
+      "id": "fresh-080",
+      "category": "Household forms",
+      "family": "grain-bin",
+      "roman": "bhakariko",
+      "references": [
+        "भकारीको"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "bhakariko",
+          "record": "nep1870636"
+        },
+        "TRAIN:native_word": {
+          "matched": "भकारीको",
+          "record": "nep1870636"
+        }
+      }
+    },
+    {
+      "id": "fresh-084",
+      "category": "Household forms",
+      "family": "pestle",
+      "roman": "lohoroko",
+      "references": [
+        "लोहोरोको"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "lohoroko",
+          "record": "nep994154"
+        },
+        "TRAIN:native_word": {
+          "matched": "लोहोरोको",
+          "record": "nep994154"
+        }
+      }
+    },
+    {
+      "id": "fresh-085",
+      "category": "Household forms",
+      "family": "kitchen-knife",
+      "roman": "chulesima",
+      "references": [
+        "चुलेसीमा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "chulesima",
+          "record": "nep844477"
+        },
+        "TRAIN:native_word": {
+          "matched": "चुलेसीमा",
+          "record": "nep844477"
+        }
+      }
+    },
+    {
+      "id": "fresh-086",
+      "category": "Household forms",
+      "family": "kitchen-knife",
+      "roman": "chulesiko",
+      "references": [
+        "चुलेसीको"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "chulesiko",
+          "record": "nep987311"
+        },
+        "TRAIN:native_word": {
+          "matched": "चुलेसीको",
+          "record": "nep987311"
+        }
+      }
+    },
+    {
+      "id": "fresh-090",
+      "category": "Household forms",
+      "family": "kitchen",
+      "roman": "bhansagharma",
+      "references": [
+        "भान्साघरमा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "bhansagharma",
+          "record": "nep366951"
+        },
+        "TRAIN:native_word": {
+          "matched": "भान्साघरमा",
+          "record": "nep2311642"
+        }
+      }
+    },
+    {
+      "id": "fresh-091",
+      "category": "Household forms",
+      "family": "snack-shop",
+      "roman": "khajagharma",
+      "references": [
+        "खाजाघरमा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "khajagharma",
+          "record": "nep2366085"
+        },
+        "TRAIN:native_word": {
+          "matched": "खाजाघरमा",
+          "record": "nep2366085"
+        }
+      }
+    },
+    {
+      "id": "fresh-092",
+      "category": "Household forms",
+      "family": "snack-shop",
+      "roman": "khajagharko",
+      "references": [
+        "खाजाघरको"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "khajagharko",
+          "record": "nep2272744"
+        },
+        "TRAIN:native_word": {
+          "matched": "खाजाघरको",
+          "record": "nep2272744"
+        }
+      }
+    },
+    {
+      "id": "fresh-093",
+      "category": "Verb forms",
+      "family": "say",
+      "roman": "bhanidinu",
+      "references": [
+        "भनिदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "bhanidinu",
+          "record": "nep1504223"
+        },
+        "TRAIN:native_word": {
+          "matched": "भनिदिनु",
+          "record": "nep1504223"
+        }
+      }
+    },
+    {
+      "id": "fresh-094",
+      "category": "Verb forms",
+      "family": "say",
+      "roman": "bhanidinus",
+      "references": [
+        "भनिदिनुस्"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "bhanidinus",
+          "record": "nep1086191"
+        },
+        "TRAIN:native_word": {
+          "matched": "भनिदिनुस्",
+          "record": "nep1138322"
+        }
+      }
+    },
+    {
+      "id": "fresh-095",
+      "category": "Verb forms",
+      "family": "write",
+      "roman": "lekhidinu",
+      "references": [
+        "लेखिदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "lekhidinu",
+          "record": "nep648837"
+        },
+        "TRAIN:native_word": {
+          "matched": "लेखिदिनु",
+          "record": "nep648837"
+        }
+      }
+    },
+    {
+      "id": "fresh-096",
+      "category": "Verb forms",
+      "family": "write",
+      "roman": "lekhidinus",
+      "references": [
+        "लेखिदिनुस्"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "lekhidinus",
+          "record": "nep201122"
+        },
+        "TRAIN:native_word": {
+          "matched": "लेखिदिनुस्",
+          "record": "nep201122"
+        }
+      }
+    },
+    {
+      "id": "fresh-097",
+      "category": "Verb forms",
+      "family": "show",
+      "roman": "dekhaidinu",
+      "references": [
+        "देखाइदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "dekhaidinu",
+          "record": "nep690243"
+        },
+        "TRAIN:native_word": {
+          "matched": "देखाइदिनु",
+          "record": "nep2197638"
+        }
+      }
+    },
+    {
+      "id": "fresh-098",
+      "category": "Verb forms",
+      "family": "show",
+      "roman": "dekhaidinus",
+      "references": [
+        "देखाइदिनुस्"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "dekhaidinus",
+          "record": "nep204489"
+        },
+        "TRAIN:native_word": {
+          "matched": "देखाइदिनुस्",
+          "record": "nep204489"
+        }
+      }
+    },
+    {
+      "id": "fresh-099",
+      "category": "Verb forms",
+      "family": "look",
+      "roman": "heridinu",
+      "references": [
+        "हेरिदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "heridinu",
+          "record": "nep70773"
+        },
+        "TRAIN:native_word": {
+          "matched": "हेरिदिनु",
+          "record": "nep70773"
+        }
+      }
+    },
+    {
+      "id": "fresh-103",
+      "category": "Verb forms",
+      "family": "explain",
+      "roman": "samjhaidinu",
+      "references": [
+        "सम्झाइदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "samjhaidinu",
+          "record": "nep1186471"
+        },
+        "TRAIN:native_word": {
+          "matched": "सम्झाइदिनु",
+          "record": "nep1186471"
+        }
+      }
+    },
+    {
+      "id": "fresh-105",
+      "category": "Verb forms",
+      "family": "call",
+      "roman": "bolaidinu",
+      "references": [
+        "बोलाइदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "bolaidinu",
+          "record": "nep374780"
+        },
+        "TRAIN:native_word": {
+          "matched": "बोलाइदिनु",
+          "record": "nep1362213"
+        }
+      }
+    },
+    {
+      "id": "fresh-107",
+      "category": "Verb forms",
+      "family": "call",
+      "roman": "bolaunubhayo",
+      "references": [
+        "बोलाउनुभयो"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "bolaunubhayo",
+          "record": "nep334919"
+        },
+        "TRAIN:native_word": {
+          "matched": "बोलाउनुभयो",
+          "record": "nep334919"
+        }
+      }
+    },
+    {
+      "id": "fresh-108",
+      "category": "Verb forms",
+      "family": "cook",
+      "roman": "pakaidinu",
+      "references": [
+        "पकाइदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "pakaidinu",
+          "record": "nep1545702"
+        },
+        "TRAIN:native_word": {
+          "matched": "पकाइदिनु",
+          "record": "nep1545702"
+        }
+      }
+    },
+    {
+      "id": "fresh-111",
+      "category": "Verb forms",
+      "family": "feed",
+      "roman": "khwaidinu",
+      "references": [
+        "ख्वाइदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "khwaidinu",
+          "record": "nep1469936"
+        },
+        "TRAIN:native_word": {
+          "matched": "ख्वाइदिनु",
+          "record": "nep1469936"
+        }
+      }
+    },
+    {
+      "id": "fresh-112",
+      "category": "Verb forms",
+      "family": "feed",
+      "roman": "khwaidinus",
+      "references": [
+        "ख्वाइदिनुस्"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "khwaidinus",
+          "record": "nep809715"
+        },
+        "TRAIN:native_word": {
+          "matched": "ख्वाइदिनुस्",
+          "record": "nep809715"
+        }
+      }
+    },
+    {
+      "id": "fresh-114",
+      "category": "Verb forms",
+      "family": "eat",
+      "roman": "khairahanuhunchha",
+      "references": [
+        "खाइरहनुहुन्छ"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "khairahanuhunchha",
+          "record": "nep704664"
+        },
+        "TRAIN:native_word": {
+          "matched": "खाइरहनुहुन्छ",
+          "record": "nep704664"
+        }
+      }
+    },
+    {
+      "id": "fresh-116",
+      "category": "Verb forms",
+      "family": "seat",
+      "roman": "basaidinu",
+      "references": [
+        "बसाइदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "basaidinu",
+          "record": "nep2271422"
+        },
+        "TRAIN:native_word": {
+          "matched": "बसाइदिनु",
+          "record": "nep2271422"
+        }
+      }
+    },
+    {
+      "id": "fresh-118",
+      "category": "Verb forms",
+      "family": "lift",
+      "roman": "uthaidinu",
+      "references": [
+        "उठाइदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "uthaidinu",
+          "record": "nep994903"
+        },
+        "TRAIN:native_word": {
+          "matched": "उठाइदिनु",
+          "record": "nep994903"
+        }
+      }
+    },
+    {
+      "id": "fresh-120",
+      "category": "Verb forms",
+      "family": "teach",
+      "roman": "sikaidinu",
+      "references": [
+        "सिकाइदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "sikaidinu",
+          "record": "nep479342"
+        },
+        "TRAIN:native_word": {
+          "matched": "सिकाइदिनु",
+          "record": "nep479342"
+        }
+      }
+    },
+    {
+      "id": "fresh-123",
+      "category": "Verb forms",
+      "family": "read",
+      "roman": "padhidinu",
+      "references": [
+        "पढिदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "padhidinu",
+          "record": "nep777199"
+        },
+        "TRAIN:native_word": {
+          "matched": "पढिदिनु",
+          "record": "nep777199"
+        }
+      }
+    },
+    {
+      "id": "fresh-124",
+      "category": "Verb forms",
+      "family": "read",
+      "roman": "padhidinus",
+      "references": [
+        "पढिदिनुस्"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "padhidinus",
+          "record": "nep633730"
+        },
+        "TRAIN:native_word": {
+          "matched": "पढिदिनुस्",
+          "record": "nep633730"
+        }
+      }
+    },
+    {
+      "id": "fresh-125",
+      "category": "Verb forms",
+      "family": "read",
+      "roman": "padhirahanuhunchha",
+      "references": [
+        "पढिरहनुहुन्छ"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "padhirahanuhunchha",
+          "record": "nep1522441"
+        },
+        "TRAIN:native_word": {
+          "matched": "पढिरहनुहुन्छ",
+          "record": "nep1522441"
+        }
+      }
+    },
+    {
+      "id": "fresh-126",
+      "category": "Verb forms",
+      "family": "keep",
+      "roman": "rakhidinu",
+      "references": [
+        "राखिदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "rakhidinu",
+          "record": "nep115972"
+        },
+        "TRAIN:native_word": {
+          "matched": "राखिदिनु",
+          "record": "nep115972"
+        }
+      }
+    },
+    {
+      "id": "fresh-127",
+      "category": "Verb forms",
+      "family": "keep",
+      "roman": "rakhidinus",
+      "references": [
+        "राखिदिनुस्"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "rakhidinus",
+          "record": "nep1154703"
+        },
+        "TRAIN:native_word": {
+          "matched": "राखिदिनुस्",
+          "record": "nep1754558"
+        }
+      }
+    },
+    {
+      "id": "fresh-133",
+      "category": "Verb forms",
+      "family": "deliver",
+      "roman": "puryaunuhunchha",
+      "references": [
+        "पुर्‍याउनुहुन्छ",
+        "पुर्याउनुहुन्छ"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "puryaunuhunchha",
+          "record": "nep2392167"
+        },
+        "TRAIN:native_word": {
+          "matched": "पुर्याउनुहुन्छ",
+          "record": "nep2392167"
+        }
+      }
+    },
+    {
+      "id": "fresh-136",
+      "category": "Verb forms",
+      "family": "hold",
+      "roman": "samatirakhnu",
+      "references": [
+        "समातिराख्नु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "samatirakhnu",
+          "record": "nep536767"
+        },
+        "TRAIN:native_word": {
+          "matched": "समातिराख्नु",
+          "record": "nep536767"
+        }
+      }
+    },
+    {
+      "id": "fresh-137",
+      "category": "Verb forms",
+      "family": "carry",
+      "roman": "bokidinu",
+      "references": [
+        "बोकिदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "bokidinu",
+          "record": "nep1394848"
+        },
+        "TRAIN:native_word": {
+          "matched": "बोकिदिनु",
+          "record": "nep1394848"
+        }
+      }
+    },
+    {
+      "id": "fresh-139",
+      "category": "Verb forms",
+      "family": "carry",
+      "roman": "boknuhunchha",
+      "references": [
+        "बोक्नुहुन्छ"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "boknuhunchha",
+          "record": "nep1135190"
+        },
+        "TRAIN:native_word": {
+          "matched": "बोक्नुहुन्छ",
+          "record": "nep1135190"
+        }
+      }
+    },
+    {
+      "id": "fresh-140",
+      "category": "Verb forms",
+      "family": "wash",
+      "roman": "dhoidinu",
+      "references": [
+        "धोइदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "dhoidinu",
+          "record": "nep938866"
+        },
+        "TRAIN:native_word": {
+          "matched": "धोइदिनु",
+          "record": "nep938866"
+        }
+      }
+    },
+    {
+      "id": "fresh-141",
+      "category": "Verb forms",
+      "family": "wash",
+      "roman": "dhoidinus",
+      "references": [
+        "धोइदिनुस्"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "dhoidinus",
+          "record": "nep1020399"
+        },
+        "TRAIN:native_word": {
+          "matched": "धोइदिनुस्",
+          "record": "nep1020399"
+        }
+      }
+    },
+    {
+      "id": "fresh-142",
+      "category": "Verb forms",
+      "family": "wipe",
+      "roman": "puchhidinu",
+      "references": [
+        "पुछिदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "puchhidinu",
+          "record": "nep2351046"
+        },
+        "TRAIN:native_word": {
+          "matched": "पुछिदिनु",
+          "record": "nep2351046"
+        }
+      }
+    },
+    {
+      "id": "fresh-143",
+      "category": "Verb forms",
+      "family": "wipe",
+      "roman": "puchhidinus",
+      "references": [
+        "पुछिदिनुस्"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "puchhidinus",
+          "record": "nep230654"
+        },
+        "TRAIN:native_word": {
+          "matched": "पुछिदिनुस्",
+          "record": "nep230654"
+        }
+      }
+    },
+    {
+      "id": "fresh-144",
+      "category": "Verb forms",
+      "family": "arrange",
+      "roman": "milaidinu",
+      "references": [
+        "मिलाइदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "milaidinu",
+          "record": "nep28437"
+        },
+        "TRAIN:native_word": {
+          "matched": "मिलाइदिनु",
+          "record": "nep28437"
+        }
+      }
+    },
+    {
+      "id": "fresh-145",
+      "category": "Verb forms",
+      "family": "arrange",
+      "roman": "milaidinus",
+      "references": [
+        "मिलाइदिनुस्"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "milaidinus",
+          "record": "nep609943"
+        }
+      }
+    },
+    {
+      "id": "fresh-146",
+      "category": "Verb forms",
+      "family": "arrange",
+      "roman": "milaaunuhunchha",
+      "references": [
+        "मिलाउनुहुन्छ"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "milaunuhuncha",
+          "record": "nep1711183"
+        },
+        "TRAIN:native_word": {
+          "matched": "मिलाउनुहुन्छ",
+          "record": "nep1711183"
+        }
+      }
+    },
+    {
+      "id": "fresh-147",
+      "category": "Verb forms",
+      "family": "decorate",
+      "roman": "sajaidinu",
+      "references": [
+        "सजाइदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "sajaidinu",
+          "record": "nep233289"
+        },
+        "TRAIN:native_word": {
+          "matched": "सजाइदिनु",
+          "record": "nep233289"
+        }
+      }
+    },
+    {
+      "id": "fresh-151",
+      "category": "Verb forms",
+      "family": "sew",
+      "roman": "silaidinu",
+      "references": [
+        "सिलाइदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "silaidinu",
+          "record": "nep710520"
+        },
+        "TRAIN:native_word": {
+          "matched": "सिलाइदिनु",
+          "record": "nep710520"
+        }
+      }
+    },
+    {
+      "id": "fresh-155",
+      "category": "Verb forms",
+      "family": "cut",
+      "roman": "kaatidinu",
+      "references": [
+        "काटिदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "katidinu",
+          "record": "nep980342"
+        },
+        "TRAIN:native_word": {
+          "matched": "काटिदिनु",
+          "record": "nep2097278"
+        }
+      }
+    },
+    {
+      "id": "fresh-157",
+      "category": "Verb forms",
+      "family": "cut",
+      "roman": "kaatnuhunchha",
+      "references": [
+        "काट्नुहुन्छ"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "katnuhunchha",
+          "record": "nep985916"
+        },
+        "TRAIN:native_word": {
+          "matched": "काट्नुहुन्छ",
+          "record": "nep985916"
+        }
+      }
+    },
+    {
+      "id": "fresh-158",
+      "category": "Verb forms",
+      "family": "untie",
+      "roman": "phukaidinu",
+      "references": [
+        "फुकाइदिनु"
+      ],
+      "exposure": {
+        "TRAIN:native_word": {
+          "matched": "फुकाइदिनु",
+          "record": "nep767698"
+        }
+      }
+    },
+    {
+      "id": "fresh-160",
+      "category": "Verb forms",
+      "family": "return",
+      "roman": "pharkaidinu",
+      "references": [
+        "फर्काइदिनु"
+      ],
+      "exposure": {
+        "TRAIN:native_word": {
+          "matched": "फर्काइदिनु",
+          "record": "nep136736"
+        }
+      }
+    },
+    {
+      "id": "fresh-162",
+      "category": "Verb forms",
+      "family": "wait",
+      "roman": "parkhidinu",
+      "references": [
+        "पर्खिदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "parkhidinu",
+          "record": "nep2082293"
+        },
+        "TRAIN:native_word": {
+          "matched": "पर्खिदिनु",
+          "record": "nep2082293"
+        }
+      }
+    },
+    {
+      "id": "fresh-165",
+      "category": "Verb forms",
+      "family": "forget",
+      "roman": "birsidinu",
+      "references": [
+        "बिर्सिदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "birsidinu",
+          "record": "nep1220047"
+        },
+        "TRAIN:native_word": {
+          "matched": "बिर्सिदिनु",
+          "record": "nep1387329"
+        }
+      }
+    },
+    {
+      "id": "fresh-167",
+      "category": "Verb forms",
+      "family": "remember",
+      "roman": "samjhinuhunchha",
+      "references": [
+        "सम्झिनुहुन्छ"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "samjhinuhunchha",
+          "record": "nep1384467"
+        },
+        "TRAIN:native_word": {
+          "matched": "सम्झिनुहुन्छ",
+          "record": "nep1384467"
+        }
+      }
+    },
+    {
+      "id": "fresh-168",
+      "category": "Verb forms",
+      "family": "remember",
+      "roman": "samjhinubhayo",
+      "references": [
+        "सम्झिनुभयो"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "samjhinubhayo",
+          "record": "nep706494"
+        },
+        "TRAIN:native_word": {
+          "matched": "सम्झिनुभयो",
+          "record": "nep706494"
+        }
+      }
+    },
+    {
+      "id": "fresh-169",
+      "category": "Verb forms",
+      "family": "think",
+      "roman": "sochirahanuhunchha",
+      "references": [
+        "सोचिरहनुहुन्छ"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "sochirahanuhunchha",
+          "record": "nep666378"
+        },
+        "TRAIN:native_word": {
+          "matched": "सोचिरहनुहुन्छ",
+          "record": "nep666378"
+        }
+      }
+    },
+    {
+      "id": "fresh-170",
+      "category": "Verb forms",
+      "family": "think",
+      "roman": "sochirakhnu",
+      "references": [
+        "सोचिराख्नु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "sochirakhnu",
+          "record": "nep89352"
+        },
+        "TRAIN:native_word": {
+          "matched": "सोचिराख्नु",
+          "record": "nep811334"
+        }
+      }
+    },
+    {
+      "id": "fresh-171",
+      "category": "Verb forms",
+      "family": "meet",
+      "roman": "bhetidinu",
+      "references": [
+        "भेटिदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "bhetidinu",
+          "record": "nep867999"
+        },
+        "TRAIN:native_word": {
+          "matched": "भेटिदिनु",
+          "record": "nep867999"
+        }
+      }
+    },
+    {
+      "id": "fresh-174",
+      "category": "Verb forms",
+      "family": "come",
+      "roman": "aaidinuhos",
+      "references": [
+        "आइदिनुहोस्"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "aidinuhos",
+          "record": "nep469903"
+        },
+        "TRAIN:native_word": {
+          "matched": "आइदिनुहोस्",
+          "record": "nep469903"
+        }
+      }
+    },
+    {
+      "id": "fresh-176",
+      "category": "Verb forms",
+      "family": "come",
+      "roman": "aaunuhunchha",
+      "references": [
+        "आउनुहुन्छ"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "aunuhunchha",
+          "record": "nep2241445"
+        },
+        "TRAIN:native_word": {
+          "matched": "आउनुहुन्छ",
+          "record": "nep2241445"
+        }
+      }
+    },
+    {
+      "id": "fresh-177",
+      "category": "Verb forms",
+      "family": "arrive",
+      "roman": "aaipugnubhayo",
+      "references": [
+        "आइपुग्नुभयो"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "aipugnubhayo",
+          "record": "nep70124"
+        },
+        "TRAIN:native_word": {
+          "matched": "आइपुग्नुभयो",
+          "record": "nep70124"
+        }
+      }
+    },
+    {
+      "id": "fresh-178",
+      "category": "Verb forms",
+      "family": "arrive",
+      "roman": "aaipugnuhunchha",
+      "references": [
+        "आइपुग्नुहुन्छ"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "aipugnuhuncha",
+          "record": "nep1115372"
+        },
+        "TRAIN:native_word": {
+          "matched": "आइपुग्नुहुन्छ",
+          "record": "nep1115372"
+        }
+      }
+    },
+    {
+      "id": "fresh-179",
+      "category": "Verb forms",
+      "family": "go",
+      "roman": "gaidinuhos",
+      "references": [
+        "गइदिनुहोस्"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "gaidinuhos",
+          "record": "nep1220997"
+        },
+        "TRAIN:native_word": {
+          "matched": "गइदिनुहोस्",
+          "record": "nep1220997"
+        }
+      }
+    },
+    {
+      "id": "fresh-180",
+      "category": "Verb forms",
+      "family": "go",
+      "roman": "gaidinus",
+      "references": [
+        "गइदिनुस्"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "gaidinus",
+          "record": "nep1860293"
+        }
+      }
+    },
+    {
+      "id": "fresh-181",
+      "category": "Verb forms",
+      "family": "go",
+      "roman": "jaanuhunchha",
+      "references": [
+        "जानुहुन्छ"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "januhunchha",
+          "record": "nep347264"
+        },
+        "TRAIN:native_word": {
+          "matched": "जानुहुन्छ",
+          "record": "nep347264"
+        }
+      }
+    },
+    {
+      "id": "fresh-182",
+      "category": "Verb forms",
+      "family": "understand",
+      "roman": "bujhaidinus",
+      "references": [
+        "बुझाइदिनुस्"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "bujhaidinus",
+          "record": "nep366061"
+        },
+        "TRAIN:native_word": {
+          "matched": "बुझाइदिनुस्",
+          "record": "nep366061"
+        }
+      }
+    },
+    {
+      "id": "fresh-183",
+      "category": "Verb forms",
+      "family": "understand",
+      "roman": "bujhidinus",
+      "references": [
+        "बुझिदिनुस्"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "bujhidinus",
+          "record": "nep762088"
+        },
+        "TRAIN:native_word": {
+          "matched": "बुझिदिनुस्",
+          "record": "nep762088"
+        }
+      }
+    },
+    {
+      "id": "fresh-184",
+      "category": "Verb forms",
+      "family": "understand",
+      "roman": "bujhnuhunchha",
+      "references": [
+        "बुझ्नुहुन्छ"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "wujhnuhunchha",
+          "record": "nep897034"
+        }
+      }
+    },
+    {
+      "id": "fresh-185",
+      "category": "Verb forms",
+      "family": "ask",
+      "roman": "sodhidinu",
+      "references": [
+        "सोधिदिनु"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "sodhidinu",
+          "record": "nep2148853"
+        },
+        "TRAIN:native_word": {
+          "matched": "सोधिदिनु",
+          "record": "nep2148853"
+        }
+      }
+    },
+    {
+      "id": "fresh-186",
+      "category": "Verb forms",
+      "family": "ask",
+      "roman": "sodhidinus",
+      "references": [
+        "सोधिदिनुस्"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "sodhidinus",
+          "record": "nep681843"
+        },
+        "TRAIN:native_word": {
+          "matched": "सोधिदिनुस्",
+          "record": "nep681843"
+        }
+      }
+    },
+    {
+      "id": "fresh-188",
+      "category": "Names",
+      "family": "aarush",
+      "roman": "aarush",
+      "references": [
+        "आरुष",
+        "आरुश"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "arush",
+          "record": "nep816982"
+        },
+        "TRAIN:native_word": {
+          "matched": "आरुष",
+          "record": "nep2384793"
+        }
+      }
+    },
+    {
+      "id": "fresh-190",
+      "category": "Names",
+      "family": "aarohi",
+      "roman": "aarohi",
+      "references": [
+        "आरोही"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "arohi",
+          "record": "nep51159"
+        },
+        "TRAIN:native_word": {
+          "matched": "आरोही",
+          "record": "nep51159"
+        }
+      }
+    },
+    {
+      "id": "fresh-196",
+      "category": "Names",
+      "family": "aadhya",
+      "roman": "aadhya",
+      "references": [
+        "आध्या"
+      ],
+      "exposure": {
+        "earlier-public-test:normalized_roman": {
+          "matched": "adhya",
+          "record": "nep3838"
+        },
+        "earlier-evaluations:normalized_roman": {
+          "matched": "adhya",
+          "record": null
+        },
+        "earlier-evaluations:native_word": {
+          "matched": "आध्या",
+          "record": null
+        }
+      }
+    },
+    {
+      "id": "fresh-197",
+      "category": "Names",
+      "family": "aadvik",
+      "roman": "aadvik",
+      "references": [
+        "आद्विक"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "adwik",
+          "record": "nep1658544"
+        }
+      }
+    },
+    {
+      "id": "fresh-199",
+      "category": "Names",
+      "family": "anvay",
+      "roman": "anvay",
+      "references": [
+        "अन्वय"
+      ],
+      "exposure": {
+        "TRAIN:native_word": {
+          "matched": "अन्वय",
+          "record": "nep1029348"
+        }
+      }
+    },
+    {
+      "id": "fresh-200",
+      "category": "Names",
+      "family": "anvika",
+      "roman": "anvika",
+      "references": [
+        "अन्विका"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "anwika",
+          "record": "nep1295657"
+        },
+        "TRAIN:native_word": {
+          "matched": "अन्विका",
+          "record": "nep1295657"
+        }
+      }
+    },
+    {
+      "id": "fresh-201",
+      "category": "Names",
+      "family": "anvisha",
+      "roman": "anvisha",
+      "references": [
+        "अन्विषा",
+        "अन्विशा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "anwisa",
+          "record": "nep854083"
+        }
+      }
+    },
+    {
+      "id": "fresh-202",
+      "category": "Names",
+      "family": "anvita",
+      "roman": "anvita",
+      "references": [
+        "अन्विता"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "anwita",
+          "record": "nep677240"
+        },
+        "TRAIN:native_word": {
+          "matched": "अन्विता",
+          "record": "nep677240"
+        }
+      }
+    },
+    {
+      "id": "fresh-203",
+      "category": "Names",
+      "family": "anvesha",
+      "roman": "anvesha",
+      "references": [
+        "अन्वेषा",
+        "अन्वेशा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "anwesha",
+          "record": "nep1898076"
+        },
+        "TRAIN:native_word": {
+          "matched": "अन्वेषा",
+          "record": "nep2073817"
+        }
+      }
+    },
+    {
+      "id": "fresh-204",
+      "category": "Names",
+      "family": "anveshi",
+      "roman": "anveshi",
+      "references": [
+        "अन्वेषी",
+        "अन्वेशी"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "anweshi",
+          "record": "nep702227"
+        },
+        "TRAIN:native_word": {
+          "matched": "अन्वेषी",
+          "record": "nep702227"
+        }
+      }
+    },
+    {
+      "id": "fresh-205",
+      "category": "Names",
+      "family": "anushri",
+      "roman": "anushri",
+      "references": [
+        "अनुश्री"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "anushree",
+          "record": "nep317425"
+        },
+        "TRAIN:native_word": {
+          "matched": "अनुश्री",
+          "record": "nep317425"
+        }
+      }
+    },
+    {
+      "id": "fresh-212",
+      "category": "Names",
+      "family": "aayushma",
+      "roman": "aayushma",
+      "references": [
+        "आयुष्मा",
+        "आयुश्मा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "ayushma",
+          "record": "nep256664"
+        },
+        "TRAIN:native_word": {
+          "matched": "आयुष्मा",
+          "record": "nep256664"
+        }
+      }
+    },
+    {
+      "id": "fresh-213",
+      "category": "Names",
+      "family": "aayushri",
+      "roman": "aayushri",
+      "references": [
+        "आयुष्री",
+        "आयुश्री"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "ayushree",
+          "record": "nep2193669"
+        },
+        "TRAIN:native_word": {
+          "matched": "आयुश्री",
+          "record": "nep2193669"
+        }
+      }
+    },
+    {
+      "id": "fresh-214",
+      "category": "Names",
+      "family": "prisha",
+      "roman": "prisha",
+      "references": [
+        "प्रिशा",
+        "प्रिषा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "prisa",
+          "record": "nep383579"
+        },
+        "TRAIN:native_word": {
+          "matched": "प्रिशा",
+          "record": "nep1160293"
+        }
+      }
+    },
+    {
+      "id": "fresh-216",
+      "category": "Names",
+      "family": "prishma",
+      "roman": "prishma",
+      "references": [
+        "प्रिश्मा",
+        "प्रिष्मा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "prishma",
+          "record": "nep927338"
+        },
+        "TRAIN:native_word": {
+          "matched": "प्रिश्मा",
+          "record": "nep927338"
+        }
+      }
+    },
+    {
+      "id": "fresh-217",
+      "category": "Names",
+      "family": "pranavi",
+      "roman": "pranavi",
+      "references": [
+        "प्रणवी",
+        "प्रनवी"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "pranavi",
+          "record": "nep2374700"
+        },
+        "TRAIN:native_word": {
+          "matched": "प्रणवी",
+          "record": "nep2374700"
+        }
+      }
+    },
+    {
+      "id": "fresh-218",
+      "category": "Names",
+      "family": "pranaya",
+      "roman": "pranaya",
+      "references": [
+        "प्रणया",
+        "प्रनया"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "pranaya",
+          "record": "nep214553"
+        }
+      }
+    },
+    {
+      "id": "fresh-219",
+      "category": "Names",
+      "family": "pranisha",
+      "roman": "pranisha",
+      "references": [
+        "प्रणिशा",
+        "प्रनिशा",
+        "प्रणिषा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "pranisa",
+          "record": "nep31983"
+        },
+        "TRAIN:native_word": {
+          "matched": "प्रनिशा",
+          "record": "nep687101"
+        }
+      }
+    },
+    {
+      "id": "fresh-220",
+      "category": "Names",
+      "family": "pranish",
+      "roman": "pranish",
+      "references": [
+        "प्रणिश",
+        "प्रनिश",
+        "प्रणीश"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "pranish",
+          "record": "nep1096583"
+        },
+        "TRAIN:native_word": {
+          "matched": "प्रनिश",
+          "record": "nep1096583"
+        }
+      }
+    },
+    {
+      "id": "fresh-222",
+      "category": "Names",
+      "family": "pranita",
+      "roman": "pranita",
+      "references": [
+        "प्रणिता",
+        "प्रनिता",
+        "प्रणीता"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "pranita",
+          "record": "nep1022638"
+        },
+        "TRAIN:native_word": {
+          "matched": "प्रणिता",
+          "record": "nep1022638"
+        }
+      }
+    },
+    {
+      "id": "fresh-223",
+      "category": "Names",
+      "family": "pranil",
+      "roman": "pranil",
+      "references": [
+        "प्रणिल",
+        "प्रनिल"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "pranil",
+          "record": "nep6100"
+        },
+        "TRAIN:native_word": {
+          "matched": "प्रनिल",
+          "record": "nep6100"
+        }
+      }
+    },
+    {
+      "id": "fresh-225",
+      "category": "Names",
+      "family": "pratyusha",
+      "roman": "pratyusha",
+      "references": [
+        "प्रत्यूषा",
+        "प्रत्युषा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "pratyusha",
+          "record": "nep5905"
+        },
+        "TRAIN:native_word": {
+          "matched": "प्रत्युषा",
+          "record": "nep5905"
+        }
+      }
+    },
+    {
+      "id": "fresh-226",
+      "category": "Names",
+      "family": "pratyush",
+      "roman": "pratyush",
+      "references": [
+        "प्रत्यूष",
+        "प्रत्युष"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "pratyush",
+          "record": "nep886244"
+        },
+        "TRAIN:native_word": {
+          "matched": "प्रत्यूष",
+          "record": "nep886244"
+        }
+      }
+    },
+    {
+      "id": "fresh-227",
+      "category": "Names",
+      "family": "ritisha",
+      "roman": "ritisha",
+      "references": [
+        "रितिशा",
+        "रितिषा",
+        "रीतिशा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "ritisha",
+          "record": "nep502125"
+        },
+        "TRAIN:native_word": {
+          "matched": "रीतिशा",
+          "record": "nep502125"
+        }
+      }
+    },
+    {
+      "id": "fresh-229",
+      "category": "Names",
+      "family": "ritwik",
+      "roman": "ritwik",
+      "references": [
+        "ऋत्विक"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "ritwik",
+          "record": "nep79425"
+        },
+        "TRAIN:native_word": {
+          "matched": "ऋत्विक",
+          "record": "nep956368"
+        }
+      }
+    },
+    {
+      "id": "fresh-230",
+      "category": "Names",
+      "family": "riddhima",
+      "roman": "riddhima",
+      "references": [
+        "रिद्धिमा",
+        "ऋद्धिमा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "riddhima",
+          "record": "nep1074110"
+        },
+        "TRAIN:native_word": {
+          "matched": "ऋद्धिमा",
+          "record": "nep1074110"
+        }
+      }
+    },
+    {
+      "id": "fresh-232",
+      "category": "Names",
+      "family": "rishika",
+      "roman": "rishika",
+      "references": [
+        "ऋषिका",
+        "रिषिका"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "rishika",
+          "record": "nep1589909"
+        },
+        "TRAIN:native_word": {
+          "matched": "ऋषिका",
+          "record": "nep1589909"
+        }
+      }
+    },
+    {
+      "id": "fresh-234",
+      "category": "Names",
+      "family": "rishvi",
+      "roman": "rishvi",
+      "references": [
+        "ऋष्वी",
+        "रिष्वी"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "risbi",
+          "record": "nep301966"
+        }
+      }
+    },
+    {
+      "id": "fresh-235",
+      "category": "Names",
+      "family": "rivaan",
+      "roman": "rivaan",
+      "references": [
+        "रिवान"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "riban",
+          "record": "nep241755"
+        },
+        "TRAIN:native_word": {
+          "matched": "रिवान",
+          "record": "nep680765"
+        }
+      }
+    },
+    {
+      "id": "fresh-236",
+      "category": "Names",
+      "family": "reyansh",
+      "roman": "reyansh",
+      "references": [
+        "रेयांश"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "reyansh",
+          "record": "nep689736"
+        },
+        "TRAIN:native_word": {
+          "matched": "रेयांश",
+          "record": "nep689736"
+        }
+      }
+    },
+    {
+      "id": "fresh-239",
+      "category": "Names",
+      "family": "renisha",
+      "roman": "renisha",
+      "references": [
+        "रेनिशा",
+        "रेनिषा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "renisha",
+          "record": "nep1299479"
+        },
+        "TRAIN:native_word": {
+          "matched": "रेनिशा",
+          "record": "nep1299479"
+        }
+      }
+    },
+    {
+      "id": "fresh-240",
+      "category": "Names",
+      "family": "roshika",
+      "roman": "roshika",
+      "references": [
+        "रोशिका",
+        "रोषिका"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "roshika",
+          "record": "nep2154775"
+        },
+        "TRAIN:native_word": {
+          "matched": "रोशिका",
+          "record": "nep2154775"
+        }
+      }
+    },
+    {
+      "id": "fresh-241",
+      "category": "Names",
+      "family": "saanvi",
+      "roman": "saanvi",
+      "references": [
+        "सान्वी",
+        "सान्वि"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "shanvi",
+          "record": "nep4357"
+        },
+        "TRAIN:native_word": {
+          "matched": "सान्वी",
+          "record": "nep1215119"
+        }
+      }
+    },
+    {
+      "id": "fresh-243",
+      "category": "Names",
+      "family": "samaira",
+      "roman": "samaira",
+      "references": [
+        "समाइरा",
+        "समैरा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "samaira",
+          "record": "nep904665"
+        }
+      }
+    },
+    {
+      "id": "fresh-244",
+      "category": "Names",
+      "family": "sayesha",
+      "roman": "sayesha",
+      "references": [
+        "सायेशा"
+      ],
+      "exposure": {
+        "TRAIN:native_word": {
+          "matched": "सायेशा",
+          "record": "nep5076"
+        }
+      }
+    },
+    {
+      "id": "fresh-245",
+      "category": "Names",
+      "family": "siyona",
+      "roman": "siyona",
+      "references": [
+        "सियोना"
+      ],
+      "exposure": {
+        "TRAIN:native_word": {
+          "matched": "सियोना",
+          "record": "nep2251615"
+        }
+      }
+    },
+    {
+      "id": "fresh-246",
+      "category": "Names",
+      "family": "siyana",
+      "roman": "siyana",
+      "references": [
+        "सियाना"
+      ],
+      "exposure": {
+        "TRAIN:native_word": {
+          "matched": "सियाना",
+          "record": "nep2380164"
+        }
+      }
+    },
+    {
+      "id": "fresh-248",
+      "category": "Names",
+      "family": "shivansh",
+      "roman": "shivansh",
+      "references": [
+        "शिवांश"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "siwansh",
+          "record": "nep560352"
+        },
+        "TRAIN:native_word": {
+          "matched": "शिवांश",
+          "record": "nep1609963"
+        }
+      }
+    },
+    {
+      "id": "fresh-252",
+      "category": "Names",
+      "family": "shivika",
+      "roman": "shivika",
+      "references": [
+        "शिविका"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "sivika",
+          "record": "nep730633"
+        },
+        "validation:normalized_roman": {
+          "matched": "sibika",
+          "record": "nep2704"
+        }
+      }
+    },
+    {
+      "id": "fresh-253",
+      "category": "Names",
+      "family": "shivin",
+      "roman": "shivin",
+      "references": [
+        "शिविन"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "sibin",
+          "record": "nep99412"
+        },
+        "TRAIN:native_word": {
+          "matched": "शिविन",
+          "record": "nep2095059"
+        }
+      }
+    },
+    {
+      "id": "fresh-254",
+      "category": "Names",
+      "family": "shrinika",
+      "roman": "shrinika",
+      "references": [
+        "श्रिनिका",
+        "श्रीनिका"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "shrinika",
+          "record": "nep607765"
+        },
+        "TRAIN:native_word": {
+          "matched": "श्रीनिका",
+          "record": "nep607765"
+        }
+      }
+    },
+    {
+      "id": "fresh-258",
+      "category": "Names",
+      "family": "shreyansh",
+      "roman": "shreyansh",
+      "references": [
+        "श्रेयांश"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "shreyansh",
+          "record": "nep556543"
+        },
+        "TRAIN:native_word": {
+          "matched": "श्रेयांश",
+          "record": "nep556543"
+        }
+      }
+    },
+    {
+      "id": "fresh-261",
+      "category": "Names",
+      "family": "shreyashi",
+      "roman": "shreyashi",
+      "references": [
+        "श्रेयशी",
+        "श्रेयाशी"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "shreyasi",
+          "record": "nep137638"
+        },
+        "TRAIN:native_word": {
+          "matched": "श्रेयशी",
+          "record": "nep280092"
+        }
+      }
+    },
+    {
+      "id": "fresh-263",
+      "category": "Names",
+      "family": "shrenika",
+      "roman": "shrenika",
+      "references": [
+        "श्रेनिका",
+        "श्रेणिका"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "shrenika",
+          "record": "nep1900"
+        }
+      }
+    },
+    {
+      "id": "fresh-266",
+      "category": "Names",
+      "family": "suvani",
+      "roman": "suvani",
+      "references": [
+        "सुवानी"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "shuwani",
+          "record": "nep31774"
+        },
+        "TRAIN:native_word": {
+          "matched": "सुवानी",
+          "record": "nep996741"
+        }
+      }
+    },
+    {
+      "id": "fresh-267",
+      "category": "Names",
+      "family": "suvansh",
+      "roman": "suvansh",
+      "references": [
+        "सुवांश"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "suwansh",
+          "record": "nep1140591"
+        }
+      }
+    },
+    {
+      "id": "fresh-269",
+      "category": "Names",
+      "family": "suvik",
+      "roman": "suvik",
+      "references": [
+        "सुविक"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "suwik",
+          "record": "nep1307060"
+        },
+        "TRAIN:native_word": {
+          "matched": "सुविक",
+          "record": "nep1307060"
+        }
+      }
+    },
+    {
+      "id": "fresh-270",
+      "category": "Names",
+      "family": "suvika",
+      "roman": "suvika",
+      "references": [
+        "सुविका"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "subika",
+          "record": "nep247483"
+        },
+        "TRAIN:native_word": {
+          "matched": "सुविका",
+          "record": "nep2329028"
+        }
+      }
+    },
+    {
+      "id": "fresh-271",
+      "category": "Names",
+      "family": "suvira",
+      "roman": "suvira",
+      "references": [
+        "सुवीरा",
+        "सुविरा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "suveera",
+          "record": "nep592860"
+        },
+        "TRAIN:native_word": {
+          "matched": "सुविरा",
+          "record": "nep1963860"
+        }
+      }
+    },
+    {
+      "id": "fresh-272",
+      "category": "Names",
+      "family": "suvrat",
+      "roman": "suvrat",
+      "references": [
+        "सुव्रत"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "shubrat",
+          "record": "nep1557995"
+        }
+      }
+    },
+    {
+      "id": "fresh-274",
+      "category": "Names",
+      "family": "tanish",
+      "roman": "tanish",
+      "references": [
+        "तनीश",
+        "तनिश"
+      ],
+      "exposure": {
+        "validation:normalized_roman": {
+          "matched": "tanis",
+          "record": "nep768"
+        },
+        "earlier-evaluations:normalized_roman": {
+          "matched": "tanis",
+          "record": null
+        }
+      }
+    },
+    {
+      "id": "fresh-275",
+      "category": "Names",
+      "family": "tanisha",
+      "roman": "tanisha",
+      "references": [
+        "तनिशा",
+        "तनीशा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "tanishaa",
+          "record": "nep4192"
+        },
+        "TRAIN:native_word": {
+          "matched": "तनिशा",
+          "record": "nep4192"
+        }
+      }
+    },
+    {
+      "id": "fresh-276",
+      "category": "Names",
+      "family": "tanishka",
+      "roman": "tanishka",
+      "references": [
+        "तनिष्का",
+        "तनिश्का"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "tanishka",
+          "record": "nep1895132"
+        }
+      }
+    },
+    {
+      "id": "fresh-278",
+      "category": "Names",
+      "family": "tavish",
+      "roman": "tavish",
+      "references": [
+        "तविष",
+        "तविश"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "tabis",
+          "record": "nep2044436"
+        },
+        "TRAIN:native_word": {
+          "matched": "तविश",
+          "record": "nep2197626"
+        }
+      }
+    },
+    {
+      "id": "fresh-281",
+      "category": "Names",
+      "family": "trishala",
+      "roman": "trishala",
+      "references": [
+        "त्रिशला",
+        "त्रिशाला"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "trishala",
+          "record": "nep365294"
+        },
+        "TRAIN:native_word": {
+          "matched": "त्रिशला",
+          "record": "nep365294"
+        }
+      }
+    },
+    {
+      "id": "fresh-283",
+      "category": "Names",
+      "family": "vihana",
+      "roman": "vihana",
+      "references": [
+        "विहाना"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "bihana",
+          "record": "nep1548230"
+        },
+        "TRAIN:native_word": {
+          "matched": "विहाना",
+          "record": "nep2188348"
+        },
+        "seed-lexicon:normalized_roman": {
+          "matched": "bihana",
+          "record": null
+        }
+      }
+    },
+    {
+      "id": "fresh-292",
+      "category": "Names",
+      "family": "yuvin",
+      "roman": "yuvin",
+      "references": [
+        "युविन"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "yubin",
+          "record": "nep1188922"
+        },
+        "TRAIN:native_word": {
+          "matched": "युविन",
+          "record": "nep1405393"
+        }
+      }
+    },
+    {
+      "id": "fresh-293",
+      "category": "Names",
+      "family": "yuvina",
+      "roman": "yuvina",
+      "references": [
+        "युविना"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "yubina",
+          "record": "nep1227792"
+        },
+        "TRAIN:native_word": {
+          "matched": "युविना",
+          "record": "nep1645745"
+        }
+      }
+    },
+    {
+      "id": "fresh-294",
+      "category": "Names",
+      "family": "kiyan",
+      "roman": "kiyan",
+      "references": [
+        "कियान"
+      ],
+      "exposure": {
+        "TRAIN:native_word": {
+          "matched": "कियान",
+          "record": "nep1675992"
+        }
+      }
+    },
+    {
+      "id": "fresh-298",
+      "category": "Names",
+      "family": "kavisha",
+      "roman": "kavisha",
+      "references": [
+        "कविशा",
+        "कवीशा"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "kawisha",
+          "record": "nep1633014"
+        },
+        "TRAIN:native_word": {
+          "matched": "कविशा",
+          "record": "nep1633014"
+        }
+      }
+    },
+    {
+      "id": "fresh-299",
+      "category": "Names",
+      "family": "kavyansh",
+      "roman": "kavyansh",
+      "references": [
+        "काव्यांश"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "kawyansh",
+          "record": "nep604010"
+        },
+        "TRAIN:native_word": {
+          "matched": "काव्यांश",
+          "record": "nep604010"
+        }
+      }
+    },
+    {
+      "id": "fresh-301",
+      "category": "Names",
+      "family": "kavyashree",
+      "roman": "kavyashree",
+      "references": [
+        "काव्यश्री"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "kawyashree",
+          "record": "nep129595"
+        }
+      }
+    },
+    {
+      "id": "fresh-303",
+      "category": "Names",
+      "family": "navish",
+      "roman": "navish",
+      "references": [
+        "नविश",
+        "नविष"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "nabis",
+          "record": "nep163309"
+        }
+      }
+    },
+    {
+      "id": "fresh-304",
+      "category": "Names",
+      "family": "navika",
+      "roman": "navika",
+      "references": [
+        "नविका"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "navika",
+          "record": "nep897548"
+        },
+        "TRAIN:native_word": {
+          "matched": "नविका",
+          "record": "nep897548"
+        }
+      }
+    },
+    {
+      "id": "fresh-307",
+      "category": "Names",
+      "family": "nivaan",
+      "roman": "nivaan",
+      "references": [
+        "निवान",
+        "नीवान"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "niban",
+          "record": "nep2013653"
+        }
+      }
+    },
+    {
+      "id": "fresh-311",
+      "category": "Names",
+      "family": "nivanshi",
+      "roman": "nivanshi",
+      "references": [
+        "निवांशी"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "niwanshi",
+          "record": "nep1273673"
+        }
+      }
+    },
+    {
+      "id": "fresh-315",
+      "category": "Names",
+      "family": "nitika",
+      "roman": "nitika",
+      "references": [
+        "नितिका",
+        "नीतिका"
+      ],
+      "exposure": {
+        "TRAIN:normalized_roman": {
+          "matched": "nitika",
+          "record": "nep264403"
+        },
+        "TRAIN:native_word": {
+          "matched": "नीतिका",
+          "record": "nep264403"
+        }
+      }
+    }
+  ],
+  "eligibleNotSelected": [
+    "fresh-015",
+    "fresh-037",
+    "fresh-049",
+    "fresh-054",
+    "fresh-056",
+    "fresh-071",
+    "fresh-074",
+    "fresh-081",
+    "fresh-088",
+    "fresh-101",
+    "fresh-110",
+    "fresh-115",
+    "fresh-121",
+    "fresh-129",
+    "fresh-130",
+    "fresh-131",
+    "fresh-135",
+    "fresh-149",
+    "fresh-153",
+    "fresh-164",
+    "fresh-173",
+    "fresh-192",
+    "fresh-193",
+    "fresh-206",
+    "fresh-208",
+    "fresh-209",
+    "fresh-215",
+    "fresh-228",
+    "fresh-231",
+    "fresh-233",
+    "fresh-238",
+    "fresh-249",
+    "fresh-251",
+    "fresh-273",
+    "fresh-277",
+    "fresh-279",
+    "fresh-286",
+    "fresh-289",
+    "fresh-296",
+    "fresh-310",
+    "fresh-312",
+    "fresh-314"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "engine-freeze.json": "a0119bffcc80a40809013d54f364caa424ce7714168d3a4253a6232e5cfad104",
+  "category-manifest.json": "d8d536500009f745bef5ed52f57e044768f6a0f9d916918b99f906a0320fe563",
+  "google-snapshot.json": "94c674bed8b5a5f46066449ff240814f7177fe3fc55ef4e212b9c5eb5db9baa1",
+  "first-results.json": "729dba9d1bc0fb8b072ee497214f2ddc3bcced4f123de95a1914a21168139b9d",
+  "regressions.json": "291766505f894060d912d88280f55f320b7fd7abdb646f25bf6000b53baec182",
+  "regression-gates.json": "13db9b06230408caecef5a74aa857244136a5e3d93bd62731a75f5f3e11bffb1"
+}

@@ -1,0 +1,803 @@
+{
+  "version": 1,
+  "lockedAt": "2026-11-12T02:21:24.748Z",
+  "seed": "category-check-v2.2-all-new-inputs",
+  "count": 97,
+  "policy": "Project-authored category probes locked before outputs. No exact Roman input appears in earlier benchmark cases. New curated vocabulary excludes these exact input spellings; known native vocabulary and productive stems are allowed, especially for typo and spelling-variant probes. Original TRAIN and old seeds can contain the words. This measures new typing inputs, not whole-word TRAIN-disjoint generalization. Not independent native annotation or representative traffic. No tuning against these outputs.",
+  "priorResultsSha256": "7e46ca9ab3ffa2fa6ebc7d2f2ffe03a54ee5686afae1ecf5b0c8191be562f552",
+  "cases": [
+    {
+      "id": "category-001",
+      "category": "Common words",
+      "roman": "pustakalaya",
+      "references": [
+        "पुस्तकालय"
+      ]
+    },
+    {
+      "id": "category-002",
+      "category": "Common words",
+      "roman": "sambidhan",
+      "references": [
+        "संविधान"
+      ]
+    },
+    {
+      "id": "category-003",
+      "category": "Common words",
+      "roman": "sanskriti",
+      "references": [
+        "संस्कृति"
+      ]
+    },
+    {
+      "id": "category-004",
+      "category": "Common words",
+      "roman": "utsaha",
+      "references": [
+        "उत्साह"
+      ]
+    },
+    {
+      "id": "category-005",
+      "category": "Common words",
+      "roman": "upasthiti",
+      "references": [
+        "उपस्थिति"
+      ]
+    },
+    {
+      "id": "category-006",
+      "category": "Common words",
+      "roman": "aamantran",
+      "references": [
+        "आमन्त्रण"
+      ]
+    },
+    {
+      "id": "category-007",
+      "category": "Common words",
+      "roman": "bhraman",
+      "references": [
+        "भ्रमण"
+      ]
+    },
+    {
+      "id": "category-008",
+      "category": "Common words",
+      "roman": "parichaya",
+      "references": [
+        "परिचय"
+      ]
+    },
+    {
+      "id": "category-009",
+      "category": "Common words",
+      "roman": "sahakarya",
+      "references": [
+        "सहकार्य"
+      ]
+    },
+    {
+      "id": "category-010",
+      "category": "Common words",
+      "roman": "jigyasa",
+      "references": [
+        "जिज्ञासा"
+      ]
+    },
+    {
+      "id": "category-011",
+      "category": "Common words",
+      "roman": "aawashyakta",
+      "references": [
+        "आवश्यकता"
+      ]
+    },
+    {
+      "id": "category-012",
+      "category": "Common words",
+      "roman": "nirdeshan",
+      "references": [
+        "निर्देशन"
+      ]
+    },
+    {
+      "id": "category-014",
+      "category": "Common words",
+      "roman": "abhiyan",
+      "references": [
+        "अभियान"
+      ]
+    },
+    {
+      "id": "category-015",
+      "category": "Common words",
+      "roman": "pratibaddhata",
+      "references": [
+        "प्रतिबद्धता"
+      ]
+    },
+    {
+      "id": "category-016",
+      "category": "Common words",
+      "roman": "sambodhan",
+      "references": [
+        "सम्बोधन"
+      ]
+    },
+    {
+      "id": "category-017",
+      "category": "Common words",
+      "roman": "abhyas",
+      "references": [
+        "अभ्यास"
+      ]
+    },
+    {
+      "id": "category-018",
+      "category": "Common words",
+      "roman": "adhyayan",
+      "references": [
+        "अध्ययन"
+      ]
+    },
+    {
+      "id": "category-019",
+      "category": "Spelling variants",
+      "roman": "swadhinataa",
+      "references": [
+        "स्वाधीनता"
+      ]
+    },
+    {
+      "id": "category-020",
+      "category": "Spelling variants",
+      "roman": "shramik",
+      "references": [
+        "श्रमिक"
+      ]
+    },
+    {
+      "id": "category-021",
+      "category": "Spelling variants",
+      "roman": "bikaash",
+      "references": [
+        "विकास"
+      ]
+    },
+    {
+      "id": "category-022",
+      "category": "Spelling variants",
+      "roman": "shaantii",
+      "references": [
+        "शान्ति"
+      ]
+    },
+    {
+      "id": "category-023",
+      "category": "Spelling variants",
+      "roman": "sangathan",
+      "references": [
+        "सङ्गठन",
+        "संगठन"
+      ]
+    },
+    {
+      "id": "category-024",
+      "category": "Spelling variants",
+      "roman": "shikshyaa",
+      "references": [
+        "शिक्षा"
+      ]
+    },
+    {
+      "id": "category-025",
+      "category": "Spelling variants",
+      "roman": "dristikon",
+      "references": [
+        "दृष्टिकोण"
+      ]
+    },
+    {
+      "id": "category-026",
+      "category": "Spelling variants",
+      "roman": "shristi",
+      "references": [
+        "सृष्टि"
+      ]
+    },
+    {
+      "id": "category-027",
+      "category": "Spelling variants",
+      "roman": "istamitra",
+      "references": [
+        "इष्टमित्र"
+      ]
+    },
+    {
+      "id": "category-028",
+      "category": "Spelling variants",
+      "roman": "pustakaalaya",
+      "references": [
+        "पुस्तकालय"
+      ]
+    },
+    {
+      "id": "category-029",
+      "category": "Spelling variants",
+      "roman": "byabasthaa",
+      "references": [
+        "व्यवस्था"
+      ]
+    },
+    {
+      "id": "category-030",
+      "category": "Spelling variants",
+      "roman": "xamata",
+      "references": [
+        "क्षमता"
+      ]
+    },
+    {
+      "id": "category-031",
+      "category": "Spelling variants",
+      "roman": "xaamaa",
+      "references": [
+        "क्षमा"
+      ]
+    },
+    {
+      "id": "category-032",
+      "category": "Spelling variants",
+      "roman": "kshhetra",
+      "references": [
+        "क्षेत्र"
+      ]
+    },
+    {
+      "id": "category-033",
+      "category": "Spelling variants",
+      "roman": "swachchha",
+      "references": [
+        "स्वच्छ"
+      ]
+    },
+    {
+      "id": "category-034",
+      "category": "Spelling variants",
+      "roman": "nyaay",
+      "references": [
+        "न्याय"
+      ]
+    },
+    {
+      "id": "category-035",
+      "category": "Suffix forms",
+      "roman": "pustakalayaharubata",
+      "references": [
+        "पुस्तकालयहरूबाट"
+      ]
+    },
+    {
+      "id": "category-036",
+      "category": "Suffix forms",
+      "roman": "aanganharuma",
+      "references": [
+        "आँगनहरूमा"
+      ]
+    },
+    {
+      "id": "category-037",
+      "category": "Suffix forms",
+      "roman": "bharyangharuma",
+      "references": [
+        "भर्‍याङहरूमा",
+        "भर्याङहरूमा"
+      ]
+    },
+    {
+      "id": "category-038",
+      "category": "Suffix forms",
+      "roman": "dhokaharusamma",
+      "references": [
+        "ढोकाहरूसम्म"
+      ]
+    },
+    {
+      "id": "category-039",
+      "category": "Suffix forms",
+      "roman": "khurpaaharuko",
+      "references": [
+        "खुर्पाहरूको"
+      ]
+    },
+    {
+      "id": "category-040",
+      "category": "Suffix forms",
+      "roman": "kuchoharulai",
+      "references": [
+        "कुचोहरूलाई"
+      ]
+    },
+    {
+      "id": "category-041",
+      "category": "Suffix forms",
+      "roman": "nangloharule",
+      "references": [
+        "नाङ्लोहरूले"
+      ]
+    },
+    {
+      "id": "category-042",
+      "category": "Suffix forms",
+      "roman": "daaduharuma",
+      "references": [
+        "डाडुहरूमा"
+      ]
+    },
+    {
+      "id": "category-043",
+      "category": "Suffix forms",
+      "roman": "sirakharubata",
+      "references": [
+        "सिरकहरूबाट"
+      ]
+    },
+    {
+      "id": "category-044",
+      "category": "Suffix forms",
+      "roman": "thailaharusanga",
+      "references": [
+        "थैलाहरूसँग"
+      ]
+    },
+    {
+      "id": "category-045",
+      "category": "Suffix forms",
+      "roman": "katoraharuma",
+      "references": [
+        "कटोराहरूमा"
+      ]
+    },
+    {
+      "id": "category-046",
+      "category": "Suffix forms",
+      "roman": "aushadhiharuko",
+      "references": [
+        "औषधिहरूको"
+      ]
+    },
+    {
+      "id": "category-047",
+      "category": "Suffix forms",
+      "roman": "pasalharudekhi",
+      "references": [
+        "पसलहरूदेखि"
+      ]
+    },
+    {
+      "id": "category-048",
+      "category": "Suffix forms",
+      "roman": "baatoharuma",
+      "references": [
+        "बाटोहरूमा"
+      ]
+    },
+    {
+      "id": "category-049",
+      "category": "Suffix forms",
+      "roman": "chappalharusamma",
+      "references": [
+        "चप्पलहरूसम्म"
+      ]
+    },
+    {
+      "id": "category-050",
+      "category": "Suffix forms",
+      "roman": "sahayogiharulai",
+      "references": [
+        "सहयोगीहरूलाई"
+      ]
+    },
+    {
+      "id": "category-051",
+      "category": "Verb forms",
+      "roman": "lekhiraheki",
+      "references": [
+        "लेखिरहेकी"
+      ]
+    },
+    {
+      "id": "category-052",
+      "category": "Verb forms",
+      "roman": "padhiraheka",
+      "references": [
+        "पढिरहेका"
+      ]
+    },
+    {
+      "id": "category-053",
+      "category": "Verb forms",
+      "roman": "boliraheko",
+      "references": [
+        "बोलिरहेको"
+      ]
+    },
+    {
+      "id": "category-054",
+      "category": "Verb forms",
+      "roman": "khelidinus",
+      "references": [
+        "खेलिदिनुस्"
+      ]
+    },
+    {
+      "id": "category-055",
+      "category": "Verb forms",
+      "roman": "bhetiraheko",
+      "references": [
+        "भेटिरहेको"
+      ]
+    },
+    {
+      "id": "category-056",
+      "category": "Verb forms",
+      "roman": "sodhiyeko",
+      "references": [
+        "सोधिएको"
+      ]
+    },
+    {
+      "id": "category-057",
+      "category": "Verb forms",
+      "roman": "rojiyeko",
+      "references": [
+        "रोजिएको"
+      ]
+    },
+    {
+      "id": "category-058",
+      "category": "Verb forms",
+      "roman": "hasiraheko",
+      "references": [
+        "हाँसिरहेको"
+      ]
+    },
+    {
+      "id": "category-059",
+      "category": "Verb forms",
+      "roman": "nachdai",
+      "references": [
+        "नाच्दै"
+      ]
+    },
+    {
+      "id": "category-060",
+      "category": "Verb forms",
+      "roman": "rakhnuhunna",
+      "references": [
+        "राख्नुहुन्न"
+      ]
+    },
+    {
+      "id": "category-061",
+      "category": "Verb forms",
+      "roman": "khojiyeka",
+      "references": [
+        "खोजिएका"
+      ]
+    },
+    {
+      "id": "category-062",
+      "category": "Verb forms",
+      "roman": "rokinchha",
+      "references": [
+        "रोकिन्छ"
+      ]
+    },
+    {
+      "id": "category-063",
+      "category": "Verb forms",
+      "roman": "khaairahanuhunchha",
+      "references": [
+        "खाइरहनुहुन्छ"
+      ]
+    },
+    {
+      "id": "category-064",
+      "category": "Verb forms",
+      "roman": "heriraheki",
+      "references": [
+        "हेरिरहेकी"
+      ]
+    },
+    {
+      "id": "category-065",
+      "category": "Verb forms",
+      "roman": "thapidinu",
+      "references": [
+        "थपिदिनु"
+      ]
+    },
+    {
+      "id": "category-066",
+      "category": "Verb forms",
+      "roman": "chhanidinus",
+      "references": [
+        "छानिदिनुस्"
+      ]
+    },
+    {
+      "id": "category-067",
+      "category": "Typos",
+      "roman": "pustaklaya",
+      "references": [
+        "पुस्तकालय"
+      ]
+    },
+    {
+      "id": "category-068",
+      "category": "Typos",
+      "roman": "sambidahn",
+      "references": [
+        "संविधान"
+      ]
+    },
+    {
+      "id": "category-069",
+      "category": "Typos",
+      "roman": "shikhsya",
+      "references": [
+        "शिक्षा"
+      ]
+    },
+    {
+      "id": "category-070",
+      "category": "Typos",
+      "roman": "dhanybaad",
+      "references": [
+        "धन्यवाद"
+      ]
+    },
+    {
+      "id": "category-071",
+      "category": "Typos",
+      "roman": "aawashykta",
+      "references": [
+        "आवश्यकता"
+      ]
+    },
+    {
+      "id": "category-072",
+      "category": "Typos",
+      "roman": "raamrrai",
+      "references": [
+        "राम्ररी"
+      ]
+    },
+    {
+      "id": "category-073",
+      "category": "Typos",
+      "roman": "praarthna",
+      "references": [
+        "प्रार्थना"
+      ]
+    },
+    {
+      "id": "category-074",
+      "category": "Typos",
+      "roman": "swagta",
+      "references": [
+        "स्वागत"
+      ]
+    },
+    {
+      "id": "category-075",
+      "category": "Typos",
+      "roman": "bahina",
+      "references": [
+        "बिहान"
+      ]
+    },
+    {
+      "id": "category-076",
+      "category": "Typos",
+      "roman": "bishwsa",
+      "references": [
+        "विश्वास"
+      ]
+    },
+    {
+      "id": "category-077",
+      "category": "Typos",
+      "roman": "samachra",
+      "references": [
+        "समाचार"
+      ]
+    },
+    {
+      "id": "category-078",
+      "category": "Typos",
+      "roman": "manishharuok",
+      "references": [
+        "मानिसहरूको"
+      ]
+    },
+    {
+      "id": "category-079",
+      "category": "Typos",
+      "roman": "sathihrauko",
+      "references": [
+        "साथीहरूको"
+      ]
+    },
+    {
+      "id": "category-080",
+      "category": "Typos",
+      "roman": "gharharuamn",
+      "references": [
+        "घरहरूमा"
+      ]
+    },
+    {
+      "id": "category-081",
+      "category": "Typos",
+      "roman": "kitbharulai",
+      "references": [
+        "किताबहरूलाई"
+      ]
+    },
+    {
+      "id": "category-082",
+      "category": "Typos",
+      "roman": "nepliharu",
+      "references": [
+        "नेपालीहरू"
+      ]
+    },
+    {
+      "id": "category-083",
+      "category": "Names",
+      "roman": "arunika",
+      "references": [
+        "अरुणिका"
+      ]
+    },
+    {
+      "id": "category-084",
+      "category": "Names",
+      "roman": "sampriya",
+      "references": [
+        "सम्प्रिया"
+      ]
+    },
+    {
+      "id": "category-085",
+      "category": "Names",
+      "roman": "kritanshi",
+      "references": [
+        "कृतांशी"
+      ]
+    },
+    {
+      "id": "category-086",
+      "category": "Names",
+      "roman": "ishanshika",
+      "references": [
+        "इशांशिका",
+        "ईशांशिका"
+      ]
+    },
+    {
+      "id": "category-087",
+      "category": "Names",
+      "roman": "divyanshi",
+      "references": [
+        "दिव्यांशी"
+      ]
+    },
+    {
+      "id": "category-088",
+      "category": "Names",
+      "roman": "manasvi",
+      "references": [
+        "मनस्वी"
+      ]
+    },
+    {
+      "id": "category-089",
+      "category": "Names",
+      "roman": "pratyusha",
+      "references": [
+        "प्रत्यूषा",
+        "प्रत्युषा"
+      ]
+    },
+    {
+      "id": "category-090",
+      "category": "Names",
+      "roman": "samriddhika",
+      "references": [
+        "समृद्धिका"
+      ]
+    },
+    {
+      "id": "category-091",
+      "category": "Names",
+      "roman": "yashasvi",
+      "references": [
+        "यशस्वी"
+      ]
+    },
+    {
+      "id": "category-092",
+      "category": "Names",
+      "roman": "roshmika",
+      "references": [
+        "रोश्मिका",
+        "रोष्मिका"
+      ]
+    },
+    {
+      "id": "category-093",
+      "category": "Names",
+      "roman": "hridika",
+      "references": [
+        "हृदिका"
+      ]
+    },
+    {
+      "id": "category-094",
+      "category": "Names",
+      "roman": "vedanshi",
+      "references": [
+        "वेदांशी"
+      ]
+    },
+    {
+      "id": "category-095",
+      "category": "Names",
+      "roman": "kashvika",
+      "references": [
+        "काश्विका"
+      ]
+    },
+    {
+      "id": "category-096",
+      "category": "Names",
+      "roman": "nishpriya",
+      "references": [
+        "निष्प्रिया",
+        "निश्प्रिया"
+      ]
+    },
+    {
+      "id": "category-097",
+      "category": "Names",
+      "roman": "suyansh",
+      "references": [
+        "सुयांश"
+      ]
+    },
+    {
+      "id": "category-098",
+      "category": "Names",
+      "roman": "varnika",
+      "references": [
+        "वर्णिका"
+      ]
+    }
+  ],
+  "excludedPreviouslyTested": [
+    {
+      "id": "category-013",
+      "category": "Common words",
+      "roman": "sankalpa",
+      "references": [
+        "सङ्कल्प",
+        "संकल्प"
+      ]
+    }
+  ]
+}

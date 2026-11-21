@@ -1,0 +1,400 @@
+{
+  "version": 1,
+  "label": "Reserved whole-word confirmation set",
+  "lockedAt": "2026-11-12T01:41:14.132Z",
+  "selection": "Every eligible but unselected case from the original pre-evaluation candidate pool, minus any Roman/reference overlap with the original 89 inputs, references and outputs. No output-based selection. No new annotations. Household/verb families can overlap; name families are distinct. Never used by training or parameter-selection scripts.",
+  "priorAuditSha256": "345340ad9aec0c55264ff18efc8de4af6b4c97ed31e53754cf66587cc8f6ed88",
+  "priorPoolSha256": "f6b98d9a2b38ab4dadc00d56762af81dadc47374cf5ae97bc1755d8d06ec35c6",
+  "count": 41,
+  "cases": [
+    {
+      "id": "fresh-015",
+      "category": "Household forms",
+      "family": "water-vessel",
+      "roman": "karuwaharu",
+      "references": [
+        "करुवाहरू"
+      ]
+    },
+    {
+      "id": "fresh-037",
+      "category": "Household forms",
+      "family": "torch",
+      "roman": "tarchharuko",
+      "references": [
+        "टर्चहरूको"
+      ]
+    },
+    {
+      "id": "fresh-049",
+      "category": "Household forms",
+      "family": "sock",
+      "roman": "mojaharuko",
+      "references": [
+        "मोजाहरूको"
+      ]
+    },
+    {
+      "id": "fresh-054",
+      "category": "Household forms",
+      "family": "cotton-towel",
+      "roman": "gamchhaharuma",
+      "references": [
+        "गम्छाहरूमा"
+      ]
+    },
+    {
+      "id": "fresh-056",
+      "category": "Household forms",
+      "family": "towel",
+      "roman": "tauliyaharuma",
+      "references": [
+        "तौलियाहरूमा"
+      ]
+    },
+    {
+      "id": "fresh-071",
+      "category": "Household forms",
+      "family": "basket",
+      "roman": "dokoharuko",
+      "references": [
+        "डोकोहरूको"
+      ]
+    },
+    {
+      "id": "fresh-074",
+      "category": "Household forms",
+      "family": "large-basket",
+      "roman": "daaloharuko",
+      "references": [
+        "डालोहरूको"
+      ]
+    },
+    {
+      "id": "fresh-081",
+      "category": "Household forms",
+      "family": "grinding-slab",
+      "roman": "silautobata",
+      "references": [
+        "सिलौटोबाट"
+      ]
+    },
+    {
+      "id": "fresh-088",
+      "category": "Household forms",
+      "family": "ladle",
+      "roman": "daduko",
+      "references": [
+        "डाडुको"
+      ]
+    },
+    {
+      "id": "fresh-101",
+      "category": "Verb forms",
+      "family": "recite",
+      "roman": "sunaidinu",
+      "references": [
+        "सुनाइदिनु"
+      ]
+    },
+    {
+      "id": "fresh-110",
+      "category": "Verb forms",
+      "family": "cook",
+      "roman": "pakaaunuhunchha",
+      "references": [
+        "पकाउनुहुन्छ"
+      ]
+    },
+    {
+      "id": "fresh-115",
+      "category": "Verb forms",
+      "family": "eat",
+      "roman": "khaisaknubhayo",
+      "references": [
+        "खाइसक्नुभयो"
+      ]
+    },
+    {
+      "id": "fresh-121",
+      "category": "Verb forms",
+      "family": "teach",
+      "roman": "sikaidinus",
+      "references": [
+        "सिकाइदिनुस्"
+      ]
+    },
+    {
+      "id": "fresh-129",
+      "category": "Verb forms",
+      "family": "bring",
+      "roman": "lyaidinus",
+      "references": [
+        "ल्याइदिनुस्"
+      ]
+    },
+    {
+      "id": "fresh-130",
+      "category": "Verb forms",
+      "family": "bring",
+      "roman": "lyaunuhunchha",
+      "references": [
+        "ल्याउनुहुन्छ"
+      ]
+    },
+    {
+      "id": "fresh-131",
+      "category": "Verb forms",
+      "family": "deliver",
+      "roman": "puryaidinu",
+      "references": [
+        "पुर्‍याइदिनु",
+        "पुर्याइदिनु"
+      ]
+    },
+    {
+      "id": "fresh-135",
+      "category": "Verb forms",
+      "family": "hold",
+      "roman": "samatidinus",
+      "references": [
+        "समातिदिनुस्"
+      ]
+    },
+    {
+      "id": "fresh-149",
+      "category": "Verb forms",
+      "family": "patch",
+      "roman": "taalidinu",
+      "references": [
+        "टालिदिनु"
+      ]
+    },
+    {
+      "id": "fresh-153",
+      "category": "Verb forms",
+      "family": "squeeze",
+      "roman": "nichoridinu",
+      "references": [
+        "निचोरिदिनु"
+      ]
+    },
+    {
+      "id": "fresh-164",
+      "category": "Verb forms",
+      "family": "wait",
+      "roman": "parkhirahanuhunchha",
+      "references": [
+        "पर्खिरहनुहुन्छ"
+      ]
+    },
+    {
+      "id": "fresh-173",
+      "category": "Verb forms",
+      "family": "meet",
+      "roman": "bhetnuhunchha",
+      "references": [
+        "भेट्नुहुन्छ"
+      ]
+    },
+    {
+      "id": "fresh-192",
+      "category": "Names",
+      "family": "aaratrika",
+      "roman": "aaratrika",
+      "references": [
+        "आरात्रिका"
+      ]
+    },
+    {
+      "id": "fresh-193",
+      "category": "Names",
+      "family": "aaradhya",
+      "roman": "aaradhya",
+      "references": [
+        "आराध्या",
+        "आराध्य"
+      ]
+    },
+    {
+      "id": "fresh-206",
+      "category": "Names",
+      "family": "anushriya",
+      "roman": "anushriya",
+      "references": [
+        "अनुश्रिया",
+        "अनुश्रीया"
+      ]
+    },
+    {
+      "id": "fresh-209",
+      "category": "Names",
+      "family": "aayansh",
+      "roman": "aayansh",
+      "references": [
+        "आयांश"
+      ]
+    },
+    {
+      "id": "fresh-215",
+      "category": "Names",
+      "family": "prishika",
+      "roman": "prishika",
+      "references": [
+        "प्रिशिका",
+        "प्रिषिका"
+      ]
+    },
+    {
+      "id": "fresh-228",
+      "category": "Names",
+      "family": "ritvika",
+      "roman": "ritvika",
+      "references": [
+        "ऋत्विका"
+      ]
+    },
+    {
+      "id": "fresh-231",
+      "category": "Names",
+      "family": "ridisha",
+      "roman": "ridisha",
+      "references": [
+        "रिदिशा",
+        "रिदिषा"
+      ]
+    },
+    {
+      "id": "fresh-233",
+      "category": "Names",
+      "family": "rishita",
+      "roman": "rishita",
+      "references": [
+        "ऋषिता",
+        "रिषिता"
+      ]
+    },
+    {
+      "id": "fresh-238",
+      "category": "Names",
+      "family": "reyana",
+      "roman": "reyana",
+      "references": [
+        "रेयाना"
+      ]
+    },
+    {
+      "id": "fresh-249",
+      "category": "Names",
+      "family": "shivanshi",
+      "roman": "shivanshi",
+      "references": [
+        "शिवांशी"
+      ]
+    },
+    {
+      "id": "fresh-251",
+      "category": "Names",
+      "family": "shivanshika",
+      "roman": "shivanshika",
+      "references": [
+        "शिवांशिका"
+      ]
+    },
+    {
+      "id": "fresh-273",
+      "category": "Names",
+      "family": "suvrata",
+      "roman": "suvrata",
+      "references": [
+        "सुव्रता"
+      ]
+    },
+    {
+      "id": "fresh-277",
+      "category": "Names",
+      "family": "tanvika",
+      "roman": "tanvika",
+      "references": [
+        "तन्विका"
+      ]
+    },
+    {
+      "id": "fresh-279",
+      "category": "Names",
+      "family": "tavishi",
+      "roman": "tavishi",
+      "references": [
+        "तविषी",
+        "तविशी"
+      ]
+    },
+    {
+      "id": "fresh-286",
+      "category": "Names",
+      "family": "viyanshi",
+      "roman": "viyanshi",
+      "references": [
+        "वियांशी"
+      ]
+    },
+    {
+      "id": "fresh-289",
+      "category": "Names",
+      "family": "yuvanshi",
+      "roman": "yuvanshi",
+      "references": [
+        "युवांशी"
+      ]
+    },
+    {
+      "id": "fresh-296",
+      "category": "Names",
+      "family": "kiyanshi",
+      "roman": "kiyanshi",
+      "references": [
+        "कियांशी"
+      ]
+    },
+    {
+      "id": "fresh-310",
+      "category": "Names",
+      "family": "nivansh",
+      "roman": "nivansh",
+      "references": [
+        "निवांश"
+      ]
+    },
+    {
+      "id": "fresh-312",
+      "category": "Names",
+      "family": "nishvika",
+      "roman": "nishvika",
+      "references": [
+        "निश्विका",
+        "निष्विका"
+      ]
+    },
+    {
+      "id": "fresh-314",
+      "category": "Names",
+      "family": "nityanshi",
+      "roman": "nityanshi",
+      "references": [
+        "नित्यांशी"
+      ]
+    }
+  ],
+  "excludedPreviousExposure": [
+    {
+      "id": "fresh-208",
+      "category": "Names",
+      "family": "anusmita",
+      "roman": "anusmita",
+      "references": [
+        "अनुस्मिता"
+      ]
+    }
+  ],
+  "limits": "Small project-authored reserved sample, same original pool and linguistic style; not independent native annotation or representative traffic. Whole words unseen in our original TRAIN/validation/prior tests; known roots and related families may overlap. Google membership unknown."
+}

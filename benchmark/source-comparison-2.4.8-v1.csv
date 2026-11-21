@@ -1,0 +1,181 @@
+set,category,source,version,observedAt,inputs,firstMatches,firstPercent,withinFiveMatches,withinFivePercent,characterErrorPercent,errors,availability
+google-comparison,all,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,512,265,51.76,374,73.05,14.81,0,available
+google-comparison,all,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,512,265,51.76,374,73.05,14.81,0,available
+google-comparison,all,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,512,258,50.39,371,72.46,15.07,0,available
+google-comparison,all,nepscript,1.0.18,2026-11-12T16:04:07.090Z,512,43,8.40,43,8.40,34.71,0,available
+google-comparison,all,Google Input Tools,Saved response,2026-11-12T00:21:56.083Z,512,166,32.42,243,47.46,26.06,0,available
+google-comparison,AK-Freq,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,262,200,76.34,241,91.98,5.61,0,available
+google-comparison,AK-Freq,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,262,200,76.34,241,91.98,5.61,0,available
+google-comparison,AK-Freq,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,262,197,75.19,241,91.98,5.57,0,available
+google-comparison,AK-Freq,nepscript,1.0.18,2026-11-12T16:04:07.090Z,262,31,11.83,31,11.83,27.56,0,available
+google-comparison,AK-Freq,Google Input Tools,Saved response,2026-11-12T00:21:56.083Z,262,117,44.66,155,59.16,17.83,0,available
+google-comparison,AK-NEF,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,102,12,11.76,40,39.22,34.69,0,available
+google-comparison,AK-NEF,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,102,12,11.76,40,39.22,34.69,0,available
+google-comparison,AK-NEF,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,102,10,9.80,40,39.22,35.01,0,available
+google-comparison,AK-NEF,nepscript,1.0.18,2026-11-12T16:04:07.090Z,102,2,1.96,2,1.96,51.18,0,available
+google-comparison,AK-NEF,Google Input Tools,Saved response,2026-11-12T00:21:56.083Z,102,13,12.75,20,19.61,47.88,0,available
+google-comparison,AK-NEI,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,147,53,36.05,92,62.59,22.88,0,available
+google-comparison,AK-NEI,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,147,53,36.05,92,62.59,22.88,0,available
+google-comparison,AK-NEI,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,147,51,34.69,89,60.54,23.85,0,available
+google-comparison,AK-NEI,nepscript,1.0.18,2026-11-12T16:04:07.090Z,147,10,6.80,10,6.80,40.28,0,available
+google-comparison,AK-NEI,Google Input Tools,Saved response,2026-11-12T00:21:56.083Z,147,36,24.49,68,46.26,30.83,0,available
+google-comparison,Multiple sources,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,1,0,0.00,1,100.00,30.00,0,available
+google-comparison,Multiple sources,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,1,0,0.00,1,100.00,30.00,0,available
+google-comparison,Multiple sources,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,1,0,0.00,1,100.00,30.00,0,available
+google-comparison,Multiple sources,nepscript,1.0.18,2026-11-12T16:04:07.090Z,1,0,0.00,0,0.00,50.00,0,available
+google-comparison,Multiple sources,Google Input Tools,Saved response,2026-11-12T00:21:56.083Z,1,0,0.00,0,0.00,10.00,0,available
+typing-check,all,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,148,148,100.00,148,100.00,0.00,0,available
+typing-check,all,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,148,148,100.00,148,100.00,0.00,0,available
+typing-check,all,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,148,148,100.00,148,100.00,0.00,0,available
+typing-check,all,nepscript,1.0.18,2026-11-12T16:04:07.090Z,148,50,33.78,50,33.78,22.49,0,available
+typing-check,all,Google Input Tools,Saved response,2026-11-12T00:37:00.667Z,148,99,66.89,129,87.16,9.12,0,available
+typing-check,Everyday,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,32,32,100.00,32,100.00,0.00,0,available
+typing-check,Everyday,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,32,32,100.00,32,100.00,0.00,0,available
+typing-check,Everyday,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,32,32,100.00,32,100.00,0.00,0,available
+typing-check,Everyday,nepscript,1.0.18,2026-11-12T16:04:07.090Z,32,11,34.38,11,34.38,18.13,0,available
+typing-check,Everyday,Google Input Tools,Saved response,2026-11-12T00:37:00.667Z,32,26,81.25,31,96.88,3.11,0,available
+typing-check,Forms,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,43,43,100.00,43,100.00,0.00,0,available
+typing-check,Forms,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,43,43,100.00,43,100.00,0.00,0,available
+typing-check,Forms,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,43,43,100.00,43,100.00,0.00,0,available
+typing-check,Forms,nepscript,1.0.18,2026-11-12T16:04:07.090Z,43,4,9.30,4,9.30,33.98,0,available
+typing-check,Forms,Google Input Tools,Saved response,2026-11-12T00:37:00.667Z,43,17,39.53,32,74.42,16.99,0,available
+typing-check,Names,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,30,30,100.00,30,100.00,0.00,0,available
+typing-check,Names,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,30,30,100.00,30,100.00,0.00,0,available
+typing-check,Names,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,30,30,100.00,30,100.00,0.00,0,available
+typing-check,Names,nepscript,1.0.18,2026-11-12T16:04:07.090Z,30,8,26.67,8,26.67,26.75,0,available
+typing-check,Names,Google Input Tools,Saved response,2026-11-12T00:37:00.667Z,30,23,76.67,30,100.00,6.45,0,available
+typing-check,Verbs,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,43,43,100.00,43,100.00,0.00,0,available
+typing-check,Verbs,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,43,43,100.00,43,100.00,0.00,0,available
+typing-check,Verbs,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,43,43,100.00,43,100.00,0.00,0,available
+typing-check,Verbs,nepscript,1.0.18,2026-11-12T16:04:07.090Z,43,27,62.79,27,62.79,7.81,0,available
+typing-check,Verbs,Google Input Tools,Saved response,2026-11-12T00:37:00.667Z,43,33,76.74,36,83.72,4.46,0,available
+public-test,all,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,4085,2212,54.15,2972,72.75,13.97,0,available
+public-test,all,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,4085,2211,54.12,2972,72.75,13.98,0,available
+public-test,all,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,4085,2196,53.76,2969,72.68,13.94,0,available
+public-test,all,nepscript,1.0.18,2026-11-12T16:04:07.090Z,4085,375,9.18,375,9.18,34.51,0,available
+public-test,all,Google Input Tools,Saved response,,,,,,,,,not captured
+public-test,AK-Freq,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,2092,1634,78.11,1917,91.63,4.78,0,available
+public-test,AK-Freq,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,2092,1634,78.11,1917,91.63,4.78,0,available
+public-test,AK-Freq,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,2092,1627,77.77,1917,91.63,4.70,0,available
+public-test,AK-Freq,nepscript,1.0.18,2026-11-12T16:04:07.090Z,2092,256,12.24,256,12.24,28.02,0,available
+public-test,AK-Freq,Google Input Tools,Saved response,,,,,,,,,not captured
+public-test,Multiple sources,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,4,2,50.00,4,100.00,13.79,0,available
+public-test,Multiple sources,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,4,2,50.00,4,100.00,13.79,0,available
+public-test,Multiple sources,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,4,2,50.00,4,100.00,14.29,0,available
+public-test,Multiple sources,nepscript,1.0.18,2026-11-12T16:04:07.090Z,4,2,50.00,2,50.00,21.43,0,available
+public-test,Multiple sources,Google Input Tools,Saved response,,,,,,,,,not captured
+public-test,AK-NEF,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,816,142,17.40,313,38.36,34.26,0,available
+public-test,AK-NEF,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,816,142,17.40,313,38.36,34.26,0,available
+public-test,AK-NEF,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,816,134,16.42,314,38.48,34.38,0,available
+public-test,AK-NEF,nepscript,1.0.18,2026-11-12T16:04:07.090Z,816,27,3.31,27,3.31,50.22,0,available
+public-test,AK-NEF,Google Input Tools,Saved response,,,,,,,,,not captured
+public-test,AK-NEI,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,1173,434,37.00,738,62.92,22.06,0,available
+public-test,AK-NEI,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,1173,433,36.91,738,62.92,22.08,0,available
+public-test,AK-NEI,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,1173,433,36.91,734,62.57,22.06,0,available
+public-test,AK-NEI,nepscript,1.0.18,2026-11-12T16:04:07.090Z,1173,90,7.67,90,7.67,39.31,0,available
+public-test,AK-NEI,Google Input Tools,Saved response,,,,,,,,,not captured
+development,all,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,60,59,98.33,60,100.00,0.53,0,available
+development,all,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,60,59,98.33,60,100.00,0.53,0,available
+development,all,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,60,59,98.33,60,100.00,0.26,0,available
+development,all,nepscript,1.0.18,2026-11-12T16:04:07.090Z,60,7,11.67,7,11.67,31.48,0,available
+development,all,Google Input Tools,Saved response,,,,,,,,,not captured
+development,common,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,10,10,100.00,10,100.00,0.00,0,available
+development,common,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,10,10,100.00,10,100.00,0.00,0,available
+development,common,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,10,10,100.00,10,100.00,0.00,0,available
+development,common,nepscript,1.0.18,2026-11-12T16:04:07.090Z,10,6,60.00,6,60.00,16.28,0,available
+development,common,Google Input Tools,Saved response,,,,,,,,,not captured
+development,variants,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,10,10,100.00,10,100.00,0.00,0,available
+development,variants,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,10,10,100.00,10,100.00,0.00,0,available
+development,variants,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,10,10,100.00,10,100.00,0.00,0,available
+development,variants,nepscript,1.0.18,2026-11-12T16:04:07.090Z,10,1,10.00,1,10.00,36.21,0,available
+development,variants,Google Input Tools,Saved response,,,,,,,,,not captured
+development,suffixes,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,20,20,100.00,20,100.00,0.00,0,available
+development,suffixes,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,20,20,100.00,20,100.00,0.00,0,available
+development,suffixes,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,20,20,100.00,20,100.00,0.00,0,available
+development,suffixes,nepscript,1.0.18,2026-11-12T16:04:07.090Z,20,0,0.00,0,0.00,35.62,0,available
+development,suffixes,Google Input Tools,Saved response,,,,,,,,,not captured
+development,typos,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,10,9,90.00,10,100.00,3.45,0,available
+development,typos,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,10,9,90.00,10,100.00,3.45,0,available
+development,typos,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,10,9,90.00,10,100.00,1.72,0,available
+development,typos,nepscript,1.0.18,2026-11-12T16:04:07.090Z,10,0,0.00,0,0.00,37.93,0,available
+development,typos,Google Input Tools,Saved response,,,,,,,,,not captured
+development,names,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,10,10,100.00,10,100.00,0.00,0,available
+development,names,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,10,10,100.00,10,100.00,0.00,0,available
+development,names,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,10,10,100.00,10,100.00,0.00,0,available
+development,names,nepscript,1.0.18,2026-11-12T16:04:07.090Z,10,0,0.00,0,0.00,20.34,0,available
+development,names,Google Input Tools,Saved response,,,,,,,,,not captured
+confirmation,all,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,41,28,68.29,41,100.00,5.14,0,available
+confirmation,all,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,41,28,68.29,41,100.00,5.14,0,available
+confirmation,all,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,41,28,68.29,41,100.00,5.14,0,available
+confirmation,all,nepscript,1.0.18,2026-11-12T16:04:07.090Z,41,3,7.32,3,7.32,25.93,0,available
+confirmation,all,Google Input Tools,Saved response,2026-11-12T01:56:50.797Z,41,10,24.39,20,48.78,15.38,0,available
+confirmation,Household forms,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,9,9,100.00,9,100.00,0.00,0,available
+confirmation,Household forms,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,9,9,100.00,9,100.00,0.00,0,available
+confirmation,Household forms,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,9,9,100.00,9,100.00,0.00,0,available
+confirmation,Household forms,nepscript,1.0.18,2026-11-12T16:04:07.090Z,9,0,0.00,0,0.00,30.00,0,available
+confirmation,Household forms,Google Input Tools,Saved response,2026-11-12T01:56:50.797Z,9,0,0.00,1,11.11,23.75,0,available
+confirmation,Verb forms,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,12,12,100.00,12,100.00,0.00,0,available
+confirmation,Verb forms,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,12,12,100.00,12,100.00,0.00,0,available
+confirmation,Verb forms,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,12,12,100.00,12,100.00,0.00,0,available
+confirmation,Verb forms,nepscript,1.0.18,2026-11-12T16:04:07.090Z,12,3,25.00,3,25.00,13.85,0,available
+confirmation,Verb forms,Google Input Tools,Saved response,2026-11-12T01:56:50.797Z,12,1,8.33,3,25.00,17.69,0,available
+confirmation,Names,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,20,7,35.00,20,100.00,12.86,0,available
+confirmation,Names,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,20,7,35.00,20,100.00,12.86,0,available
+confirmation,Names,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,20,7,35.00,20,100.00,12.86,0,available
+confirmation,Names,nepscript,1.0.18,2026-11-12T16:04:07.090Z,20,0,0.00,0,0.00,34.75,0,available
+confirmation,Names,Google Input Tools,Saved response,2026-11-12T01:56:50.797Z,20,9,45.00,16,80.00,8.51,0,available
+fresh-regression,all,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,89,64,71.91,88,98.88,5.24,0,available
+fresh-regression,all,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,89,64,71.91,88,98.88,5.24,0,available
+fresh-regression,all,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,89,62,69.66,88,98.88,5.63,0,available
+fresh-regression,all,nepscript,1.0.18,2026-11-12T16:04:07.090Z,89,2,2.25,2,2.25,27.08,0,available
+fresh-regression,all,Google Input Tools,Saved response,2026-11-12T01:28:19.517Z,89,21,23.60,41,46.07,16.73,0,available
+fresh-regression,Household forms,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,24,24,100.00,24,100.00,0.00,0,available
+fresh-regression,Household forms,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,24,24,100.00,24,100.00,0.00,0,available
+fresh-regression,Household forms,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,24,24,100.00,24,100.00,0.00,0,available
+fresh-regression,Household forms,nepscript,1.0.18,2026-11-12T16:04:07.090Z,24,0,0.00,0,0.00,31.60,0,available
+fresh-regression,Household forms,Google Input Tools,Saved response,2026-11-12T01:28:19.517Z,24,2,8.33,3,12.50,22.94,0,available
+fresh-regression,Verb forms,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,25,25,100.00,25,100.00,0.00,0,available
+fresh-regression,Verb forms,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,25,25,100.00,25,100.00,0.00,0,available
+fresh-regression,Verb forms,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,25,25,100.00,25,100.00,0.00,0,available
+fresh-regression,Verb forms,nepscript,1.0.18,2026-11-12T16:04:07.090Z,25,2,8.00,2,8.00,18.35,0,available
+fresh-regression,Verb forms,Google Input Tools,Saved response,2026-11-12T01:28:19.517Z,25,0,0.00,3,12.00,19.85,0,available
+fresh-regression,Names,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,40,15,37.50,39,97.50,14.44,0,available
+fresh-regression,Names,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,40,15,37.50,39,97.50,14.44,0,available
+fresh-regression,Names,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,40,13,32.50,39,97.50,15.49,0,available
+fresh-regression,Names,nepscript,1.0.18,2026-11-12T16:04:07.090Z,40,0,0.00,0,0.00,31.58,0,available
+fresh-regression,Names,Google Input Tools,Saved response,2026-11-12T01:28:19.517Z,40,19,47.50,35,87.50,8.77,0,available
+categories,all,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,97,85,87.63,92,94.85,2.81,0,available
+categories,all,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,97,85,87.63,92,94.85,2.81,0,available
+categories,all,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,97,80,82.47,88,90.72,4.86,0,available
+categories,all,nepscript,1.0.18,2026-11-12T16:04:07.090Z,97,13,13.40,13,13.40,28.22,0,available
+categories,all,Google Input Tools,Saved response,2026-11-12T02:56:02.338Z,97,43,44.33,57,58.76,16.75,0,available
+categories,Common words,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,17,16,94.12,16,94.12,0.81,0,available
+categories,Common words,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,17,16,94.12,16,94.12,0.81,0,available
+categories,Common words,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,17,16,94.12,16,94.12,0.81,0,available
+categories,Common words,nepscript,1.0.18,2026-11-12T16:04:07.090Z,17,5,29.41,5,29.41,18.70,0,available
+categories,Common words,Google Input Tools,Saved response,2026-11-12T02:56:02.338Z,17,16,94.12,17,100.00,0.81,0,available
+categories,Spelling variants,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,16,15,93.75,15,93.75,0.93,0,available
+categories,Spelling variants,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,16,15,93.75,15,93.75,0.93,0,available
+categories,Spelling variants,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,16,11,68.75,11,68.75,14.95,0,available
+categories,Spelling variants,nepscript,1.0.18,2026-11-12T16:04:07.090Z,16,4,25.00,4,25.00,29.63,0,available
+categories,Spelling variants,Google Input Tools,Saved response,2026-11-12T02:56:02.338Z,16,5,31.25,7,43.75,24.30,0,available
+categories,Suffix forms,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,16,16,100.00,16,100.00,0.00,0,available
+categories,Suffix forms,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,16,16,100.00,16,100.00,0.00,0,available
+categories,Suffix forms,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,16,16,100.00,16,100.00,0.00,0,available
+categories,Suffix forms,nepscript,1.0.18,2026-11-12T16:04:07.090Z,16,0,0.00,0,0.00,30.77,0,available
+categories,Suffix forms,Google Input Tools,Saved response,2026-11-12T02:56:02.338Z,16,0,0.00,4,25.00,29.59,0,available
+categories,Verb forms,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,16,16,100.00,16,100.00,0.00,0,available
+categories,Verb forms,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,16,16,100.00,16,100.00,0.00,0,available
+categories,Verb forms,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,16,16,100.00,16,100.00,0.00,0,available
+categories,Verb forms,nepscript,1.0.18,2026-11-12T16:04:07.090Z,16,4,25.00,4,25.00,13.77,0,available
+categories,Verb forms,Google Input Tools,Saved response,2026-11-12T02:56:02.338Z,16,11,68.75,11,68.75,3.62,0,available
+categories,Typos,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,16,12,75.00,13,81.25,10.57,0,available
+categories,Typos,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,16,12,75.00,13,81.25,10.57,0,available
+categories,Typos,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,16,12,75.00,13,81.25,10.57,0,available
+categories,Typos,nepscript,1.0.18,2026-11-12T16:04:07.090Z,16,0,0.00,0,0.00,41.46,0,available
+categories,Typos,Google Input Tools,Saved response,2026-11-12T02:56:02.338Z,16,4,25.00,5,31.25,30.08,0,available
+categories,Names,Nepali Writer,2.4.8,2026-11-12T14:05:48.231Z,16,10,62.50,16,100.00,5.74,0,available
+categories,Names,Nepali Writer,2.4.7,2026-11-12T14:05:48.231Z,16,10,62.50,16,100.00,5.74,0,available
+categories,Names,Nepali Writer,2.2.0,2026-11-12T02:56:19.191Z,16,9,56.25,16,100.00,6.56,0,available
+categories,Names,nepscript,1.0.18,2026-11-12T16:04:07.090Z,16,0,0.00,0,0.00,36.07,0,available
+categories,Names,Google Input Tools,Saved response,2026-11-12T02:56:02.338Z,16,7,43.75,13,81.25,9.84,0,available

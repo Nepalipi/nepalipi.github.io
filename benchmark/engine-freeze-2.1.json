@@ -1,0 +1,25 @@
+{
+  "version": "2.1.0",
+  "frozenAt": "2026-11-12T01:56:38.569Z",
+  "files": {
+    "public/engine/engine.js": "b98b513ed6d12437308c2d387683f740477bd9657d7dc981daf2dfd4a6fcfc0a",
+    "public/engine/rules.js": "2990e7eb8839b92ad682b8624867882a6a300aa61de7d0107d7fee94bb91e0a4",
+    "public/engine/lexicon.js": "dc295d68718a3f1741cde981e66344f39a19bd4bd55d97a238428659a2dec197",
+    "public/engine/corrections.js": "2b2287e70969000c21ae1c880851764e55ca692b89f93e9ba2245c6eaa8885ed",
+    "public/engine/orthography.js": "e19cef57aa755ebb411153128d493ec517f2e8b2a9bc43221dda9e98f1334456",
+    "public/engine/orthography-data.js": "d84a554b60121d4d6139beb817e8308d5b409bf2614a2215aa1a530460d05fb1",
+    "public/engine/transducer.js": "92420d1cecfc2e56f963c2e53c9b7a15d56f31c5c9532bd1ff885b6388f91584",
+    "public/engine/transducer-data.js": "b653b8ec08288d6e70ccb5faaab208a2a2d3eceaec8ffaab298e68203493f390",
+    "public/engine/unit-language.js": "605c40479253ba8ea56e0879fe513b8359128d64023fff47c67fada952bb566b",
+    "public/engine/unit-language-data.js": "72a913deaf5d4ba080d73bfa619ef6a9048813e290dfd9de07ea3bde63e5fc5d",
+    "public/engine/position-data.js": "39702fcbf5893831e06f7c870cfe0bc636f238c6746b8b1ac88075fd5088ef44",
+    "public/engine/decoder-config.js": "571d3f91346f6deff64f83c6639996a1af5c038d976927bd9f6ea0f9797bc17d"
+  },
+  "selectionFiles": {
+    "benchmarks/position-selection.json": "9d69f75a11b6a6d41f76a737fd17cc9e28bcb39fb46b8bbd96cffe3c1ffd3be4",
+    "benchmarks/faithfulness-selection.json": "50ba7530ca079de686fadcc2493fadb73de4d30feda7c4382151bceaf55f0101",
+    "benchmarks/fusion-selection.json": "db3b214ad4c5850d72893d3f85898c5b4a0bb0e84bf1e8c96af4829e6d80583d",
+    "benchmarks/ensemble-selection.json": "08d51fab721224898539e5daee0e48cfd89e6040f63bf81749938496def1b870"
+  },
+  "policy": "Final freeze before any predictions or Google results on the reserved 41-case confirmation set. Existing 89 and typing148 are observed regression/selection gates. No engine tuning after confirmation."
+}

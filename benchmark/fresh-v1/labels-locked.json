@@ -1,0 +1,7 @@
+{
+  "manifestSha256": "96840ad508d2bb7070b0c00e2b17eacf48a906b73fd09e7921dc5286782d143c",
+  "auditSha256": "345340ad9aec0c55264ff18efc8de4af6b4c97ed31e53754cf66587cc8f6ed88",
+  "engineFreezeSha256": "32c3cedd662274d4d6935d1a20c330256954eaef6894bd87495868518ea9514a",
+  "lockedAt": "2026-11-12T01:27:59.826Z",
+  "policy": "References locked before either fresh model run. No post-result edits, tuning or exclusions."
+}

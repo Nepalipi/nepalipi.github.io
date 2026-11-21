@@ -1,0 +1,1146 @@
+{
+  "lockedAt": "2026-11-12T06:45:22.392749+00:00",
+  "engineVersion": "2.4.4",
+  "scope": "Project-authored benchmark expansion. Exact sentence strings differ from the previous 60, but words/stems may be familiar. Not independently annotated, representative, TRAIN-disjoint or a Google comparison. No engine tuning in this run. Every case retained; tracks have separate denominators.",
+  "sentencePolicy": "Automatic first-choice acceptance. NFC exact whole-text agreement; spacing, punctuation and numeral script count. Only references listed before capture are accepted.",
+  "choicePolicy": "Actual word list after explicit Nepali left context; first/top-five/reference reciprocal rank. Prefix traces are observations, not completion-accuracy scores.",
+  "workflowPolicy": "Fresh browser state for every workflow. Final reference and all intermediate checkpoints must match. Missing choices, exceptions and page errors fail the case. Reload may request local static assets; typing remains offline.",
+  "sentences": [
+    {
+      "id": "extended-sentence-001",
+      "category": "Appointments",
+      "roman": "hami parsi bihana bhetchhau.",
+      "references": [
+        "हामी पर्सि बिहान भेट्छौँ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-002",
+      "category": "Appointments",
+      "roman": "haami parsi bihaan bhetchau.",
+      "references": [
+        "हामी पर्सि बिहान भेट्छौँ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-003",
+      "category": "Appointments",
+      "roman": "tapai bholi aaunuhunchha?",
+      "references": [
+        "तपाईं भोलि आउनुहुन्छ?"
+      ]
+    },
+    {
+      "id": "extended-sentence-004",
+      "category": "Appointments",
+      "roman": "tapaai bholi aaunuhuncha?",
+      "references": [
+        "तपाईं भोलि आउनुहुन्छ?"
+      ]
+    },
+    {
+      "id": "extended-sentence-005",
+      "category": "Directions",
+      "roman": "yahabata sidha januhos.",
+      "references": [
+        "यहाँबाट सीधा जानुहोस्।"
+      ]
+    },
+    {
+      "id": "extended-sentence-006",
+      "category": "Directions",
+      "roman": "yahaabata seedha jaanuhos.",
+      "references": [
+        "यहाँबाट सीधा जानुहोस्।"
+      ]
+    },
+    {
+      "id": "extended-sentence-007",
+      "category": "Directions",
+      "roman": "baya modma pasal chha.",
+      "references": [
+        "बायाँ मोडमा पसल छ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-008",
+      "category": "Directions",
+      "roman": "baayaa modma pasal cha.",
+      "references": [
+        "बायाँ मोडमा पसल छ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-009",
+      "category": "Restaurant",
+      "roman": "malai chiya ra roti dinuhos.",
+      "references": [
+        "मलाई चिया र रोटी दिनुहोस्।"
+      ]
+    },
+    {
+      "id": "extended-sentence-010",
+      "category": "Restaurant",
+      "roman": "malaai chiyaa ra rotee dinuhos.",
+      "references": [
+        "मलाई चिया र रोटी दिनुहोस्।"
+      ]
+    },
+    {
+      "id": "extended-sentence-011",
+      "category": "Restaurant",
+      "roman": "yo khana dherai mitho chha.",
+      "references": [
+        "यो खाना धेरै मिठो छ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-012",
+      "category": "Restaurant",
+      "roman": "yo khaana dherai meetho cha.",
+      "references": [
+        "यो खाना धेरै मिठो छ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-013",
+      "category": "Payments",
+      "roman": "masanga ahile paisa chhaina.",
+      "references": [
+        "मसँग अहिले पैसा छैन।"
+      ]
+    },
+    {
+      "id": "extended-sentence-014",
+      "category": "Payments",
+      "roman": "ma sanga ahile paisaa chaina.",
+      "references": [
+        "म सँग अहिले पैसा छैन।"
+      ]
+    },
+    {
+      "id": "extended-sentence-015",
+      "category": "Payments",
+      "roman": "yasko mulya kati ho?",
+      "references": [
+        "यसको मूल्य कति हो?"
+      ]
+    },
+    {
+      "id": "extended-sentence-016",
+      "category": "Payments",
+      "roman": "yas ko moolya kati ho.",
+      "references": [
+        "यस को मूल्य कति हो।"
+      ]
+    },
+    {
+      "id": "extended-sentence-017",
+      "category": "Work messages",
+      "roman": "maile patra lekheko chhu.",
+      "references": [
+        "मैले पत्र लेखेको छु।"
+      ]
+    },
+    {
+      "id": "extended-sentence-018",
+      "category": "Work messages",
+      "roman": "maile patra lekheko chu.",
+      "references": [
+        "मैले पत्र लेखेको छु।"
+      ]
+    },
+    {
+      "id": "extended-sentence-019",
+      "category": "Work messages",
+      "roman": "kripaya malai khabar garnuhos.",
+      "references": [
+        "कृपया मलाई खबर गर्नुहोस्।"
+      ]
+    },
+    {
+      "id": "extended-sentence-020",
+      "category": "Work messages",
+      "roman": "kripya malaai khabar garnuhos.",
+      "references": [
+        "कृपया मलाई खबर गर्नुहोस्।"
+      ]
+    },
+    {
+      "id": "extended-sentence-021",
+      "category": "Household",
+      "roman": "jhyal kholnuhos, kotha tato chha.",
+      "references": [
+        "झ्याल खोल्नुहोस्, कोठा तातो छ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-022",
+      "category": "Household",
+      "roman": "jhyaal kholnuhos, kothaa taato cha.",
+      "references": [
+        "झ्याल खोल्नुहोस्, कोठा तातो छ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-023",
+      "category": "Household",
+      "roman": "maile sabai luga dhoye.",
+      "references": [
+        "मैले सबै लुगा धोएँ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-024",
+      "category": "Household",
+      "roman": "maile sabai lugaa dhoen.",
+      "references": [
+        "मैले सबै लुगा धोएँ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-025",
+      "category": "Feelings",
+      "roman": "ma aaja dherai khusi chhu.",
+      "references": [
+        "म आज धेरै खुसी छु।"
+      ]
+    },
+    {
+      "id": "extended-sentence-026",
+      "category": "Feelings",
+      "roman": "ma aja dherai khushee chu.",
+      "references": [
+        "म आज धेरै खुसी छु।"
+      ]
+    },
+    {
+      "id": "extended-sentence-027",
+      "category": "Feelings",
+      "roman": "timilai ke bhayo?",
+      "references": [
+        "तिमीलाई के भयो?"
+      ]
+    },
+    {
+      "id": "extended-sentence-028",
+      "category": "Feelings",
+      "roman": "timilaai k bhayo?",
+      "references": [
+        "तिमीलाई के भयो?"
+      ]
+    },
+    {
+      "id": "extended-sentence-029",
+      "category": "Invitations",
+      "roman": "hamro gharma aaunuhos.",
+      "references": [
+        "हाम्रो घरमा आउनुहोस्।"
+      ]
+    },
+    {
+      "id": "extended-sentence-030",
+      "category": "Invitations",
+      "roman": "haamro gharmaa aaunuhos.",
+      "references": [
+        "हाम्रो घरमा आउनुहोस्।"
+      ]
+    },
+    {
+      "id": "extended-sentence-031",
+      "category": "Invitations",
+      "roman": "hami sangai khana khaau.",
+      "references": [
+        "हामी सँगै खाना खाऔँ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-032",
+      "category": "Invitations",
+      "roman": "haami sangai khaana khaaun.",
+      "references": [
+        "हामी सँगै खाना खाऔँ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-033",
+      "category": "Help requests",
+      "roman": "kripaya malai sahayog garnuhos!",
+      "references": [
+        "कृपया मलाई सहयोग गर्नुहोस्!"
+      ]
+    },
+    {
+      "id": "extended-sentence-034",
+      "category": "Help requests",
+      "roman": "kripya malaai sahayog garnuhos!",
+      "references": [
+        "कृपया मलाई सहयोग गर्नुहोस्!"
+      ]
+    },
+    {
+      "id": "extended-sentence-035",
+      "category": "Help requests",
+      "roman": "yaha mero jhola harayo.",
+      "references": [
+        "यहाँ मेरो झोला हरायो।"
+      ]
+    },
+    {
+      "id": "extended-sentence-036",
+      "category": "Help requests",
+      "roman": "yahaa mero jholaa haraayo.",
+      "references": [
+        "यहाँ मेरो झोला हरायो।"
+      ]
+    },
+    {
+      "id": "extended-sentence-037",
+      "category": "Weather and seasons",
+      "roman": "aaja bahira dherai chiso chha.",
+      "references": [
+        "आज बाहिर धेरै चिसो छ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-038",
+      "category": "Weather and seasons",
+      "roman": "aja baahira dherai chiso cha.",
+      "references": [
+        "आज बाहिर धेरै चिसो छ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-039",
+      "category": "Weather and seasons",
+      "roman": "gham lagepachhi hami janchhau.",
+      "references": [
+        "घाम लागेपछि हामी जान्छौँ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-040",
+      "category": "Weather and seasons",
+      "roman": "ghaam laagepachi haami jaanchau.",
+      "references": [
+        "घाम लागेपछि हामी जान्छौँ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-041",
+      "category": "Honorific contrasts",
+      "roman": "uha ahile gharma hunuhunchha.",
+      "references": [
+        "उहाँ अहिले घरमा हुनुहुन्छ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-042",
+      "category": "Honorific contrasts",
+      "roman": "uhaa ahile gharmaa hunuhuncha.",
+      "references": [
+        "उहाँ अहिले घरमा हुनुहुन्छ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-043",
+      "category": "Honorific contrasts",
+      "roman": "timi ahile gharma chhau.",
+      "references": [
+        "तिमी अहिले घरमा छौ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-044",
+      "category": "Honorific contrasts",
+      "roman": "timi ahile gharmaa chau.",
+      "references": [
+        "तिमी अहिले घरमा छौ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-045",
+      "category": "Conjuncts and nasalization",
+      "roman": "mero drishti ramro chha.",
+      "references": [
+        "मेरो दृष्टि राम्रो छ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-046",
+      "category": "Conjuncts and nasalization",
+      "roman": "mero dristhi ramro cha.",
+      "references": [
+        "मेरो दृष्टि राम्रो छ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-047",
+      "category": "Conjuncts and nasalization",
+      "roman": "yo gyan sabailai chahinchha.",
+      "references": [
+        "यो ज्ञान सबैलाई चाहिन्छ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-048",
+      "category": "Conjuncts and nasalization",
+      "roman": "yo gnyan sabailaai chahincha.",
+      "references": [
+        "यो ज्ञान सबैलाई चाहिन्छ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-049",
+      "category": "Informal Roman",
+      "roman": "manxe xito aauxa.",
+      "references": [
+        "मान्छे छिटो आउँछ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-050",
+      "category": "Informal Roman",
+      "roman": "manchhe chhito aauchha.",
+      "references": [
+        "मान्छे छिटो आउँछ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-051",
+      "category": "Informal Roman",
+      "roman": "malai kehi thaha xaina.",
+      "references": [
+        "मलाई केही थाहा छैन।"
+      ]
+    },
+    {
+      "id": "extended-sentence-052",
+      "category": "Informal Roman",
+      "roman": "malaai kehee thaahaa chhaina.",
+      "references": [
+        "मलाई केही थाहा छैन।"
+      ]
+    },
+    {
+      "id": "extended-sentence-053",
+      "category": "Negative questions",
+      "roman": "timile kaam garenau?",
+      "references": [
+        "तिमीले काम गरेनौ?"
+      ]
+    },
+    {
+      "id": "extended-sentence-054",
+      "category": "Negative questions",
+      "roman": "timeele kaam garenau?",
+      "references": [
+        "तिमीले काम गरेनौ?"
+      ]
+    },
+    {
+      "id": "extended-sentence-055",
+      "category": "Negative questions",
+      "roman": "uniharu kina aayenan?",
+      "references": [
+        "उनीहरू किन आएनन्?"
+      ]
+    },
+    {
+      "id": "extended-sentence-056",
+      "category": "Negative questions",
+      "roman": "uneeharu kina aaenan?",
+      "references": [
+        "उनीहरू किन आएनन्?"
+      ]
+    },
+    {
+      "id": "extended-sentence-057",
+      "category": "Extended punctuation",
+      "roman": "\"thik chha\", sitale bhanin.",
+      "references": [
+        "\"ठीक छ\", सीताले भनिन्।"
+      ]
+    },
+    {
+      "id": "extended-sentence-058",
+      "category": "Extended punctuation",
+      "roman": "“theek cha”, seetale bhanin.",
+      "references": [
+        "“ठीक छ”, सीताले भनिन्।"
+      ]
+    },
+    {
+      "id": "extended-sentence-059",
+      "category": "Extended punctuation",
+      "roman": "namaste—aajako khabar ke chha?",
+      "references": [
+        "नमस्ते—आजको खबर के छ?"
+      ]
+    },
+    {
+      "id": "extended-sentence-060",
+      "category": "Extended punctuation",
+      "roman": "namaste—ajako khabar k cha?",
+      "references": [
+        "नमस्ते—आजको खबर के छ?"
+      ]
+    },
+    {
+      "id": "extended-sentence-061",
+      "category": "Longer clauses",
+      "roman": "ma bazaar gaye, tara pasal banda thiyo.",
+      "references": [
+        "म बजार गएँ, तर पसल बन्द थियो।"
+      ]
+    },
+    {
+      "id": "extended-sentence-062",
+      "category": "Longer clauses",
+      "roman": "ma bajaar gaen, tara pasal banda thiyo.",
+      "references": [
+        "म बजार गएँ, तर पसल बन्द थियो।"
+      ]
+    },
+    {
+      "id": "extended-sentence-063",
+      "category": "Longer clauses",
+      "roman": "yadi paani parena bhane hami bahira janchhau.",
+      "references": [
+        "यदि पानी परेन भने हामी बाहिर जान्छौँ।"
+      ]
+    },
+    {
+      "id": "extended-sentence-064",
+      "category": "Longer clauses",
+      "roman": "yadi pani parena bhane haami baahira jaanchau.",
+      "references": [
+        "यदि पानी परेन भने हामी बाहिर जान्छौँ।"
+      ]
+    }
+  ],
+  "choices": [
+    {
+      "id": "choice-001",
+      "category": "Water / also",
+      "before": "म ",
+      "roman": "pani",
+      "references": [
+        "पनि"
+      ]
+    },
+    {
+      "id": "choice-002",
+      "category": "Water / also",
+      "before": "चिसो ",
+      "roman": "pani",
+      "references": [
+        "पानी"
+      ]
+    },
+    {
+      "id": "choice-003",
+      "category": "Water / also",
+      "before": "आज ",
+      "roman": "pani",
+      "references": [
+        "पनि"
+      ]
+    },
+    {
+      "id": "choice-004",
+      "category": "Water / also",
+      "before": "गिलास ",
+      "roman": "paani",
+      "references": [
+        "पानी"
+      ]
+    },
+    {
+      "id": "choice-005",
+      "category": "Time / relation",
+      "before": "बिहान ८ ",
+      "roman": "baje",
+      "references": [
+        "बजे"
+      ]
+    },
+    {
+      "id": "choice-006",
+      "category": "Time / relation",
+      "before": "मेरो ",
+      "roman": "baje",
+      "references": [
+        "बाजे"
+      ]
+    },
+    {
+      "id": "choice-007",
+      "category": "Time / relation",
+      "before": "कति ",
+      "roman": "baaje",
+      "references": [
+        "बाजे"
+      ]
+    },
+    {
+      "id": "choice-008",
+      "category": "Time / relation",
+      "before": "बस कति ",
+      "roman": "baje",
+      "references": [
+        "बजे"
+      ]
+    },
+    {
+      "id": "choice-009",
+      "category": "Person endings",
+      "before": "हामी पर्सि ",
+      "roman": "aaunchhau",
+      "references": [
+        "आउँछौँ",
+        "आउँछौं"
+      ]
+    },
+    {
+      "id": "choice-010",
+      "category": "Person endings",
+      "before": "तिमी पर्सि ",
+      "roman": "aaunchhau",
+      "references": [
+        "आउँछौ"
+      ]
+    },
+    {
+      "id": "choice-011",
+      "category": "Person endings",
+      "before": "मैले पत्र ",
+      "roman": "lekhen",
+      "references": [
+        "लेखें",
+        "लेखेँ"
+      ]
+    },
+    {
+      "id": "choice-012",
+      "category": "Person endings",
+      "before": "उनीहरू किन ",
+      "roman": "aayenan",
+      "references": [
+        "आएनन्"
+      ]
+    },
+    {
+      "id": "choice-013",
+      "category": "Word meanings",
+      "before": "",
+      "roman": "khana",
+      "references": [
+        "खाना"
+      ]
+    },
+    {
+      "id": "choice-014",
+      "category": "Word meanings",
+      "before": "",
+      "roman": "khan",
+      "references": [
+        "खान"
+      ]
+    },
+    {
+      "id": "choice-015",
+      "category": "Word meanings",
+      "before": "",
+      "roman": "parchaa",
+      "references": [
+        "पर्चा"
+      ]
+    },
+    {
+      "id": "choice-016",
+      "category": "Word meanings",
+      "before": "ढोका ",
+      "roman": "banda",
+      "references": [
+        "बन्द"
+      ]
+    },
+    {
+      "id": "choice-017",
+      "category": "Names and clusters",
+      "before": "",
+      "roman": "srijana",
+      "references": [
+        "सिर्जना",
+        "सृजना"
+      ]
+    },
+    {
+      "id": "choice-018",
+      "category": "Names and clusters",
+      "before": "",
+      "roman": "pragya",
+      "references": [
+        "प्रज्ञा"
+      ]
+    },
+    {
+      "id": "choice-019",
+      "category": "Names and clusters",
+      "before": "",
+      "roman": "sanskriti",
+      "references": [
+        "संस्कृति"
+      ]
+    },
+    {
+      "id": "choice-020",
+      "category": "Names and clusters",
+      "before": "",
+      "roman": "drishti",
+      "references": [
+        "दृष्टि"
+      ]
+    },
+    {
+      "id": "choice-021",
+      "category": "Roman styles",
+      "before": "",
+      "roman": "aausadhalayema",
+      "references": [
+        "औषधालयमा"
+      ]
+    },
+    {
+      "id": "choice-022",
+      "category": "Roman styles",
+      "before": "",
+      "roman": "aakhaa",
+      "references": [
+        "आँखा"
+      ]
+    },
+    {
+      "id": "choice-023",
+      "category": "Roman styles",
+      "before": "",
+      "roman": "manxe",
+      "references": [
+        "मान्छे"
+      ]
+    },
+    {
+      "id": "choice-024",
+      "category": "Roman styles",
+      "before": "",
+      "roman": "gnyan",
+      "references": [
+        "ज्ञान"
+      ]
+    }
+  ],
+  "workflows": [
+    {
+      "id": "workflow-001",
+      "category": "Choosing words",
+      "label": "Choose water explicitly",
+      "references": [
+        "आज पानी परिरहेको छ।"
+      ],
+      "steps": [
+        {
+          "kind": "type",
+          "text": "aja pani"
+        },
+        {
+          "kind": "choose",
+          "text": "पानी"
+        },
+        {
+          "kind": "type",
+          "text": " pariraheko cha."
+        }
+      ]
+    },
+    {
+      "id": "workflow-002",
+      "category": "Choosing words",
+      "label": "Arrow and Enter choose the second spelling",
+      "references": [
+        "पानी"
+      ],
+      "steps": [
+        {
+          "kind": "type",
+          "text": "pani"
+        },
+        {
+          "kind": "press",
+          "key": "ArrowDown"
+        },
+        {
+          "kind": "press",
+          "key": "Enter"
+        }
+      ]
+    },
+    {
+      "id": "workflow-003",
+      "category": "Choosing words",
+      "label": "Number key selects the second spelling",
+      "references": [
+        "पानी"
+      ],
+      "steps": [
+        {
+          "kind": "type",
+          "text": "pani"
+        },
+        {
+          "kind": "press",
+          "key": "2"
+        }
+      ]
+    },
+    {
+      "id": "workflow-004",
+      "category": "Choosing words",
+      "label": "Click an explicit name",
+      "references": [
+        "सीता"
+      ],
+      "steps": [
+        {
+          "kind": "type",
+          "text": "sita"
+        },
+        {
+          "kind": "choose",
+          "text": "सीता"
+        }
+      ]
+    },
+    {
+      "id": "workflow-005",
+      "category": "Word joining",
+      "label": "Join a noun ending explicitly",
+      "references": [
+        "म घरमा छु।"
+      ],
+      "steps": [
+        {
+          "kind": "fill",
+          "text": "म घर ma"
+        },
+        {
+          "kind": "choose",
+          "text": "घरमा"
+        },
+        {
+          "kind": "type",
+          "text": " chhu."
+        }
+      ]
+    },
+    {
+      "id": "workflow-006",
+      "category": "Word joining",
+      "label": "Join an irregular pronoun case",
+      "references": [
+        "मैले"
+      ],
+      "steps": [
+        {
+          "kind": "fill",
+          "text": "म le"
+        },
+        {
+          "kind": "choose",
+          "text": "मैले"
+        }
+      ]
+    },
+    {
+      "id": "workflow-007",
+      "category": "History",
+      "label": "Undo and redo a word commit",
+      "references": [
+        "नमस्ते"
+      ],
+      "steps": [
+        {
+          "kind": "type",
+          "text": "namaste"
+        },
+        {
+          "kind": "press",
+          "key": "Enter",
+          "expect": "नमस्ते"
+        },
+        {
+          "kind": "press",
+          "key": "ControlOrMeta+z",
+          "expect": "namaste"
+        },
+        {
+          "kind": "press",
+          "key": "ControlOrMeta+Shift+z"
+        }
+      ]
+    },
+    {
+      "id": "workflow-008",
+      "category": "Caret editing",
+      "label": "Insert punctuation in the middle",
+      "references": [
+        "नमस्ते। साथी"
+      ],
+      "steps": [
+        {
+          "kind": "fill",
+          "text": "नमस्ते साथी"
+        },
+        {
+          "kind": "select",
+          "start": 6,
+          "end": 6
+        },
+        {
+          "kind": "press",
+          "key": "."
+        }
+      ]
+    },
+    {
+      "id": "workflow-009",
+      "category": "Caret editing",
+      "label": "Replace a selected range",
+      "references": [
+        "नमस्ते।"
+      ],
+      "steps": [
+        {
+          "kind": "fill",
+          "text": "नमस्ते..."
+        },
+        {
+          "kind": "select",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "kind": "press",
+          "key": "."
+        }
+      ]
+    },
+    {
+      "id": "workflow-010",
+      "category": "English and paste",
+      "label": "English mode keeps dots and numbers",
+      "references": [
+        "Hello, Nepal. 3.5"
+      ],
+      "steps": [
+        {
+          "kind": "mode",
+          "value": "english"
+        },
+        {
+          "kind": "type",
+          "text": "Hello, Nepal. 3.5"
+        }
+      ]
+    },
+    {
+      "id": "workflow-011",
+      "category": "English and paste",
+      "label": "Escape keeps Roman text",
+      "references": [
+        "OpenAI "
+      ],
+      "steps": [
+        {
+          "kind": "type",
+          "text": "OpenAI"
+        },
+        {
+          "kind": "press",
+          "key": "Escape"
+        },
+        {
+          "kind": "press",
+          "key": "Space"
+        }
+      ]
+    },
+    {
+      "id": "workflow-012",
+      "category": "English and paste",
+      "label": "Paste a URL and email unchanged",
+      "references": [
+        "https://example.com a@example.com"
+      ],
+      "steps": [
+        {
+          "kind": "paste",
+          "text": "https://example.com a@example.com"
+        }
+      ]
+    },
+    {
+      "id": "workflow-013",
+      "category": "English and paste",
+      "label": "Paste conjuncts and mixed scripts unchanged",
+      "references": [
+        "श्रद्धा, आँखा र ब्रह्म — UTF-8"
+      ],
+      "steps": [
+        {
+          "kind": "paste",
+          "text": "श्रद्धा, आँखा र ब्रह्म — UTF-8"
+        }
+      ]
+    },
+    {
+      "id": "workflow-014",
+      "category": "Software keyboard",
+      "label": "Mobile period after accepted text",
+      "references": [
+        "नमस्ते।"
+      ],
+      "steps": [
+        {
+          "kind": "fill",
+          "text": "नमस्ते"
+        },
+        {
+          "kind": "beforeinput",
+          "data": "."
+        }
+      ]
+    },
+    {
+      "id": "workflow-015",
+      "category": "Software keyboard",
+      "label": "Mobile closing quote commits the word",
+      "references": [
+        "म घर आएँ”"
+      ],
+      "steps": [
+        {
+          "kind": "fill",
+          "text": "म घर aaye"
+        },
+        {
+          "kind": "beforeinput",
+          "data": "”"
+        }
+      ]
+    },
+    {
+      "id": "workflow-016",
+      "category": "Preferences",
+      "label": "A contextual choice survives reload",
+      "references": [
+        "एक गिलास pani"
+      ],
+      "steps": [
+        {
+          "kind": "fill",
+          "text": "एक गिलास pani"
+        },
+        {
+          "kind": "choose",
+          "text": "पनि"
+        },
+        {
+          "kind": "waitSave"
+        },
+        {
+          "kind": "reload"
+        },
+        {
+          "kind": "fill",
+          "text": "एक गिलास pani",
+          "firstChoice": "पनि"
+        }
+      ]
+    },
+    {
+      "id": "workflow-017",
+      "category": "Persistence",
+      "label": "Draft survives reload",
+      "references": [
+        "नमस्ते "
+      ],
+      "steps": [
+        {
+          "kind": "type",
+          "text": "namaste "
+        },
+        {
+          "kind": "waitSave"
+        },
+        {
+          "kind": "reload"
+        }
+      ]
+    },
+    {
+      "id": "workflow-018",
+      "category": "Punctuation and numbers",
+      "label": "Shift Enter inserts a new line",
+      "references": [
+        "मेरो नाम\nसीता हो।"
+      ],
+      "steps": [
+        {
+          "kind": "type",
+          "text": "mero naam"
+        },
+        {
+          "kind": "press",
+          "key": "Shift+Enter"
+        },
+        {
+          "kind": "type",
+          "text": "sita ho."
+        }
+      ]
+    },
+    {
+      "id": "workflow-019",
+      "category": "Punctuation and numbers",
+      "label": "Decimal followed by sentence punctuation",
+      "references": [
+        "मूल्य 3.5।"
+      ],
+      "steps": [
+        {
+          "kind": "fill",
+          "text": "मूल्य "
+        },
+        {
+          "kind": "type",
+          "text": "3.5."
+        }
+      ]
+    },
+    {
+      "id": "workflow-020",
+      "category": "Punctuation and numbers",
+      "label": "Brackets commit the enclosed word",
+      "references": [
+        "[नमस्ते] र (पानी)"
+      ],
+      "steps": [
+        {
+          "kind": "type",
+          "text": "[namaste] ra (paani)"
+        }
+      ]
+    }
+  ]
+}

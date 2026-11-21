@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f8f9f6"><title>Everyday writing under test — Nepalipi</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/benchmark/extended.css"><link rel="stylesheet" href="/interface.css">
+  <script type="module" src="/benchmark/extended.js"></script>
+</head>
+<body class="benchmark-page extended-page">
+  <header class="site-header"><a class="brand" href="/"><span class="brand-mark" lang="ne">अ</span><span>Nepa<span class="brand-light">lipi</span><small>EVERY WORD COUNTS</small></span></a><nav aria-label="Main navigation"><a href="/">Playground ↗</a><a href="/benchmark.html">Word benchmark ↗</a></nav></header>
+  <main class="extended-main">
+    <section class="extended-intro"><div><h1>Writing benchmarks.</h1><p>Explore what works. Find what needs attention.</p></div><div class="snapshot-control"><label for="result-snapshot">Result snapshot<select id="result-snapshot"><option value="2.4.8" selected>Engine 2.4.8 · latest editor</option><option value="2.4.7">Engine 2.4.7 · previous editor</option><option value="2.4.5">Engine 2.4.5 · previous</option><option value="2.4.4">Engine 2.4.4 · original</option></select></label><p class="capture-stamp" id="capture-stamp"></p></div></section>
+    <aside class="scope-note"><span id="scope-caption">Project-authored reference checks.</span> <a href="#method">Method &amp; limits ↓</a></aside>
+    <section class="track-stats" role="group" aria-label="Benchmark track">
+      <button type="button" data-track="sentences" aria-pressed="true"><span>Sentences</span><strong id="sentence-score"></strong><small id="sentence-detail"></small></button>
+      <button type="button" data-track="choices" aria-pressed="false"><span>Word choices</span><strong id="choice-score"></strong><small id="choice-detail"></small></button>
+      <button type="button" data-track="workflows" aria-pressed="false"><span>Editor workflows</span><strong id="workflow-score"></strong><small>Final output + every checkpoint</small></button>
+    </section>
+    <section class="inspection" aria-labelledby="inspect-title">
+      <div class="section-heading"><h2 id="inspect-title">Results</h2><a href="/benchmark/extended-v1.csv" data-artifact=".csv" download>Export CSV ↓</a></div>
+      <div class="case-controls"><label>Search cases<input id="extended-search" type="search" placeholder="Roman text, Nepali text, or case ID"></label><label>Category<select id="extended-category"><option value="">All categories</option></select></label><label>Result<select id="extended-status"><option value="">All results</option><option value="miss">Reference mismatches</option><option value="match">Matches</option></select></label></div>
+      <p id="extended-count" role="status" aria-live="polite"></p><div id="extended-cases"></div>
+      <details class="category-breakdown"><summary>Category breakdown</summary><div class="category-scroll" tabindex="0" role="region" aria-label="Category results"><table><thead id="extended-category-head"></thead><tbody id="extended-category-rows"></tbody></table></div></details>
+    </section>
+    <details class="extended-method" id="method"><summary>Method &amp; downloads <span>+</span></summary><p class="track-policy" id="track-policy"></p><p id="detailed-metrics"></p><div class="method-columns"><article><h3>Fixed before measurement</h3><p>64 sentence strings across 16 categories, 24 contextual word probes, and 20 editor workflows. The 64 strings differ from the previous sentence set; familiar vocabulary and stems are allowed. The 2.4.5 replay follows fixes developed from these observed failures. The 2.4.7 replay checks the punctuation-choice editor; 2.4.8 adds verb/context robustness. Original references remain unchanged.</p><h3>Three distinct measurements</h3><p>Sentence scores use NFC exact text, including spaces and punctuation. Word scores report first choice, within-five coverage and reciprocal rank. Prefix traces show actual alternatives while typing; they are not completion-accuracy scores. Workflow passes require the final text and all intermediate checkpoints.</p></article><article><h3>Failures remain visible</h3><p>Every case stays in its denominator, including exceptions and missing choices. Reference mismatches can include legitimate spelling variants; annotation notes identify cases needing native-speaker review. These cases are author-known diagnostics, not independent annotation.</p><h3>Fresh state and offline typing</h3><p>Each workflow uses a new browser context. Typing runs offline; reload checks may fetch only local static assets. An initial capture had a profile-isolation bug. It is preserved with the faulty harness; all 108 cases were repeated with unchanged labels after fixing isolation.</p></article></div><div class="downloads"><a href="/benchmark/extended-v1.json" data-artifact=".json" download>Complete scored results ↓</a><a href="/benchmark/extended-v1-raw.json" data-artifact="-raw.json" download>Raw verified capture ↓</a><a href="/benchmark/extended-v1-manifest.json" data-artifact="-manifest.json" download>Locked references ↓</a><a href="/benchmark/extended-v1-freeze.json" data-artifact="-freeze.json" download>Runtime freeze ↓</a></div><p class="reproduce"><span>VERIFY LOCALLY</span><code id="extended-verify-command">npm run audit:editor:verify</code></p></details>
+    <footer><span>108 recorded checks. Every result included.</span><a href="/benchmark.html">Back to word benchmark ↗</a></footer>
+  </main>
+</body>
+</html>

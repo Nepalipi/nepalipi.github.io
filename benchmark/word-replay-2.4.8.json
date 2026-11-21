@@ -1,0 +1,561 @@
+{
+  "recordedAt": "2026-11-12T14:05:48.231Z",
+  "engineVersion": "2.4.8",
+  "previousVersion": "2.4.7",
+  "scope": "Previously observed word replays; all changed candidate lists retained. Not independent quality evidence.",
+  "engineFreezeSha256": "c7038430e9f0c2c11bc968fd1f5309f6f14d0f390ba628e4c3e14752c56822b3",
+  "baselinePath": "benchmarks/improvement-2.4/regressions.json",
+  "baselineSha256": "24b31bcce93b0cee7cdf06737ea277c5aa3cf0413b9576c11de5da8b28a594c2",
+  "suites": [
+    {
+      "id": "google-comparison",
+      "before": {
+        "n": 512,
+        "first": 265,
+        "withinFive": 374
+      },
+      "after": {
+        "n": 512,
+        "first": 265,
+        "withinFive": 374
+      },
+      "changes": [
+        {
+          "id": "nep221",
+          "roman": "bujhinchha",
+          "before": [
+            "बुझिन्छ",
+            "बुझिनछ",
+            "बुझिँछ",
+            "ब्युझिन्छ",
+            "बुझिंछ"
+          ],
+          "after": [
+            "बुझिन्छ",
+            "बुझिनछ",
+            "बुझिँछ",
+            "बुझिंछ",
+            "बुझिन्छा"
+          ]
+        },
+        {
+          "id": "nep438",
+          "roman": "ankhaharuko",
+          "before": [
+            "आँखाहरूको"
+          ],
+          "after": [
+            "आँखाहरूको"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "typing-check",
+      "before": {
+        "n": 148,
+        "first": 148,
+        "withinFive": 148
+      },
+      "after": {
+        "n": 148,
+        "first": 148,
+        "withinFive": 148
+      },
+      "changes": [
+        {
+          "id": "typing-137",
+          "roman": "tyasari",
+          "before": [
+            "त्यसरी",
+            "त्यसरि"
+          ],
+          "after": [
+            "त्यसरी",
+            "त्यसरि"
+          ]
+        },
+        {
+          "id": "typing-138",
+          "roman": "yasari",
+          "before": [
+            "यसरी",
+            "यसरि"
+          ],
+          "after": [
+            "यसरी",
+            "यसरि"
+          ]
+        },
+        {
+          "id": "typing-37",
+          "roman": "pugchha",
+          "before": [
+            "पुग्छ",
+            "पुगछ",
+            "पूग्छ",
+            "पुग्छा",
+            "पुगछा"
+          ],
+          "after": [
+            "पुग्छ",
+            "पुगछ",
+            "पूग्छ",
+            "पुग्छा",
+            "पुगछा"
+          ]
+        },
+        {
+          "id": "typing-22",
+          "roman": "dekhiyeko",
+          "before": [
+            "देखिएको",
+            "देखिञेको"
+          ],
+          "after": [
+            "देखिएको",
+            "देखिञेको"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "public-test",
+      "before": {
+        "n": 4085,
+        "first": 2211,
+        "withinFive": 2972
+      },
+      "after": {
+        "n": 4085,
+        "first": 2212,
+        "withinFive": 2972
+      },
+      "changes": [
+        {
+          "id": "nep27",
+          "roman": "banaiyo",
+          "before": [
+            "बनाइयो",
+            "बनाईयो",
+            "बनैयो",
+            "बानाइयो",
+            "बनइयो"
+          ],
+          "after": [
+            "बनाइयो",
+            "बनाईयो",
+            "बनैयो",
+            "बानाइयो",
+            "बनइयो"
+          ]
+        },
+        {
+          "id": "nep173",
+          "roman": "ankhaharulai",
+          "before": [
+            "आँखाहरूलाई"
+          ],
+          "after": [
+            "आँखाहरूलाई"
+          ]
+        },
+        {
+          "id": "nep186",
+          "roman": "bramha",
+          "before": [
+            "ब्रह्म",
+            "ब्रह्मा"
+          ],
+          "after": [
+            "ब्रह्म",
+            "ब्रह्मा"
+          ]
+        },
+        {
+          "id": "nep221",
+          "roman": "bujhinchha",
+          "before": [
+            "बुझिन्छ",
+            "बुझिनछ",
+            "बुझिँछ",
+            "ब्युझिन्छ",
+            "बुझिंछ"
+          ],
+          "after": [
+            "बुझिन्छ",
+            "बुझिनछ",
+            "बुझिँछ",
+            "बुझिंछ",
+            "बुझिन्छा"
+          ]
+        },
+        {
+          "id": "nep275",
+          "roman": "sakdina",
+          "before": [
+            "सक्दिन",
+            "सक्दिना",
+            "साक्दिन",
+            "सकदिन",
+            "सक्दिने"
+          ],
+          "after": [
+            "सक्दिन",
+            "सक्दिनँ",
+            "सक्दिना",
+            "साक्दिन",
+            "सकदिन"
+          ]
+        },
+        {
+          "id": "nep296",
+          "roman": "pugdaina",
+          "before": [
+            "पुग्दैन",
+            "पुग्दैना",
+            "पुगदैन",
+            "पुग्दाइन",
+            "पुग्दैण"
+          ],
+          "after": [
+            "पुग्दैन",
+            "पुग्दैना",
+            "पुगदैन",
+            "पुग्दाइन",
+            "पुग्दैण"
+          ]
+        },
+        {
+          "id": "nep340",
+          "roman": "ankhalai",
+          "before": [
+            "आँखालाई"
+          ],
+          "after": [
+            "आँखालाई"
+          ]
+        },
+        {
+          "id": "nep433",
+          "roman": "ankhaharuma",
+          "before": [
+            "आँखाहरूमा"
+          ],
+          "after": [
+            "आँखाहरूमा"
+          ]
+        },
+        {
+          "id": "nep438",
+          "roman": "ankhaharuko",
+          "before": [
+            "आँखाहरूको"
+          ],
+          "after": [
+            "आँखाहरूको"
+          ]
+        },
+        {
+          "id": "nep534",
+          "roman": "aankhalai",
+          "before": [
+            "आँखालाई"
+          ],
+          "after": [
+            "आँखालाई"
+          ]
+        },
+        {
+          "id": "nep1141",
+          "roman": "aankhaaharulai",
+          "before": [
+            "आँखाहरूलाई"
+          ],
+          "after": [
+            "आँखाहरूलाई"
+          ]
+        },
+        {
+          "id": "nep1353",
+          "roman": "aankhaakaa",
+          "before": [
+            "आँखाका"
+          ],
+          "after": [
+            "आँखाका"
+          ]
+        },
+        {
+          "id": "nep1427",
+          "roman": "parena",
+          "before": [
+            "परेन",
+            "पारेन",
+            "परेना",
+            "पारेना",
+            "परेणा"
+          ],
+          "after": [
+            "परेन",
+            "पारेन",
+            "परेना",
+            "पारेना",
+            "परेणा"
+          ]
+        },
+        {
+          "id": "nep1554",
+          "roman": "ankhaharubata",
+          "before": [
+            "आँखाहरूबाट"
+          ],
+          "after": [
+            "आँखाहरूबाट"
+          ]
+        },
+        {
+          "id": "nep1594",
+          "roman": "namaste",
+          "before": [
+            "नमस्ते"
+          ],
+          "after": [
+            "नमस्ते"
+          ]
+        },
+        {
+          "id": "nep1798",
+          "roman": "aankhaaharuko",
+          "before": [
+            "आँखाहरूको"
+          ],
+          "after": [
+            "आँखाहरूको"
+          ]
+        },
+        {
+          "id": "nep1911",
+          "roman": "aankhaaharumaa",
+          "before": [
+            "आँखाहरूमा",
+            "आँखाहरुमा",
+            "आँखाहरूलाई",
+            "आन्खाहरूमा",
+            "आन्खाहरुमा"
+          ],
+          "after": [
+            "आँखाहरूमा",
+            "आँखाहरुमा",
+            "आँखाहरूलाई",
+            "आन्खाहरूमा",
+            "आन्खाहरुमा"
+          ]
+        },
+        {
+          "id": "nep1999",
+          "roman": "parnuhunna",
+          "before": [
+            "पर्नुहुन्न",
+            "पार्नुहुन्न",
+            "पार्नुहुन्ना",
+            "पर्नुहुन्ना",
+            "पार्नुहुँना"
+          ],
+          "after": [
+            "पर्नुहुन्न",
+            "पार्नुहुन्न",
+            "पार्नुहुन्ना",
+            "पर्नुहुन्ना",
+            "पार्नुहुँना"
+          ]
+        },
+        {
+          "id": "nep2005",
+          "roman": "ankhaka",
+          "before": [
+            "आँखाका"
+          ],
+          "after": [
+            "आँखाका"
+          ]
+        },
+        {
+          "id": "nep2041",
+          "roman": "bachau",
+          "before": [
+            "बचाउ",
+            "बँचाउ",
+            "बछाउ",
+            "बचाऊ",
+            "बच्चा"
+          ],
+          "after": [
+            "बचाउ",
+            "बँचाउ",
+            "बछाउ",
+            "बचाऊ",
+            "बच्चा"
+          ]
+        },
+        {
+          "id": "nep3473",
+          "roman": "rakhecha",
+          "before": [
+            "राखेचा",
+            "राखेच",
+            "राखेछ",
+            "रखेचा",
+            "रखेच"
+          ],
+          "after": [
+            "राखेछ",
+            "राखेचा",
+            "राखेच",
+            "रखेचा",
+            "रखेच"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "development",
+      "before": {
+        "n": 60,
+        "first": 59,
+        "withinFive": 60
+      },
+      "after": {
+        "n": 60,
+        "first": 59,
+        "withinFive": 60
+      },
+      "changes": [
+        {
+          "id": "dev-1",
+          "roman": "namaste",
+          "before": [
+            "नमस्ते"
+          ],
+          "after": [
+            "नमस्ते"
+          ]
+        },
+        {
+          "id": "dev-19",
+          "roman": "NAMASTE",
+          "before": [
+            "नमस्ते"
+          ],
+          "after": [
+            "नमस्ते"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "confirmation",
+      "before": {
+        "n": 41,
+        "first": 28,
+        "withinFive": 41
+      },
+      "after": {
+        "n": 41,
+        "first": 28,
+        "withinFive": 41
+      },
+      "changes": [
+        {
+          "id": "fresh-130",
+          "roman": "lyaunuhunchha",
+          "before": [
+            "ल्याउनुहुन्छ",
+            "लयाउनुहुन्छ",
+            "ल्याउनुहुनछ",
+            "लयउनुहुन्छ",
+            "ल्याउनुहुँछ"
+          ],
+          "after": [
+            "ल्याउनुहुन्छ",
+            "लयाउनुहुन्छ",
+            "ल्याउनुहुनछ",
+            "लयउनुहुन्छ",
+            "ल्याउनुहुँछ"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fresh-regression",
+      "before": {
+        "n": 89,
+        "first": 64,
+        "withinFive": 88
+      },
+      "after": {
+        "n": 89,
+        "first": 64,
+        "withinFive": 88
+      },
+      "changes": []
+    },
+    {
+      "id": "categories",
+      "before": {
+        "n": 97,
+        "first": 85,
+        "withinFive": 92
+      },
+      "after": {
+        "n": 97,
+        "first": 85,
+        "withinFive": 92
+      },
+      "changes": [
+        {
+          "id": "category-056",
+          "roman": "sodhiyeko",
+          "before": [
+            "सोधिएको",
+            "सोधिञेको",
+            "सोधीञेको"
+          ],
+          "after": [
+            "सोधिएको",
+            "सोधिञेको",
+            "सोधीञेको"
+          ]
+        },
+        {
+          "id": "category-057",
+          "roman": "rojiyeko",
+          "before": [
+            "रोजिएको",
+            "रोजिञेको",
+            "रोजीञेको"
+          ],
+          "after": [
+            "रोजिएको",
+            "रोजिञेको",
+            "रोजीञेको"
+          ]
+        },
+        {
+          "id": "category-061",
+          "roman": "khojiyeka",
+          "before": [
+            "खोजिएका",
+            "खोजिञेका",
+            "खोजीञेका"
+          ],
+          "after": [
+            "खोजिएका",
+            "खोजिञेका",
+            "खोजीञेका"
+          ]
+        }
+      ]
+    }
+  ]
+}

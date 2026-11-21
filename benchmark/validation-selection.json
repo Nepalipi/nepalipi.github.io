@@ -1,0 +1,78 @@
+{
+  "split": "validation only",
+  "population": {
+    "rawRows": 2804,
+    "acceptedRows": 2804,
+    "excluded": {
+      "missing": 0,
+      "roman": 0,
+      "native": 0
+    },
+    "uniqueInputs": 2804,
+    "mergedRows": 0,
+    "multipleReferences": 0
+  },
+  "primaryMetric": "top-1 exact match; ties resolved by top-5 then narrower beam",
+  "scores": [
+    {
+      "width": 32,
+      "languageWeight": 0.25,
+      "top1": 1584,
+      "top5": 2340,
+      "elapsedSeconds": 4.537212417000001
+    },
+    {
+      "width": 32,
+      "languageWeight": 0.5,
+      "top1": 1777,
+      "top5": 2464,
+      "elapsedSeconds": 4.48609675
+    },
+    {
+      "width": 32,
+      "languageWeight": 0.75,
+      "top1": 1817,
+      "top5": 2501,
+      "elapsedSeconds": 4.307120083
+    },
+    {
+      "width": 32,
+      "languageWeight": 1,
+      "top1": 1810,
+      "top5": 2508,
+      "elapsedSeconds": 4.6158754580000005
+    },
+    {
+      "width": 64,
+      "languageWeight": 0.25,
+      "top1": 1584,
+      "top5": 2342,
+      "elapsedSeconds": 8.597282
+    },
+    {
+      "width": 64,
+      "languageWeight": 0.5,
+      "top1": 1777,
+      "top5": 2464,
+      "elapsedSeconds": 22.937774457999996
+    },
+    {
+      "width": 64,
+      "languageWeight": 0.75,
+      "top1": 1817,
+      "top5": 2501,
+      "elapsedSeconds": 24.064160082999994
+    },
+    {
+      "width": 64,
+      "languageWeight": 1,
+      "top1": 1810,
+      "top5": 2508,
+      "elapsedSeconds": 26.9560625
+    }
+  ],
+  "selected": {
+    "width": 32,
+    "languageWeight": 0.75
+  }
+}

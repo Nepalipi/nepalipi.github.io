@@ -1,0 +1,127 @@
+:root {
+  --ink: var(--text);
+  --control-border: #818181;
+  --table-grid: var(--control-border);
+  --table-edge: var(--control-border);
+  --header-bg: var(--soft);
+  --hover: var(--side);
+  --filter-menu: var(--surface);
+  --filter-hover: var(--side);
+  --filter-selected: var(--soft);
+  --filter-text: var(--text);
+  --filter-shadow: var(--popup-shadow);
+}
+
+:root[data-theme=ink] {
+  --control-border: #8c8c8c;
+}
+
+:is(.simple-header, .dashboard-header) {
+  min-height: 72px;
+  border-bottom: 1px solid var(--line);
+}
+
+:is(.simple-brand, .dashboard-brand) {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 23px;
+  letter-spacing: -.9px;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font: 18px/1 'Noto Sans Devanagari', sans-serif;
+  letter-spacing: 0;
+}
+
+.playground-link {
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.playground-link:hover {
+  background: var(--side);
+  color: var(--text);
+}
+
+.appearance {
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.appearance button {
+  border-radius: 7px;
+  padding: 5px 10px;
+}
+
+.appearance button[aria-pressed=true] {
+  color: var(--accent);
+  background: var(--soft);
+}
+
+.page-heading {
+  padding: clamp(28px, 4vw, 40px) 0 24px;
+}
+
+:is(.page-heading, .dashboard-hero) h1 {
+  font-size: clamp(38px, 6.4vw, 66px);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -.06em;
+  font-synthesis: weight;
+}
+
+:is(.page-heading, .dashboard-hero) h1 span {
+  color: var(--hero-accent);
+}
+
+.page-heading p {
+  max-width: 640px;
+  margin-inline: auto;
+  font-size: 16px;
+  text-wrap: pretty;
+}
+
+.comparison-toolbar, .freshness {
+  padding: clamp(14px, 2vw, 22px);
+  border: 4px solid transparent;
+  border-radius: 20px;
+  background: linear-gradient(var(--surface), var(--surface)) padding-box,
+    var(--frame) border-box;
+  background-color: var(--surface);
+  box-shadow: var(--popup-shadow);
+}
+
+#scores-panel, #words-panel {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+
+@media (max-width: 600px) {
+  :is(.simple-header, .dashboard-header) .appearance button {
+    padding-inline: 7px;
+  }
+}
+
+@media (max-width: 360px) {
+  :is(.simple-header, .dashboard-header) .playground-link {
+    padding-inline: 8px;
+  }
+
+  :is(.simple-header, .dashboard-header) .playground-link span {
+    display: none;
+  }
+}

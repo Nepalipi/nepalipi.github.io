@@ -1,0 +1,21 @@
+{
+  "primaryResultSha256": "729dba9d1bc0fb8b072ee497214f2ddc3bcced4f123de95a1914a21168139b9d",
+  "policy": "Supplementary diagnostic using the same fold defined in the earlier 2.0 experiment: remove joiners, हरु→हरू, final स्→स. Apply equally to all fixed references and systems. Not primary scoring or comprehensive linguistic correctness.",
+  "scores": {
+    "writer": {
+      "n": 97,
+      "first": 80,
+      "five": 88
+    },
+    "writer-v2": {
+      "n": 97,
+      "first": 66,
+      "five": 74
+    },
+    "google": {
+      "n": 97,
+      "first": 51,
+      "five": 61
+    }
+  }
+}

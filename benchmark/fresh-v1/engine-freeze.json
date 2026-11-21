@@ -1,0 +1,18 @@
+{
+  "version": "2.0.0",
+  "frozenAt": "2026-11-12T01:21:09.216Z",
+  "policy": "No model, rule, dictionary, ranking or preference tuning during this evaluation. Personalization disabled.",
+  "files": {
+    "public/engine/engine.js": "0268e06ebda3d275bcf26d893f6d84a59d3de7111a8a789d312a3bc4be7dd5b8",
+    "public/engine/rules.js": "2990e7eb8839b92ad682b8624867882a6a300aa61de7d0107d7fee94bb91e0a4",
+    "public/engine/lexicon.js": "dc295d68718a3f1741cde981e66344f39a19bd4bd55d97a238428659a2dec197",
+    "public/engine/corrections.js": "2b2287e70969000c21ae1c880851764e55ca692b89f93e9ba2245c6eaa8885ed",
+    "public/engine/orthography.js": "e19cef57aa755ebb411153128d493ec517f2e8b2a9bc43221dda9e98f1334456",
+    "public/engine/orthography-data.js": "d84a554b60121d4d6139beb817e8308d5b409bf2614a2215aa1a530460d05fb1",
+    "public/engine/transducer.js": "bd8d6fea6e744be842688fdad6d66b14044c68ca7bb2672362778ad6540ca3fe",
+    "public/engine/transducer-data.js": "b653b8ec08288d6e70ccb5faaab208a2a2d3eceaec8ffaab298e68203493f390",
+    "public/engine/unit-language.js": "605c40479253ba8ea56e0879fe513b8359128d64023fff47c67fada952bb566b",
+    "public/engine/unit-language-data.js": "72a913deaf5d4ba080d73bfa619ef6a9048813e290dfd9de07ea3bde63e5fc5d",
+    "public/engine/decoder-config.js": "6fb5ab30833d104a03d7dc1686f4e29cfe9da702a19314e4be14a28693d1a5dc"
+  }
+}

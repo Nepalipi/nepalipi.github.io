@@ -1,0 +1,32 @@
+{
+  "confirmationExposure": [
+    {
+      "id": "usage-word-040",
+      "roman": "rokinchha",
+      "reason": "This locked confirmation input also appears in the older category suite. The routine pre-freeze regression replay queries it. Retain it in the 24-case denominator and report the 23 non-overlapping confirmation words separately. No references were changed and its output did not guide the fix."
+    }
+  ],
+  "annotationReview": [
+    {
+      "id": "usage-word-024",
+      "reason": "Proper-name spelling convention मृण्मय versus returned मृन्मय needs independent review. Preserve the locked reference and both candidate lists; do not add a whole-name alias."
+    }
+  ],
+  "policy": "All inputs remain scored. The confirmation set is authored and not independently annotated; it is not a claim of blind, word-disjoint or traffic-representative accuracy.",
+  "postEvaluationReview": {
+    "policy": "Post-output review notes only. Original references, eligibility, captures and scores remain unchanged; no further tuning in this iteration.",
+    "cases": [
+      {
+        "id": "usage-word-047",
+        "roman": "shreeyansh",
+        "reference": "श्रेयांश",
+        "returnedFirst": "श्रीयांश",
+        "note": "The selected name spelling and explicit ee notation need independent pronunciation/spelling review. Retain the strict miss; do not memorize a complete-name alias."
+      },
+      {
+        "id": "usage-sentence-018",
+        "note": "The feminine past आइन् remains unsupported for this Roman form; keep the captured आयिन failure for a later iteration."
+      }
+    ]
+  }
+}

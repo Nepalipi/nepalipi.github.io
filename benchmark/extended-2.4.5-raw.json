@@ -1,0 +1,5616 @@
+{
+  "capturedAt": "2026-11-12T11:44:41.906045+00:00",
+  "engineVersion": "2.4.5",
+  "manifestSha256": "c2d3bfac218f271a0b7b174dec77486c17280591d39c4c042ab68b85c97be327",
+  "freezeSha256": "cb51fe282f43e22d2da334eb898b30326dc4af4eb01b4883429cb26b5eeaa477",
+  "servedSourceHashes": {
+    "public/app.js": "9b1adda469788131d4759960c1827445a1a99b07c75888ac22b73144ed275d81",
+    "public/transliterate.js": "dd817866655069290a886f2cfb4e761843680feefd6f56bf263cc51ed1c2db1f",
+    "public/engine/engine.js": "26f9d5fa75f4a99f1bfa7a5fdb9702a683ffbc4a3b1299c77236443d64ad601f",
+    "public/engine/preferences.js": "fba157ce557898f9236bb9eaca876bb2132bcbf83a065724f89f2412c7795548",
+    "public/engine/context.js": "fca38e0f3deac42b3e4fc08e0580d28e8fa53e2939fcdec51ef2c226b8bb6016",
+    "public/engine/rules.js": "7a80b90fd8180c508f7f41765e3b3fe88e00782ef334f68754a2284c266fd94f",
+    "public/engine/lexicon.js": "c4605f6133688df5e1603c2d735f093e8d7a30aba31b3228804780fc5ed38472",
+    "public/engine/orthography.js": "e19cef57aa755ebb411153128d493ec517f2e8b2a9bc43221dda9e98f1334456",
+    "public/engine/decoder-config.js": "571d3f91346f6deff64f83c6639996a1af5c038d976927bd9f6ea0f9797bc17d",
+    "public/engine/transducer.js": "89761e5c70cf3aa148fe172aa0d51d737e287bb278a788281460655a71e7abca",
+    "public/engine/corrections.js": "a1daebac8c3327f2f317c72bfb5658c4321480eecbd7135010ca53c916ec19bb",
+    "public/engine/native-lexicon.js": "c3d3ba70d3dd8798187c7582879e3c79d2492e5e5f150aed1ff54bbcee20171c",
+    "public/engine/morphology.js": "522b4f85a96caa5a0fdcf9a102361d5776a29afcefaad12fd717de016f3681af",
+    "public/engine/syllables.js": "d6ef7dabc4b199d97df362b07cf8b1df946862cc1bed882a7005500764d3a967",
+    "public/engine/core-lexicon.js": "c10b7b78accf5250eba6cfe957eb275656b8d0ce9382c252a78e31321eccca97",
+    "public/engine/transducer-data.js": "b653b8ec08288d6e70ccb5faaab208a2a2d3eceaec8ffaab298e68203493f390",
+    "public/engine/unit-language.js": "605c40479253ba8ea56e0879fe513b8359128d64023fff47c67fada952bb566b",
+    "public/engine/orthography-data.js": "d84a554b60121d4d6139beb817e8308d5b409bf2614a2215aa1a530460d05fb1",
+    "public/engine/position-data.js": "39702fcbf5893831e06f7c870cfe0bc636f238c6746b8b1ac88075fd5088ef44",
+    "public/engine/native-lexicon-data.js": "b0db6082e4a9bbf204dd8e5940eae72ac230a1dd62a952ba4a0de176cc98495d",
+    "public/engine/unit-language-data.js": "72a913deaf5d4ba080d73bfa619ef6a9048813e290dfd9de07ea3bde63e5fc5d"
+  },
+  "runnerSha256": "663494808e6a1974f840c5f34a06780d75f6d7aabfd20ed7b8ee1ffd32113f00",
+  "workflowIsolation": "new browser context for every workflow",
+  "scope": "Observed expanded-benchmark regression replay after targeted fixes. The same 108 references are retained; cases are development evidence, not independent quality evaluation.",
+  "localAssetRequests": 598,
+  "tracks": {
+    "sentences": [
+      {
+        "id": "extended-sentence-001",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "हामी पर्सि बिहान भेट्छौँ।",
+        "words": [
+          {
+            "roman": "hami",
+            "editorBeforeCommit": "hami",
+            "candidates": [
+              "हामी",
+              "हामि",
+              "हमी",
+              "हमि"
+            ]
+          },
+          {
+            "roman": "parsi",
+            "editorBeforeCommit": "हामी parsi",
+            "candidates": [
+              "पर्सि",
+              "पर्सी",
+              "पार्सी",
+              "पारसी",
+              "परासी"
+            ]
+          },
+          {
+            "roman": "bihana",
+            "editorBeforeCommit": "हामी पर्सि bihana",
+            "candidates": [
+              "बिहान",
+              "बीहान",
+              "बिहाना",
+              "बिहन",
+              "बिहानै"
+            ]
+          },
+          {
+            "roman": "bhetchhau",
+            "editorBeforeCommit": "हामी पर्सि बिहान bhetchhau",
+            "candidates": [
+              "भेट्छौँ",
+              "भेट्छौ",
+              "भेत्छौ",
+              "भेटछौ",
+              "भेतछौ"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-002",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "हामी पर्सि बिहान भेट्छौँ।",
+        "words": [
+          {
+            "roman": "haami",
+            "editorBeforeCommit": "haami",
+            "candidates": [
+              "हामी",
+              "हामि",
+              "हाँमी"
+            ]
+          },
+          {
+            "roman": "parsi",
+            "editorBeforeCommit": "हामी parsi",
+            "candidates": [
+              "पर्सि",
+              "पर्सी",
+              "पार्सी",
+              "पारसी",
+              "परासी"
+            ]
+          },
+          {
+            "roman": "bihaan",
+            "editorBeforeCommit": "हामी पर्सि bihaan",
+            "candidates": [
+              "बिहान",
+              "बिहाँ",
+              "बीहाँ",
+              "बिहान्",
+              "बिहानी"
+            ]
+          },
+          {
+            "roman": "bhetchau",
+            "editorBeforeCommit": "हामी पर्सि बिहान bhetchau",
+            "candidates": [
+              "भेट्छौँ",
+              "भेट्छौ",
+              "भेटचौ",
+              "भेट्चौ",
+              "भेटचाउ"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-003",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "तपाईं भोलि आउनुहुन्छ?",
+        "words": [
+          {
+            "roman": "tapai",
+            "editorBeforeCommit": "tapai",
+            "candidates": [
+              "तपाईं",
+              "तपाई",
+              "टपाइ",
+              "तपाइ",
+              "तपाईँ"
+            ]
+          },
+          {
+            "roman": "bholi",
+            "editorBeforeCommit": "तपाईं bholi",
+            "candidates": [
+              "भोलि",
+              "भोली"
+            ]
+          },
+          {
+            "roman": "aaunuhunchha",
+            "editorBeforeCommit": "तपाईं भोलि aaunuhunchha",
+            "candidates": [
+              "आउनुहुन्छ",
+              "आउनुहुनछ",
+              "आउँनुहुन्छ",
+              "आउनुहुँछ",
+              "आउनुहुन्छा"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-004",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "तपाईं भोलि आउनुहुन्छ?",
+        "words": [
+          {
+            "roman": "tapaai",
+            "editorBeforeCommit": "tapaai",
+            "candidates": [
+              "तपाईं",
+              "तपाई",
+              "टपाइ",
+              "तपाइ",
+              "तपाईँ"
+            ]
+          },
+          {
+            "roman": "bholi",
+            "editorBeforeCommit": "तपाईं bholi",
+            "candidates": [
+              "भोलि",
+              "भोली"
+            ]
+          },
+          {
+            "roman": "aaunuhuncha",
+            "editorBeforeCommit": "तपाईं भोलि aaunuhuncha",
+            "candidates": [
+              "आउनुहुन्छ",
+              "आउनुहुँच",
+              "आउनुहुन्च",
+              "आउनुहुंच",
+              "आउनुहुन्चा"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-005",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "यहाँबाट सिधा जानुहोस्।",
+        "words": [
+          {
+            "roman": "yahabata",
+            "editorBeforeCommit": "yahabata",
+            "candidates": [
+              "यहाँबाट",
+              "यहाबाट",
+              "यहबाट",
+              "याहाबाट",
+              "याहबाट"
+            ]
+          },
+          {
+            "roman": "sidha",
+            "editorBeforeCommit": "यहाँबाट sidha",
+            "candidates": [
+              "सिधा",
+              "सीधा",
+              "सिध",
+              "सिद्ध",
+              "सुधा"
+            ]
+          },
+          {
+            "roman": "januhos",
+            "editorBeforeCommit": "यहाँबाट सिधा januhos",
+            "candidates": [
+              "जानुहोस्",
+              "जनुहोस्",
+              "जानुहोस",
+              "जानूहोस्",
+              "जनुहोस"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-006",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "यहाँबाट सीधा जानुहोस्।",
+        "words": [
+          {
+            "roman": "yahaabata",
+            "editorBeforeCommit": "yahaabata",
+            "candidates": [
+              "यहाँबाट",
+              "यहाबाट",
+              "याहाँबाट",
+              "याहाबाट",
+              "यहाँबता"
+            ]
+          },
+          {
+            "roman": "seedha",
+            "editorBeforeCommit": "यहाँबाट seedha",
+            "candidates": [
+              "सीधा",
+              "सीध",
+              "सीढा",
+              "सीढ",
+              "सुधा"
+            ]
+          },
+          {
+            "roman": "jaanuhos",
+            "editorBeforeCommit": "यहाँबाट सीधा jaanuhos",
+            "candidates": [
+              "जानुहोस्",
+              "जानुहोस",
+              "जानूहोस्",
+              "जानूहोस",
+              "जानुहोश"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-007",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "बायाँ मोडमा पसल छ।",
+        "words": [
+          {
+            "roman": "baya",
+            "editorBeforeCommit": "baya",
+            "candidates": [
+              "बायाँ",
+              "बय",
+              "बाय",
+              "बया",
+              "बाया"
+            ]
+          },
+          {
+            "roman": "modma",
+            "editorBeforeCommit": "बायाँ modma",
+            "candidates": [
+              "मोडमा",
+              "मोदमा",
+              "मोडम",
+              "मोडामा",
+              "मोड्मा"
+            ]
+          },
+          {
+            "roman": "pasal",
+            "editorBeforeCommit": "बायाँ मोडमा pasal",
+            "candidates": [
+              "पसल",
+              "पसाल्",
+              "पासल",
+              "पसाल",
+              "पासाल"
+            ]
+          },
+          {
+            "roman": "chha",
+            "editorBeforeCommit": "बायाँ मोडमा पसल chha",
+            "candidates": [
+              "छ",
+              "छा",
+              "चाह"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-008",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "बायाँ मोडमा पसल छ।",
+        "words": [
+          {
+            "roman": "baayaa",
+            "editorBeforeCommit": "baayaa",
+            "candidates": [
+              "बायाँ",
+              "बाया"
+            ]
+          },
+          {
+            "roman": "modma",
+            "editorBeforeCommit": "बायाँ modma",
+            "candidates": [
+              "मोडमा",
+              "मोदमा",
+              "मोडम",
+              "मोडामा",
+              "मोड्मा"
+            ]
+          },
+          {
+            "roman": "pasal",
+            "editorBeforeCommit": "बायाँ मोडमा pasal",
+            "candidates": [
+              "पसल",
+              "पसाल्",
+              "पासल",
+              "पसाल",
+              "पासाल"
+            ]
+          },
+          {
+            "roman": "cha",
+            "editorBeforeCommit": "बायाँ मोडमा पसल cha",
+            "candidates": [
+              "छ",
+              "च",
+              "चा",
+              "छा"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-009",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "मलाई चिया र रोटी दिनुहोस्।",
+        "words": [
+          {
+            "roman": "malai",
+            "editorBeforeCommit": "malai",
+            "candidates": [
+              "मलाई",
+              "मलाइ",
+              "मालाई",
+              "मलै",
+              "मालाइ"
+            ]
+          },
+          {
+            "roman": "chiya",
+            "editorBeforeCommit": "मलाई chiya",
+            "candidates": [
+              "चिया",
+              "छिया",
+              "चीया",
+              "छीया",
+              "चिय"
+            ]
+          },
+          {
+            "roman": "ra",
+            "editorBeforeCommit": "मलाई चिया ra",
+            "candidates": [
+              "र",
+              "रा"
+            ]
+          },
+          {
+            "roman": "roti",
+            "editorBeforeCommit": "मलाई चिया र roti",
+            "candidates": [
+              "रोटी",
+              "रोटि",
+              "रोति",
+              "रोती",
+              "राती"
+            ]
+          },
+          {
+            "roman": "dinuhos",
+            "editorBeforeCommit": "मलाई चिया र रोटी dinuhos",
+            "candidates": [
+              "दिनुहोस्",
+              "दिनुहोस",
+              "डिनुहोस्",
+              "दिनूहोस्",
+              "दीनुहोस्"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-010",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "मलाई चिया र रोटी दिनुहोस्।",
+        "words": [
+          {
+            "roman": "malaai",
+            "editorBeforeCommit": "malaai",
+            "candidates": [
+              "मलाई",
+              "मलाइ",
+              "मालाई",
+              "मालाइ"
+            ]
+          },
+          {
+            "roman": "chiyaa",
+            "editorBeforeCommit": "मलाई chiyaa",
+            "candidates": [
+              "चिया",
+              "छिया",
+              "चीया",
+              "छीया"
+            ]
+          },
+          {
+            "roman": "ra",
+            "editorBeforeCommit": "मलाई चिया ra",
+            "candidates": [
+              "र",
+              "रा"
+            ]
+          },
+          {
+            "roman": "rotee",
+            "editorBeforeCommit": "मलाई चिया र rotee",
+            "candidates": [
+              "रोटी",
+              "रोती",
+              "राति"
+            ]
+          },
+          {
+            "roman": "dinuhos",
+            "editorBeforeCommit": "मलाई चिया र रोटी dinuhos",
+            "candidates": [
+              "दिनुहोस्",
+              "दिनुहोस",
+              "डिनुहोस्",
+              "दिनूहोस्",
+              "दीनुहोस्"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-011",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "यो खाना धेरै मीठो छ।",
+        "words": [
+          {
+            "roman": "yo",
+            "editorBeforeCommit": "yo",
+            "candidates": [
+              "यो",
+              "ञो",
+              "यॉ"
+            ]
+          },
+          {
+            "roman": "khana",
+            "editorBeforeCommit": "यो khana",
+            "candidates": [
+              "खाना",
+              "खान",
+              "खन",
+              "खना",
+              "खानु"
+            ]
+          },
+          {
+            "roman": "dherai",
+            "editorBeforeCommit": "यो खाना dherai",
+            "candidates": [
+              "धेरै",
+              "ढेरै",
+              "धेराई",
+              "धेराइ",
+              "ढेराई"
+            ]
+          },
+          {
+            "roman": "mitho",
+            "editorBeforeCommit": "यो खाना धेरै mitho",
+            "candidates": [
+              "मीठो",
+              "मिठो",
+              "मिथो",
+              "मीथो"
+            ]
+          },
+          {
+            "roman": "chha",
+            "editorBeforeCommit": "यो खाना धेरै मीठो chha",
+            "candidates": [
+              "छ",
+              "छा",
+              "चाह"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-012",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "यो खाना धेरै मीठो छ।",
+        "words": [
+          {
+            "roman": "yo",
+            "editorBeforeCommit": "yo",
+            "candidates": [
+              "यो",
+              "ञो",
+              "यॉ"
+            ]
+          },
+          {
+            "roman": "khaana",
+            "editorBeforeCommit": "यो khaana",
+            "candidates": [
+              "खाना",
+              "खान",
+              "खन",
+              "खानु"
+            ]
+          },
+          {
+            "roman": "dherai",
+            "editorBeforeCommit": "यो खाना dherai",
+            "candidates": [
+              "धेरै",
+              "ढेरै",
+              "धेराई",
+              "धेराइ",
+              "ढेराई"
+            ]
+          },
+          {
+            "roman": "meetho",
+            "editorBeforeCommit": "यो खाना धेरै meetho",
+            "candidates": [
+              "मीठो",
+              "मिठो",
+              "मीथो"
+            ]
+          },
+          {
+            "roman": "cha",
+            "editorBeforeCommit": "यो खाना धेरै मीठो cha",
+            "candidates": [
+              "छ",
+              "च",
+              "चा",
+              "छा"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-013",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "मसँग अहिले पैसा छैन।",
+        "words": [
+          {
+            "roman": "masanga",
+            "editorBeforeCommit": "masanga",
+            "candidates": [
+              "मसँग",
+              "मसंग",
+              "मासंग",
+              "मासँग",
+              "मसङ्ग"
+            ]
+          },
+          {
+            "roman": "ahile",
+            "editorBeforeCommit": "मसँग ahile",
+            "candidates": [
+              "अहिले",
+              "अहीले",
+              "आहिले",
+              "आहीले"
+            ]
+          },
+          {
+            "roman": "paisa",
+            "editorBeforeCommit": "मसँग अहिले paisa",
+            "candidates": [
+              "पैसा",
+              "पाइस",
+              "पैस",
+              "पाइसा",
+              "पाईस"
+            ]
+          },
+          {
+            "roman": "chhaina",
+            "editorBeforeCommit": "मसँग अहिले पैसा chhaina",
+            "candidates": [
+              "छैन",
+              "चैन",
+              "छाइन",
+              "छैना",
+              "छाइना"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-014",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "म सँग अहिले पैसा छैन।",
+        "words": [
+          {
+            "roman": "ma",
+            "editorBeforeCommit": "ma",
+            "candidates": [
+              "म",
+              "मा"
+            ]
+          },
+          {
+            "roman": "sanga",
+            "editorBeforeCommit": "म sanga",
+            "candidates": [
+              "सँग",
+              "संग",
+              "सङ्ग",
+              "सांग",
+              "मसँग"
+            ]
+          },
+          {
+            "roman": "ahile",
+            "editorBeforeCommit": "म सँग ahile",
+            "candidates": [
+              "अहिले",
+              "अहीले",
+              "आहिले",
+              "आहीले"
+            ]
+          },
+          {
+            "roman": "paisaa",
+            "editorBeforeCommit": "म सँग अहिले paisaa",
+            "candidates": [
+              "पैसा",
+              "पाइसा"
+            ]
+          },
+          {
+            "roman": "chaina",
+            "editorBeforeCommit": "म सँग अहिले पैसा chaina",
+            "candidates": [
+              "छैन",
+              "चैन",
+              "चाइना",
+              "चाइन",
+              "चैना"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-015",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "यसको मूल्य कति हो?",
+        "words": [
+          {
+            "roman": "yasko",
+            "editorBeforeCommit": "yasko",
+            "candidates": [
+              "यसको",
+              "यस्को",
+              "यासको",
+              "यास्को",
+              "याएको"
+            ]
+          },
+          {
+            "roman": "mulya",
+            "editorBeforeCommit": "यसको mulya",
+            "candidates": [
+              "मूल्य",
+              "मुल्य",
+              "मूल्या",
+              "मूलय",
+              "मुलय"
+            ]
+          },
+          {
+            "roman": "kati",
+            "editorBeforeCommit": "यसको मूल्य kati",
+            "candidates": [
+              "कति",
+              "काटी",
+              "काटि",
+              "काति",
+              "काती"
+            ]
+          },
+          {
+            "roman": "ho",
+            "editorBeforeCommit": "यसको मूल्य कति ho",
+            "candidates": [
+              "हो",
+              "हॉ"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-016",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "यस को मूल्य कति हो।",
+        "words": [
+          {
+            "roman": "yas",
+            "editorBeforeCommit": "yas",
+            "candidates": [
+              "यस",
+              "यस्",
+              "यश",
+              "यास",
+              "यास्"
+            ]
+          },
+          {
+            "roman": "ko",
+            "editorBeforeCommit": "यस ko",
+            "candidates": [
+              "को"
+            ]
+          },
+          {
+            "roman": "moolya",
+            "editorBeforeCommit": "यस को moolya",
+            "candidates": [
+              "मूल्य",
+              "मुल्य",
+              "मूल्या",
+              "मूलय",
+              "मूलया"
+            ]
+          },
+          {
+            "roman": "kati",
+            "editorBeforeCommit": "यस को मूल्य kati",
+            "candidates": [
+              "कति",
+              "काटी",
+              "काटि",
+              "काति",
+              "काती"
+            ]
+          },
+          {
+            "roman": "ho",
+            "editorBeforeCommit": "यस को मूल्य कति ho",
+            "candidates": [
+              "हो",
+              "हॉ"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-017",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "मैले पत्र लेखेको छु।",
+        "words": [
+          {
+            "roman": "maile",
+            "editorBeforeCommit": "maile",
+            "candidates": [
+              "मैले",
+              "माइले",
+              "माईले",
+              "माइल",
+              "म्याइले"
+            ]
+          },
+          {
+            "roman": "patra",
+            "editorBeforeCommit": "मैले patra",
+            "candidates": [
+              "पत्र",
+              "पात्र",
+              "पत्रा",
+              "पात्रा",
+              "पटर"
+            ]
+          },
+          {
+            "roman": "lekheko",
+            "editorBeforeCommit": "मैले पत्र lekheko",
+            "candidates": [
+              "लेखेको"
+            ]
+          },
+          {
+            "roman": "chhu",
+            "editorBeforeCommit": "मैले पत्र लेखेको chhu",
+            "candidates": [
+              "छु",
+              "छू",
+              "कछु"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-018",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "मैले पत्र लेखेको छु।",
+        "words": [
+          {
+            "roman": "maile",
+            "editorBeforeCommit": "maile",
+            "candidates": [
+              "मैले",
+              "माइले",
+              "माईले",
+              "माइल",
+              "म्याइले"
+            ]
+          },
+          {
+            "roman": "patra",
+            "editorBeforeCommit": "मैले patra",
+            "candidates": [
+              "पत्र",
+              "पात्र",
+              "पत्रा",
+              "पात्रा",
+              "पटर"
+            ]
+          },
+          {
+            "roman": "lekheko",
+            "editorBeforeCommit": "मैले पत्र lekheko",
+            "candidates": [
+              "लेखेको"
+            ]
+          },
+          {
+            "roman": "chu",
+            "editorBeforeCommit": "मैले पत्र लेखेको chu",
+            "candidates": [
+              "छु",
+              "चु",
+              "चू",
+              "छू"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-019",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "कृपया मलाई खबर गर्नुहोस्।",
+        "words": [
+          {
+            "roman": "kripaya",
+            "editorBeforeCommit": "kripaya",
+            "candidates": [
+              "कृपया",
+              "कृपाय",
+              "कृपाया",
+              "कृपय",
+              "क्रिपय"
+            ]
+          },
+          {
+            "roman": "malai",
+            "editorBeforeCommit": "कृपया malai",
+            "candidates": [
+              "मलाई",
+              "मलाइ",
+              "मालाई",
+              "मलै",
+              "मालाइ"
+            ]
+          },
+          {
+            "roman": "khabar",
+            "editorBeforeCommit": "कृपया मलाई khabar",
+            "candidates": [
+              "खबर",
+              "खबार",
+              "खाबार",
+              "खाबर",
+              "अखबार"
+            ]
+          },
+          {
+            "roman": "garnuhos",
+            "editorBeforeCommit": "कृपया मलाई खबर garnuhos",
+            "candidates": [
+              "गर्नुहोस्",
+              "गर्नुहोस",
+              "गार्नुहोस्",
+              "गर्नूहोस्",
+              "गार्नुहोस"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-020",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "कृपया मलाई खबर गर्नुहोस्।",
+        "words": [
+          {
+            "roman": "kripya",
+            "editorBeforeCommit": "kripya",
+            "candidates": [
+              "कृपया",
+              "क्रिप्या",
+              "क्रिप्य",
+              "कृप्य",
+              "कृप्या"
+            ]
+          },
+          {
+            "roman": "malaai",
+            "editorBeforeCommit": "कृपया malaai",
+            "candidates": [
+              "मलाई",
+              "मलाइ",
+              "मालाई",
+              "मालाइ"
+            ]
+          },
+          {
+            "roman": "khabar",
+            "editorBeforeCommit": "कृपया मलाई khabar",
+            "candidates": [
+              "खबर",
+              "खबार",
+              "खाबार",
+              "खाबर",
+              "अखबार"
+            ]
+          },
+          {
+            "roman": "garnuhos",
+            "editorBeforeCommit": "कृपया मलाई खबर garnuhos",
+            "candidates": [
+              "गर्नुहोस्",
+              "गर्नुहोस",
+              "गार्नुहोस्",
+              "गर्नूहोस्",
+              "गार्नुहोस"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-021",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "झ्याल खोल्नुहोस्, कोठा तातो छ।",
+        "words": [
+          {
+            "roman": "jhyal",
+            "editorBeforeCommit": "jhyal",
+            "candidates": [
+              "झ्याल",
+              "झयाल",
+              "झ्याल्",
+              "झ्यल",
+              "झयल"
+            ]
+          },
+          {
+            "roman": "kholnuhos",
+            "editorBeforeCommit": "झ्याल kholnuhos",
+            "candidates": [
+              "खोल्नुहोस्",
+              "खोल्नुहोस",
+              "खोलनुहोस्",
+              "खोलिनुहोस्",
+              "खोल्नूहोस्"
+            ]
+          },
+          {
+            "roman": "kotha",
+            "editorBeforeCommit": "झ्याल खोल्नुहोस्, kotha",
+            "candidates": [
+              "कोठा",
+              "कोठ",
+              "कोथ",
+              "कोथा",
+              "कथा"
+            ]
+          },
+          {
+            "roman": "tato",
+            "editorBeforeCommit": "झ्याल खोल्नुहोस्, कोठा tato",
+            "candidates": [
+              "तातो",
+              "टाटो",
+              "ततो",
+              "टटो",
+              "ताटो"
+            ]
+          },
+          {
+            "roman": "chha",
+            "editorBeforeCommit": "झ्याल खोल्नुहोस्, कोठा तातो chha",
+            "candidates": [
+              "छ",
+              "छा",
+              "चाह"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-022",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "झ्याल खोल्नुहोस्, कोठा तातो छ।",
+        "words": [
+          {
+            "roman": "jhyaal",
+            "editorBeforeCommit": "jhyaal",
+            "candidates": [
+              "झ्याल",
+              "झयाल",
+              "झ्याल्"
+            ]
+          },
+          {
+            "roman": "kholnuhos",
+            "editorBeforeCommit": "झ्याल kholnuhos",
+            "candidates": [
+              "खोल्नुहोस्",
+              "खोल्नुहोस",
+              "खोलनुहोस्",
+              "खोलिनुहोस्",
+              "खोल्नूहोस्"
+            ]
+          },
+          {
+            "roman": "kothaa",
+            "editorBeforeCommit": "झ्याल खोल्नुहोस्, kothaa",
+            "candidates": [
+              "कोठा",
+              "कोथा",
+              "कथा"
+            ]
+          },
+          {
+            "roman": "taato",
+            "editorBeforeCommit": "झ्याल खोल्नुहोस्, कोठा taato",
+            "candidates": [
+              "तातो",
+              "टाटो",
+              "तट",
+              "टातो",
+              "ताटो"
+            ]
+          },
+          {
+            "roman": "cha",
+            "editorBeforeCommit": "झ्याल खोल्नुहोस्, कोठा तातो cha",
+            "candidates": [
+              "छ",
+              "च",
+              "चा",
+              "छा"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-023",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "मैले सबै लुगा धोएँ।",
+        "words": [
+          {
+            "roman": "maile",
+            "editorBeforeCommit": "maile",
+            "candidates": [
+              "मैले",
+              "माइले",
+              "माईले",
+              "माइल",
+              "म्याइले"
+            ]
+          },
+          {
+            "roman": "sabai",
+            "editorBeforeCommit": "मैले sabai",
+            "candidates": [
+              "सबै",
+              "सबाई",
+              "सवाई",
+              "सबाइ",
+              "सवाइ"
+            ]
+          },
+          {
+            "roman": "luga",
+            "editorBeforeCommit": "मैले सबै luga",
+            "candidates": [
+              "लुगा",
+              "लूगा",
+              "लुग",
+              "लूग",
+              "लुगाँ"
+            ]
+          },
+          {
+            "roman": "dhoye",
+            "editorBeforeCommit": "मैले सबै लुगा dhoye",
+            "candidates": [
+              "धोएँ",
+              "धोए",
+              "धोञे",
+              "ढोञे"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-024",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "मैले सबै लुगा धोएँ।",
+        "words": [
+          {
+            "roman": "maile",
+            "editorBeforeCommit": "maile",
+            "candidates": [
+              "मैले",
+              "माइले",
+              "माईले",
+              "माइल",
+              "म्याइले"
+            ]
+          },
+          {
+            "roman": "sabai",
+            "editorBeforeCommit": "मैले sabai",
+            "candidates": [
+              "सबै",
+              "सबाई",
+              "सवाई",
+              "सबाइ",
+              "सवाइ"
+            ]
+          },
+          {
+            "roman": "lugaa",
+            "editorBeforeCommit": "मैले सबै lugaa",
+            "candidates": [
+              "लुगा",
+              "लूगा"
+            ]
+          },
+          {
+            "roman": "dhoen",
+            "editorBeforeCommit": "मैले सबै लुगा dhoen",
+            "candidates": [
+              "धोएँ",
+              "धोएन",
+              "धोएन्",
+              "ढोएन",
+              "ढोएँ"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-025",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "म आज धेरै खुसी छु।",
+        "words": [
+          {
+            "roman": "ma",
+            "editorBeforeCommit": "ma",
+            "candidates": [
+              "म",
+              "मा"
+            ]
+          },
+          {
+            "roman": "aaja",
+            "editorBeforeCommit": "म aaja",
+            "candidates": [
+              "आज",
+              "आजा",
+              "अज"
+            ]
+          },
+          {
+            "roman": "dherai",
+            "editorBeforeCommit": "म आज dherai",
+            "candidates": [
+              "धेरै",
+              "ढेरै",
+              "धेराई",
+              "धेराइ",
+              "ढेराई"
+            ]
+          },
+          {
+            "roman": "khusi",
+            "editorBeforeCommit": "म आज धेरै khusi",
+            "candidates": [
+              "खुसी",
+              "खुशी",
+              "खुसि",
+              "खूसी",
+              "खुशि"
+            ]
+          },
+          {
+            "roman": "chhu",
+            "editorBeforeCommit": "म आज धेरै खुसी chhu",
+            "candidates": [
+              "छु",
+              "छू",
+              "कछु"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-026",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "म आज धेरै खुशी छु।",
+        "words": [
+          {
+            "roman": "ma",
+            "editorBeforeCommit": "ma",
+            "candidates": [
+              "म",
+              "मा"
+            ]
+          },
+          {
+            "roman": "aja",
+            "editorBeforeCommit": "म aja",
+            "candidates": [
+              "आज",
+              "अज",
+              "आजा",
+              "अजा"
+            ]
+          },
+          {
+            "roman": "dherai",
+            "editorBeforeCommit": "म आज dherai",
+            "candidates": [
+              "धेरै",
+              "ढेरै",
+              "धेराई",
+              "धेराइ",
+              "ढेराई"
+            ]
+          },
+          {
+            "roman": "khushee",
+            "editorBeforeCommit": "म आज धेरै khushee",
+            "candidates": [
+              "खुशी",
+              "खुसी",
+              "खूशी"
+            ]
+          },
+          {
+            "roman": "chu",
+            "editorBeforeCommit": "म आज धेरै खुशी chu",
+            "candidates": [
+              "छु",
+              "चु",
+              "चू",
+              "छू"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-027",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "तिमीलाई के भयो?",
+        "words": [
+          {
+            "roman": "timilai",
+            "editorBeforeCommit": "timilai",
+            "candidates": [
+              "तिमीलाई",
+              "तिमिलाई",
+              "टिमीलाई",
+              "टिमिलाई",
+              "तिमिलाइ"
+            ]
+          },
+          {
+            "roman": "ke",
+            "editorBeforeCommit": "तिमीलाई ke",
+            "candidates": [
+              "के"
+            ]
+          },
+          {
+            "roman": "bhayo",
+            "editorBeforeCommit": "तिमीलाई के bhayo",
+            "candidates": [
+              "भयो",
+              "भायो",
+              "भए",
+              "भाञो",
+              "भञो"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-028",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "तिमीलाई के भयो?",
+        "words": [
+          {
+            "roman": "timilaai",
+            "editorBeforeCommit": "timilaai",
+            "candidates": [
+              "तिमीलाई",
+              "तिमिलाई",
+              "टिमीलाई",
+              "टिमिलाई",
+              "तिमिलाइ"
+            ]
+          },
+          {
+            "roman": "k",
+            "editorBeforeCommit": "तिमीलाई k",
+            "candidates": [
+              "के",
+              "क",
+              "क्"
+            ]
+          },
+          {
+            "roman": "bhayo",
+            "editorBeforeCommit": "तिमीलाई के bhayo",
+            "candidates": [
+              "भयो",
+              "भायो",
+              "भए",
+              "भाञो",
+              "भञो"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-029",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "हाम्रो घरमा आउनुहोस्।",
+        "words": [
+          {
+            "roman": "hamro",
+            "editorBeforeCommit": "hamro",
+            "candidates": [
+              "हाम्रो",
+              "हम्रो",
+              "हमरो",
+              "हामरो",
+              "हंरो"
+            ]
+          },
+          {
+            "roman": "gharma",
+            "editorBeforeCommit": "हाम्रो gharma",
+            "candidates": [
+              "घरमा",
+              "घरम",
+              "घर्म",
+              "घारमा",
+              "घर्मा"
+            ]
+          },
+          {
+            "roman": "aaunuhos",
+            "editorBeforeCommit": "हाम्रो घरमा aaunuhos",
+            "candidates": [
+              "आउनुहोस्",
+              "आउनुहोस",
+              "आउँनुहोस्",
+              "आयुनुहोस्",
+              "आउनुहोश"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-030",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "हाम्रो घरमा आउनुहोस्।",
+        "words": [
+          {
+            "roman": "haamro",
+            "editorBeforeCommit": "haamro",
+            "candidates": [
+              "हाम्रो",
+              "हामरो",
+              "हाँम्रो"
+            ]
+          },
+          {
+            "roman": "gharmaa",
+            "editorBeforeCommit": "हाम्रो gharmaa",
+            "candidates": [
+              "घरमा",
+              "घारमा",
+              "घर्मा"
+            ]
+          },
+          {
+            "roman": "aaunuhos",
+            "editorBeforeCommit": "हाम्रो घरमा aaunuhos",
+            "candidates": [
+              "आउनुहोस्",
+              "आउनुहोस",
+              "आउँनुहोस्",
+              "आयुनुहोस्",
+              "आउनुहोश"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-031",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "हामी सँगै खाना खाऔँ।",
+        "words": [
+          {
+            "roman": "hami",
+            "editorBeforeCommit": "hami",
+            "candidates": [
+              "हामी",
+              "हामि",
+              "हमी",
+              "हमि"
+            ]
+          },
+          {
+            "roman": "sangai",
+            "editorBeforeCommit": "हामी sangai",
+            "candidates": [
+              "सँगै",
+              "संगै",
+              "सङ्गै",
+              "साङ्गै",
+              "सँग"
+            ]
+          },
+          {
+            "roman": "khana",
+            "editorBeforeCommit": "हामी सँगै khana",
+            "candidates": [
+              "खाना",
+              "खान",
+              "खन",
+              "खना",
+              "खानु"
+            ]
+          },
+          {
+            "roman": "khaau",
+            "editorBeforeCommit": "हामी सँगै खाना khaau",
+            "candidates": [
+              "खाऔँ",
+              "खाउ",
+              "खाऊ"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-032",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "हामी सँगै खाना खाऔँ।",
+        "words": [
+          {
+            "roman": "haami",
+            "editorBeforeCommit": "haami",
+            "candidates": [
+              "हामी",
+              "हामि",
+              "हाँमी"
+            ]
+          },
+          {
+            "roman": "sangai",
+            "editorBeforeCommit": "हामी sangai",
+            "candidates": [
+              "सँगै",
+              "संगै",
+              "सङ्गै",
+              "साङ्गै",
+              "सँग"
+            ]
+          },
+          {
+            "roman": "khaana",
+            "editorBeforeCommit": "हामी सँगै khaana",
+            "candidates": [
+              "खाना",
+              "खान",
+              "खन",
+              "खानु"
+            ]
+          },
+          {
+            "roman": "khaaun",
+            "editorBeforeCommit": "हामी सँगै खाना khaaun",
+            "candidates": [
+              "खाऔँ",
+              "खानु",
+              "खाउँ",
+              "खाउन",
+              "खान"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-033",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "कृपया मलाई सहयोग गर्नुहोस्!",
+        "words": [
+          {
+            "roman": "kripaya",
+            "editorBeforeCommit": "kripaya",
+            "candidates": [
+              "कृपया",
+              "कृपाय",
+              "कृपाया",
+              "कृपय",
+              "क्रिपय"
+            ]
+          },
+          {
+            "roman": "malai",
+            "editorBeforeCommit": "कृपया malai",
+            "candidates": [
+              "मलाई",
+              "मलाइ",
+              "मालाई",
+              "मलै",
+              "मालाइ"
+            ]
+          },
+          {
+            "roman": "sahayog",
+            "editorBeforeCommit": "कृपया मलाई sahayog",
+            "candidates": [
+              "सहयोग",
+              "साहयोग",
+              "सहयोग्",
+              "सहायोग",
+              "सहयोगी"
+            ]
+          },
+          {
+            "roman": "garnuhos",
+            "editorBeforeCommit": "कृपया मलाई सहयोग garnuhos",
+            "candidates": [
+              "गर्नुहोस्",
+              "गर्नुहोस",
+              "गार्नुहोस्",
+              "गर्नूहोस्",
+              "गार्नुहोस"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-034",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "कृपया मलाई सहयोग गर्नुहोस्!",
+        "words": [
+          {
+            "roman": "kripya",
+            "editorBeforeCommit": "kripya",
+            "candidates": [
+              "कृपया",
+              "क्रिप्या",
+              "क्रिप्य",
+              "कृप्य",
+              "कृप्या"
+            ]
+          },
+          {
+            "roman": "malaai",
+            "editorBeforeCommit": "कृपया malaai",
+            "candidates": [
+              "मलाई",
+              "मलाइ",
+              "मालाई",
+              "मालाइ"
+            ]
+          },
+          {
+            "roman": "sahayog",
+            "editorBeforeCommit": "कृपया मलाई sahayog",
+            "candidates": [
+              "सहयोग",
+              "साहयोग",
+              "सहयोग्",
+              "सहायोग",
+              "सहयोगी"
+            ]
+          },
+          {
+            "roman": "garnuhos",
+            "editorBeforeCommit": "कृपया मलाई सहयोग garnuhos",
+            "candidates": [
+              "गर्नुहोस्",
+              "गर्नुहोस",
+              "गार्नुहोस्",
+              "गर्नूहोस्",
+              "गार्नुहोस"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-035",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "यहाँ मेरो झोला हरायो।",
+        "words": [
+          {
+            "roman": "yaha",
+            "editorBeforeCommit": "yaha",
+            "candidates": [
+              "यहाँ",
+              "याहा",
+              "यहा",
+              "याह",
+              "यह"
+            ]
+          },
+          {
+            "roman": "mero",
+            "editorBeforeCommit": "यहाँ mero",
+            "candidates": [
+              "मेरो",
+              "मेरु",
+              "मेरू",
+              "मेरॉ"
+            ]
+          },
+          {
+            "roman": "jhola",
+            "editorBeforeCommit": "यहाँ मेरो jhola",
+            "candidates": [
+              "झोला",
+              "झोल",
+              "झोले"
+            ]
+          },
+          {
+            "roman": "harayo",
+            "editorBeforeCommit": "यहाँ मेरो झोला harayo",
+            "candidates": [
+              "हरायो",
+              "हारायो",
+              "हर्यायो",
+              "हरयो",
+              "हरियो"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-036",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "यहाँ मेरो झोला हरायो।",
+        "words": [
+          {
+            "roman": "yahaa",
+            "editorBeforeCommit": "yahaa",
+            "candidates": [
+              "यहाँ",
+              "याहाँ",
+              "याहा",
+              "यहा"
+            ]
+          },
+          {
+            "roman": "mero",
+            "editorBeforeCommit": "यहाँ mero",
+            "candidates": [
+              "मेरो",
+              "मेरु",
+              "मेरू",
+              "मेरॉ"
+            ]
+          },
+          {
+            "roman": "jholaa",
+            "editorBeforeCommit": "यहाँ मेरो jholaa",
+            "candidates": [
+              "झोला",
+              "झोल"
+            ]
+          },
+          {
+            "roman": "haraayo",
+            "editorBeforeCommit": "यहाँ मेरो झोला haraayo",
+            "candidates": [
+              "हरायो",
+              "हारायो",
+              "हरियो"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-037",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "आज बाहिर धेरै चिसो छ।",
+        "words": [
+          {
+            "roman": "aaja",
+            "editorBeforeCommit": "aaja",
+            "candidates": [
+              "आज",
+              "आजा",
+              "अज"
+            ]
+          },
+          {
+            "roman": "bahira",
+            "editorBeforeCommit": "आज bahira",
+            "candidates": [
+              "बाहिर",
+              "बाहीर",
+              "बहिर",
+              "बहिरा",
+              "बाहिरा"
+            ]
+          },
+          {
+            "roman": "dherai",
+            "editorBeforeCommit": "आज बाहिर dherai",
+            "candidates": [
+              "धेरै",
+              "ढेरै",
+              "धेराई",
+              "धेराइ",
+              "ढेराई"
+            ]
+          },
+          {
+            "roman": "chiso",
+            "editorBeforeCommit": "आज बाहिर धेरै chiso",
+            "candidates": [
+              "चिसो",
+              "चीसो",
+              "छिसो",
+              "छीसो",
+              "चिसॉ"
+            ]
+          },
+          {
+            "roman": "chha",
+            "editorBeforeCommit": "आज बाहिर धेरै चिसो chha",
+            "candidates": [
+              "छ",
+              "छा",
+              "चाह"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-038",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "आज बाहिर धेरै चिसो छ।",
+        "words": [
+          {
+            "roman": "aja",
+            "editorBeforeCommit": "aja",
+            "candidates": [
+              "आज",
+              "अज",
+              "आजा",
+              "अजा"
+            ]
+          },
+          {
+            "roman": "baahira",
+            "editorBeforeCommit": "आज baahira",
+            "candidates": [
+              "बाहिर",
+              "बाहीर",
+              "बाहिरा",
+              "बाहीरा"
+            ]
+          },
+          {
+            "roman": "dherai",
+            "editorBeforeCommit": "आज बाहिर dherai",
+            "candidates": [
+              "धेरै",
+              "ढेरै",
+              "धेराई",
+              "धेराइ",
+              "ढेराई"
+            ]
+          },
+          {
+            "roman": "chiso",
+            "editorBeforeCommit": "आज बाहिर धेरै chiso",
+            "candidates": [
+              "चिसो",
+              "चीसो",
+              "छिसो",
+              "छीसो",
+              "चिसॉ"
+            ]
+          },
+          {
+            "roman": "cha",
+            "editorBeforeCommit": "आज बाहिर धेरै चिसो cha",
+            "candidates": [
+              "छ",
+              "च",
+              "चा",
+              "छा"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-039",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "घाम लागेपछि हामी जान्छौँ।",
+        "words": [
+          {
+            "roman": "gham",
+            "editorBeforeCommit": "gham",
+            "candidates": [
+              "घाम",
+              "घम",
+              "घम्",
+              "घाम्"
+            ]
+          },
+          {
+            "roman": "lagepachhi",
+            "editorBeforeCommit": "घाम lagepachhi",
+            "candidates": [
+              "लागेपछि",
+              "लगेपछि",
+              "लागेपछी",
+              "लगेपछी",
+              "लाजेपछि"
+            ]
+          },
+          {
+            "roman": "hami",
+            "editorBeforeCommit": "घाम लागेपछि hami",
+            "candidates": [
+              "हामी",
+              "हामि",
+              "हमी",
+              "हमि"
+            ]
+          },
+          {
+            "roman": "janchhau",
+            "editorBeforeCommit": "घाम लागेपछि हामी janchhau",
+            "candidates": [
+              "जान्छौँ",
+              "जान्छौ",
+              "जँचाउ",
+              "जन्छौ",
+              "जान्छु"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-040",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "घाम लागेपछि हामी जान्छौँ।",
+        "words": [
+          {
+            "roman": "ghaam",
+            "editorBeforeCommit": "ghaam",
+            "candidates": [
+              "घाम",
+              "घाम्"
+            ]
+          },
+          {
+            "roman": "laagepachi",
+            "editorBeforeCommit": "घाम laagepachi",
+            "candidates": [
+              "लागेपछि",
+              "लागेपचि",
+              "लागेपछी",
+              "लाजेपछि",
+              "लागेपची"
+            ]
+          },
+          {
+            "roman": "haami",
+            "editorBeforeCommit": "घाम लागेपछि haami",
+            "candidates": [
+              "हामी",
+              "हामि",
+              "हाँमी"
+            ]
+          },
+          {
+            "roman": "jaanchau",
+            "editorBeforeCommit": "घाम लागेपछि हामी jaanchau",
+            "candidates": [
+              "जान्छौँ",
+              "जान्छौ",
+              "जाँचौ",
+              "जाँचौं",
+              "जान्छु"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-041",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "उहाँ अहिले घरमा हुनुहुन्छ।",
+        "words": [
+          {
+            "roman": "uha",
+            "editorBeforeCommit": "uha",
+            "candidates": [
+              "उहाँ",
+              "उहा",
+              "उह",
+              "ऊहा",
+              "ऊह"
+            ]
+          },
+          {
+            "roman": "ahile",
+            "editorBeforeCommit": "उहाँ ahile",
+            "candidates": [
+              "अहिले",
+              "अहीले",
+              "आहिले",
+              "आहीले"
+            ]
+          },
+          {
+            "roman": "gharma",
+            "editorBeforeCommit": "उहाँ अहिले gharma",
+            "candidates": [
+              "घरमा",
+              "घरम",
+              "घर्म",
+              "घारमा",
+              "घर्मा"
+            ]
+          },
+          {
+            "roman": "hunuhunchha",
+            "editorBeforeCommit": "उहाँ अहिले घरमा hunuhunchha",
+            "candidates": [
+              "हुनुहुन्छ",
+              "हूनुहुन्छ",
+              "हुनुहून्छ",
+              "हुनुहुनछ",
+              "हुनुहुन्छा"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-042",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "उहाँ अहिले घरमा हुनुहुन्छ।",
+        "words": [
+          {
+            "roman": "uhaa",
+            "editorBeforeCommit": "uhaa",
+            "candidates": [
+              "उहाँ",
+              "उहा",
+              "ऊहा"
+            ]
+          },
+          {
+            "roman": "ahile",
+            "editorBeforeCommit": "उहाँ ahile",
+            "candidates": [
+              "अहिले",
+              "अहीले",
+              "आहिले",
+              "आहीले"
+            ]
+          },
+          {
+            "roman": "gharmaa",
+            "editorBeforeCommit": "उहाँ अहिले gharmaa",
+            "candidates": [
+              "घरमा",
+              "घारमा",
+              "घर्मा"
+            ]
+          },
+          {
+            "roman": "hunuhuncha",
+            "editorBeforeCommit": "उहाँ अहिले घरमा hunuhuncha",
+            "candidates": [
+              "हुनुहुन्छ",
+              "हूनुहुन्छ",
+              "हुनुहुन्च",
+              "हुनुहुँच",
+              "हुनुहुन्चा"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-043",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "तिमी अहिले घरमा छौ।",
+        "words": [
+          {
+            "roman": "timi",
+            "editorBeforeCommit": "timi",
+            "candidates": [
+              "तिमी",
+              "तिमि",
+              "तीमी",
+              "तीमि",
+              "टिमी"
+            ]
+          },
+          {
+            "roman": "ahile",
+            "editorBeforeCommit": "तिमी ahile",
+            "candidates": [
+              "अहिले",
+              "अहीले",
+              "आहिले",
+              "आहीले"
+            ]
+          },
+          {
+            "roman": "gharma",
+            "editorBeforeCommit": "तिमी अहिले gharma",
+            "candidates": [
+              "घरमा",
+              "घरम",
+              "घर्म",
+              "घारमा",
+              "घर्मा"
+            ]
+          },
+          {
+            "roman": "chhau",
+            "editorBeforeCommit": "तिमी अहिले घरमा chhau",
+            "candidates": [
+              "छौ",
+              "छौँ",
+              "छाउ",
+              "छौं",
+              "छ"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-044",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "तिमी अहिले घरमा छौ।",
+        "words": [
+          {
+            "roman": "timi",
+            "editorBeforeCommit": "timi",
+            "candidates": [
+              "तिमी",
+              "तिमि",
+              "तीमी",
+              "तीमि",
+              "टिमी"
+            ]
+          },
+          {
+            "roman": "ahile",
+            "editorBeforeCommit": "तिमी ahile",
+            "candidates": [
+              "अहिले",
+              "अहीले",
+              "आहिले",
+              "आहीले"
+            ]
+          },
+          {
+            "roman": "gharmaa",
+            "editorBeforeCommit": "तिमी अहिले gharmaa",
+            "candidates": [
+              "घरमा",
+              "घारमा",
+              "घर्मा"
+            ]
+          },
+          {
+            "roman": "chau",
+            "editorBeforeCommit": "तिमी अहिले घरमा chau",
+            "candidates": [
+              "छौ",
+              "छौँ",
+              "छाउ",
+              "चौ",
+              "चाउ"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-045",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "मेरो दृष्टि राम्रो छ।",
+        "words": [
+          {
+            "roman": "mero",
+            "editorBeforeCommit": "mero",
+            "candidates": [
+              "मेरो",
+              "मेरु",
+              "मेरू",
+              "मेरॉ"
+            ]
+          },
+          {
+            "roman": "drishti",
+            "editorBeforeCommit": "मेरो drishti",
+            "candidates": [
+              "दृष्टि",
+              "दृष्टी",
+              "दृश्ति",
+              "दृश्ती",
+              "ड्रिष्टि"
+            ]
+          },
+          {
+            "roman": "ramro",
+            "editorBeforeCommit": "मेरो दृष्टि ramro",
+            "candidates": [
+              "राम्रो",
+              "रामरो",
+              "रम्रो",
+              "रमरो",
+              "राम्री"
+            ]
+          },
+          {
+            "roman": "chha",
+            "editorBeforeCommit": "मेरो दृष्टि राम्रो chha",
+            "candidates": [
+              "छ",
+              "छा",
+              "चाह"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-046",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "मेरो दृष्टि राम्रो छ।",
+        "words": [
+          {
+            "roman": "mero",
+            "editorBeforeCommit": "mero",
+            "candidates": [
+              "मेरो",
+              "मेरु",
+              "मेरू",
+              "मेरॉ"
+            ]
+          },
+          {
+            "roman": "dristhi",
+            "editorBeforeCommit": "मेरो dristhi",
+            "candidates": [
+              "दृष्टि",
+              "ड्रिस्थि",
+              "दृष्ठि",
+              "ड्रीस्थि",
+              "दरिस्थि"
+            ]
+          },
+          {
+            "roman": "ramro",
+            "editorBeforeCommit": "मेरो दृष्टि ramro",
+            "candidates": [
+              "राम्रो",
+              "रामरो",
+              "रम्रो",
+              "रमरो",
+              "राम्री"
+            ]
+          },
+          {
+            "roman": "cha",
+            "editorBeforeCommit": "मेरो दृष्टि राम्रो cha",
+            "candidates": [
+              "छ",
+              "च",
+              "चा",
+              "छा"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-047",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "यो ज्ञान सबैलाई चाहिन्छ।",
+        "words": [
+          {
+            "roman": "yo",
+            "editorBeforeCommit": "yo",
+            "candidates": [
+              "यो",
+              "ञो",
+              "यॉ"
+            ]
+          },
+          {
+            "roman": "gyan",
+            "editorBeforeCommit": "यो gyan",
+            "candidates": [
+              "ज्ञान",
+              "ग्यान",
+              "ग्यां",
+              "ग्यान्",
+              "ग्याण"
+            ]
+          },
+          {
+            "roman": "sabailai",
+            "editorBeforeCommit": "यो ज्ञान sabailai",
+            "candidates": [
+              "सबैलाई",
+              "सबैलाइ",
+              "सबइलाई",
+              "सबैलै",
+              "सबाईलाई"
+            ]
+          },
+          {
+            "roman": "chahinchha",
+            "editorBeforeCommit": "यो ज्ञान सबैलाई chahinchha",
+            "candidates": [
+              "चाहिन्छ",
+              "चाहिनछ",
+              "चहिन्छ",
+              "चाहिंछ",
+              "चाहन्छु"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-048",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "यो ज्ञान सबैलाई चाहिन्छ।",
+        "words": [
+          {
+            "roman": "yo",
+            "editorBeforeCommit": "yo",
+            "candidates": [
+              "यो",
+              "ञो",
+              "यॉ"
+            ]
+          },
+          {
+            "roman": "gnyan",
+            "editorBeforeCommit": "यो gnyan",
+            "candidates": [
+              "ज्ञान",
+              "गन्यन",
+              "गण्यन",
+              "ग्नयन",
+              "गन्यान"
+            ]
+          },
+          {
+            "roman": "sabailaai",
+            "editorBeforeCommit": "यो ज्ञान sabailaai",
+            "candidates": [
+              "सबैलाई",
+              "सबैलाइ",
+              "सबइलाई",
+              "सबाईलाई",
+              "साबैलाई"
+            ]
+          },
+          {
+            "roman": "chahincha",
+            "editorBeforeCommit": "यो ज्ञान सबैलाई chahincha",
+            "candidates": [
+              "चाहिन्छ",
+              "चाहिन्च",
+              "चाहिन्चा",
+              "चाहिँच",
+              "चाहन्छु"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-049",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "मान्छे छिटो आउँछ।",
+        "words": [
+          {
+            "roman": "manxe",
+            "editorBeforeCommit": "manxe",
+            "candidates": [
+              "मान्छे"
+            ]
+          },
+          {
+            "roman": "xito",
+            "editorBeforeCommit": "मान्छे xito",
+            "candidates": [
+              "छिटो"
+            ]
+          },
+          {
+            "roman": "aauxa",
+            "editorBeforeCommit": "मान्छे छिटो aauxa",
+            "candidates": [
+              "आउँछ"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-050",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "मान्छे छिटो आउँछ।",
+        "words": [
+          {
+            "roman": "manchhe",
+            "editorBeforeCommit": "manchhe",
+            "candidates": [
+              "मान्छे",
+              "मन्छे",
+              "मनछे",
+              "मङ्छे",
+              "माङ्छे"
+            ]
+          },
+          {
+            "roman": "chhito",
+            "editorBeforeCommit": "मान्छे chhito",
+            "candidates": [
+              "छिटो",
+              "छीटो",
+              "छितो",
+              "छीतो"
+            ]
+          },
+          {
+            "roman": "aauchha",
+            "editorBeforeCommit": "मान्छे छिटो aauchha",
+            "candidates": [
+              "आउँछ",
+              "आउछ",
+              "आउछा"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-051",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "मलाई केही थाहा छैन।",
+        "words": [
+          {
+            "roman": "malai",
+            "editorBeforeCommit": "malai",
+            "candidates": [
+              "मलाई",
+              "मलाइ",
+              "मालाई",
+              "मलै",
+              "मालाइ"
+            ]
+          },
+          {
+            "roman": "kehi",
+            "editorBeforeCommit": "मलाई kehi",
+            "candidates": [
+              "केही",
+              "केहि",
+              "कहि",
+              "कही"
+            ]
+          },
+          {
+            "roman": "thaha",
+            "editorBeforeCommit": "मलाई केही thaha",
+            "candidates": [
+              "थाहा",
+              "थाह",
+              "ठह",
+              "ठाह",
+              "ठाहा"
+            ]
+          },
+          {
+            "roman": "xaina",
+            "editorBeforeCommit": "मलाई केही थाहा xaina",
+            "candidates": [
+              "छैन",
+              "चैन"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-052",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "मलाई केही थाहा छैन।",
+        "words": [
+          {
+            "roman": "malaai",
+            "editorBeforeCommit": "malaai",
+            "candidates": [
+              "मलाई",
+              "मलाइ",
+              "मालाई",
+              "मालाइ"
+            ]
+          },
+          {
+            "roman": "kehee",
+            "editorBeforeCommit": "मलाई kehee",
+            "candidates": [
+              "केही",
+              "केहि",
+              "कोही",
+              "कही"
+            ]
+          },
+          {
+            "roman": "thaahaa",
+            "editorBeforeCommit": "मलाई केही thaahaa",
+            "candidates": [
+              "थाहा",
+              "ठाहा",
+              "ठाहाँ",
+              "थाह"
+            ]
+          },
+          {
+            "roman": "chhaina",
+            "editorBeforeCommit": "मलाई केही थाहा chhaina",
+            "candidates": [
+              "छैन",
+              "चैन",
+              "छाइन",
+              "छैना",
+              "छाइना"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-053",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "तिमीले काम गरेनौ?",
+        "words": [
+          {
+            "roman": "timile",
+            "editorBeforeCommit": "timile",
+            "candidates": [
+              "तिमीले",
+              "तिमिले",
+              "टिमीले",
+              "टिमिले",
+              "तिमिल"
+            ]
+          },
+          {
+            "roman": "kaam",
+            "editorBeforeCommit": "तिमीले kaam",
+            "candidates": [
+              "काम",
+              "काम्",
+              "कम"
+            ]
+          },
+          {
+            "roman": "garenau",
+            "editorBeforeCommit": "तिमीले काम garenau",
+            "candidates": [
+              "गरेनौ",
+              "गारेनौ",
+              "गरेनाउ",
+              "गारेनाउ",
+              "गरेणाउ"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-054",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "तिमीले काम गरेनौ?",
+        "words": [
+          {
+            "roman": "timeele",
+            "editorBeforeCommit": "timeele",
+            "candidates": [
+              "तिमीले",
+              "टिमीले",
+              "टीमीले",
+              "तिमिले",
+              "तीमीले"
+            ]
+          },
+          {
+            "roman": "kaam",
+            "editorBeforeCommit": "तिमीले kaam",
+            "candidates": [
+              "काम",
+              "काम्",
+              "कम"
+            ]
+          },
+          {
+            "roman": "garenau",
+            "editorBeforeCommit": "तिमीले काम garenau",
+            "candidates": [
+              "गरेनौ",
+              "गारेनौ",
+              "गरेनाउ",
+              "गारेनाउ",
+              "गरेणाउ"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-055",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "उनीहरू किन आएनन्?",
+        "words": [
+          {
+            "roman": "uniharu",
+            "editorBeforeCommit": "uniharu",
+            "candidates": [
+              "उनीहरू",
+              "उनिहरू",
+              "ऊनीहरू",
+              "उनीहरु",
+              "उनिहरु"
+            ]
+          },
+          {
+            "roman": "kina",
+            "editorBeforeCommit": "उनीहरू kina",
+            "candidates": [
+              "किन",
+              "कीन",
+              "किना",
+              "कीना",
+              "किण"
+            ]
+          },
+          {
+            "roman": "aayenan",
+            "editorBeforeCommit": "उनीहरू किन aayenan",
+            "candidates": [
+              "आएनन्"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-056",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "उनीहरू किन आएनन्?",
+        "words": [
+          {
+            "roman": "uneeharu",
+            "editorBeforeCommit": "uneeharu",
+            "candidates": [
+              "उनीहरू",
+              "ऊनीहरू",
+              "उनेलेहरू",
+              "उनीहरु",
+              "उनिहरू"
+            ]
+          },
+          {
+            "roman": "kina",
+            "editorBeforeCommit": "उनीहरू kina",
+            "candidates": [
+              "किन",
+              "कीन",
+              "किना",
+              "कीना",
+              "किण"
+            ]
+          },
+          {
+            "roman": "aaenan",
+            "editorBeforeCommit": "उनीहरू किन aaenan",
+            "candidates": [
+              "आएनन्",
+              "आएनन",
+              "आएनँ",
+              "आएनान",
+              "आएनान्"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-057",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "\"ठीक छ\", सीताले भनिन्।",
+        "words": [
+          {
+            "roman": "thik",
+            "editorBeforeCommit": "\"thik",
+            "candidates": [
+              "ठीक",
+              "ठिक",
+              "थिक",
+              "ठिक्",
+              "थिक्"
+            ]
+          },
+          {
+            "roman": "chha",
+            "editorBeforeCommit": "\"ठीक chha",
+            "candidates": [
+              "छ",
+              "छा",
+              "चाह"
+            ]
+          },
+          {
+            "roman": "sitale",
+            "editorBeforeCommit": "\"ठीक छ\", sitale",
+            "candidates": [
+              "सीताले",
+              "सिताले",
+              "सिटले",
+              "सितले",
+              "सिटाले"
+            ]
+          },
+          {
+            "roman": "bhanin",
+            "editorBeforeCommit": "\"ठीक छ\", सीताले bhanin",
+            "candidates": [
+              "भनिन्",
+              "भनिन",
+              "भनिं",
+              "भनिँ",
+              "भानिन"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-058",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "“ठीक छ”, सीताले भनिन्।",
+        "words": [
+          {
+            "roman": "theek",
+            "editorBeforeCommit": "“theek",
+            "candidates": [
+              "ठीक",
+              "थीक",
+              "ठेक्का"
+            ]
+          },
+          {
+            "roman": "cha",
+            "editorBeforeCommit": "“ठीक cha",
+            "candidates": [
+              "छ",
+              "च",
+              "चा",
+              "छा"
+            ]
+          },
+          {
+            "roman": "seetale",
+            "editorBeforeCommit": "“ठीक छ”, seetale",
+            "candidates": [
+              "सीताले",
+              "सीतले",
+              "सीटाले",
+              "सीटले"
+            ]
+          },
+          {
+            "roman": "bhanin",
+            "editorBeforeCommit": "“ठीक छ”, सीताले bhanin",
+            "candidates": [
+              "भनिन्",
+              "भनिन",
+              "भनिं",
+              "भनिँ",
+              "भानिन"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-059",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "नमस्ते—आजको खबर के छ?",
+        "words": [
+          {
+            "roman": "namaste",
+            "editorBeforeCommit": "namaste",
+            "candidates": [
+              "नमस्ते"
+            ]
+          },
+          {
+            "roman": "aajako",
+            "editorBeforeCommit": "नमस्ते—aajako",
+            "candidates": [
+              "आजको",
+              "आजाको"
+            ]
+          },
+          {
+            "roman": "khabar",
+            "editorBeforeCommit": "नमस्ते—आजको khabar",
+            "candidates": [
+              "खबर",
+              "खबार",
+              "खाबार",
+              "खाबर",
+              "अखबार"
+            ]
+          },
+          {
+            "roman": "ke",
+            "editorBeforeCommit": "नमस्ते—आजको खबर ke",
+            "candidates": [
+              "के"
+            ]
+          },
+          {
+            "roman": "chha",
+            "editorBeforeCommit": "नमस्ते—आजको खबर के chha",
+            "candidates": [
+              "छ",
+              "छा",
+              "चाह"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-060",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "नमस्ते—आजको खबर के छ?",
+        "words": [
+          {
+            "roman": "namaste",
+            "editorBeforeCommit": "namaste",
+            "candidates": [
+              "नमस्ते"
+            ]
+          },
+          {
+            "roman": "ajako",
+            "editorBeforeCommit": "नमस्ते—ajako",
+            "candidates": [
+              "आजको",
+              "अजको",
+              "अजाको",
+              "आजाको"
+            ]
+          },
+          {
+            "roman": "khabar",
+            "editorBeforeCommit": "नमस्ते—आजको khabar",
+            "candidates": [
+              "खबर",
+              "खबार",
+              "खाबार",
+              "खाबर",
+              "अखबार"
+            ]
+          },
+          {
+            "roman": "k",
+            "editorBeforeCommit": "नमस्ते—आजको खबर k",
+            "candidates": [
+              "के",
+              "क",
+              "क्"
+            ]
+          },
+          {
+            "roman": "cha",
+            "editorBeforeCommit": "नमस्ते—आजको खबर के cha",
+            "candidates": [
+              "छ",
+              "च",
+              "चा",
+              "छा"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-061",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "म बजार गएँ, तर पसल बन्द थियो।",
+        "words": [
+          {
+            "roman": "ma",
+            "editorBeforeCommit": "ma",
+            "candidates": [
+              "म",
+              "मा"
+            ]
+          },
+          {
+            "roman": "bazaar",
+            "editorBeforeCommit": "म bazaar",
+            "candidates": [
+              "बजार",
+              "बजार्",
+              "वजार"
+            ]
+          },
+          {
+            "roman": "gaye",
+            "editorBeforeCommit": "म बजार gaye",
+            "candidates": [
+              "गएँ",
+              "गए",
+              "गाए",
+              "गाएँ",
+              "गाञे"
+            ]
+          },
+          {
+            "roman": "tara",
+            "editorBeforeCommit": "म बजार गएँ, tara",
+            "candidates": [
+              "तर",
+              "तारा",
+              "तार",
+              "टार",
+              "तरा"
+            ]
+          },
+          {
+            "roman": "pasal",
+            "editorBeforeCommit": "म बजार गएँ, तर pasal",
+            "candidates": [
+              "पसल",
+              "पसाल्",
+              "पासल",
+              "पसाल",
+              "पासाल"
+            ]
+          },
+          {
+            "roman": "banda",
+            "editorBeforeCommit": "म बजार गएँ, तर पसल banda",
+            "candidates": [
+              "बन्द",
+              "बन्दा",
+              "बन्डा",
+              "बाँडा",
+              "बान्दा"
+            ]
+          },
+          {
+            "roman": "thiyo",
+            "editorBeforeCommit": "म बजार गएँ, तर पसल बन्द thiyo",
+            "candidates": [
+              "थियो",
+              "ठियो",
+              "ठीयो",
+              "थीयो",
+              "थिए"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-062",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "म बजार गएँ, तर पसल बन्द थियो।",
+        "words": [
+          {
+            "roman": "ma",
+            "editorBeforeCommit": "ma",
+            "candidates": [
+              "म",
+              "मा"
+            ]
+          },
+          {
+            "roman": "bajaar",
+            "editorBeforeCommit": "म bajaar",
+            "candidates": [
+              "बजार",
+              "बजार्",
+              "वजार",
+              "बाजार"
+            ]
+          },
+          {
+            "roman": "gaen",
+            "editorBeforeCommit": "म बजार gaen",
+            "candidates": [
+              "गएँ",
+              "गाएँ",
+              "गएन",
+              "गाएन",
+              "गएन्"
+            ]
+          },
+          {
+            "roman": "tara",
+            "editorBeforeCommit": "म बजार गएँ, tara",
+            "candidates": [
+              "तर",
+              "तारा",
+              "तार",
+              "टार",
+              "तरा"
+            ]
+          },
+          {
+            "roman": "pasal",
+            "editorBeforeCommit": "म बजार गएँ, तर pasal",
+            "candidates": [
+              "पसल",
+              "पसाल्",
+              "पासल",
+              "पसाल",
+              "पासाल"
+            ]
+          },
+          {
+            "roman": "banda",
+            "editorBeforeCommit": "म बजार गएँ, तर पसल banda",
+            "candidates": [
+              "बन्द",
+              "बन्दा",
+              "बन्डा",
+              "बाँडा",
+              "बान्दा"
+            ]
+          },
+          {
+            "roman": "thiyo",
+            "editorBeforeCommit": "म बजार गएँ, तर पसल बन्द thiyo",
+            "candidates": [
+              "थियो",
+              "ठियो",
+              "ठीयो",
+              "थीयो",
+              "थिए"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-063",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "यदि पानी परेन भने हामी बाहिर जान्छौँ।",
+        "words": [
+          {
+            "roman": "yadi",
+            "editorBeforeCommit": "yadi",
+            "candidates": [
+              "यदि",
+              "यदी",
+              "यादि",
+              "यादी",
+              "याडी"
+            ]
+          },
+          {
+            "roman": "paani",
+            "editorBeforeCommit": "यदि paani",
+            "candidates": [
+              "पानी",
+              "पनि",
+              "पानि",
+              "पाणि",
+              "पाणी"
+            ]
+          },
+          {
+            "roman": "parena",
+            "editorBeforeCommit": "यदि पानी parena",
+            "candidates": [
+              "परेन",
+              "पारेन",
+              "परेना",
+              "पारेना",
+              "परेणा"
+            ]
+          },
+          {
+            "roman": "bhane",
+            "editorBeforeCommit": "यदि पानी परेन bhane",
+            "candidates": [
+              "भने",
+              "भाने",
+              "भनि",
+              "भनी",
+              "बाहाने"
+            ]
+          },
+          {
+            "roman": "hami",
+            "editorBeforeCommit": "यदि पानी परेन भने hami",
+            "candidates": [
+              "हामी",
+              "हामि",
+              "हमी",
+              "हमि"
+            ]
+          },
+          {
+            "roman": "bahira",
+            "editorBeforeCommit": "यदि पानी परेन भने हामी bahira",
+            "candidates": [
+              "बाहिर",
+              "बाहीर",
+              "बहिर",
+              "बहिरा",
+              "बाहिरा"
+            ]
+          },
+          {
+            "roman": "janchhau",
+            "editorBeforeCommit": "यदि पानी परेन भने हामी बाहिर janchhau",
+            "candidates": [
+              "जान्छौँ",
+              "जान्छौ",
+              "जँचाउ",
+              "जन्छौ",
+              "जान्छु"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extended-sentence-064",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "यदि पनि परेन भने हामी बाहिर जान्छौँ।",
+        "words": [
+          {
+            "roman": "yadi",
+            "editorBeforeCommit": "yadi",
+            "candidates": [
+              "यदि",
+              "यदी",
+              "यादि",
+              "यादी",
+              "याडी"
+            ]
+          },
+          {
+            "roman": "pani",
+            "editorBeforeCommit": "यदि pani",
+            "candidates": [
+              "पनि",
+              "पानी",
+              "पनी",
+              "पानि",
+              "पाणि"
+            ]
+          },
+          {
+            "roman": "parena",
+            "editorBeforeCommit": "यदि पनि parena",
+            "candidates": [
+              "परेन",
+              "पारेन",
+              "परेना",
+              "पारेना",
+              "परेणा"
+            ]
+          },
+          {
+            "roman": "bhane",
+            "editorBeforeCommit": "यदि पनि परेन bhane",
+            "candidates": [
+              "भने",
+              "भाने",
+              "भनि",
+              "भनी",
+              "बाहाने"
+            ]
+          },
+          {
+            "roman": "haami",
+            "editorBeforeCommit": "यदि पनि परेन भने haami",
+            "candidates": [
+              "हामी",
+              "हामि",
+              "हाँमी"
+            ]
+          },
+          {
+            "roman": "baahira",
+            "editorBeforeCommit": "यदि पनि परेन भने हामी baahira",
+            "candidates": [
+              "बाहिर",
+              "बाहीर",
+              "बाहिरा",
+              "बाहीरा"
+            ]
+          },
+          {
+            "roman": "jaanchau",
+            "editorBeforeCommit": "यदि पनि परेन भने हामी बाहिर jaanchau",
+            "candidates": [
+              "जान्छौँ",
+              "जान्छौ",
+              "जाँचौ",
+              "जाँचौं",
+              "जान्छु"
+            ]
+          }
+        ]
+      }
+    ],
+    "choices": [
+      {
+        "id": "choice-001",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "पनि",
+          "पानी",
+          "पनी",
+          "पानि",
+          "पाणि"
+        ],
+        "prefixes": [
+          {
+            "prefix": "p",
+            "candidates": [
+              "प",
+              "पी",
+              "प्",
+              "पा",
+              "पे"
+            ]
+          },
+          {
+            "prefix": "pa",
+            "candidates": [
+              "प",
+              "पा",
+              "प्या",
+              "पे",
+              "पै"
+            ]
+          },
+          {
+            "prefix": "pan",
+            "candidates": [
+              "पन",
+              "पान",
+              "पन्",
+              "पाँ",
+              "पं"
+            ]
+          },
+          {
+            "prefix": "pani",
+            "candidates": [
+              "पनि",
+              "पानी",
+              "पनी",
+              "पानि",
+              "पाणि"
+            ]
+          }
+        ],
+        "actual": "म pani"
+      },
+      {
+        "id": "choice-002",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "पानी",
+          "पनि",
+          "पनी",
+          "पानि",
+          "पाणि"
+        ],
+        "prefixes": [
+          {
+            "prefix": "p",
+            "candidates": [
+              "प",
+              "पी",
+              "प्",
+              "पा",
+              "पे"
+            ]
+          },
+          {
+            "prefix": "pa",
+            "candidates": [
+              "प",
+              "पा",
+              "प्या",
+              "पे",
+              "पै"
+            ]
+          },
+          {
+            "prefix": "pan",
+            "candidates": [
+              "पन",
+              "पान",
+              "पन्",
+              "पाँ",
+              "पं"
+            ]
+          },
+          {
+            "prefix": "pani",
+            "candidates": [
+              "पानी",
+              "पनि",
+              "पनी",
+              "पानि",
+              "पाणि"
+            ]
+          }
+        ],
+        "actual": "चिसो pani"
+      },
+      {
+        "id": "choice-003",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "पनि",
+          "पानी",
+          "पनी",
+          "पानि",
+          "पाणि"
+        ],
+        "prefixes": [
+          {
+            "prefix": "p",
+            "candidates": [
+              "प",
+              "पी",
+              "प्",
+              "पा",
+              "पे"
+            ]
+          },
+          {
+            "prefix": "pa",
+            "candidates": [
+              "प",
+              "पा",
+              "प्या",
+              "पे",
+              "पै"
+            ]
+          },
+          {
+            "prefix": "pan",
+            "candidates": [
+              "पन",
+              "पान",
+              "पन्",
+              "पाँ",
+              "पं"
+            ]
+          },
+          {
+            "prefix": "pani",
+            "candidates": [
+              "पनि",
+              "पानी",
+              "पनी",
+              "पानि",
+              "पाणि"
+            ]
+          }
+        ],
+        "actual": "आज pani"
+      },
+      {
+        "id": "choice-004",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "पानी",
+          "पनि",
+          "पानि",
+          "पाणि",
+          "पाणी"
+        ],
+        "prefixes": [
+          {
+            "prefix": "p",
+            "candidates": [
+              "प",
+              "पी",
+              "प्",
+              "पा",
+              "पे"
+            ]
+          },
+          {
+            "prefix": "pa",
+            "candidates": [
+              "प",
+              "पा",
+              "प्या",
+              "पे",
+              "पै"
+            ]
+          },
+          {
+            "prefix": "paa",
+            "candidates": [
+              "पा"
+            ]
+          },
+          {
+            "prefix": "paan",
+            "candidates": [
+              "पान",
+              "पाँ",
+              "पान्",
+              "पन",
+              "पाङ्"
+            ]
+          },
+          {
+            "prefix": "paani",
+            "candidates": [
+              "पानी",
+              "पनि",
+              "पानि",
+              "पाणि",
+              "पाणी"
+            ]
+          }
+        ],
+        "actual": "गिलास paani"
+      },
+      {
+        "id": "choice-005",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "बजे",
+          "बाजे",
+          "वजे",
+          "वाजे"
+        ],
+        "prefixes": [
+          {
+            "prefix": "b",
+            "candidates": [
+              "ब",
+              "ब्",
+              "बी",
+              "बा",
+              "व"
+            ]
+          },
+          {
+            "prefix": "ba",
+            "candidates": [
+              "बाँ",
+              "वा",
+              "ब",
+              "बा",
+              "व"
+            ]
+          },
+          {
+            "prefix": "baj",
+            "candidates": [
+              "बाज",
+              "बज्",
+              "बज",
+              "बाज्",
+              "वज"
+            ]
+          },
+          {
+            "prefix": "baje",
+            "candidates": [
+              "बजे",
+              "बाजे",
+              "वजे",
+              "वाजे"
+            ]
+          }
+        ],
+        "actual": "बिहान ८ baje"
+      },
+      {
+        "id": "choice-006",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "बाजे",
+          "बजे",
+          "वजे",
+          "वाजे"
+        ],
+        "prefixes": [
+          {
+            "prefix": "b",
+            "candidates": [
+              "ब",
+              "ब्",
+              "बी",
+              "बा",
+              "व"
+            ]
+          },
+          {
+            "prefix": "ba",
+            "candidates": [
+              "बाँ",
+              "वा",
+              "ब",
+              "बा",
+              "व"
+            ]
+          },
+          {
+            "prefix": "baj",
+            "candidates": [
+              "बाज",
+              "बज्",
+              "बज",
+              "बाज्",
+              "वज"
+            ]
+          },
+          {
+            "prefix": "baje",
+            "candidates": [
+              "बाजे",
+              "बजे",
+              "वजे",
+              "वाजे"
+            ]
+          }
+        ],
+        "actual": "मेरो baje"
+      },
+      {
+        "id": "choice-007",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "बाजे",
+          "बजे"
+        ],
+        "prefixes": [
+          {
+            "prefix": "b",
+            "candidates": [
+              "ब",
+              "ब्",
+              "बी",
+              "बा",
+              "व"
+            ]
+          },
+          {
+            "prefix": "ba",
+            "candidates": [
+              "बाँ",
+              "वा",
+              "ब",
+              "बा",
+              "व"
+            ]
+          },
+          {
+            "prefix": "baa",
+            "candidates": [
+              "बाँ",
+              "वा",
+              "बा"
+            ]
+          },
+          {
+            "prefix": "baaj",
+            "candidates": [
+              "बाज",
+              "बाजे",
+              "बाज्",
+              "बज्"
+            ]
+          },
+          {
+            "prefix": "baaje",
+            "candidates": [
+              "बाजे",
+              "बजे"
+            ]
+          }
+        ],
+        "actual": "कति baaje"
+      },
+      {
+        "id": "choice-008",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "बजे",
+          "बाजे",
+          "वजे",
+          "वाजे"
+        ],
+        "prefixes": [
+          {
+            "prefix": "b",
+            "candidates": [
+              "ब",
+              "ब्",
+              "बी",
+              "बा",
+              "व"
+            ]
+          },
+          {
+            "prefix": "ba",
+            "candidates": [
+              "बाँ",
+              "वा",
+              "ब",
+              "बा",
+              "व"
+            ]
+          },
+          {
+            "prefix": "baj",
+            "candidates": [
+              "बाज",
+              "बज्",
+              "बज",
+              "बाज्",
+              "वज"
+            ]
+          },
+          {
+            "prefix": "baje",
+            "candidates": [
+              "बजे",
+              "बाजे",
+              "वजे",
+              "वाजे"
+            ]
+          }
+        ],
+        "actual": "बस कति baje"
+      },
+      {
+        "id": "choice-009",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "आउँछौँ",
+          "आउँछौ",
+          "आउन्छौ",
+          "आउनछौ",
+          "आउँछाउ"
+        ],
+        "prefixes": [
+          {
+            "prefix": "a",
+            "candidates": [
+              "अ",
+              "आँ",
+              "आ"
+            ]
+          },
+          {
+            "prefix": "aa",
+            "candidates": [
+              "आँ",
+              "आ",
+              "अ"
+            ]
+          },
+          {
+            "prefix": "aau",
+            "candidates": [
+              "आउ",
+              "आउँ",
+              "आऊ",
+              "अउ",
+              "औ"
+            ]
+          },
+          {
+            "prefix": "aaun",
+            "candidates": [
+              "आउँ",
+              "आउन",
+              "आउन्",
+              "औँ",
+              "आउण"
+            ]
+          },
+          {
+            "prefix": "aaunc",
+            "candidates": [
+              "आउनक",
+              "आउँक",
+              "आउँका",
+              "आउनका",
+              "आउन्सी"
+            ]
+          },
+          {
+            "prefix": "aaunch",
+            "candidates": [
+              "आउँच",
+              "आउन्च",
+              "आउनच",
+              "आउँच्",
+              "आउँछ"
+            ]
+          },
+          {
+            "prefix": "aaunchh",
+            "candidates": [
+              "आउँछ",
+              "आउँछ्",
+              "आउनछ",
+              "आउन्छ",
+              "आउन्छ्"
+            ]
+          },
+          {
+            "prefix": "aaunchha",
+            "candidates": [
+              "आउँछ",
+              "आउनछ",
+              "आउन्छ",
+              "आउँछा",
+              "आउन्छा"
+            ]
+          },
+          {
+            "prefix": "aaunchhau",
+            "candidates": [
+              "आउँछौँ",
+              "आउँछौ",
+              "आउन्छौ",
+              "आउनछौ",
+              "आउँछाउ"
+            ]
+          }
+        ],
+        "actual": "हामी पर्सि aaunchhau"
+      },
+      {
+        "id": "choice-010",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "आउँछौ",
+          "आउँछौँ",
+          "आउन्छौ",
+          "आउनछौ",
+          "आउँछाउ"
+        ],
+        "prefixes": [
+          {
+            "prefix": "a",
+            "candidates": [
+              "अ",
+              "आँ",
+              "आ"
+            ]
+          },
+          {
+            "prefix": "aa",
+            "candidates": [
+              "आँ",
+              "आ",
+              "अ"
+            ]
+          },
+          {
+            "prefix": "aau",
+            "candidates": [
+              "आउ",
+              "आउँ",
+              "आऊ",
+              "अउ",
+              "औ"
+            ]
+          },
+          {
+            "prefix": "aaun",
+            "candidates": [
+              "आउँ",
+              "आउन",
+              "आउन्",
+              "औँ",
+              "आउण"
+            ]
+          },
+          {
+            "prefix": "aaunc",
+            "candidates": [
+              "आउनक",
+              "आउँक",
+              "आउँका",
+              "आउनका",
+              "आउन्सी"
+            ]
+          },
+          {
+            "prefix": "aaunch",
+            "candidates": [
+              "आउँच",
+              "आउन्च",
+              "आउनच",
+              "आउँच्",
+              "आउँछ"
+            ]
+          },
+          {
+            "prefix": "aaunchh",
+            "candidates": [
+              "आउँछ",
+              "आउँछ्",
+              "आउनछ",
+              "आउन्छ",
+              "आउन्छ्"
+            ]
+          },
+          {
+            "prefix": "aaunchha",
+            "candidates": [
+              "आउँछ",
+              "आउनछ",
+              "आउन्छ",
+              "आउँछा",
+              "आउन्छा"
+            ]
+          },
+          {
+            "prefix": "aaunchhau",
+            "candidates": [
+              "आउँछौ",
+              "आउँछौँ",
+              "आउन्छौ",
+              "आउनछौ",
+              "आउँछाउ"
+            ]
+          }
+        ],
+        "actual": "तिमी पर्सि aaunchhau"
+      },
+      {
+        "id": "choice-011",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "लेखेँ",
+          "लेखेन",
+          "लेखेन्",
+          "लेखें",
+          "लेखेण"
+        ],
+        "prefixes": [
+          {
+            "prefix": "l",
+            "candidates": [
+              "ल",
+              "ल्"
+            ]
+          },
+          {
+            "prefix": "le",
+            "candidates": [
+              "ले",
+              "पत्रले"
+            ]
+          },
+          {
+            "prefix": "lek",
+            "candidates": [
+              "लेक",
+              "लेक्"
+            ]
+          },
+          {
+            "prefix": "lekh",
+            "candidates": [
+              "लेख",
+              "लेख्",
+              "लख",
+              "लेखि",
+              "लेखं"
+            ]
+          },
+          {
+            "prefix": "lekhe",
+            "candidates": [
+              "लेखेँ",
+              "लेखे",
+              "लेख"
+            ]
+          },
+          {
+            "prefix": "lekhen",
+            "candidates": [
+              "लेखेँ",
+              "लेखेन",
+              "लेखेन्",
+              "लेखें",
+              "लेखेण"
+            ]
+          }
+        ],
+        "actual": "मैले पत्र lekhen"
+      },
+      {
+        "id": "choice-012",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "आएनन्"
+        ],
+        "prefixes": [
+          {
+            "prefix": "a",
+            "candidates": [
+              "अ",
+              "आँ",
+              "आ"
+            ]
+          },
+          {
+            "prefix": "aa",
+            "candidates": [
+              "आँ",
+              "आ",
+              "अ"
+            ]
+          },
+          {
+            "prefix": "aay",
+            "candidates": [
+              "आय"
+            ]
+          },
+          {
+            "prefix": "aaye",
+            "candidates": [
+              "आए",
+              "आएँ",
+              "अये"
+            ]
+          },
+          {
+            "prefix": "aayen",
+            "candidates": [
+              "आएँ"
+            ]
+          },
+          {
+            "prefix": "aayena",
+            "candidates": [
+              "आएन"
+            ]
+          },
+          {
+            "prefix": "aayenan",
+            "candidates": [
+              "आएनन्"
+            ]
+          }
+        ],
+        "actual": "उनीहरू किन aayenan"
+      },
+      {
+        "id": "choice-013",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "खाना",
+          "खान",
+          "खन",
+          "खना",
+          "खानु"
+        ],
+        "prefixes": [
+          {
+            "prefix": "k",
+            "candidates": [
+              "के",
+              "क",
+              "क्"
+            ]
+          },
+          {
+            "prefix": "kh",
+            "candidates": [
+              "ख",
+              "ख्",
+              "खं",
+              "खि",
+              "कि"
+            ]
+          },
+          {
+            "prefix": "kha",
+            "candidates": [
+              "खा",
+              "खाँ",
+              "ख",
+              "खं"
+            ]
+          },
+          {
+            "prefix": "khan",
+            "candidates": [
+              "खान",
+              "खन",
+              "खन्",
+              "खाँ",
+              "खां"
+            ]
+          },
+          {
+            "prefix": "khana",
+            "candidates": [
+              "खाना",
+              "खान",
+              "खन",
+              "खना",
+              "खानु"
+            ]
+          }
+        ],
+        "actual": "khana"
+      },
+      {
+        "id": "choice-014",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "खान",
+          "खन",
+          "खन्",
+          "खाँ",
+          "खां"
+        ],
+        "prefixes": [
+          {
+            "prefix": "k",
+            "candidates": [
+              "के",
+              "क",
+              "क्"
+            ]
+          },
+          {
+            "prefix": "kh",
+            "candidates": [
+              "ख",
+              "ख्",
+              "खं",
+              "खि",
+              "कि"
+            ]
+          },
+          {
+            "prefix": "kha",
+            "candidates": [
+              "खा",
+              "खाँ",
+              "ख",
+              "खं"
+            ]
+          },
+          {
+            "prefix": "khan",
+            "candidates": [
+              "खान",
+              "खन",
+              "खन्",
+              "खाँ",
+              "खां"
+            ]
+          }
+        ],
+        "actual": "khan"
+      },
+      {
+        "id": "choice-015",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "पर्चा",
+          "पर्छ",
+          "पार्चा",
+          "परचा"
+        ],
+        "prefixes": [
+          {
+            "prefix": "p",
+            "candidates": [
+              "प",
+              "पी",
+              "प्",
+              "पा",
+              "पे"
+            ]
+          },
+          {
+            "prefix": "pa",
+            "candidates": [
+              "प",
+              "पा",
+              "प्या",
+              "पे",
+              "पै"
+            ]
+          },
+          {
+            "prefix": "par",
+            "candidates": [
+              "पर्",
+              "पार",
+              "पार्",
+              "पर"
+            ]
+          },
+          {
+            "prefix": "parc",
+            "candidates": [
+              "पार्क",
+              "पर्क",
+              "परक",
+              "पारक",
+              "पर्सी"
+            ]
+          },
+          {
+            "prefix": "parch",
+            "candidates": [
+              "पार्च",
+              "पर्च",
+              "परच",
+              "परिच",
+              "पार्क"
+            ]
+          },
+          {
+            "prefix": "parcha",
+            "candidates": [
+              "पर्छ",
+              "पर्चा",
+              "पार्च",
+              "पर्च",
+              "पार्छ"
+            ]
+          },
+          {
+            "prefix": "parchaa",
+            "candidates": [
+              "पर्चा",
+              "पर्छ",
+              "पार्चा",
+              "परचा"
+            ]
+          }
+        ],
+        "actual": "parchaa"
+      },
+      {
+        "id": "choice-016",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "बन्द",
+          "बन्दा",
+          "बन्डा",
+          "बाँडा",
+          "बान्दा"
+        ],
+        "prefixes": [
+          {
+            "prefix": "b",
+            "candidates": [
+              "ब",
+              "ब्",
+              "बी",
+              "बा",
+              "व"
+            ]
+          },
+          {
+            "prefix": "ba",
+            "candidates": [
+              "बाँ",
+              "वा",
+              "ब",
+              "बा",
+              "व"
+            ]
+          },
+          {
+            "prefix": "ban",
+            "candidates": [
+              "वन",
+              "बन",
+              "बन्",
+              "बाँ",
+              "बाण"
+            ]
+          },
+          {
+            "prefix": "band",
+            "candidates": [
+              "बन्द",
+              "बाँड्",
+              "बाँड",
+              "बन्ड",
+              "बाँद"
+            ]
+          },
+          {
+            "prefix": "banda",
+            "candidates": [
+              "बन्द",
+              "बन्दा",
+              "बन्डा",
+              "बाँडा",
+              "बान्दा"
+            ]
+          }
+        ],
+        "actual": "ढोका banda"
+      },
+      {
+        "id": "choice-017",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "सृजना",
+          "सृजन",
+          "सरिजन",
+          "सरिजना",
+          "श्रीजना"
+        ],
+        "prefixes": [
+          {
+            "prefix": "s",
+            "candidates": [
+              "स",
+              "स्",
+              "श",
+              "श्",
+              "ष्"
+            ]
+          },
+          {
+            "prefix": "sr",
+            "candidates": [
+              "स्र",
+              "सर",
+              "श्र",
+              "सार",
+              "सर्"
+            ]
+          },
+          {
+            "prefix": "sri",
+            "candidates": [
+              "श्री",
+              "श्रि",
+              "सरी",
+              "सृ",
+              "सरि"
+            ]
+          },
+          {
+            "prefix": "srij",
+            "candidates": [
+              "सृज",
+              "सरिज",
+              "श्रीज",
+              "स्रिज",
+              "सरीज"
+            ]
+          },
+          {
+            "prefix": "srija",
+            "candidates": [
+              "सृजा",
+              "सृज",
+              "सरिज",
+              "स्रिजा",
+              "श्रीजा"
+            ]
+          },
+          {
+            "prefix": "srijan",
+            "candidates": [
+              "सृजन",
+              "सृजना",
+              "सरिजन",
+              "सृजन्",
+              "सृजान"
+            ]
+          },
+          {
+            "prefix": "srijana",
+            "candidates": [
+              "सृजना",
+              "सृजन",
+              "सरिजन",
+              "सरिजना",
+              "श्रीजना"
+            ]
+          }
+        ],
+        "actual": "srijana"
+      },
+      {
+        "id": "choice-018",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "प्रज्ञ",
+          "प्रज्ञा",
+          "प्राज्ञ",
+          "प्राग्य",
+          "पराग्य"
+        ],
+        "prefixes": [
+          {
+            "prefix": "p",
+            "candidates": [
+              "प",
+              "पी",
+              "प्",
+              "पा",
+              "पे"
+            ]
+          },
+          {
+            "prefix": "pr",
+            "candidates": [
+              "प्र",
+              "पर",
+              "प्रा",
+              "प्रे",
+              "पीर"
+            ]
+          },
+          {
+            "prefix": "pra",
+            "candidates": [
+              "प्रअ",
+              "प्रा",
+              "प्र",
+              "पर",
+              "परा"
+            ]
+          },
+          {
+            "prefix": "prag",
+            "candidates": [
+              "प्रग",
+              "प्राग",
+              "पराग",
+              "प्राग्",
+              "प्रयाग"
+            ]
+          },
+          {
+            "prefix": "pragy",
+            "candidates": [
+              "प्रज्ञ",
+              "प्राज्ञ",
+              "प्राग्य",
+              "पराग्य",
+              "प्रग्य"
+            ]
+          },
+          {
+            "prefix": "pragya",
+            "candidates": [
+              "प्रज्ञ",
+              "प्रज्ञा",
+              "प्राज्ञ",
+              "प्राग्य",
+              "पराग्य"
+            ]
+          }
+        ],
+        "actual": "pragya"
+      },
+      {
+        "id": "choice-019",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "संस्कृति",
+          "सँस्कृति",
+          "संस्कृती",
+          "सांस्कृति",
+          "साँस्कृति"
+        ],
+        "prefixes": [
+          {
+            "prefix": "s",
+            "candidates": [
+              "स",
+              "स्",
+              "श",
+              "श्",
+              "ष्"
+            ]
+          },
+          {
+            "prefix": "sa",
+            "candidates": [
+              "स",
+              "सा",
+              "श",
+              "शा",
+              "ष"
+            ]
+          },
+          {
+            "prefix": "san",
+            "candidates": [
+              "सन",
+              "सन्",
+              "सान",
+              "साँ",
+              "सान्"
+            ]
+          },
+          {
+            "prefix": "sans",
+            "candidates": [
+              "सन्स",
+              "संस्",
+              "संस",
+              "सांस्",
+              "सांस"
+            ]
+          },
+          {
+            "prefix": "sansk",
+            "candidates": [
+              "संस्क",
+              "सांस्क",
+              "संसक",
+              "सन्स्क",
+              "सन्सक"
+            ]
+          },
+          {
+            "prefix": "sanskr",
+            "candidates": [
+              "संस्कर",
+              "सांस्कर",
+              "सन्स्कर",
+              "संसकर",
+              "संस्क्र"
+            ]
+          },
+          {
+            "prefix": "sanskri",
+            "candidates": [
+              "संस्करी",
+              "संस्कृ",
+              "सांस्कृ",
+              "संस्क्री",
+              "सांस्करी"
+            ]
+          },
+          {
+            "prefix": "sanskrit",
+            "candidates": [
+              "संस्कृत",
+              "सांस्कृत",
+              "साँस्कृत",
+              "संस्कृत्",
+              "संस्कृति"
+            ]
+          },
+          {
+            "prefix": "sanskriti",
+            "candidates": [
+              "संस्कृति",
+              "सँस्कृति",
+              "संस्कृती",
+              "सांस्कृति",
+              "साँस्कृति"
+            ]
+          }
+        ],
+        "actual": "sanskriti"
+      },
+      {
+        "id": "choice-020",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "दृष्टि",
+          "दृष्टी",
+          "दृश्ति",
+          "दृश्ती",
+          "ड्रिष्टि"
+        ],
+        "prefixes": [
+          {
+            "prefix": "d",
+            "candidates": [
+              "द",
+              "ड",
+              "द्",
+              "ड्",
+              "ड़"
+            ]
+          },
+          {
+            "prefix": "dr",
+            "candidates": [
+              "द्र",
+              "दर",
+              "ड्र",
+              "डर",
+              "ड्रा"
+            ]
+          },
+          {
+            "prefix": "dri",
+            "candidates": [
+              "ड्री",
+              "दृ",
+              "ड्रि",
+              "द्री",
+              "दरी"
+            ]
+          },
+          {
+            "prefix": "dris",
+            "candidates": [
+              "ड्रिस",
+              "ड्रिस्",
+              "दरिस",
+              "दृस्",
+              "द्रिस"
+            ]
+          },
+          {
+            "prefix": "drish",
+            "candidates": [
+              "दृश",
+              "दृष्",
+              "दृश्",
+              "ड्रिश",
+              "द्रिश"
+            ]
+          },
+          {
+            "prefix": "drisht",
+            "candidates": [
+              "दृष्ट",
+              "दृश्त",
+              "दृष्टि",
+              "दृष्त",
+              "दृष्ट्"
+            ]
+          },
+          {
+            "prefix": "drishti",
+            "candidates": [
+              "दृष्टि",
+              "दृष्टी",
+              "दृश्ति",
+              "दृश्ती",
+              "ड्रिष्टि"
+            ]
+          }
+        ],
+        "actual": "drishti"
+      },
+      {
+        "id": "choice-021",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "औषधालयमा"
+        ],
+        "prefixes": [
+          {
+            "prefix": "a",
+            "candidates": [
+              "अ",
+              "आँ",
+              "आ"
+            ]
+          },
+          {
+            "prefix": "aa",
+            "candidates": [
+              "आँ",
+              "आ",
+              "अ"
+            ]
+          },
+          {
+            "prefix": "aau",
+            "candidates": [
+              "आउ",
+              "आउँ",
+              "आऊ",
+              "अउ",
+              "औ"
+            ]
+          },
+          {
+            "prefix": "aaus",
+            "candidates": [
+              "आउस",
+              "आउस्",
+              "आस",
+              "आस्",
+              "आयुस"
+            ]
+          },
+          {
+            "prefix": "aausa",
+            "candidates": [
+              "आउस",
+              "आउसा",
+              "आयुस",
+              "आयुसा",
+              "आयस"
+            ]
+          },
+          {
+            "prefix": "aausad",
+            "candidates": [
+              "औषध",
+              "आउसाद",
+              "आउसद",
+              "आउसड",
+              "आउसद्"
+            ]
+          },
+          {
+            "prefix": "aausadh",
+            "candidates": [
+              "औषध"
+            ]
+          },
+          {
+            "prefix": "aausadha",
+            "candidates": [
+              "आउसाध",
+              "आउसध",
+              "आउसाधा",
+              "आउसधा",
+              "औषध"
+            ]
+          },
+          {
+            "prefix": "aausadhal",
+            "candidates": [
+              "आउसाधल",
+              "आउसधाल",
+              "आउसाधाल",
+              "आउसधल",
+              "आयुसाधल"
+            ]
+          },
+          {
+            "prefix": "aausadhala",
+            "candidates": [
+              "आउसधाला",
+              "आउसाधाला",
+              "आउसाधला",
+              "आउसाधल",
+              "आउसधाल"
+            ]
+          },
+          {
+            "prefix": "aausadhalay",
+            "candidates": [
+              "औषधालय",
+              "आउसधालय",
+              "आउसाधालय",
+              "आउसाधलय",
+              "आउसाधलाय"
+            ]
+          },
+          {
+            "prefix": "aausadhalaye",
+            "candidates": [
+              "औषधालय"
+            ]
+          },
+          {
+            "prefix": "aausadhalayem",
+            "candidates": [
+              "आउसाधलायेम",
+              "आउसधालायेम",
+              "आउसाधालायेम",
+              "आउसधलायेम",
+              "आउसधालयेम"
+            ]
+          },
+          {
+            "prefix": "aausadhalayema",
+            "candidates": [
+              "औषधालयमा"
+            ]
+          }
+        ],
+        "actual": "aausadhalayema"
+      },
+      {
+        "id": "choice-022",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "आँखा",
+          "आखा"
+        ],
+        "prefixes": [
+          {
+            "prefix": "a",
+            "candidates": [
+              "अ",
+              "आँ",
+              "आ"
+            ]
+          },
+          {
+            "prefix": "aa",
+            "candidates": [
+              "आँ",
+              "आ",
+              "अ"
+            ]
+          },
+          {
+            "prefix": "aak",
+            "candidates": [
+              "आँक",
+              "आँक्",
+              "आक",
+              "आक्"
+            ]
+          },
+          {
+            "prefix": "aakh",
+            "candidates": [
+              "आख्",
+              "आख"
+            ]
+          },
+          {
+            "prefix": "aakha",
+            "candidates": [
+              "आँखा",
+              "आखा"
+            ]
+          },
+          {
+            "prefix": "aakhaa",
+            "candidates": [
+              "आँखा",
+              "आखा"
+            ]
+          }
+        ],
+        "actual": "aakhaa"
+      },
+      {
+        "id": "choice-023",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "मान्छे"
+        ],
+        "prefixes": [
+          {
+            "prefix": "m",
+            "candidates": [
+              "म",
+              "म्"
+            ]
+          },
+          {
+            "prefix": "ma",
+            "candidates": [
+              "म",
+              "मा"
+            ]
+          },
+          {
+            "prefix": "man",
+            "candidates": [
+              "मन",
+              "मान",
+              "मान्",
+              "मन्",
+              "माँ"
+            ]
+          },
+          {
+            "prefix": "manx",
+            "candidates": [
+              "मन्छ"
+            ]
+          },
+          {
+            "prefix": "manxe",
+            "candidates": [
+              "मान्छे"
+            ]
+          }
+        ],
+        "actual": "manxe"
+      },
+      {
+        "id": "choice-024",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "candidates": [
+          "ज्ञान",
+          "गन्यन",
+          "गण्यन",
+          "ग्नयन",
+          "गन्यान"
+        ],
+        "prefixes": [
+          {
+            "prefix": "g",
+            "candidates": [
+              "ग",
+              "ग्"
+            ]
+          },
+          {
+            "prefix": "gn",
+            "candidates": [
+              "ग्न",
+              "गण",
+              "गन",
+              "गन्",
+              "गेन"
+            ]
+          },
+          {
+            "prefix": "gny",
+            "candidates": [
+              "ज्ञ",
+              "गन्य",
+              "गण्य",
+              "ग्न्य",
+              "गणय"
+            ]
+          },
+          {
+            "prefix": "gnya",
+            "candidates": [
+              "ज्ञ",
+              "गन्य",
+              "गण्य",
+              "गन्या",
+              "ग्न्या"
+            ]
+          },
+          {
+            "prefix": "gnyan",
+            "candidates": [
+              "ज्ञान",
+              "गन्यन",
+              "गण्यन",
+              "ग्नयन",
+              "गन्यान"
+            ]
+          }
+        ],
+        "actual": "gnyan"
+      }
+    ],
+    "workflows": [
+      {
+        "id": "workflow-001",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "आज पानी परिरहेको छ।",
+        "events": [
+          {
+            "action": "type",
+            "actual": "आज pani",
+            "candidates": [
+              "पनि",
+              "पानी",
+              "पनी",
+              "पानि",
+              "पाणि"
+            ],
+            "missingChoice": false
+          },
+          {
+            "action": "choose",
+            "actual": "आज पानी",
+            "candidates": [],
+            "missingChoice": false
+          },
+          {
+            "action": "type",
+            "actual": "आज पानी परिरहेको छ।",
+            "candidates": [],
+            "missingChoice": false
+          }
+        ],
+        "reloadRequests": 0
+      },
+      {
+        "id": "workflow-002",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "पानी",
+        "events": [
+          {
+            "action": "type",
+            "actual": "pani",
+            "candidates": [
+              "पनि",
+              "पानी",
+              "पनी",
+              "पानि",
+              "पाणि"
+            ],
+            "missingChoice": false
+          },
+          {
+            "action": "press",
+            "actual": "pani",
+            "candidates": [
+              "पनि",
+              "पानी",
+              "पनी",
+              "पानि",
+              "पाणि"
+            ],
+            "missingChoice": false
+          },
+          {
+            "action": "press",
+            "actual": "पानी",
+            "candidates": [],
+            "missingChoice": false
+          }
+        ],
+        "reloadRequests": 0
+      },
+      {
+        "id": "workflow-003",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "पानी",
+        "events": [
+          {
+            "action": "type",
+            "actual": "pani",
+            "candidates": [
+              "पनि",
+              "पानी",
+              "पनी",
+              "पानि",
+              "पाणि"
+            ],
+            "missingChoice": false
+          },
+          {
+            "action": "press",
+            "actual": "पानी",
+            "candidates": [],
+            "missingChoice": false
+          }
+        ],
+        "reloadRequests": 0
+      },
+      {
+        "id": "workflow-004",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "सीता",
+        "events": [
+          {
+            "action": "type",
+            "actual": "sita",
+            "candidates": [
+              "सीता",
+              "सिता",
+              "सित",
+              "सिट",
+              "शीत"
+            ],
+            "missingChoice": false
+          },
+          {
+            "action": "choose",
+            "actual": "सीता",
+            "candidates": [],
+            "missingChoice": false
+          }
+        ],
+        "reloadRequests": 0
+      },
+      {
+        "id": "workflow-005",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "म घरमा छु।",
+        "events": [
+          {
+            "action": "fill",
+            "actual": "म घर ma",
+            "candidates": [
+              "मा",
+              "म",
+              "घरमा"
+            ],
+            "missingChoice": false
+          },
+          {
+            "action": "choose",
+            "actual": "म घरमा",
+            "candidates": [],
+            "missingChoice": false
+          },
+          {
+            "action": "type",
+            "actual": "म घरमा छु।",
+            "candidates": [],
+            "missingChoice": false
+          }
+        ],
+        "reloadRequests": 0
+      },
+      {
+        "id": "workflow-006",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "मैले",
+        "events": [
+          {
+            "action": "fill",
+            "actual": "म le",
+            "candidates": [
+              "ले",
+              "मैले"
+            ],
+            "missingChoice": false
+          },
+          {
+            "action": "choose",
+            "actual": "मैले",
+            "candidates": [],
+            "missingChoice": false
+          }
+        ],
+        "reloadRequests": 0
+      },
+      {
+        "id": "workflow-007",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "नमस्ते",
+        "events": [
+          {
+            "action": "type",
+            "actual": "namaste",
+            "candidates": [
+              "नमस्ते"
+            ],
+            "missingChoice": false
+          },
+          {
+            "action": "press",
+            "actual": "नमस्ते",
+            "candidates": [],
+            "missingChoice": false
+          },
+          {
+            "action": "press",
+            "actual": "namaste",
+            "candidates": [
+              "नमस्ते"
+            ],
+            "missingChoice": false
+          },
+          {
+            "action": "press",
+            "actual": "नमस्ते",
+            "candidates": [],
+            "missingChoice": false
+          }
+        ],
+        "reloadRequests": 0
+      },
+      {
+        "id": "workflow-008",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "नमस्ते। साथी",
+        "events": [
+          {
+            "action": "fill",
+            "actual": "नमस्ते साथी",
+            "candidates": [],
+            "missingChoice": false
+          },
+          {
+            "action": "select",
+            "actual": "नमस्ते साथी",
+            "candidates": [],
+            "missingChoice": false
+          },
+          {
+            "action": "press",
+            "actual": "नमस्ते। साथी",
+            "candidates": [],
+            "missingChoice": false
+          }
+        ],
+        "reloadRequests": 0
+      },
+      {
+        "id": "workflow-009",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "नमस्ते।",
+        "events": [
+          {
+            "action": "fill",
+            "actual": "नमस्ते...",
+            "candidates": [],
+            "missingChoice": false
+          },
+          {
+            "action": "select",
+            "actual": "नमस्ते...",
+            "candidates": [],
+            "missingChoice": false
+          },
+          {
+            "action": "press",
+            "actual": "नमस्ते।",
+            "candidates": [],
+            "missingChoice": false
+          }
+        ],
+        "reloadRequests": 0
+      },
+      {
+        "id": "workflow-010",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "Hello, Nepal. 3.5",
+        "events": [
+          {
+            "action": "mode",
+            "actual": "",
+            "candidates": [],
+            "missingChoice": false
+          },
+          {
+            "action": "type",
+            "actual": "Hello, Nepal. 3.5",
+            "candidates": [],
+            "missingChoice": false
+          }
+        ],
+        "reloadRequests": 0
+      },
+      {
+        "id": "workflow-011",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "OpenAI ",
+        "events": [
+          {
+            "action": "type",
+            "actual": "OpenAI",
+            "candidates": [
+              "ओपेनाई",
+              "ओपेणाई"
+            ],
+            "missingChoice": false
+          },
+          {
+            "action": "press",
+            "actual": "OpenAI",
+            "candidates": [],
+            "missingChoice": false
+          },
+          {
+            "action": "press",
+            "actual": "OpenAI ",
+            "candidates": [],
+            "missingChoice": false
+          }
+        ],
+        "reloadRequests": 0
+      },
+      {
+        "id": "workflow-012",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "https://example.com a@example.com",
+        "events": [
+          {
+            "action": "paste",
+            "actual": "https://example.com a@example.com",
+            "candidates": [
+              "कोम",
+              "कम्",
+              "कोम्",
+              "कॉम",
+              "कम"
+            ],
+            "missingChoice": false
+          }
+        ],
+        "reloadRequests": 0
+      },
+      {
+        "id": "workflow-013",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "श्रद्धा, आँखा र ब्रह्म — UTF-8",
+        "events": [
+          {
+            "action": "paste",
+            "actual": "श्रद्धा, आँखा र ब्रह्म — UTF-8",
+            "candidates": [],
+            "missingChoice": false
+          }
+        ],
+        "reloadRequests": 0
+      },
+      {
+        "id": "workflow-014",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "नमस्ते।",
+        "events": [
+          {
+            "action": "fill",
+            "actual": "नमस्ते",
+            "candidates": [],
+            "missingChoice": false
+          },
+          {
+            "action": "beforeinput",
+            "actual": "नमस्ते।",
+            "candidates": [],
+            "missingChoice": false
+          }
+        ],
+        "reloadRequests": 0
+      },
+      {
+        "id": "workflow-015",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "म घर आएँ”",
+        "events": [
+          {
+            "action": "fill",
+            "actual": "म घर aaye",
+            "candidates": [
+              "आएँ",
+              "आए",
+              "अये"
+            ],
+            "missingChoice": false
+          },
+          {
+            "action": "beforeinput",
+            "actual": "म घर आएँ”",
+            "candidates": [],
+            "missingChoice": false
+          }
+        ],
+        "reloadRequests": 0
+      },
+      {
+        "id": "workflow-016",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "एक गिलास pani",
+        "events": [
+          {
+            "action": "fill",
+            "actual": "एक गिलास pani",
+            "candidates": [
+              "पानी",
+              "पनि",
+              "पनी",
+              "पानि",
+              "पाणि"
+            ],
+            "missingChoice": false
+          },
+          {
+            "action": "choose",
+            "actual": "एक गिलास पनि",
+            "candidates": [],
+            "missingChoice": false
+          },
+          {
+            "action": "waitSave",
+            "actual": "एक गिलास पनि",
+            "candidates": [],
+            "missingChoice": false
+          },
+          {
+            "action": "reload",
+            "actual": "एक गिलास पनि",
+            "candidates": [],
+            "missingChoice": false
+          },
+          {
+            "action": "fill",
+            "actual": "एक गिलास pani",
+            "candidates": [
+              "पनि",
+              "पानी",
+              "पनी",
+              "पानि",
+              "पाणि"
+            ],
+            "missingChoice": false
+          }
+        ],
+        "reloadRequests": 26
+      },
+      {
+        "id": "workflow-017",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "नमस्ते ",
+        "events": [
+          {
+            "action": "type",
+            "actual": "नमस्ते ",
+            "candidates": [],
+            "missingChoice": false
+          },
+          {
+            "action": "waitSave",
+            "actual": "नमस्ते ",
+            "candidates": [],
+            "missingChoice": false
+          },
+          {
+            "action": "reload",
+            "actual": "नमस्ते ",
+            "candidates": [],
+            "missingChoice": false
+          }
+        ],
+        "reloadRequests": 26
+      },
+      {
+        "id": "workflow-018",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "मेरो नाम\nसीता हो।",
+        "events": [
+          {
+            "action": "type",
+            "actual": "मेरो naam",
+            "candidates": [
+              "नाम",
+              "नाम्"
+            ],
+            "missingChoice": false
+          },
+          {
+            "action": "press",
+            "actual": "मेरो नाम\n",
+            "candidates": [],
+            "missingChoice": false
+          },
+          {
+            "action": "type",
+            "actual": "मेरो नाम\nसीता हो।",
+            "candidates": [],
+            "missingChoice": false
+          }
+        ],
+        "reloadRequests": 0
+      },
+      {
+        "id": "workflow-019",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "मूल्य 3.5.",
+        "events": [
+          {
+            "action": "fill",
+            "actual": "मूल्य ",
+            "candidates": [],
+            "missingChoice": false
+          },
+          {
+            "action": "type",
+            "actual": "मूल्य 3.5.",
+            "candidates": [],
+            "missingChoice": false
+          }
+        ],
+        "reloadRequests": 0
+      },
+      {
+        "id": "workflow-020",
+        "error": null,
+        "pageErrors": [],
+        "typingRequests": 0,
+        "actual": "[नमस्ते] र (पानी)",
+        "events": [
+          {
+            "action": "type",
+            "actual": "[नमस्ते] र (पानी)",
+            "candidates": [],
+            "missingChoice": false
+          }
+        ],
+        "reloadRequests": 0
+      }
+    ]
+  }
+}

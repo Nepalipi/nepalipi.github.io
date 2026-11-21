@@ -1,0 +1,14 @@
+{
+  "source": "Madan Puraskar Pustakalaya Nepali SpellChecking Dictionary 1.1 (2006-10-17)",
+  "repository": "https://github.com/LibreOffice/dictionaries",
+  "revision": "c0865a85eb67dc377f2cf8e8fe2c4fa9e53f0dcb",
+  "sourceUrl": "https://raw.githubusercontent.com/LibreOffice/dictionaries/c0865a85eb67dc377f2cf8e8fe2c4fa9e53f0dcb/ne_NP/ne_NP.dic",
+  "license": "LGPL-2.1",
+  "sourceSha256": "f3e8877d0f7f12c3ab7ef812388a77c20a9fcd3f8cc24d973709ec517150598d",
+  "declaredRows": 39924,
+  "distinctAcceptedWords": 34288,
+  "romanSignatures": 52937,
+  "processing": "Strip Hunspell flags; NFC; remove joiners; deduplicate; retain <=64-character words supported by the explicit native-to-Roman table. No affix expansion. Optional final schwa and nasal notation are retrieval aliases, not independent pronunciation annotations.",
+  "use": "Lexical evidence only; no frequency counts, Google labels, or claim of modern spelling completeness.",
+  "generatedSha256": "b0db6082e4a9bbf204dd8e5940eae72ac230a1dd62a952ba4a0de176cc98495d"
+}

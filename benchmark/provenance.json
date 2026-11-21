@@ -1,0 +1,12 @@
+{
+  "dataset": "AI4Bharat Aksharantar",
+  "revision": "e418c1fc928d9f5393af33268472cf20c1891be8",
+  "url": "https://huggingface.co/datasets/ai4bharat/Aksharantar/tree/e418c1fc928d9f5393af33268472cf20c1891be8",
+  "archiveSha256": "8bdcc5957d701ea36b63c00c713b43bc30902774b70736737d480e77929de92c",
+  "license": "Dataset card: manually collected data CC-BY; mined and existing-source packaging CC0. Original card retained beside these files.",
+  "attribution": "Yash Madhani et al., Aksharantar: Open Indic-language Transliteration datasets and models for the Next Billion Users, AI4Bharat.",
+  "files": {
+    "aksharantar-test.jsonl": "172c759fcbb9faeda0a23765ccd12ad0520fb535a05dca42dd9c9923ee5f554e",
+    "aksharantar-validation.jsonl": "9bc1c65df08c5f41eb61ffeaf631bf1bc3820c64ef71ae54b4868c5ac3ea9be7"
+  }
+}

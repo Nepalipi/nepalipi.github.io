@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" data-theme="paper">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Compare Nepalipi with six external sources on words and long everyday sentences.">
+  <title>Nepalipi Benchmark</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/theme.css">
+  <link rel="stylesheet" href="/benchmark/simple.css">
+  <link rel="stylesheet" href="/benchmark/select.css">
+  <link rel="stylesheet" href="/benchmark/appearance.css">
+  <script type="module" src="/benchmark/source-comparison.js"></script>
+  <script type="module" src="/benchmark/sticky-headers.js"></script>
+  <script type="module" src="/benchmark/theme.js"></script>
+</head>
+<body class="benchmark-simple" data-comparison="compact" data-kind="word">
+  <a class="skip-link" href="#scores-panel">Skip to results</a>
+  <header class="simple-header">
+    <div class="header-start"><a class="simple-brand" href="/"><span class="brand-mark" lang="ne" aria-hidden="true">ने</span>nepalipi</a><nav aria-label="Benchmark navigation"><a href="/input-demo.html">Playground</a><a href="/benchmark.html" aria-current="page">Nepalipi Benchmark</a></nav></div>
+    <div class="header-actions"><div class="appearance" role="group" aria-label="Benchmark appearance"><button type="button" data-theme-choice="paper" aria-pressed="true">Light</button><button type="button" data-theme-choice="ink" aria-pressed="false">Dark</button></div><a class="playground-link" href="/input-demo.html">Try Nepalipi <span aria-hidden="true">↗</span></a></div>
+  </header>
+  <main>
+    <div class="page-heading"><div><h1>Nepalipi Benchmark</h1><p>Compare Nepali transliteration engines on the same inputs and references.</p></div>
+    </div>
+    <div class="comparison-toolbar">
+      <label><span>Test set</span><select id="comparison-set"><button type="button"><selectedcontent></selectedcontent></button></select></label>
+      <label id="ranking-filter">Score ranking<select id="comparison-metric"><button type="button"><selectedcontent></selectedcontent></button><option value="first">First match</option><option value="withinThree">Within three</option><option value="withinFive">Within five</option><option value="cer">Character error</option></select></label>
+      <label class="checkbox-label"><input id="comparison-history" type="checkbox"> Include older versions</label>
+    </div>
+    <p id="comparison-scope" hidden></p>
+    <section id="scores-panel" aria-labelledby="scores-heading" tabindex="-1">
+    <div class="panel-heading"><h2 id="scores-heading">Aggregate scores</h2><span id="score-direction">Higher match rates are better</span></div>
+    <div class="simple-source-scroll" tabindex="0" role="region" aria-label="Source scores, scroll for more metrics"><table class="source-table" aria-label="Word suggestion comparison">
+      <caption><span id="comparison-caption"></span> <span class="word-source"> · Word tests based on <a href="https://aclanthology.org/2023.findings-emnlp.4/">AI4Bharat’s Aksharantar Nepali test set</a>.<span id="public-word-sources" hidden> The full set contains 4,085 unique inputs from Aksharantar and seven additional Wikidata names.</span></span></caption>
+      <thead><tr><th scope="col" class="rank-heading">Rank</th><th scope="col">Engine</th><th scope="col">First match</th><th scope="col">Within three</th><th scope="col">Within five</th><th scope="col" class="error-heading">Character error ↓</th></tr></thead>
+      <tbody id="comparison-rows"></tbody>
+    </table></div>
+    <p id="comparison-summary" class="comparison-summary" role="status" aria-live="polite"></p>
+    </section>
+    <p class="source-note" id="source-note">All tools cover every word. Google &amp; Quillpad use saved per-word responses; dates and capture counts are below.</p>
+    <section id="words-panel" aria-labelledby="words">
+      <div class="results-heading"><h2 id="words">Word by word</h2></div>
+      <div class="word-controls"><label><span id="word-search-label">Find a word</span><input id="word-search" type="search" placeholder="Roman, Nepali or case ID" autocomplete="off" spellcheck="false"></label><p id="word-count" role="status" aria-live="polite"></p></div>
+      <p class="word-note" id="word-note">Recorded first suggestions. ✓ matches an expected spelling. Expand a cell for alternatives. Scroll → for more tools. Search filters these rows; scores stay unchanged.</p>
+      <div id="word-grid-scroll" class="word-grid-scroll" tabindex="0" role="region" aria-label="Word comparison, scroll horizontally for more tools">
+        <table class="word-grid"><caption class="sr-only">Roman input above the expected spelling, with tool columns ordered by benchmark rank</caption><thead id="word-grid-head"></thead><tbody id="word-grid-body"></tbody></table>
+      </div>
+      <p id="word-empty" class="word-empty" hidden>No words match this search.</p>
+      <nav id="word-pagination" class="word-pagination" aria-label="Sentence comparison pages" hidden><button id="word-previous" type="button">← Previous</button><span id="word-page"></span><button id="word-next" type="button">Next →</button></nav>
+    </section>
+    <details id="methods" class="source-method disclosure"><summary>Method &amp; downloads</summary><div>
+      <p id="metric-explanation"><strong>First match:</strong> the first suggestion equals an expected spelling. <strong>Within three:</strong> an expected spelling appears in the first three suggestions. <strong>Within five:</strong> an expected spelling appears in the first five suggestions. Higher is better. Counts show matches / tested words.</p>
+      <p id="comparison-method">Each engine receives the same Roman input; its output is scored against fixed corpus references, with personal preferences off. nepscript, Lekhika and Nepali Unicoder return one spelling each. Errors stay in the denominator; missing captures show “Not captured”. Sorting uses actual scores and shares ranks for ties. Character error measures first-output edits per reference character; lower is better.</p>
+      <p id="comparison-independence"></p>
+      <p>Renamed from Nepali Writer. Saved results and downloads retain their original engine names; the current engine is displayed as Nepalipi.</p>
+      <p id="population-note">Every word set has at least 2,000 unique inputs. The four views overlap; their scores must not be pooled. Smaller authored checks remain in the detailed diagnostics.</p>
+      <div class="category-breakdown">
+        <label>Break down the test set<select id="comparison-category" aria-describedby="category-description"><button type="button"><selectedcontent></selectedcontent></button></select></label>
+        <a href="#scores-panel">View scores ↑</a>
+        <p id="category-description">Choose a group to update the scores, rankings, and examples above.</p>
+      </div>
+      <ul id="source-dates"></ul>
+      <div class="download-links"><a id="results-json" href="/benchmark/large-comparison-2.4.8-v2.json" download>Results · JSON</a><a id="scores-csv" href="/benchmark/large-comparison-2.4.8-v2.csv" download>Scores · CSV</a></div>
+    </div></details>
+    <footer><a href="/benchmark-details.html">Sentence tests &amp; engine checks ↗</a><a href="/benchmark-history.html">Archive ↗</a></footer>
+    <noscript>Enable JavaScript to display the saved comparisons. The results are available as <a href="/benchmark/large-comparison-2.4.8-v2.csv">CSV</a>.</noscript>
+  </main>
+</body>
+</html>

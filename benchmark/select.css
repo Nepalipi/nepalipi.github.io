@@ -1,0 +1,112 @@
+/* Benchmark-only native selects. No synthetic buttons, copied options or state. */
+select {
+  min-width: 0;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid var(--control-border);
+  border-radius: 10px;
+  background-color: var(--field);
+  color: var(--filter-text);
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: start;
+}
+.benchmark-simple select:focus-visible,
+.dashboard-page select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+@media (hover: hover) and (pointer: fine) {
+  select:hover { border-color: var(--muted); }
+}
+
+/* Unsupported browsers keep the real platform picker and keyboard behavior. */
+@supports (appearance: base-select) and selector(select::picker(select)) {
+  select, select::picker(select) { appearance: base-select; }
+  select {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  select:open { border-color: var(--accent); }
+  select > button {
+    flex: 1;
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    text-align: inherit;
+  }
+  select selectedcontent {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  select::picker-icon {
+    content: '';
+    flex: none;
+    width: 7px;
+    height: 7px;
+    margin-inline-start: auto;
+    margin-inline-end: 3px;
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+    color: var(--muted);
+    rotate: 45deg;
+    translate: 0 -2px;
+  }
+  select:open::picker-icon { rotate: 225deg; translate: 0 2px; }
+  select::picker(select) {
+    box-sizing: border-box;
+    inline-size: anchor-size(width);
+    min-inline-size: anchor-size(width);
+    max-inline-size: calc(100vw - 16px);
+    max-block-size: min(352px, calc(100dvh - 32px));
+    margin-block: 6px;
+    padding: 5px;
+    overflow: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+    border: 1px solid var(--control-border);
+    border-radius: 12px;
+    background: var(--filter-menu);
+    color: var(--filter-text);
+    box-shadow: var(--filter-shadow);
+    font: 13px/1.5 'DM Sans', 'Noto Sans Devanagari', sans-serif;
+  }
+  select option {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-block-size: 40px;
+    padding: 9px 11px;
+    border: 0;
+    border-radius: 7px;
+    background: transparent;
+    color: var(--filter-text);
+    white-space: normal;
+    text-wrap: pretty;
+    overflow-wrap: anywhere;
+    cursor: pointer;
+  }
+  select option + option { margin-block-start: 2px; }
+  select option:checked { background: var(--filter-selected); }
+  select option:focus-visible { outline: 2px solid var(--muted); outline-offset: -2px; }
+  select option::checkmark {
+    order: 1;
+    flex: none;
+    margin-inline-start: auto;
+    color: currentColor;
+    font-size: 13px;
+  }
+  select option:disabled { color: var(--muted); cursor: default; }
+  @media (hover: hover) and (pointer: fine) {
+    select option:hover:not(:checked):not(:disabled) { background: var(--filter-hover); }
+  }
+}

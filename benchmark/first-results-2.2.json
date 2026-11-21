@@ -1,0 +1,6228 @@
+{
+  "schemaVersion": 1,
+  "evaluatedAt": "2026-11-12T02:56:19.191Z",
+  "freeze": {
+    "version": "2.2.0",
+    "frozenAt": "2026-11-12T02:55:37.779Z",
+    "manifestSha256": "d8d536500009f745bef5ed52f57e044768f6a0f9d916918b99f906a0320fe563",
+    "files": {
+      "public/engine/engine.js": "9c07ac3df98d892d564004a5bbe74241e7767241146ea83f762a78bcf309abb5",
+      "public/engine/rules.js": "2990e7eb8839b92ad682b8624867882a6a300aa61de7d0107d7fee94bb91e0a4",
+      "public/engine/lexicon.js": "5eab112d8c78bb16503ea4832f5c2448910479165e09c25a16e8681ce1487bde",
+      "public/engine/corrections.js": "a1daebac8c3327f2f317c72bfb5658c4321480eecbd7135010ca53c916ec19bb",
+      "public/engine/orthography.js": "e19cef57aa755ebb411153128d493ec517f2e8b2a9bc43221dda9e98f1334456",
+      "public/engine/orthography-data.js": "d84a554b60121d4d6139beb817e8308d5b409bf2614a2215aa1a530460d05fb1",
+      "public/engine/transducer.js": "92420d1cecfc2e56f963c2e53c9b7a15d56f31c5c9532bd1ff885b6388f91584",
+      "public/engine/transducer-data.js": "b653b8ec08288d6e70ccb5faaab208a2a2d3eceaec8ffaab298e68203493f390",
+      "public/engine/unit-language.js": "605c40479253ba8ea56e0879fe513b8359128d64023fff47c67fada952bb566b",
+      "public/engine/unit-language-data.js": "72a913deaf5d4ba080d73bfa619ef6a9048813e290dfd9de07ea3bde63e5fc5d",
+      "public/engine/position-data.js": "39702fcbf5893831e06f7c870cfe0bc636f238c6746b8b1ac88075fd5088ef44",
+      "public/engine/core-lexicon.js": "c10b7b78accf5250eba6cfe957eb275656b8d0ce9382c252a78e31321eccca97",
+      "public/engine/morphology.js": "5a87e28588ce4952d967df053609e9ab14cfe5d1a76315024f5f53e75045d1c6",
+      "public/engine/decoder-config.js": "571d3f91346f6deff64f83c6639996a1af5c038d976927bd9f6ea0f9797bc17d"
+    },
+    "developmentEvidence": {
+      "benchmarks/improvement-2.2/baseline-results.json": "7e46ca9ab3ffa2fa6ebc7d2f2ffe03a54ee5686afae1ecf5b0c8191be562f552",
+      "benchmarks/improvement-2.2/regressions.json": "291766505f894060d912d88280f55f320b7fd7abdb646f25bf6000b53baec182",
+      "benchmarks/improvement-2.2/regression-gates.json": "13db9b06230408caecef5a74aa857244136a5e3d93bd62731a75f5f3e11bffb1",
+      "benchmarks/improvement-2.2/vocabulary-provenance.json": "f8151326c0b9ab0aa437735af97a44dae9d4f9be0df5b973249bc57e3d75e106"
+    },
+    "policy": "Final engine frozen after 21 tests, all 23 observed suite/category aggregate gates and offline browser checks. No tuning after new category-probe outputs. Probes are author-known diagnostics, not blind independent annotation or TRAIN-word-disjoint generalization."
+  },
+  "manifestSha256": "d8d536500009f745bef5ed52f57e044768f6a0f9d916918b99f906a0320fe563",
+  "sourceHashes": {
+    "public/engine/engine.js": "9c07ac3df98d892d564004a5bbe74241e7767241146ea83f762a78bcf309abb5",
+    "public/engine/rules.js": "2990e7eb8839b92ad682b8624867882a6a300aa61de7d0107d7fee94bb91e0a4",
+    "public/engine/lexicon.js": "5eab112d8c78bb16503ea4832f5c2448910479165e09c25a16e8681ce1487bde",
+    "public/engine/corrections.js": "a1daebac8c3327f2f317c72bfb5658c4321480eecbd7135010ca53c916ec19bb",
+    "public/engine/orthography.js": "e19cef57aa755ebb411153128d493ec517f2e8b2a9bc43221dda9e98f1334456",
+    "public/engine/orthography-data.js": "d84a554b60121d4d6139beb817e8308d5b409bf2614a2215aa1a530460d05fb1",
+    "public/engine/transducer.js": "92420d1cecfc2e56f963c2e53c9b7a15d56f31c5c9532bd1ff885b6388f91584",
+    "public/engine/transducer-data.js": "b653b8ec08288d6e70ccb5faaab208a2a2d3eceaec8ffaab298e68203493f390",
+    "public/engine/unit-language.js": "605c40479253ba8ea56e0879fe513b8359128d64023fff47c67fada952bb566b",
+    "public/engine/unit-language-data.js": "72a913deaf5d4ba080d73bfa619ef6a9048813e290dfd9de07ea3bde63e5fc5d",
+    "public/engine/position-data.js": "39702fcbf5893831e06f7c870cfe0bc636f238c6746b8b1ac88075fd5088ef44",
+    "public/engine/core-lexicon.js": "c10b7b78accf5250eba6cfe957eb275656b8d0ce9382c252a78e31321eccca97",
+    "public/engine/morphology.js": "5a87e28588ce4952d967df053609e9ab14cfe5d1a76315024f5f53e75045d1c6",
+    "public/engine/decoder-config.js": "571d3f91346f6deff64f83c6639996a1af5c038d976927bd9f6ea0f9797bc17d",
+    "benchmarks/vendor/ours-v1.1/engine.js": "620647753575a94e2ec6364976f08aed7957f5445633c4b783935b782cf7f2bd",
+    "benchmarks/vendor/ours-v1.1/rules.js": "2990e7eb8839b92ad682b8624867882a6a300aa61de7d0107d7fee94bb91e0a4",
+    "benchmarks/vendor/ours-v1.1/lexicon.js": "dc295d68718a3f1741cde981e66344f39a19bd4bd55d97a238428659a2dec197",
+    "benchmarks/vendor/ours-v1.1/orthography.js": "9d021f61c733e2e8006a39ffa2098c6b6ccecede3f7a23f2863a9161bfbf75cb",
+    "benchmarks/vendor/ours-v1.1/orthography-data.js": "d84a554b60121d4d6139beb817e8308d5b409bf2614a2215aa1a530460d05fb1",
+    "benchmarks/vendor/nepscript/index.js": "43c678cdd0bd275f82abd58e264f94717eba10d1d54ae46f2019a0c0c53fdb05",
+    "benchmarks/vendor/nepscript/adapter.mjs": "a09e9bc145564e6e47deded06bfa78dce9fb1674f0c016d0c7410fd5d1820aa4",
+    "benchmarks/vendor/nepscript/alphabet/alphabet.json": "7dd6ab98faa463561974bf060fca3dc13363cc53fbfcf932e878ab3aa425600b",
+    "benchmarks/google/public-test-manifest.json": "e027ddcd9ef45fcfbd0453101566a0c07f6cf8c9428dbf82e2a8ec81eb8d1129",
+    "benchmarks/google/public-test-snapshot.json": "4e0d4d224540e702dd7f7ef3f76332ec3c05443eb9c48d759704228e59f932fe",
+    "benchmarks/google/everyday-manifest.json": "b43d4e27acad1270a9ad379ac7344c8b912e984791bbf68eedb80a69ed42326c",
+    "benchmarks/google/everyday-snapshot.json": "b2d991291e810460c1ce0905511dc6b7cdb40b58b2f08e9c00dd803dbcb8ac12",
+    "benchmarks/improvement-2.2/category-manifest.json": "d8d536500009f745bef5ed52f57e044768f6a0f9d916918b99f906a0320fe563",
+    "benchmarks/improvement-2.2/google-snapshot.json": "94c674bed8b5a5f46066449ff240814f7177fe3fc55ef4e212b9c5eb5db9baa1",
+    "benchmarks/vendor/ours-v2.1/engine.js": "b98b513ed6d12437308c2d387683f740477bd9657d7dc981daf2dfd4a6fcfc0a",
+    "benchmarks/vendor/ours-v2.1/rules.js": "2990e7eb8839b92ad682b8624867882a6a300aa61de7d0107d7fee94bb91e0a4",
+    "benchmarks/vendor/ours-v2.1/lexicon.js": "dc295d68718a3f1741cde981e66344f39a19bd4bd55d97a238428659a2dec197",
+    "benchmarks/vendor/ours-v2.1/corrections.js": "2b2287e70969000c21ae1c880851764e55ca692b89f93e9ba2245c6eaa8885ed",
+    "benchmarks/vendor/ours-v2.1/orthography.js": "e19cef57aa755ebb411153128d493ec517f2e8b2a9bc43221dda9e98f1334456",
+    "benchmarks/vendor/ours-v2.1/orthography-data.js": "d84a554b60121d4d6139beb817e8308d5b409bf2614a2215aa1a530460d05fb1",
+    "benchmarks/vendor/ours-v2.1/transducer.js": "92420d1cecfc2e56f963c2e53c9b7a15d56f31c5c9532bd1ff885b6388f91584",
+    "benchmarks/vendor/ours-v2.1/transducer-data.js": "b653b8ec08288d6e70ccb5faaab208a2a2d3eceaec8ffaab298e68203493f390",
+    "benchmarks/vendor/ours-v2.1/unit-language.js": "605c40479253ba8ea56e0879fe513b8359128d64023fff47c67fada952bb566b",
+    "benchmarks/vendor/ours-v2.1/unit-language-data.js": "72a913deaf5d4ba080d73bfa619ef6a9048813e290dfd9de07ea3bde63e5fc5d",
+    "benchmarks/vendor/ours-v2.1/position-data.js": "39702fcbf5893831e06f7c870cfe0bc636f238c6746b8b1ac88075fd5088ef44",
+    "benchmarks/vendor/ours-v2.1/decoder-config.js": "571d3f91346f6deff64f83c6639996a1af5c038d976927bd9f6ea0f9797bc17d"
+  },
+  "protocol": {
+    "version": "2.2",
+    "ranking": "Top-1 exact match descending; equal values share a rank. No composite score. Network services are excluded from local-speed ranking.",
+    "normalization": "Trim whitespace and apply Unicode NFC. Roman input is otherwise unchanged.",
+    "references": "Every supplied reference for the same Roman token is accepted; repeated inputs are grouped.",
+    "errors": "Exceptions, absent responses and empty outputs count as misses and remain in the denominator.",
+    "top5": "Match among the first five unique returned suggestions; single-output engines get one candidate.",
+    "cer": "Micro Unicode code-point edit distance using the lowest-CER reference per case; may exceed 100%.",
+    "timing": "Local engine latency is Node in-process wall-clock time after import and three fixed warmups, one occurrence per query. Google latency is the original network request duration in the snapshot. These timing classes are not directly comparable. UI/model loading and scoring are excluded.",
+    "uncertainty": "95% Wilson intervals are descriptive under independent-input assumptions; related forms may be correlated.",
+    "personalization": "Off. No reference text or Google output is passed to the engine.",
+    "limitations": "Google baseline is the public per-word ne-t-i0-und endpoint, not the complete contextual/personalized Google Translate UI. Strict reference agreement does not establish broad product superiority. The typing check has project-authored references and was used for debugging; the public corpus is not real typing traffic."
+  },
+  "engines": [
+    {
+      "id": "writer",
+      "label": "Nepali Writer",
+      "version": "2.2.0",
+      "kind": "Current on-device engine",
+      "candidates": 5,
+      "timingClass": "in-process",
+      "source": "Curated vocabulary + productive forms + guarded correction + learned decoder",
+      "sha256": "f43779b09d56a7c55720a0f71eea3bd581232f5504191e824d829155ea853b60"
+    },
+    {
+      "id": "writer-v1",
+      "label": "Nepali Writer",
+      "version": "1.1.0",
+      "kind": "Frozen previous engine",
+      "candidates": 5,
+      "timingClass": "in-process",
+      "source": "Letter rules + seed lexicon + character prior",
+      "sha256": "2b26928a30971c3f801839b2b39dd546f11eec22b626c5e73e79d00d47a28397"
+    },
+    {
+      "id": "nepscript",
+      "label": "nepscript",
+      "version": "1.0.18",
+      "kind": "External rules baseline",
+      "candidates": 1,
+      "timingClass": "in-process",
+      "source": "https://registry.npmjs.org/nepscript/1.0.18",
+      "sha256": "1543bdbfd42b4c39607957dd34e1b4bb314f6ecec5ec9b9515be00a2e79019dd"
+    },
+    {
+      "id": "google",
+      "label": "Google Input Tools",
+      "version": "2026-11-12",
+      "kind": "Per-word cloud snapshot · network timing",
+      "candidates": 5,
+      "timingClass": "network",
+      "source": "https://www.google.com/inputtools/services/features/transliteration.html",
+      "sha256": "20745a248277df32b652f03162f513819959abb22c9eb8a9f294a7a43ca99104"
+    },
+    {
+      "id": "writer-v2",
+      "label": "Nepali Writer",
+      "version": "2.1.0",
+      "kind": "Frozen previous engine",
+      "candidates": 5,
+      "timingClass": "in-process",
+      "source": "Exact archived 2.1 source; verified against its original freeze",
+      "sha256": "a4ae51ba97d9038c7d648c628925a82f4184c7484a7b1400d436d7a79bcab971"
+    }
+  ],
+  "suite": {
+    "id": "categories",
+    "label": "Category checks · 97 inputs",
+    "description": "New typed inputs across six categories · compare frozen 2.1 and Google",
+    "engineIds": [
+      "writer",
+      "writer-v2",
+      "google"
+    ],
+    "cases": [
+      {
+        "id": "category-001",
+        "category": "Common words",
+        "roman": "pustakalaya",
+        "references": [
+          "पुस्तकालय"
+        ]
+      },
+      {
+        "id": "category-002",
+        "category": "Common words",
+        "roman": "sambidhan",
+        "references": [
+          "संविधान"
+        ]
+      },
+      {
+        "id": "category-003",
+        "category": "Common words",
+        "roman": "sanskriti",
+        "references": [
+          "संस्कृति"
+        ]
+      },
+      {
+        "id": "category-004",
+        "category": "Common words",
+        "roman": "utsaha",
+        "references": [
+          "उत्साह"
+        ]
+      },
+      {
+        "id": "category-005",
+        "category": "Common words",
+        "roman": "upasthiti",
+        "references": [
+          "उपस्थिति"
+        ]
+      },
+      {
+        "id": "category-006",
+        "category": "Common words",
+        "roman": "aamantran",
+        "references": [
+          "आमन्त्रण"
+        ]
+      },
+      {
+        "id": "category-007",
+        "category": "Common words",
+        "roman": "bhraman",
+        "references": [
+          "भ्रमण"
+        ]
+      },
+      {
+        "id": "category-008",
+        "category": "Common words",
+        "roman": "parichaya",
+        "references": [
+          "परिचय"
+        ]
+      },
+      {
+        "id": "category-009",
+        "category": "Common words",
+        "roman": "sahakarya",
+        "references": [
+          "सहकार्य"
+        ]
+      },
+      {
+        "id": "category-010",
+        "category": "Common words",
+        "roman": "jigyasa",
+        "references": [
+          "जिज्ञासा"
+        ]
+      },
+      {
+        "id": "category-011",
+        "category": "Common words",
+        "roman": "aawashyakta",
+        "references": [
+          "आवश्यकता"
+        ]
+      },
+      {
+        "id": "category-012",
+        "category": "Common words",
+        "roman": "nirdeshan",
+        "references": [
+          "निर्देशन"
+        ]
+      },
+      {
+        "id": "category-014",
+        "category": "Common words",
+        "roman": "abhiyan",
+        "references": [
+          "अभियान"
+        ]
+      },
+      {
+        "id": "category-015",
+        "category": "Common words",
+        "roman": "pratibaddhata",
+        "references": [
+          "प्रतिबद्धता"
+        ]
+      },
+      {
+        "id": "category-016",
+        "category": "Common words",
+        "roman": "sambodhan",
+        "references": [
+          "सम्बोधन"
+        ]
+      },
+      {
+        "id": "category-017",
+        "category": "Common words",
+        "roman": "abhyas",
+        "references": [
+          "अभ्यास"
+        ]
+      },
+      {
+        "id": "category-018",
+        "category": "Common words",
+        "roman": "adhyayan",
+        "references": [
+          "अध्ययन"
+        ]
+      },
+      {
+        "id": "category-019",
+        "category": "Spelling variants",
+        "roman": "swadhinataa",
+        "references": [
+          "स्वाधीनता"
+        ]
+      },
+      {
+        "id": "category-020",
+        "category": "Spelling variants",
+        "roman": "shramik",
+        "references": [
+          "श्रमिक"
+        ]
+      },
+      {
+        "id": "category-021",
+        "category": "Spelling variants",
+        "roman": "bikaash",
+        "references": [
+          "विकास"
+        ]
+      },
+      {
+        "id": "category-022",
+        "category": "Spelling variants",
+        "roman": "shaantii",
+        "references": [
+          "शान्ति"
+        ]
+      },
+      {
+        "id": "category-023",
+        "category": "Spelling variants",
+        "roman": "sangathan",
+        "references": [
+          "सङ्गठन",
+          "संगठन"
+        ]
+      },
+      {
+        "id": "category-024",
+        "category": "Spelling variants",
+        "roman": "shikshyaa",
+        "references": [
+          "शिक्षा"
+        ]
+      },
+      {
+        "id": "category-025",
+        "category": "Spelling variants",
+        "roman": "dristikon",
+        "references": [
+          "दृष्टिकोण"
+        ]
+      },
+      {
+        "id": "category-026",
+        "category": "Spelling variants",
+        "roman": "shristi",
+        "references": [
+          "सृष्टि"
+        ]
+      },
+      {
+        "id": "category-027",
+        "category": "Spelling variants",
+        "roman": "istamitra",
+        "references": [
+          "इष्टमित्र"
+        ]
+      },
+      {
+        "id": "category-028",
+        "category": "Spelling variants",
+        "roman": "pustakaalaya",
+        "references": [
+          "पुस्तकालय"
+        ]
+      },
+      {
+        "id": "category-029",
+        "category": "Spelling variants",
+        "roman": "byabasthaa",
+        "references": [
+          "व्यवस्था"
+        ]
+      },
+      {
+        "id": "category-030",
+        "category": "Spelling variants",
+        "roman": "xamata",
+        "references": [
+          "क्षमता"
+        ]
+      },
+      {
+        "id": "category-031",
+        "category": "Spelling variants",
+        "roman": "xaamaa",
+        "references": [
+          "क्षमा"
+        ]
+      },
+      {
+        "id": "category-032",
+        "category": "Spelling variants",
+        "roman": "kshhetra",
+        "references": [
+          "क्षेत्र"
+        ]
+      },
+      {
+        "id": "category-033",
+        "category": "Spelling variants",
+        "roman": "swachchha",
+        "references": [
+          "स्वच्छ"
+        ]
+      },
+      {
+        "id": "category-034",
+        "category": "Spelling variants",
+        "roman": "nyaay",
+        "references": [
+          "न्याय"
+        ]
+      },
+      {
+        "id": "category-035",
+        "category": "Suffix forms",
+        "roman": "pustakalayaharubata",
+        "references": [
+          "पुस्तकालयहरूबाट"
+        ]
+      },
+      {
+        "id": "category-036",
+        "category": "Suffix forms",
+        "roman": "aanganharuma",
+        "references": [
+          "आँगनहरूमा"
+        ]
+      },
+      {
+        "id": "category-037",
+        "category": "Suffix forms",
+        "roman": "bharyangharuma",
+        "references": [
+          "भर्‍याङहरूमा",
+          "भर्याङहरूमा"
+        ]
+      },
+      {
+        "id": "category-038",
+        "category": "Suffix forms",
+        "roman": "dhokaharusamma",
+        "references": [
+          "ढोकाहरूसम्म"
+        ]
+      },
+      {
+        "id": "category-039",
+        "category": "Suffix forms",
+        "roman": "khurpaaharuko",
+        "references": [
+          "खुर्पाहरूको"
+        ]
+      },
+      {
+        "id": "category-040",
+        "category": "Suffix forms",
+        "roman": "kuchoharulai",
+        "references": [
+          "कुचोहरूलाई"
+        ]
+      },
+      {
+        "id": "category-041",
+        "category": "Suffix forms",
+        "roman": "nangloharule",
+        "references": [
+          "नाङ्लोहरूले"
+        ]
+      },
+      {
+        "id": "category-042",
+        "category": "Suffix forms",
+        "roman": "daaduharuma",
+        "references": [
+          "डाडुहरूमा"
+        ]
+      },
+      {
+        "id": "category-043",
+        "category": "Suffix forms",
+        "roman": "sirakharubata",
+        "references": [
+          "सिरकहरूबाट"
+        ]
+      },
+      {
+        "id": "category-044",
+        "category": "Suffix forms",
+        "roman": "thailaharusanga",
+        "references": [
+          "थैलाहरूसँग"
+        ]
+      },
+      {
+        "id": "category-045",
+        "category": "Suffix forms",
+        "roman": "katoraharuma",
+        "references": [
+          "कटोराहरूमा"
+        ]
+      },
+      {
+        "id": "category-046",
+        "category": "Suffix forms",
+        "roman": "aushadhiharuko",
+        "references": [
+          "औषधिहरूको"
+        ]
+      },
+      {
+        "id": "category-047",
+        "category": "Suffix forms",
+        "roman": "pasalharudekhi",
+        "references": [
+          "पसलहरूदेखि"
+        ]
+      },
+      {
+        "id": "category-048",
+        "category": "Suffix forms",
+        "roman": "baatoharuma",
+        "references": [
+          "बाटोहरूमा"
+        ]
+      },
+      {
+        "id": "category-049",
+        "category": "Suffix forms",
+        "roman": "chappalharusamma",
+        "references": [
+          "चप्पलहरूसम्म"
+        ]
+      },
+      {
+        "id": "category-050",
+        "category": "Suffix forms",
+        "roman": "sahayogiharulai",
+        "references": [
+          "सहयोगीहरूलाई"
+        ]
+      },
+      {
+        "id": "category-051",
+        "category": "Verb forms",
+        "roman": "lekhiraheki",
+        "references": [
+          "लेखिरहेकी"
+        ]
+      },
+      {
+        "id": "category-052",
+        "category": "Verb forms",
+        "roman": "padhiraheka",
+        "references": [
+          "पढिरहेका"
+        ]
+      },
+      {
+        "id": "category-053",
+        "category": "Verb forms",
+        "roman": "boliraheko",
+        "references": [
+          "बोलिरहेको"
+        ]
+      },
+      {
+        "id": "category-054",
+        "category": "Verb forms",
+        "roman": "khelidinus",
+        "references": [
+          "खेलिदिनुस्"
+        ]
+      },
+      {
+        "id": "category-055",
+        "category": "Verb forms",
+        "roman": "bhetiraheko",
+        "references": [
+          "भेटिरहेको"
+        ]
+      },
+      {
+        "id": "category-056",
+        "category": "Verb forms",
+        "roman": "sodhiyeko",
+        "references": [
+          "सोधिएको"
+        ]
+      },
+      {
+        "id": "category-057",
+        "category": "Verb forms",
+        "roman": "rojiyeko",
+        "references": [
+          "रोजिएको"
+        ]
+      },
+      {
+        "id": "category-058",
+        "category": "Verb forms",
+        "roman": "hasiraheko",
+        "references": [
+          "हाँसिरहेको"
+        ]
+      },
+      {
+        "id": "category-059",
+        "category": "Verb forms",
+        "roman": "nachdai",
+        "references": [
+          "नाच्दै"
+        ]
+      },
+      {
+        "id": "category-060",
+        "category": "Verb forms",
+        "roman": "rakhnuhunna",
+        "references": [
+          "राख्नुहुन्न"
+        ]
+      },
+      {
+        "id": "category-061",
+        "category": "Verb forms",
+        "roman": "khojiyeka",
+        "references": [
+          "खोजिएका"
+        ]
+      },
+      {
+        "id": "category-062",
+        "category": "Verb forms",
+        "roman": "rokinchha",
+        "references": [
+          "रोकिन्छ"
+        ]
+      },
+      {
+        "id": "category-063",
+        "category": "Verb forms",
+        "roman": "khaairahanuhunchha",
+        "references": [
+          "खाइरहनुहुन्छ"
+        ]
+      },
+      {
+        "id": "category-064",
+        "category": "Verb forms",
+        "roman": "heriraheki",
+        "references": [
+          "हेरिरहेकी"
+        ]
+      },
+      {
+        "id": "category-065",
+        "category": "Verb forms",
+        "roman": "thapidinu",
+        "references": [
+          "थपिदिनु"
+        ]
+      },
+      {
+        "id": "category-066",
+        "category": "Verb forms",
+        "roman": "chhanidinus",
+        "references": [
+          "छानिदिनुस्"
+        ]
+      },
+      {
+        "id": "category-067",
+        "category": "Typos",
+        "roman": "pustaklaya",
+        "references": [
+          "पुस्तकालय"
+        ]
+      },
+      {
+        "id": "category-068",
+        "category": "Typos",
+        "roman": "sambidahn",
+        "references": [
+          "संविधान"
+        ]
+      },
+      {
+        "id": "category-069",
+        "category": "Typos",
+        "roman": "shikhsya",
+        "references": [
+          "शिक्षा"
+        ]
+      },
+      {
+        "id": "category-070",
+        "category": "Typos",
+        "roman": "dhanybaad",
+        "references": [
+          "धन्यवाद"
+        ]
+      },
+      {
+        "id": "category-071",
+        "category": "Typos",
+        "roman": "aawashykta",
+        "references": [
+          "आवश्यकता"
+        ]
+      },
+      {
+        "id": "category-072",
+        "category": "Typos",
+        "roman": "raamrrai",
+        "references": [
+          "राम्ररी"
+        ]
+      },
+      {
+        "id": "category-073",
+        "category": "Typos",
+        "roman": "praarthna",
+        "references": [
+          "प्रार्थना"
+        ]
+      },
+      {
+        "id": "category-074",
+        "category": "Typos",
+        "roman": "swagta",
+        "references": [
+          "स्वागत"
+        ]
+      },
+      {
+        "id": "category-075",
+        "category": "Typos",
+        "roman": "bahina",
+        "references": [
+          "बिहान"
+        ]
+      },
+      {
+        "id": "category-076",
+        "category": "Typos",
+        "roman": "bishwsa",
+        "references": [
+          "विश्वास"
+        ]
+      },
+      {
+        "id": "category-077",
+        "category": "Typos",
+        "roman": "samachra",
+        "references": [
+          "समाचार"
+        ]
+      },
+      {
+        "id": "category-078",
+        "category": "Typos",
+        "roman": "manishharuok",
+        "references": [
+          "मानिसहरूको"
+        ]
+      },
+      {
+        "id": "category-079",
+        "category": "Typos",
+        "roman": "sathihrauko",
+        "references": [
+          "साथीहरूको"
+        ]
+      },
+      {
+        "id": "category-080",
+        "category": "Typos",
+        "roman": "gharharuamn",
+        "references": [
+          "घरहरूमा"
+        ]
+      },
+      {
+        "id": "category-081",
+        "category": "Typos",
+        "roman": "kitbharulai",
+        "references": [
+          "किताबहरूलाई"
+        ]
+      },
+      {
+        "id": "category-082",
+        "category": "Typos",
+        "roman": "nepliharu",
+        "references": [
+          "नेपालीहरू"
+        ]
+      },
+      {
+        "id": "category-083",
+        "category": "Names",
+        "roman": "arunika",
+        "references": [
+          "अरुणिका"
+        ]
+      },
+      {
+        "id": "category-084",
+        "category": "Names",
+        "roman": "sampriya",
+        "references": [
+          "सम्प्रिया"
+        ]
+      },
+      {
+        "id": "category-085",
+        "category": "Names",
+        "roman": "kritanshi",
+        "references": [
+          "कृतांशी"
+        ]
+      },
+      {
+        "id": "category-086",
+        "category": "Names",
+        "roman": "ishanshika",
+        "references": [
+          "इशांशिका",
+          "ईशांशिका"
+        ]
+      },
+      {
+        "id": "category-087",
+        "category": "Names",
+        "roman": "divyanshi",
+        "references": [
+          "दिव्यांशी"
+        ]
+      },
+      {
+        "id": "category-088",
+        "category": "Names",
+        "roman": "manasvi",
+        "references": [
+          "मनस्वी"
+        ]
+      },
+      {
+        "id": "category-089",
+        "category": "Names",
+        "roman": "pratyusha",
+        "references": [
+          "प्रत्यूषा",
+          "प्रत्युषा"
+        ]
+      },
+      {
+        "id": "category-090",
+        "category": "Names",
+        "roman": "samriddhika",
+        "references": [
+          "समृद्धिका"
+        ]
+      },
+      {
+        "id": "category-091",
+        "category": "Names",
+        "roman": "yashasvi",
+        "references": [
+          "यशस्वी"
+        ]
+      },
+      {
+        "id": "category-092",
+        "category": "Names",
+        "roman": "roshmika",
+        "references": [
+          "रोश्मिका",
+          "रोष्मिका"
+        ]
+      },
+      {
+        "id": "category-093",
+        "category": "Names",
+        "roman": "hridika",
+        "references": [
+          "हृदिका"
+        ]
+      },
+      {
+        "id": "category-094",
+        "category": "Names",
+        "roman": "vedanshi",
+        "references": [
+          "वेदांशी"
+        ]
+      },
+      {
+        "id": "category-095",
+        "category": "Names",
+        "roman": "kashvika",
+        "references": [
+          "काश्विका"
+        ]
+      },
+      {
+        "id": "category-096",
+        "category": "Names",
+        "roman": "nishpriya",
+        "references": [
+          "निष्प्रिया",
+          "निश्प्रिया"
+        ]
+      },
+      {
+        "id": "category-097",
+        "category": "Names",
+        "roman": "suyansh",
+        "references": [
+          "सुयांश"
+        ]
+      },
+      {
+        "id": "category-098",
+        "category": "Names",
+        "roman": "varnika",
+        "references": [
+          "वर्णिका"
+        ]
+      }
+    ],
+    "population": {
+      "rawRows": 97,
+      "acceptedRows": 97,
+      "uniqueInputs": 97,
+      "mergedRows": 0,
+      "excluded": {
+        "missing": 0,
+        "roman": 0,
+        "native": 0
+      },
+      "multipleReferences": 6
+    },
+    "sha256": "d8d536500009f745bef5ed52f57e044768f6a0f9d916918b99f906a0320fe563",
+    "snapshotKey": "categories",
+    "independence": "Project-authored category probes locked before outputs. No exact Roman input appears in earlier benchmark cases. New curated vocabulary excludes these exact input spellings; known native vocabulary and productive stems are allowed, especially for typo and spelling-variant probes. Original TRAIN and old seeds can contain the words. This measures new typing inputs, not whole-word TRAIN-disjoint generalization. Not independent native annotation or representative traffic. No tuning against these outputs.",
+    "outputs": {
+      "writer": [
+        {
+          "id": "category-001",
+          "candidates": [
+            "पुस्तकालय",
+            "पुस्तकलाय",
+            "पुस्ताकालय",
+            "पुस्तकलय",
+            "पुस्ताकालाय"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 3.0187500000029104,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-002",
+          "candidates": [
+            "संबिधान",
+            "सम्बिधान",
+            "साम्बिधान",
+            "समबिधान",
+            "संबिधान्"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 1,
+          "referenceLength": 7,
+          "ms": 3.4177920000001905,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-003",
+          "candidates": [
+            "संस्कृति",
+            "सांस्कृति",
+            "संस्कृती",
+            "साँस्कृति",
+            "सांस्कृती"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 2.5001249999986612,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-004",
+          "candidates": [
+            "उत्साह",
+            "उत्साहा",
+            "उत्सह",
+            "उत्सहा",
+            "उट्सह"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 2.2813329999989946,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-005",
+          "candidates": [
+            "उपस्थिति",
+            "उपस्थिती",
+            "उपास्थिति",
+            "उपास्थिती",
+            "अपस्थिति"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 2.7619999999988067,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-006",
+          "candidates": [
+            "आमन्त्रण",
+            "आयामन्त्रण",
+            "आमन्त्रान",
+            "आमन्त्रन",
+            "आमन्त्राण"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 2.758750000000873,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-007",
+          "candidates": [
+            "भ्रमण",
+            "भ्रमन",
+            "भ्रमान",
+            "भ्रमाण",
+            "भ्रमन्"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 5,
+          "ms": 2.110000000000582,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-008",
+          "candidates": [
+            "परिचय",
+            "परिचाय",
+            "परिचया",
+            "पारिचय",
+            "परिचाया"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 5,
+          "ms": 3.118791999997484,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-009",
+          "candidates": [
+            "सहकार्य",
+            "सहकार्या",
+            "साहकार्य",
+            "सहकारय",
+            "सहाकार्य"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 3.1750409999986005,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-010",
+          "candidates": [
+            "जिज्ञासा",
+            "जिग्यास",
+            "जिज्ञास",
+            "जिग्यस",
+            "जिग्यसा"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 2.478832999997394,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-011",
+          "candidates": [
+            "आवश्यकता",
+            "आवश्यकट",
+            "आवश्यक्त",
+            "आवश्यक्ता",
+            "आवश्यकत"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 3.1787919999987935,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-012",
+          "candidates": [
+            "निर्देशन",
+            "निर्देशान",
+            "निर्देशान्",
+            "निर्देशन्",
+            "निर्देशण"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 3.472750000000815,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-014",
+          "candidates": [
+            "अभियान",
+            "अभियन",
+            "अभियन्",
+            "अभियण",
+            "अभियान्"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 2.1519159999988915,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-015",
+          "candidates": [
+            "प्रतिबद्धता",
+            "प्रतिबद्धत",
+            "प्रतिबद्धाट",
+            "प्रतिबद्धट",
+            "प्रतिबद्धात"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 11,
+          "ms": 4.648666000000958,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-016",
+          "candidates": [
+            "सम्बोधन",
+            "साम्बोधन",
+            "समबोधन",
+            "संबोधन",
+            "सम्बोधान"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 3.1987499999995634,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-017",
+          "candidates": [
+            "अभ्यास",
+            "अभ्यस्",
+            "अभ्यस",
+            "अभ्यास्",
+            "आभ्यास"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 1.715250000001106,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-018",
+          "candidates": [
+            "अध्ययन",
+            "अध्यायन",
+            "आध्यायन",
+            "अध्ययण",
+            "आध्ययन"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 2.424250000000029,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-019",
+          "candidates": [
+            "स्वाधीनता",
+            "स्वाधीनताका",
+            "स्वाधीनतामा",
+            "स्वाधीनताअ",
+            "स्वाधीनताया"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 4.032500000001164,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-020",
+          "candidates": [
+            "श्रमिक",
+            "श्रामिक",
+            "श्रमीक",
+            "शरमिक",
+            "श्रामीक"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 1.7635000000009313,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-021",
+          "candidates": [
+            "विकास",
+            "बिकाश",
+            "बिकायाश",
+            "बिकाआश",
+            "बिकाएश"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 5,
+          "ms": 1.9380000000019209,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-022",
+          "candidates": [
+            "शान्ति",
+            "शान्तिई",
+            "शान्तीई",
+            "शांतिई",
+            "सहअन्तिई"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 2.443582999996579,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-023",
+          "candidates": [
+            "संगठन",
+            "सङ्गठन",
+            "सांगठन",
+            "साङ्गठन",
+            "संगठन्"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 5,
+          "ms": 3.41058300000077,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-024",
+          "candidates": [
+            "शिक्षा",
+            "शिक्ष्यया",
+            "शिक्ष्यमा",
+            "शिक्ष्याए",
+            "शिक्ष्या"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 2.9599170000001322,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-025",
+          "candidates": [
+            "दृष्टिकोण",
+            "ड्रिस्टिकोण",
+            "दृष्टिकोन",
+            "दृष्टिकोन्",
+            "दरिस्टिकोण"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 2.313749999997526,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-026",
+          "candidates": [
+            "श्रीस्ती",
+            "श्रीस्ति",
+            "श्रीस्टी",
+            "श्रीस्टि",
+            "श्रिस्ती"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 7,
+          "referenceLength": 6,
+          "ms": 1.7775839999994787,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-027",
+          "candidates": [
+            "इस्टमित्र",
+            "इस्टामित्र",
+            "इस्टमिटर",
+            "इस्टमित्रा",
+            "ईस्टमित्र"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 1,
+          "referenceLength": 9,
+          "ms": 2.298791999997775,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-028",
+          "candidates": [
+            "पुस्तकालय",
+            "पुस्ताकायालय",
+            "पुस्ताकालय",
+            "पुस्तकयालय",
+            "पुस्तकायालय"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 3.314542000000074,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-029",
+          "candidates": [
+            "व्यवस्था",
+            "ब्यबस्था",
+            "ब्यबस्थाअ",
+            "ब्यबस्थाया",
+            "ब्यबस्थामा"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 3.030291999999463,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-030",
+          "candidates": [
+            "क्यामट",
+            "क्यामता",
+            "क्यामत",
+            "क्यामेत",
+            "क्यामाता"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 4,
+          "referenceLength": 6,
+          "ms": 1.691500000000815,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-031",
+          "candidates": [
+            "क्याएमा",
+            "क्याएमाया",
+            "क्यायामा",
+            "क्याएमआ",
+            "क्यायामाया"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 3,
+          "referenceLength": 5,
+          "ms": 1.4444580000017595,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-032",
+          "candidates": [
+            "क्षहेत्र",
+            "कश्हेत्र",
+            "कष्हेत्र",
+            "क्ष्हेत्र",
+            "क्षहेटर"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 1,
+          "referenceLength": 7,
+          "ms": 2.191291999999521,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-033",
+          "candidates": [
+            "स्वच्छ",
+            "स्वच्छा",
+            "स्वाच्छ",
+            "सवच्छ",
+            "श्वच्छ"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 2.7537499999998545,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-034",
+          "candidates": [
+            "न्याय",
+            "न्यायाय",
+            "न्याले",
+            "न्याये",
+            "न्यायाइ"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 5,
+          "ms": 1.1806670000005397,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-035",
+          "candidates": [
+            "पुस्तकालयहरूबाट",
+            "पुस्ताकालयहरूबाट",
+            "पुस्तकालयहरुबाट",
+            "पुस्तकलयहरूबाट",
+            "पुस्ताकालयहरुबाट"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 15,
+          "ms": 8.357208000001265,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-036",
+          "candidates": [
+            "आँगनहरूमा",
+            "आँगनहरुमा",
+            "आँगणहरूमा",
+            "आँगनहरूम",
+            "आँगनहरूलाई"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 4.731082999998762,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-037",
+          "candidates": [
+            "भर्याङहरूमा",
+            "भार्याङहरूमा",
+            "भर्याङ्गहरूमा",
+            "भर्याङहरुमा",
+            "भर्याङहरूलाई"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 11,
+          "ms": 5.348290999998426,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-038",
+          "candidates": [
+            "ढोकाहरूसम्म",
+            "ढोकाहरुसम्म",
+            "धोकाहरूसम्म",
+            "ढोकहरूसम्म",
+            "धोकाहरुसम्म"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 11,
+          "ms": 4.998125000001892,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-039",
+          "candidates": [
+            "खुर्पाहरूको",
+            "खुर्पाहरुको",
+            "खुर्पायाहरूको",
+            "खुर्पायहरूको",
+            "खुर्पाहरू"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 11,
+          "ms": 4.09454199999891,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-040",
+          "candidates": [
+            "कुचोहरूलाई",
+            "कुचोहरुलाई",
+            "कुचओहरूलाई",
+            "कूचोहरूलाई",
+            "कुचोहरूमा"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 10,
+          "ms": 4.723250000002736,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-041",
+          "candidates": [
+            "नाङ्लोहरूले",
+            "नाङलोहरूले",
+            "नाङ्ग्लोहरूले",
+            "नङ्ग्लोहरूले",
+            "नाङ्लोहरूलाई"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 11,
+          "ms": 3.6566249999996217,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-042",
+          "candidates": [
+            "डाडुहरूमा",
+            "दादुहरूमा",
+            "दादुहरुमा",
+            "दयादुहरूमा",
+            "डाडुहरूलाई"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 3.6674160000002303,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-043",
+          "candidates": [
+            "सिरकहरूबाट",
+            "सिराकहरूबाट",
+            "सिरकहरुबाट",
+            "सिराकहरुबाट",
+            "सिराखरूबाट"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 10,
+          "ms": 4.570332999999664,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-044",
+          "candidates": [
+            "थैलाहरूसँग",
+            "थाइलाहरूसँग",
+            "थाइलहरूसँग",
+            "थाइलहरुसँग",
+            "थैलाहरुसँग"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 10,
+          "ms": 5.6333750000012515,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-045",
+          "candidates": [
+            "कटोराहरूमा",
+            "काटोरहरूमा",
+            "कटोरहरूमा",
+            "कातोरहरूमा",
+            "कटोराहरूलाई"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 10,
+          "ms": 4.101957999999286,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-046",
+          "candidates": [
+            "औषधिहरूको",
+            "औषधीहरूको",
+            "औषधिहरुको",
+            "औषधीहरुको",
+            "औषधिहरू"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 6.3052500000012515,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-047",
+          "candidates": [
+            "पसलहरूदेखि",
+            "पसलहरुदेखि",
+            "पासलहरूदेखि",
+            "पसालहरूदेखि",
+            "पासलहरुदेखि"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 10,
+          "ms": 4.593666000000667,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-048",
+          "candidates": [
+            "बाटोहरूमा",
+            "बाटोहरुमा",
+            "बयाटोहरूमा",
+            "बाटोहरूम",
+            "बाटोहरूलाई"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 3.5076670000016748,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-049",
+          "candidates": [
+            "चप्पलहरूसम्म",
+            "चप्पलहरुसम्म",
+            "चप्पालहरूसम्म",
+            "चप्पलहरूसम्मा",
+            "चप्पालहरुसम्म"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 12,
+          "ms": 5.4440829999985,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-050",
+          "candidates": [
+            "सहयोगीहरूलाई",
+            "सहयोगीहरुलाई",
+            "सहयोगिहरूलाई",
+            "साहयोगीहरूलाई",
+            "सहयोगीहरूमा"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 12,
+          "ms": 5.646457999999257,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-051",
+          "candidates": [
+            "लेखिरहेकी",
+            "लेखिरहेकि",
+            "लेखीरहेकी",
+            "लेखिराहेकी",
+            "लिखिरहेकी"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 3.3899160000000848,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-052",
+          "candidates": [
+            "पढिरहेका",
+            "पढिरहेक",
+            "पाधिरहेका",
+            "पधिरहेका",
+            "पढ़िरहेका"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 3.7531660000022384,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-053",
+          "candidates": [
+            "बोलिरहेको",
+            "बोलीरहेको",
+            "बोलाइरहेको",
+            "बोलिराहेको",
+            "बोलिरेहेको"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 2.647333000000799,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-054",
+          "candidates": [
+            "खेलिदिनुस्",
+            "खेलिदिनुस",
+            "खेलीदिनुस्",
+            "खेलिदिनूस",
+            "खेलाइदिनुस्"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 10,
+          "ms": 3.0611250000001746,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-055",
+          "candidates": [
+            "भेटिरहेको",
+            "भेटीरहेको",
+            "भेटाइरहेको",
+            "भेतिरहेको",
+            "भेटिराहेको"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 3.0060000000012224,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-056",
+          "candidates": [
+            "सोधिएको",
+            "सोधियेको",
+            "सोधीयेको",
+            "सोध्ययेको",
+            "सोधिइएको"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 2.6700829999972484,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-057",
+          "candidates": [
+            "रोजिएको",
+            "रोजियेको",
+            "रोजीयेको",
+            "रोजिइएको",
+            "रोजीइएको"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 1.7854579999984708,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-058",
+          "candidates": [
+            "हाँसिरहेको",
+            "हासिरहेको",
+            "हसिरहेको",
+            "हाजिरहेको",
+            "हासीरहेको"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 10,
+          "ms": 2.6239999999997963,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-059",
+          "candidates": [
+            "नाच्दै",
+            "नच्दै",
+            "नाचदै",
+            "नचदै",
+            "नाच्दाई"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 2.3081249999995634,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-060",
+          "candidates": [
+            "राख्नुहुन्न",
+            "राख्नुहुन्ना",
+            "रख्नुहुन्न",
+            "राख्नुहुँना",
+            "राख्नुहुनन"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 11,
+          "ms": 3.1198330000006536,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-061",
+          "candidates": [
+            "खोजिएका",
+            "खोजियेका",
+            "खोजीयेका",
+            "खोजियेक",
+            "खोजीयेक"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 2.1610839999993914,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-062",
+          "candidates": [
+            "रोकिन्छ",
+            "रोकिनछ",
+            "रोकिंछ",
+            "रोकिँछ",
+            "रोकिनेछ"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 2.9278749999975844,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-063",
+          "candidates": [
+            "खाइरहनुहुन्छ",
+            "खयाइरहनुहुन्छ",
+            "खाआइरहनुहुन्छ",
+            "खआइरहनुहुन्छ",
+            "खायाइरहनुहुन्छ"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 12,
+          "ms": 6.226624999999331,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-064",
+          "candidates": [
+            "हेरिरहेकी",
+            "हेरीरहेकी",
+            "हेरिरहेकि",
+            "हेरिरेहेकी",
+            "हेरिराहेकी"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 2.5800840000010794,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-065",
+          "candidates": [
+            "थपिदिनु",
+            "थापिदिनु",
+            "थपिदिनू",
+            "थपिडिनु",
+            "थापिदिनू"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 2.635582999999315,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-066",
+          "candidates": [
+            "छानिदिनुस्",
+            "छानिदिनुस",
+            "छनिदिनुस्",
+            "छनिदिनुस",
+            "छानीदिनुस्"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 10,
+          "ms": 3.563040999997611,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-067",
+          "candidates": [
+            "पुस्तकलाय",
+            "पुस्तकलय",
+            "पुस्ताक्लाय",
+            "पुस्तक्लाय",
+            "पुस्ताक्लय"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 2,
+          "referenceLength": 9,
+          "ms": 2.7696670000004815,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-068",
+          "candidates": [
+            "सम्बिदाह्न",
+            "सम्बिदहन",
+            "साम्बिदाह्न",
+            "सम्बिदाहन",
+            "सम्बइडःन"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 6,
+          "referenceLength": 7,
+          "ms": 2.449333000000479,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-069",
+          "candidates": [
+            "शिक्षा",
+            "शिखस्य",
+            "शिखस्या",
+            "शिखसय",
+            "शिख्स्य"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 2.1519999999982247,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-070",
+          "candidates": [
+            "धन्यवाद",
+            "धन्यबाद",
+            "धनीबड",
+            "धनीबाड",
+            "धान्यबाद"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 2.569500000001426,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-071",
+          "candidates": [
+            "आवश्यकता",
+            "आवश्यकट",
+            "आवश्यक्त",
+            "आवश्यक्ता",
+            "आवश्यकत"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 2.8873750000020664,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-072",
+          "candidates": [
+            "राम्ररी",
+            "रामर्राई",
+            "रामर्रै",
+            "राम्रराई",
+            "रामरराई"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 2.1417920000021695,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-073",
+          "candidates": [
+            "प्रार्थना",
+            "प्राअर्थन",
+            "प्रार्थन",
+            "प्राअर्थना",
+            "पराअर्थन"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 2.2414590000007593,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-074",
+          "candidates": [
+            "स्वागत",
+            "स्वागता",
+            "स्वगत",
+            "स्वगता",
+            "सवागत"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 1.510708000001614,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-075",
+          "candidates": [
+            "बहिना",
+            "बहीन",
+            "बहिन",
+            "बाहिना",
+            "बहिनी"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 3,
+          "referenceLength": 5,
+          "ms": 1.9185409999990952,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-076",
+          "candidates": [
+            "विश्वास",
+            "बिश्वसा",
+            "बिश्वस",
+            "बिश्वास",
+            "बिश्वासा"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 1.9770000000025902,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-077",
+          "candidates": [
+            "समाचार",
+            "समाचर",
+            "सामाचर",
+            "समाचरा",
+            "सामाचरा"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 2.1913750000021537,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-078",
+          "candidates": [
+            "मानिसहरूको",
+            "मनिषहरूक",
+            "मनीषहरूक",
+            "मानिशहरूक",
+            "मानिसहरू"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 10,
+          "ms": 3.417083000000275,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-079",
+          "candidates": [
+            "साथीहरूको",
+            "साथीह्रौको",
+            "साथीह्राउको",
+            "साथीहराउको",
+            "साथीहरौको"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 3.368916999999783,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-080",
+          "candidates": [
+            "घरहरूअमन",
+            "घरहरूआमन",
+            "घरहरुआमन",
+            "घरहरुअमन",
+            "घरहरूमा"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.2,
+          "edits": 2,
+          "referenceLength": 7,
+          "ms": 3.142875000001368,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-081",
+          "candidates": [
+            "किताबहरूलाई",
+            "किटबहरूलाई",
+            "कित्वहरूलाई",
+            "कीटबहरूलाई",
+            "किटभारूलाई"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 11,
+          "ms": 3.9497919999994338,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-082",
+          "candidates": [
+            "नेपालीहरू",
+            "नेप्लीहरू",
+            "नेपालीहरु",
+            "नेप्लिहरू",
+            "नेप्लीहरु"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 3.718916999998328,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-083",
+          "candidates": [
+            "अरुणिका",
+            "अरुणीका",
+            "अरुणिक",
+            "अरुनिका",
+            "अरूनिका"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 2.2372920000016165,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-084",
+          "candidates": [
+            "सम्प्रिय",
+            "साम्प्रिय",
+            "समप्रिया",
+            "सम्प्रिया",
+            "साम्प्रिया"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.25,
+          "edits": 1,
+          "referenceLength": 9,
+          "ms": 2.1796659999999974,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-085",
+          "candidates": [
+            "कृतनशी",
+            "क्रितांशी",
+            "क्रीतांशी",
+            "क्रिटांशी",
+            "कृतांशी"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.2,
+          "edits": 2,
+          "referenceLength": 7,
+          "ms": 3.5959159999983967,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-086",
+          "candidates": [
+            "इशानशिका",
+            "इशानशीका",
+            "ईशानशिका",
+            "ईशानशीका",
+            "इशांशिका"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.2,
+          "edits": 1,
+          "referenceLength": 8,
+          "ms": 3.6522079999995185,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-087",
+          "candidates": [
+            "दिव्यांशी",
+            "दीव्यांशी",
+            "दिव्यांशि",
+            "दिव्यनशी",
+            "दिब्यांशी"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 3.1392500000001746,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-088",
+          "candidates": [
+            "मानस्वी",
+            "मनस्वी",
+            "मनास्वी",
+            "मानास्वी",
+            "मानस्वि"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.5,
+          "edits": 1,
+          "referenceLength": 6,
+          "ms": 1.9528749999990396,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-089",
+          "candidates": [
+            "प्रत्युषा",
+            "प्रत्यूषा",
+            "प्रत्युश",
+            "प्रत्युष",
+            "प्रत्यूष"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 2.858209000001807,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-090",
+          "candidates": [
+            "समृद्धिका",
+            "समृद्धिक",
+            "सम्रिद्धिका",
+            "सम्रीद्धिका",
+            "सम्रिद्ढिका"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 4.246457999997801,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-091",
+          "candidates": [
+            "यशस्वी",
+            "यशास्वी",
+            "यसहस्वी",
+            "याशस्वी",
+            "याशास्वी"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 2.8887919999979204,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-092",
+          "candidates": [
+            "रोष्मीका",
+            "रोश्मिका",
+            "रोष्मिका",
+            "रोशमीका",
+            "रोशमिका"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.5,
+          "edits": 1,
+          "referenceLength": 8,
+          "ms": 2.406041999998706,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-093",
+          "candidates": [
+            "हृदिका",
+            "हृदीका",
+            "हृदयका",
+            "ह्रिदिका",
+            "हृदिक"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 1.9650000000001455,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-094",
+          "candidates": [
+            "वेदांशी",
+            "वेदनशी",
+            "वेडांशी",
+            "बेदांशी",
+            "बेडांशी"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 3.0689999999995052,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-095",
+          "candidates": [
+            "काश्वीका",
+            "कश्वीका",
+            "काश्विक",
+            "काश्विका",
+            "कश्विका"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.25,
+          "edits": 1,
+          "referenceLength": 8,
+          "ms": 2.5027920000029553,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-096",
+          "candidates": [
+            "निष्प्रिय",
+            "निष्परिया",
+            "निष्प्रिया",
+            "निशप्रिया",
+            "निष्परिय"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.3333333333333333,
+          "edits": 1,
+          "referenceLength": 10,
+          "ms": 2.670084000001225,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-097",
+          "candidates": [
+            "सुयांश",
+            "सूयांश",
+            "शुयांश",
+            "सुयणश",
+            "सूयणश"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 2.3948330000021087,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-098",
+          "candidates": [
+            "वर्णिका",
+            "वर्निका",
+            "वर्णीका",
+            "वार्निका",
+            "बर्निका"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 1.981500000001688,
+          "error": null,
+          "timingClass": "in-process"
+        }
+      ],
+      "google": [
+        {
+          "id": "category-001",
+          "candidates": [
+            "पुस्तकालय",
+            "पुस्ताकालय",
+            "पूस्तकालय",
+            "पुस्तकलय",
+            "पुस्ताकलाया"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 122.52020800000001,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-002",
+          "candidates": [
+            "संबिधान",
+            "सम्बिधान",
+            "संविधान",
+            "सम्बिधन",
+            "सम्विधान"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.3333333333333333,
+          "edits": 1,
+          "referenceLength": 7,
+          "ms": 20.094249999999988,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-003",
+          "candidates": [
+            "संस्कृति",
+            "संस्कृती",
+            "सांस्कृति",
+            "सन्स्क्रिति",
+            "संस्क्रिति"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 20.83974999999998,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-004",
+          "candidates": [
+            "उत्साह",
+            "उत्साहा",
+            "उत्सः",
+            "उत्सह",
+            "उत्सहा"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 39.075917000000004,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-005",
+          "candidates": [
+            "उपस्थिति",
+            "उपस्थिती",
+            "उपास्थिति",
+            "उपस्थीती",
+            "उपस्थीति"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 20.675500000000056,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-006",
+          "candidates": [
+            "आमन्त्रण",
+            "आमंत्रण",
+            "आमान्त्रण",
+            "आमन्त्रन",
+            "आमानत्रण"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 20.1545000000001,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-007",
+          "candidates": [
+            "भ्रमण",
+            "भ्रमन",
+            "भरमण",
+            "भ्रमान",
+            "भ्रामन"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 5,
+          "ms": 20.9096669999999,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-008",
+          "candidates": [
+            "परिचय",
+            "परिचया",
+            "परीचय",
+            "परिचाया",
+            "परीचाया"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 5,
+          "ms": 20.144958000000088,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-009",
+          "candidates": [
+            "सहकार्य",
+            "सहकर्य",
+            "सहाकार्य",
+            "सहकर्या",
+            "सहकार्या"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 24.294083999999884,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-010",
+          "candidates": [
+            "जिज्ञासा",
+            "जिज्ञसा",
+            "जिग्यासा",
+            "जिग्यस",
+            "जिग्यसा"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 20.426874999999654,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-011",
+          "candidates": [
+            "आवश्यकता",
+            "आवश्यक्ता",
+            "आवाश्यकता",
+            "आवश्यक्त",
+            "आवाश्यक्ता"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 26.855417000000216,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-012",
+          "candidates": [
+            "निर्देशन",
+            "निर्देषण",
+            "निरदेशन",
+            "निर्देशान",
+            "निरदेषण"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 26.321457999999893,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-014",
+          "candidates": [
+            "अभियान",
+            "अभियन",
+            "अभियाँ",
+            "अभियां",
+            "अभीयाँ"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 20.348041000000194,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-015",
+          "candidates": [
+            "प्रतिबद्धता",
+            "प्रतिबद्धत",
+            "प्रतिबद्दता",
+            "प्रतिवद्धता",
+            "प्रतिबद्द्ता"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 11,
+          "ms": 19.31762499999968,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-016",
+          "candidates": [
+            "सम्बोधन",
+            "संबोधन",
+            "सम्वोधन",
+            "समबोधन",
+            "संवोधन"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 20.236541999999645,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-017",
+          "candidates": [
+            "अभ्यास",
+            "अभ्यस",
+            "अभयस",
+            "अभयास",
+            "अब्ह्यास"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 19.403124999999818,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-018",
+          "candidates": [
+            "अध्ययन",
+            "अध्यायन",
+            "अध्ययान",
+            "अधययन",
+            "अध्ययाँ"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 17.67791699999998,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-019",
+          "candidates": [
+            "स्वाधिनता",
+            "स्वाधीनता",
+            "स्वधिनता",
+            "स्वधीनता",
+            "स्वधिनाता"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.5,
+          "edits": 1,
+          "referenceLength": 9,
+          "ms": 21.599125000000186,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-020",
+          "candidates": [
+            "श्रमिक",
+            "श्रमीक",
+            "श्रामिक",
+            "शरमिक",
+            "शरामिक"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 20.574291000000812,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-021",
+          "candidates": [
+            "बिकाश",
+            "विकाश",
+            "बीकाश",
+            "बिकाष",
+            "विकाष"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 2,
+          "referenceLength": 5,
+          "ms": 20.38041599999997,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-022",
+          "candidates": [
+            "शान्ती",
+            "शानती",
+            "शांती",
+            "शान्टी",
+            "शानटी"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 1,
+          "referenceLength": 6,
+          "ms": 20.562708999999813,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-023",
+          "candidates": [
+            "संगठन",
+            "संगथान",
+            "सनगथन",
+            "संगथन",
+            "संगाथान"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 5,
+          "ms": 22.23858300000029,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-024",
+          "candidates": [
+            "शिक्ष्या",
+            "शिक्श्या",
+            "शिक्षया",
+            "शिकश्या",
+            "शिक्शया"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 2,
+          "referenceLength": 6,
+          "ms": 23.355749999999716,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-025",
+          "candidates": [
+            "द्रिस्तिकों",
+            "द्रिस्तिकोन",
+            "दृस्तिकों",
+            "दरिस्तिकों",
+            "द्रीस्तिकों"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 6,
+          "referenceLength": 9,
+          "ms": 20.096875000000182,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-026",
+          "candidates": [
+            "श्रीस्ती",
+            "श्रिस्ति",
+            "श्रिस्ती",
+            "श्रीस्ति",
+            "श्रीसती"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 7,
+          "referenceLength": 6,
+          "ms": 36.062707999999475,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-027",
+          "candidates": [
+            "इस्टमित्र",
+            "इस्तमित्र",
+            "इस्तामित्र",
+            "इसतामित्र",
+            "इस्तामित्रा"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 1,
+          "referenceLength": 9,
+          "ms": 17.998125000000073,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-028",
+          "candidates": [
+            "पुस्तकालय",
+            "पुस्ताकालय",
+            "पूस्तकालय",
+            "पुस्ताकालाया",
+            "पुस्तकालाया"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 19.524499999999534,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-029",
+          "candidates": [
+            "ब्यबस्था",
+            "व्यबस्था",
+            "व्यवस्था",
+            "ब्यवस्था",
+            "ब्याबस्था"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.3333333333333333,
+          "edits": 2,
+          "referenceLength": 8,
+          "ms": 21.078457999999955,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-030",
+          "candidates": [
+            "क्षमत"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 1,
+          "referenceLength": 6,
+          "ms": 17.607250000000022,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-031",
+          "candidates": [
+            "क्षामा"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 1,
+          "referenceLength": 5,
+          "ms": 26.381665999999313,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-032",
+          "candidates": [
+            "क्ष्हेत्र",
+            "क्श्हेत्र",
+            "क्षहेत्र",
+            "क्शहेत्र",
+            "कश्हेत्र"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 2,
+          "referenceLength": 7,
+          "ms": 19.326125000000502,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-033",
+          "candidates": [
+            "स्वच्छ",
+            "स्वच्छा",
+            "स्वचछा",
+            "स्वाच्छा",
+            "स्वाचछा"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 21.527208000000428,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-034",
+          "candidates": [
+            "न्याय",
+            "नयाय",
+            "न्यय",
+            "ण्याय",
+            "णयाय"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 5,
+          "ms": 18.183250000000044,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-035",
+          "candidates": [
+            "पुस्ताकलायाहरुबता",
+            "पुस्तकलयहरुबत",
+            "पुस्तकलायाहरुबता",
+            "पुस्ताकालायाहरुबता",
+            "पुस्तकालायाहरुबता"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 7,
+          "referenceLength": 15,
+          "ms": 20.218708999999762,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-036",
+          "candidates": [
+            "आन्गन्हारुमा",
+            "आङ्गन्हरुम",
+            "आन्गान्हारुमा",
+            "आनगन्हारुमा",
+            "आंगन्हारुमा"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 5,
+          "referenceLength": 9,
+          "ms": 20.04883299999983,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-037",
+          "candidates": [
+            "भर्याँघरुमा",
+            "भर्यनघरुम",
+            "भर्यांघरुमा",
+            "भार्यन्घरुमा",
+            "भर्यन्घरुमा"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 3,
+          "referenceLength": 11,
+          "ms": 23.65650000000005,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-038",
+          "candidates": [
+            "धोकहरुसम्मा",
+            "धोकहरुसम्म",
+            "धोकाहरुसम्मा",
+            "धोकहरुसंमा",
+            "धोकहारुसम्मा"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 4,
+          "referenceLength": 11,
+          "ms": 20.51875000000109,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-039",
+          "candidates": [
+            "खुर्पाहरुको",
+            "खुरपाहरुको",
+            "खुर्पाहारुको",
+            "खुरपाहारुको",
+            "खुर्पाहरूको"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.2,
+          "edits": 1,
+          "referenceLength": 11,
+          "ms": 32.066625000001295,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-040",
+          "candidates": [
+            "कुचोहरुलाई",
+            "कुचोहरुलै",
+            "कुचोहारुलाई",
+            "कुचोहरूलाई",
+            "कुचोहारूलाई"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.25,
+          "edits": 1,
+          "referenceLength": 10,
+          "ms": 20.291000000001077,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-041",
+          "candidates": [
+            "नंग्लोहरुले",
+            "ननग्लोहरुले",
+            "नंगलोहरुले",
+            "नन्ग्लोहरुले",
+            "नंग्लोहारुले"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 3,
+          "referenceLength": 11,
+          "ms": 20.038375000000087,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-042",
+          "candidates": [
+            "दादुहरुमा",
+            "दादुहरुम",
+            "दादुहारुमा",
+            "दादुहरूमा",
+            "डादुहरुमा"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 3,
+          "referenceLength": 9,
+          "ms": 21.118916999999783,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-043",
+          "candidates": [
+            "सिराखारुबता",
+            "सिरखरुबत",
+            "सिरखारुबता",
+            "सिराखरुबता",
+            "सिरखरुबता"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 6,
+          "referenceLength": 10,
+          "ms": 24.43866700000035,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-044",
+          "candidates": [
+            "थैलाहरुसंगा",
+            "थैलहरुसनग",
+            "थैलाहारुसंगा",
+            "त्हैलाहरुसंगा",
+            "थैलहरुसंगा"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 3,
+          "referenceLength": 10,
+          "ms": 22.3057919999992,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-045",
+          "candidates": [
+            "कतोरहरुमा",
+            "कतोरहरुम",
+            "कतोराहरुमा",
+            "कतोरहारुमा",
+            "कतोराहारुमा"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 3,
+          "referenceLength": 10,
+          "ms": 16.684166999999434,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-046",
+          "candidates": [
+            "औषधिहरुको",
+            "औषधिहरूको",
+            "औशाधिहरुको",
+            "औशधिहरुको",
+            "औशाधिहारुको"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.5,
+          "edits": 1,
+          "referenceLength": 9,
+          "ms": 18.496250000000146,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-047",
+          "candidates": [
+            "पसल्हारुदेखी",
+            "पसल्हरुदेखि",
+            "पसल्हरुदेखी",
+            "पसाल्हारुदेखी",
+            "पासल्हारुदेखी"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 4,
+          "referenceLength": 10,
+          "ms": 22.328416999998808,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-048",
+          "candidates": [
+            "बाटोहरुमा",
+            "बातोहरुमा",
+            "बातोहरुम",
+            "बाटोहरुम",
+            "बातोहारुमा"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 1,
+          "referenceLength": 9,
+          "ms": 17.004291000001103,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-049",
+          "candidates": [
+            "चप्पल्हारुसम्मा",
+            "चप्पल्हरुसम्म",
+            "चाप्पल्हारुसम्मा",
+            "चप्पल्हरुसम्मा",
+            "चाप्पल्हरुसम्मा"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 4,
+          "referenceLength": 12,
+          "ms": 20.310208000000785,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-050",
+          "candidates": [
+            "सहयोगीहरुलाई",
+            "सहयोगीहरूलाई",
+            "सहयोगिहरुलाई",
+            "सहयोगिहरुलै",
+            "सहयोगीहरुले"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.5,
+          "edits": 1,
+          "referenceLength": 12,
+          "ms": 17.912916000001132,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-051",
+          "candidates": [
+            "लेखिरहेकी",
+            "लेखिरहेकि",
+            "लेखिराहेकी",
+            "लेखीरहेकी",
+            "लेखीराहेकी"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 18.151624999998603,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-052",
+          "candidates": [
+            "पढिरहेका",
+            "पढिरहेक",
+            "पधिरहेका",
+            "पधिरहेक",
+            "पधिराहेका"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 22.00129200000083,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-053",
+          "candidates": [
+            "बोलिरहेको",
+            "बोलीरहेको",
+            "बोलिराहेको",
+            "बोलीराहेको",
+            "बोलिरअहेको"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 20.40083400000003,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-054",
+          "candidates": [
+            "खेलिदिनुस",
+            "खेलीदिनुस",
+            "खेलिदीनुस",
+            "खेलीदीनुस",
+            "खेलिडिनुस"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 1,
+          "referenceLength": 10,
+          "ms": 18.28004200000032,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-055",
+          "candidates": [
+            "भेटिरहेको",
+            "भेतिरहेको",
+            "भेतिराहेको",
+            "भेतीरहेको",
+            "भेतीराहेको"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 21.28950000000077,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-056",
+          "candidates": [
+            "सोधिएको",
+            "सोधीएको",
+            "सोधियेको",
+            "सोधीयेको",
+            "सोद्हिएको"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 20.477624999999534,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-057",
+          "candidates": [
+            "रोजिएको",
+            "रोजियेको",
+            "रोजीएको",
+            "रोजीयेको",
+            "रोजियेकों"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 20.752458000000843,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-058",
+          "candidates": [
+            "हासिरहेको",
+            "हसिरहेको",
+            "हसिराहेको",
+            "हसीरहेको",
+            "हसीराहेको"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 1,
+          "referenceLength": 10,
+          "ms": 19.922708000000057,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-059",
+          "candidates": [
+            "नाच्दै",
+            "नच्दै",
+            "नाचदै",
+            "नाच्दाई",
+            "नाचदाई"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 26.45299999999952,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-060",
+          "candidates": [
+            "राख्नुहुन्न",
+            "रख्नुहुन्ना",
+            "रख्नुहुन्न",
+            "रखनुहुन्ना",
+            "रख्नुहुनना"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 11,
+          "ms": 19.682958000001236,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-061",
+          "candidates": [
+            "खोजिएका",
+            "खोजिएक",
+            "खोजीएक",
+            "खोजियेक",
+            "खोजियेका"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 20.47833299999911,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-062",
+          "candidates": [
+            "रोकिन्छा",
+            "रोकिञ्छ",
+            "रोकिंछा",
+            "रोकिनछा",
+            "रोकीन्छा"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 1,
+          "referenceLength": 7,
+          "ms": 23.150499999999738,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-063",
+          "candidates": [
+            "खाइरहनुहुञ्छ"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 1,
+          "referenceLength": 12,
+          "ms": 18.693874999999025,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-064",
+          "candidates": [
+            "हेरिरहेकी",
+            "हेरिरहेकि",
+            "हेरीरहेकी",
+            "हेरिराहेकी",
+            "हेरीराहेकी"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 23.052041000000827,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-065",
+          "candidates": [
+            "थपिदिनु",
+            "थापिदिनु",
+            "ठापिदिनु",
+            "ठपिदिनु",
+            "थपीदिनु"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 20.0301670000008,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-066",
+          "candidates": [
+            "छानिदिनुस",
+            "छनिदिनुस",
+            "छानिदीनुस",
+            "छानीदिनुस",
+            "छनिदीनुस"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 1,
+          "referenceLength": 10,
+          "ms": 17.811499999999796,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-067",
+          "candidates": [
+            "पुस्तक्लाया",
+            "पुस्तक्लय",
+            "पुस्ताक्लाया",
+            "पुस्ताक्लय",
+            "पुस्तकलाया"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 3,
+          "referenceLength": 9,
+          "ms": 18.092459000001327,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-068",
+          "candidates": [
+            "सम्बिदहं",
+            "सम्बिदह्न",
+            "सम्बिदाहं",
+            "समबिदहं",
+            "सम्बिदाह्न"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 6,
+          "referenceLength": 7,
+          "ms": 20.370582999999897,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-069",
+          "candidates": [
+            "शिख्स्य",
+            "शिखस्य",
+            "शिख्स्या",
+            "शिखस्या",
+            "शिख्सया"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 4,
+          "referenceLength": 6,
+          "ms": 18.518874999999753,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-070",
+          "candidates": [
+            "धन्यबाद",
+            "धन्यवाद",
+            "धन्य्बाद",
+            "धनय्बाद",
+            "धनयबाद"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.5,
+          "edits": 1,
+          "referenceLength": 7,
+          "ms": 22.024665999999343,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-071",
+          "candidates": [
+            "आवश्यकता",
+            "आवश्यक्ता",
+            "आवाश्यकता",
+            "आवश्य्क्त",
+            "आवाश्यक्ता"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 20.842083000001367,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-072",
+          "candidates": [
+            "राम्ररी",
+            "राम्र्रै",
+            "राम्ररि",
+            "राम्ररै",
+            "रामर्रै"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 17.57274999999936,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-073",
+          "candidates": [
+            "प्रार्थना",
+            "प्रार्थ्ना",
+            "प्रार्थ्न",
+            "प्रार्थन",
+            "प्रारथ्ना"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 19.418791000000056,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-074",
+          "candidates": [
+            "स्वागत",
+            "स्वगत",
+            "स्वगता",
+            "स्वग्त",
+            "स्वागता"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 19.40191600000071,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-075",
+          "candidates": [
+            "बहिन",
+            "बहिना",
+            "बाहिन",
+            "बाहिना",
+            "बहीना"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 2,
+          "referenceLength": 5,
+          "ms": 15.971874999999272,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-076",
+          "candidates": [
+            "विश्वसा",
+            "बिश्वसा",
+            "बिश्व्सा",
+            "बिश्व्स",
+            "बिशव्सा"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 2,
+          "referenceLength": 7,
+          "ms": 20.38783400000102,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-077",
+          "candidates": [
+            "समाचर",
+            "समच्रा",
+            "समच्र",
+            "समचरा",
+            "समाच्रा"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 1,
+          "referenceLength": 6,
+          "ms": 23.229875000000902,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-078",
+          "candidates": [
+            "मनिश्हरुओक"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 6,
+          "referenceLength": 10,
+          "ms": 25.687167000000045,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-079",
+          "candidates": [
+            "साथीहरुको",
+            "साथिहरुको",
+            "सथिह्रौको",
+            "सथिहरौको",
+            "सथिह्रुको"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 1,
+          "referenceLength": 9,
+          "ms": 24.623250000000553,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-080",
+          "candidates": [
+            "घर्हरुअम्न",
+            "घर्हरुंन",
+            "घरहरुंन",
+            "घर्हारुंन"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 5,
+          "referenceLength": 7,
+          "ms": 18.545208999999886,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-081",
+          "candidates": [
+            "कित्भारुलाई",
+            "कित्भरुलै",
+            "कितभारुलाई",
+            "कित्भरुलाई",
+            "कितभरुलाई"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 4,
+          "referenceLength": 11,
+          "ms": 20.652750000001106,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-082",
+          "candidates": [
+            "नेपलीहरु",
+            "नेप्लिहरु",
+            "नेपलिहरु",
+            "नेप्लिहारू",
+            "नेप्लिहारु"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 2,
+          "referenceLength": 9,
+          "ms": 22.083833000000595,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-083",
+          "candidates": [
+            "अरुनिका",
+            "अरुनिक",
+            "अरुणिका",
+            "अरुनीका",
+            "अरूनिका"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.3333333333333333,
+          "edits": 1,
+          "referenceLength": 7,
+          "ms": 21.065833999997267,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-084",
+          "candidates": [
+            "सम्प्रिया",
+            "सम्प्रिय",
+            "संप्रिया",
+            "समप्रिया",
+            "सम्परिया"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 19.536541999998008,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-085",
+          "candidates": [
+            "क्रितंशी",
+            "क्रितन्शि",
+            "कृतंशी",
+            "करितंशी",
+            "क्रीतंशी"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 4,
+          "referenceLength": 7,
+          "ms": 33.973916999999346,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-086",
+          "candidates": [
+            "इशंशिका",
+            "इशन्शिक",
+            "इशान्शिका",
+            "इशांशिका",
+            "इशानशिका"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.25,
+          "edits": 1,
+          "referenceLength": 8,
+          "ms": 25.238792000000103,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-087",
+          "candidates": [
+            "दिव्यंशी",
+            "दिव्यन्शि",
+            "दिव्यन्शी",
+            "दिव्यनशी",
+            "दिवयंशी"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 1,
+          "referenceLength": 9,
+          "ms": 25.19537499999933,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-088",
+          "candidates": [
+            "मनस्वी",
+            "मनस्वि",
+            "मनास्वी",
+            "मानस्वी",
+            "मनासवी"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 20.21845899999971,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-089",
+          "candidates": [
+            "प्रत्यूष",
+            "प्रत्युश",
+            "प्रत्युषा",
+            "प्रत्युशा",
+            "प्रत्युष"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.3333333333333333,
+          "edits": 1,
+          "referenceLength": 9,
+          "ms": 21.730082999998558,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-090",
+          "candidates": [
+            "समृद्धिका",
+            "समृद्धिक",
+            "सम्रिद्धिका",
+            "सम्रिद्धिक",
+            "समरिद्धिका"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 18.186667000001762,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-091",
+          "candidates": [
+            "यशस्वी",
+            "यशास्वी",
+            "यशस्वि",
+            "याशास्वी",
+            "याशस्वी"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 17.42095799999879,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-092",
+          "candidates": [
+            "रोश्मिका",
+            "रोश्मिक",
+            "रोशमिका",
+            "रोष्मिका",
+            "रोषमिका"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 18.68720899999971,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-093",
+          "candidates": [
+            "हृदिका",
+            "ह्रिदिक",
+            "ह्रिदिका",
+            "हरिदिका",
+            "ह्रीदिका"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 19.363250000002154,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-094",
+          "candidates": [
+            "वेदंशी",
+            "वेदन्शि",
+            "वेडंशी",
+            "वेदन्शी",
+            "वेदान्शी"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 1,
+          "referenceLength": 7,
+          "ms": 19.738459000000148,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-095",
+          "candidates": [
+            "कश्विका",
+            "कश्विक",
+            "कशविका",
+            "कष्विका",
+            "काश्विका"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.2,
+          "edits": 1,
+          "referenceLength": 8,
+          "ms": 21.669459000000643,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-096",
+          "candidates": [
+            "निश्प्रिया",
+            "निश्प्रिय",
+            "निशप्रिया",
+            "निष्प्रिया",
+            "निश्परिया"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 10,
+          "ms": 23.905750000001717,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-097",
+          "candidates": [
+            "सुयंश",
+            "सुयन्श",
+            "सुयांश",
+            "सुयाँश",
+            "सुयान्श"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.3333333333333333,
+          "edits": 1,
+          "referenceLength": 6,
+          "ms": 19.907458999998198,
+          "error": null,
+          "timingClass": "network"
+        },
+        {
+          "id": "category-098",
+          "candidates": [
+            "वर्निका",
+            "वर्निक",
+            "वर्णिका",
+            "वरनिका",
+            "वार्निका"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.3333333333333333,
+          "edits": 1,
+          "referenceLength": 7,
+          "ms": 22.188625000002503,
+          "error": null,
+          "timingClass": "network"
+        }
+      ],
+      "writer-v2": [
+        {
+          "id": "category-001",
+          "candidates": [
+            "पुस्तकालय",
+            "पुस्तकलाय",
+            "पुस्ताकालय",
+            "पुस्तकलय",
+            "पुस्ताकालाय"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 3.0305419999967853,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-002",
+          "candidates": [
+            "संबिधान",
+            "सम्बिधान",
+            "साम्बिधान",
+            "समबिधान",
+            "संबिधान्"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 1,
+          "referenceLength": 7,
+          "ms": 3.1926669999993464,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-003",
+          "candidates": [
+            "संस्कृति",
+            "सांस्कृति",
+            "संस्कृती",
+            "साँस्कृति",
+            "सांस्कृती"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 2.581459000000905,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-004",
+          "candidates": [
+            "उत्साह",
+            "उत्साहा",
+            "उत्सह",
+            "उत्सहा",
+            "उट्सह"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 1.76933299999655,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-005",
+          "candidates": [
+            "उपस्थिति",
+            "उपस्थिती",
+            "उपास्थिति",
+            "उपास्थिती",
+            "अपस्थिति"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 2.7752500000024156,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-006",
+          "candidates": [
+            "आमन्त्रण",
+            "आयामन्त्रण",
+            "आमन्त्रान",
+            "आमन्त्रन",
+            "आमन्त्राण"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 2.6313330000011774,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-007",
+          "candidates": [
+            "भ्रमण",
+            "भ्रमन",
+            "भ्रमान",
+            "भ्रमाण",
+            "भ्रमन्"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 5,
+          "ms": 2.0496249999996508,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-008",
+          "candidates": [
+            "परिचय",
+            "परिचाय",
+            "परिचया",
+            "पारिचय",
+            "परिचाया"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 5,
+          "ms": 2.9249589999999444,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-009",
+          "candidates": [
+            "सहकार्य",
+            "सहकार्या",
+            "साहकार्य",
+            "सहकारय",
+            "सहाकार्य"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 2.384374999997817,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-010",
+          "candidates": [
+            "जिज्ञासा",
+            "जिग्यास",
+            "जिज्ञास",
+            "जिग्यस",
+            "जिग्यसा"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 2.248416999998881,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-011",
+          "candidates": [
+            "आवश्यकता",
+            "आवश्यकट",
+            "आवश्यक्त",
+            "आवश्यक्ता",
+            "आवश्यकत"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 3.069083000002138,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-012",
+          "candidates": [
+            "निर्देशन",
+            "निर्देशान",
+            "निर्देशान्",
+            "निर्देशन्",
+            "निर्देशण"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 3.217499999998836,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-014",
+          "candidates": [
+            "अभियान",
+            "अभियन",
+            "अभियन्",
+            "अभियण",
+            "अभियान्"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 2.126624999997148,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-015",
+          "candidates": [
+            "प्रतिबद्धता",
+            "प्रतिबद्धत",
+            "प्रतिबद्धाट",
+            "प्रतिबद्धट",
+            "प्रतिबद्धात"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 11,
+          "ms": 4.500499999998283,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-016",
+          "candidates": [
+            "सम्बोधन",
+            "साम्बोधन",
+            "समबोधन",
+            "संबोधन",
+            "सम्बोधान"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 3.341499999998632,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-017",
+          "candidates": [
+            "अभ्यास",
+            "अभ्यस्",
+            "अभ्यस",
+            "अभ्यास्",
+            "आभ्यास"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 1.5957499999967695,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-018",
+          "candidates": [
+            "अध्ययन",
+            "अध्यायन",
+            "आध्यायन",
+            "अध्ययण",
+            "आध्ययन"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 2.398416999996698,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-019",
+          "candidates": [
+            "स्वाधीनता",
+            "स्वाधीनताका",
+            "स्वाधीनतामा",
+            "स्वाधीनताअ",
+            "स्वाधीनताया"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 3.8602910000008706,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-020",
+          "candidates": [
+            "श्रमिक",
+            "श्रामिक",
+            "श्रमीक",
+            "शरमिक",
+            "श्रामीक"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 1.6882919999989099,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-021",
+          "candidates": [
+            "विकास",
+            "बिकाश",
+            "बिकायाश",
+            "बिकाआश",
+            "बिकाएश"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 5,
+          "ms": 2.3455420000027516,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-022",
+          "candidates": [
+            "शान्ति",
+            "शान्तिई",
+            "शान्तीई",
+            "शांतिई",
+            "सहअन्तिई"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 2.19945799999914,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-023",
+          "candidates": [
+            "संगठन",
+            "सङ्गठन",
+            "सांगठन",
+            "साङ्गठन",
+            "संगठन्"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 5,
+          "ms": 3.230374999999185,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-024",
+          "candidates": [
+            "शिक्ष्यया",
+            "शिक्ष्यमा",
+            "शिक्ष्याए",
+            "शिक्ष्या",
+            "शिक्षयमा"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 3,
+          "referenceLength": 6,
+          "ms": 2.5647080000017013,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-025",
+          "candidates": [
+            "दृष्टिकोण",
+            "ड्रिस्टिकोण",
+            "दृष्टिकोन",
+            "दृष्टिकोन्",
+            "दरिस्टिकोण"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 2.2669999999998254,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-026",
+          "candidates": [
+            "श्रीस्ती",
+            "श्रीस्ति",
+            "श्रीस्टी",
+            "श्रीस्टि",
+            "श्रिस्ती"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 7,
+          "referenceLength": 6,
+          "ms": 1.7543750000004366,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-027",
+          "candidates": [
+            "इस्टमित्र",
+            "इस्टामित्र",
+            "इस्टमिटर",
+            "इस्टमित्रा",
+            "ईस्टमित्र"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 1,
+          "referenceLength": 9,
+          "ms": 2.2394580000000133,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-028",
+          "candidates": [
+            "पुस्तकालय",
+            "पुस्ताकायालय",
+            "पुस्ताकालय",
+            "पुस्तकयालय",
+            "पुस्तकायालय"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 3.344708000000537,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-029",
+          "candidates": [
+            "ब्यबस्था",
+            "ब्यबस्थाअ",
+            "ब्यबस्थाया",
+            "ब्यबस्थामा",
+            "ब्यबस्थाए"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 2,
+          "referenceLength": 8,
+          "ms": 3.0118340000008175,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-030",
+          "candidates": [
+            "क्यामट",
+            "क्यामता",
+            "क्यामत",
+            "क्यामेत",
+            "क्यामाता"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 4,
+          "referenceLength": 6,
+          "ms": 1.6584169999987353,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-031",
+          "candidates": [
+            "क्याएमा",
+            "क्याएमाया",
+            "क्यायामा",
+            "क्याएमआ",
+            "क्यायामाया"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 3,
+          "referenceLength": 5,
+          "ms": 1.3893749999988358,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-032",
+          "candidates": [
+            "क्षहेत्र",
+            "कश्हेत्र",
+            "कष्हेत्र",
+            "क्ष्हेत्र",
+            "क्षहेटर"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 1,
+          "referenceLength": 7,
+          "ms": 2.1099170000015874,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-033",
+          "candidates": [
+            "स्वच्छ",
+            "स्वच्छा",
+            "स्वाच्छ",
+            "सवच्छ",
+            "श्वच्छ"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 2.9960840000021562,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-034",
+          "candidates": [
+            "न्याय",
+            "न्यायाय",
+            "न्याले",
+            "न्याये",
+            "न्यायाइ"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 5,
+          "ms": 1.1416659999995318,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-035",
+          "candidates": [
+            "पुस्तकालयहरूबाट",
+            "पुस्ताकालयहरूबाट",
+            "पुस्तकालयहरुबाट",
+            "पुस्तकलयहरूबाट",
+            "पुस्ताकालयहरुबाट"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 15,
+          "ms": 5.995624999999563,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-036",
+          "candidates": [
+            "आँगनहरूमा",
+            "आँगनहरुमा",
+            "आँगणहरूमा",
+            "आँगनहरूम",
+            "आँगनहरुम"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 3.5973329999978887,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-037",
+          "candidates": [
+            "भर्याङहरूमा",
+            "भार्याङहरूमा",
+            "भर्याङ्गहरूमा",
+            "भर्याङहरुमा",
+            "भर्याङहरूम"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 11,
+          "ms": 4.280541000000085,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-038",
+          "candidates": [
+            "ढोकाहरूसम्म",
+            "ढोकाहरुसम्म",
+            "धोकाहरूसम्म",
+            "ढोकहरूसम्म",
+            "धोकाहरुसम्म"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 11,
+          "ms": 4.001290999996854,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-039",
+          "candidates": [
+            "खुर्पाहरूको",
+            "खुर्पाहरुको",
+            "खुर्पायाहरूको",
+            "खुर्पायहरूको",
+            "खुर्पाएहरूको"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 11,
+          "ms": 3.3100419999973383,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-040",
+          "candidates": [
+            "कुचोहरूलाई",
+            "कुचोहरुलाई",
+            "कुचओहरूलाई",
+            "कूचोहरूलाई",
+            "कुचोहरूलाइ"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 10,
+          "ms": 3.9594580000011774,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-041",
+          "candidates": [
+            "नाङ्लोहरूले",
+            "नाङलोहरूले",
+            "नाङ्ग्लोहरूले",
+            "नङ्ग्लोहरूले",
+            "नाङ्लोहरुले"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 11,
+          "ms": 3.124374999999418,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-042",
+          "candidates": [
+            "दादुहरूमा",
+            "दादुहरुमा",
+            "दयादुहरूमा",
+            "दयाडुहरूमा",
+            "दयादूहरूमा"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 2,
+          "referenceLength": 9,
+          "ms": 2.96941599999991,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-043",
+          "candidates": [
+            "सिरकहरूबाट",
+            "सिराकहरूबाट",
+            "सिरकहरुबाट",
+            "सिराकहरुबाट",
+            "सिराखरूबाट"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 10,
+          "ms": 3.817166000000725,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-044",
+          "candidates": [
+            "थैलाहरूसँग",
+            "थाइलाहरूसँग",
+            "थाइलहरूसँग",
+            "थाइलहरुसँग",
+            "थैलाहरुसँग"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 10,
+          "ms": 4.760041999998066,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-045",
+          "candidates": [
+            "काटोरहरूमा",
+            "कटोरहरूमा",
+            "कातोरहरूमा",
+            "काटोरहरुमा",
+            "काटोराहरूमा"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 2,
+          "referenceLength": 10,
+          "ms": 3.391250000000582,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-046",
+          "candidates": [
+            "औषधिहरूको",
+            "औषधीहरूको",
+            "औषधिहरुको",
+            "औषधीहरुको",
+            "आयुषधिहरूको"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 4.766999999999825,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-047",
+          "candidates": [
+            "पसलहरूदेखि",
+            "पसलहरुदेखि",
+            "पासलहरूदेखि",
+            "पसालहरूदेखि",
+            "पासलहरुदेखि"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 10,
+          "ms": 4.342749999999796,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-048",
+          "candidates": [
+            "बाटोहरूमा",
+            "बाटोहरुमा",
+            "बयाटोहरूमा",
+            "बाटोहरूम",
+            "बाटोहरुम"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 2.9584580000009737,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-049",
+          "candidates": [
+            "चप्पलहरूसम्म",
+            "चप्पलहरुसम्म",
+            "चप्पालहरूसम्म",
+            "चप्पलहरूसम्मा",
+            "चप्पालहरुसम्म"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 12,
+          "ms": 4.5850419999987935,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-050",
+          "candidates": [
+            "सहयोगीहरूलाई",
+            "सहयोगीहरुलाई",
+            "सहयोगिहरूलाई",
+            "साहयोगीहरूलाई",
+            "सहयोगीहरूलाइ"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 12,
+          "ms": 4.605749999998807,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-051",
+          "candidates": [
+            "लेखिरहेकी",
+            "लेखिरहेकि",
+            "लेखीरहेकी",
+            "लेखिराहेकी",
+            "लिखिरहेकी"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 3.004499999999098,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-052",
+          "candidates": [
+            "पढिरहेका",
+            "पढिरहेक",
+            "पाधिरहेका",
+            "पधिरहेका",
+            "पढ़िरहेका"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 3.239291999998386,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-053",
+          "candidates": [
+            "बोलिरहेको",
+            "बोलीरहेको",
+            "बोलाइरहेको",
+            "बोलिराहेको",
+            "बोलिरेहेको"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 2.4184580000001006,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-054",
+          "candidates": [
+            "खेलिदिनुस्",
+            "खेलिदिनुस",
+            "खेलीदिनुस्",
+            "खेलिदिनूस",
+            "खेलाइदिनुस्"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 10,
+          "ms": 2.933666999997513,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-055",
+          "candidates": [
+            "भेटिरहेको",
+            "भेटीरहेको",
+            "भेटाइरहेको",
+            "भेतिरहेको",
+            "भेटिराहेको"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 3.231792000002315,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-056",
+          "candidates": [
+            "सोधियेको",
+            "सोधीयेको",
+            "सोध्ययेको",
+            "सोधिइएको",
+            "सोधिएको"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.2,
+          "edits": 2,
+          "referenceLength": 7,
+          "ms": 2.4370830000007118,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-057",
+          "candidates": [
+            "रोजियेको",
+            "रोजीयेको",
+            "रोजिइएको",
+            "रोजीइएको",
+            "रोजइयेको"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 2,
+          "referenceLength": 7,
+          "ms": 1.6760829999984708,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-058",
+          "candidates": [
+            "हासिरहेको",
+            "हसिरहेको",
+            "हाजिरहेको",
+            "हासीरहेको",
+            "हसीरहेको"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 1,
+          "referenceLength": 10,
+          "ms": 2.7226249999985157,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-059",
+          "candidates": [
+            "नाच्दै",
+            "नच्दै",
+            "नाचदै",
+            "नचदै",
+            "नाच्दाई"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 2.1012080000000424,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-060",
+          "candidates": [
+            "राख्नुहुन्न",
+            "राख्नुहुन्ना",
+            "रख्नुहुन्न",
+            "राख्नुहुँना",
+            "राख्नुहुनन"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 11,
+          "ms": 3.1360419999982696,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-061",
+          "candidates": [
+            "खोजियेका",
+            "खोजीयेका",
+            "खोजियेक",
+            "खोजीयेक",
+            "खोजिइएका"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 2,
+          "referenceLength": 7,
+          "ms": 2.068333999999595,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-062",
+          "candidates": [
+            "रोकिन्छ",
+            "रोकिनछ",
+            "रोकिंछ",
+            "रोकिँछ",
+            "रोकिनेछ"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 2.731500000001688,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-063",
+          "candidates": [
+            "खाइरहनुहुन्छ",
+            "खयाइरहनुहुन्छ",
+            "खाआइरहनुहुन्छ",
+            "खआइरहनुहुन्छ",
+            "खायाइरहनुहुन्छ"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 12,
+          "ms": 5.861042000000452,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-064",
+          "candidates": [
+            "हेरिरहेकी",
+            "हेरीरहेकी",
+            "हेरिरहेकि",
+            "हेरिरेहेकी",
+            "हेरिराहेकी"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 2.5158340000016324,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-065",
+          "candidates": [
+            "थपिदिनु",
+            "थापिदिनु",
+            "थपिदिनू",
+            "थपिडिनु",
+            "थापिदिनू"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 2.8662079999994603,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-066",
+          "candidates": [
+            "छानिदिनुस्",
+            "छानिदिनुस",
+            "छनिदिनुस्",
+            "छनिदिनुस",
+            "छानीदिनुस्"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 10,
+          "ms": 3.4871669999993173,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-067",
+          "candidates": [
+            "पुस्तकलाय",
+            "पुस्तकलय",
+            "पुस्ताक्लाय",
+            "पुस्तक्लाय",
+            "पुस्ताक्लय"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 2,
+          "referenceLength": 9,
+          "ms": 2.6194159999977273,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-068",
+          "candidates": [
+            "सम्बिदाह्न",
+            "सम्बिदहन",
+            "साम्बिदाह्न",
+            "सम्बिदाहन",
+            "सम्बइडःन"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 6,
+          "referenceLength": 7,
+          "ms": 2.347750000000815,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-069",
+          "candidates": [
+            "शिखस्य",
+            "शिखस्या",
+            "शिखसय",
+            "शिख्स्य",
+            "शिख्स्या"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 4,
+          "referenceLength": 6,
+          "ms": 2.0614169999971637,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-070",
+          "candidates": [
+            "धन्यवाद",
+            "धन्यबाद",
+            "धनीबड",
+            "धनीबाड",
+            "धान्यबाद"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 2.5364579999986745,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-071",
+          "candidates": [
+            "आवश्यकता",
+            "आवश्यकट",
+            "आवश्यक्त",
+            "आवश्यक्ता",
+            "आवश्यकत"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 8,
+          "ms": 2.4945000000006985,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-072",
+          "candidates": [
+            "रामर्राई",
+            "रामर्रै",
+            "राम्रराई",
+            "रामरराई",
+            "राम्ररै"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 3,
+          "referenceLength": 7,
+          "ms": 2.043375000001106,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-073",
+          "candidates": [
+            "प्राअर्थन",
+            "प्रार्थन",
+            "प्राअर्थना",
+            "प्रार्थना",
+            "पराअर्थन"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.25,
+          "edits": 2,
+          "referenceLength": 9,
+          "ms": 2.1705000000001746,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-074",
+          "candidates": [
+            "स्वागत",
+            "स्वागता",
+            "स्वगत",
+            "स्वगता",
+            "सवागत"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 1.5089159999988624,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-075",
+          "candidates": [
+            "बहिना",
+            "बहीन",
+            "बहिन",
+            "बाहिना",
+            "बहिनी"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 3,
+          "referenceLength": 5,
+          "ms": 1.815666999998939,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-076",
+          "candidates": [
+            "विश्वास",
+            "बिश्वसा",
+            "बिश्वस",
+            "बिश्वास",
+            "बिश्वासा"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 1.8867500000014843,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-077",
+          "candidates": [
+            "समाचार",
+            "समाचर",
+            "सामाचर",
+            "समाचरा",
+            "सामाचरा"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 2.419916999999259,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-078",
+          "candidates": [
+            "मनिषहरूक",
+            "मनीषहरूक",
+            "मानिशहरूक",
+            "मनिषहरुक",
+            "मनीषहरुक"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 3,
+          "referenceLength": 10,
+          "ms": 3.20745800000077,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-079",
+          "candidates": [
+            "साथीह्रौको",
+            "साथीह्राउको",
+            "साथीहराउको",
+            "साथीहरौको",
+            "साथिहराउको"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 2,
+          "referenceLength": 9,
+          "ms": 3.1740409999983967,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-080",
+          "candidates": [
+            "घरहरूअमन",
+            "घरहरूआमन",
+            "घरहरुआमन",
+            "घरहरुअमन",
+            "घरहरूअम्न"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 2,
+          "referenceLength": 7,
+          "ms": 2.9870000000009895,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-081",
+          "candidates": [
+            "किटबहरूलाई",
+            "कित्वहरूलाई",
+            "कीटबहरूलाई",
+            "किटभारूलाई",
+            "किटभरूलाई"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 2,
+          "referenceLength": 11,
+          "ms": 3.190582999999606,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-082",
+          "candidates": [
+            "नेपालीहरू",
+            "नेप्लीहरू",
+            "नेपालीहरु",
+            "नेप्लिहरू",
+            "नेप्लीहरु"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 2.3561250000020664,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-083",
+          "candidates": [
+            "अरुणिका",
+            "अरुणीका",
+            "अरुणिक",
+            "अरुनीका",
+            "अरुनिका"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 1.7452499999999418,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-084",
+          "candidates": [
+            "सम्प्रिय",
+            "साम्प्रिय",
+            "सम्प्रिया",
+            "साम्प्रिया",
+            "सम्प्रीय"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.3333333333333333,
+          "edits": 1,
+          "referenceLength": 9,
+          "ms": 1.8654160000005504,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-085",
+          "candidates": [
+            "कृतनशी",
+            "कृतांशी",
+            "कृतनसहि",
+            "क्रिटेन्सी",
+            "कृतांषी"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.5,
+          "edits": 2,
+          "referenceLength": 7,
+          "ms": 2.8994999999995343,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-086",
+          "candidates": [
+            "इशानशिका",
+            "इशानशीका",
+            "ईशानशिका",
+            "ईशानशीका",
+            "इशानशिक"
+          ],
+          "top1": false,
+          "top5": false,
+          "reciprocalRank": 0,
+          "edits": 1,
+          "referenceLength": 8,
+          "ms": 3.208999999998923,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-087",
+          "candidates": [
+            "दिव्यांशी",
+            "दिव्यांशि",
+            "दिव्यनशी",
+            "दिव्यांषी",
+            "दिव्यांशई"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 3.158625000000029,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-088",
+          "candidates": [
+            "मानस्वी",
+            "मनस्वी",
+            "मनास्वी",
+            "मानास्वी",
+            "मानस्वि"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.5,
+          "edits": 1,
+          "referenceLength": 6,
+          "ms": 1.779500000000553,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-089",
+          "candidates": [
+            "प्रत्युषा",
+            "प्रत्यूषा",
+            "प्रत्युश",
+            "प्रत्युष",
+            "प्रत्यूष"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 2.731832999998005,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-090",
+          "candidates": [
+            "समृद्धिका",
+            "समृद्धिक",
+            "समृद्धीका",
+            "समृद्धीक",
+            "सामृद्धिका"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 9,
+          "ms": 3.14270800000304,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-091",
+          "candidates": [
+            "यशस्वी",
+            "यशास्वी",
+            "यसहस्वी",
+            "याशस्वी",
+            "याशास्वी"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 2.272791999999754,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-092",
+          "candidates": [
+            "रोष्मीका",
+            "रोश्मिका",
+            "रोशमीका",
+            "रोश्मीका",
+            "रोष्मीक"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.5,
+          "edits": 1,
+          "referenceLength": 8,
+          "ms": 1.778083000001061,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-093",
+          "candidates": [
+            "हृदिका",
+            "हृदीका",
+            "हृदयका",
+            "हृदिक",
+            "हृडीका"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 1.535541999997804,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-094",
+          "candidates": [
+            "वेदांशी",
+            "वेदनशी",
+            "वेदनसहि",
+            "वेदांषी",
+            "वेदानशी"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 2.64429200000086,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-095",
+          "candidates": [
+            "काश्वीका",
+            "कश्वीका",
+            "काश्विक",
+            "काश्विका",
+            "कश्विक"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.25,
+          "edits": 1,
+          "referenceLength": 8,
+          "ms": 1.8951249999990978,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-096",
+          "candidates": [
+            "निष्प्रिय",
+            "निष्परिया",
+            "निष्प्रिया",
+            "निष्परिय",
+            "निष्प्रीय"
+          ],
+          "top1": false,
+          "top5": true,
+          "reciprocalRank": 0.3333333333333333,
+          "edits": 1,
+          "referenceLength": 10,
+          "ms": 2.196083999999246,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-097",
+          "candidates": [
+            "सुयांश",
+            "सुयणश",
+            "सूयणश",
+            "सूयांश",
+            "सुयंश"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 6,
+          "ms": 2.046958999999333,
+          "error": null,
+          "timingClass": "in-process"
+        },
+        {
+          "id": "category-098",
+          "candidates": [
+            "वर्णिका",
+            "वर्णीका",
+            "वर्णिक",
+            "वर्निका",
+            "वर्नीका"
+          ],
+          "top1": true,
+          "top5": true,
+          "reciprocalRank": 1,
+          "edits": 0,
+          "referenceLength": 7,
+          "ms": 1.591207999998005,
+          "error": null,
+          "timingClass": "in-process"
+        }
+      ]
+    },
+    "summaries": {
+      "writer": {
+        "n": 97,
+        "top1Count": 80,
+        "top5Count": 88,
+        "top1": 0.8247422680412371,
+        "top5": 0.9072164948453608,
+        "mrr": 0.8498281786941582,
+        "cer": 0.04859335038363171,
+        "p50": 2.8873750000020664,
+        "p95": 5.6333750000012515,
+        "errors": 0,
+        "interval": [
+          0.737143589002599,
+          0.8875994555424038
+        ]
+      },
+      "google": {
+        "n": 97,
+        "top1Count": 43,
+        "top5Count": 57,
+        "top1": 0.44329896907216493,
+        "top5": 0.5876288659793815,
+        "mrr": 0.4938144329896908,
+        "cer": 0.16751918158567775,
+        "p50": 20.40083400000003,
+        "p95": 32.066625000001295,
+        "errors": 0,
+        "interval": [
+          0.34847593432042534,
+          0.5424419467907645
+        ]
+      },
+      "writer-v2": {
+        "n": 97,
+        "top1Count": 66,
+        "top5Count": 74,
+        "top1": 0.6804123711340206,
+        "top5": 0.7628865979381443,
+        "mrr": 0.7099656357388315,
+        "cer": 0.08951406649616368,
+        "p50": 2.64429200000086,
+        "p95": 4.605749999998807,
+        "errors": 0,
+        "interval": [
+          0.582266326033009,
+          0.7648131431586593
+        ]
+      }
+    }
+  }
+}

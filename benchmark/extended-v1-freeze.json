@@ -1,0 +1,30 @@
+{
+  "frozenAt": "2026-11-12T06:47:34.403579+00:00",
+  "engineVersion": "2.4.4",
+  "engineFreezePath": "benchmarks/improvement-2.4.4/engine-freeze.json",
+  "engineFreezeSha256": "9dc4c354cd2a44a4f33d35c8bd735abc9b0a014d710380314bb044ec91625922",
+  "manifestSha256": "c2d3bfac218f271a0b7b174dec77486c17280591d39c4c042ab68b85c97be327",
+  "files": {
+    "public/app.js": "9b1adda469788131d4759960c1827445a1a99b07c75888ac22b73144ed275d81",
+    "public/engine/context.js": "b1d45e6ea363f4384be00e0c6d563764b44c5d03f60c2494edb77f5ef61da5f6",
+    "public/engine/core-lexicon.js": "c10b7b78accf5250eba6cfe957eb275656b8d0ce9382c252a78e31321eccca97",
+    "public/engine/corrections.js": "a1daebac8c3327f2f317c72bfb5658c4321480eecbd7135010ca53c916ec19bb",
+    "public/engine/decoder-config.js": "571d3f91346f6deff64f83c6639996a1af5c038d976927bd9f6ea0f9797bc17d",
+    "public/engine/engine.js": "537ef788c62a0290ba2985d452e095e5c9f3c51b2ce737e0765009813fee79ee",
+    "public/engine/lexicon.js": "fd2f159acc4921601e18f1c3878354b3d4fca8e765eaa615321d665431b60b19",
+    "public/engine/morphology.js": "91ef07d4e5e476fd3cba044106385ec12e2dd0486ed6f77fae84043113105a99",
+    "public/engine/native-lexicon-data.js": "b0db6082e4a9bbf204dd8e5940eae72ac230a1dd62a952ba4a0de176cc98495d",
+    "public/engine/native-lexicon.js": "c3d3ba70d3dd8798187c7582879e3c79d2492e5e5f150aed1ff54bbcee20171c",
+    "public/engine/orthography-data.js": "d84a554b60121d4d6139beb817e8308d5b409bf2614a2215aa1a530460d05fb1",
+    "public/engine/orthography.js": "e19cef57aa755ebb411153128d493ec517f2e8b2a9bc43221dda9e98f1334456",
+    "public/engine/position-data.js": "39702fcbf5893831e06f7c870cfe0bc636f238c6746b8b1ac88075fd5088ef44",
+    "public/engine/preferences.js": "fba157ce557898f9236bb9eaca876bb2132bcbf83a065724f89f2412c7795548",
+    "public/engine/rules.js": "7a80b90fd8180c508f7f41765e3b3fe88e00782ef334f68754a2284c266fd94f",
+    "public/engine/syllables.js": "d6ef7dabc4b199d97df362b07cf8b1df946862cc1bed882a7005500764d3a967",
+    "public/engine/transducer-data.js": "b653b8ec08288d6e70ccb5faaab208a2a2d3eceaec8ffaab298e68203493f390",
+    "public/engine/transducer.js": "89761e5c70cf3aa148fe172aa0d51d737e287bb278a788281460655a71e7abca",
+    "public/engine/unit-language-data.js": "72a913deaf5d4ba080d73bfa619ef6a9048813e290dfd9de07ea3bde63e5fc5d",
+    "public/engine/unit-language.js": "605c40479253ba8ea56e0879fe513b8359128d64023fff47c67fada952bb566b",
+    "public/transliterate.js": "dd817866655069290a886f2cfb4e761843680feefd6f56bf263cc51ed1c2db1f"
+  }
+}

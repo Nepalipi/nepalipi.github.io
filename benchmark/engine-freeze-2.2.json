@@ -1,0 +1,28 @@
+{
+  "version": "2.2.0",
+  "frozenAt": "2026-11-12T02:55:37.779Z",
+  "manifestSha256": "d8d536500009f745bef5ed52f57e044768f6a0f9d916918b99f906a0320fe563",
+  "files": {
+    "public/engine/engine.js": "9c07ac3df98d892d564004a5bbe74241e7767241146ea83f762a78bcf309abb5",
+    "public/engine/rules.js": "2990e7eb8839b92ad682b8624867882a6a300aa61de7d0107d7fee94bb91e0a4",
+    "public/engine/lexicon.js": "5eab112d8c78bb16503ea4832f5c2448910479165e09c25a16e8681ce1487bde",
+    "public/engine/corrections.js": "a1daebac8c3327f2f317c72bfb5658c4321480eecbd7135010ca53c916ec19bb",
+    "public/engine/orthography.js": "e19cef57aa755ebb411153128d493ec517f2e8b2a9bc43221dda9e98f1334456",
+    "public/engine/orthography-data.js": "d84a554b60121d4d6139beb817e8308d5b409bf2614a2215aa1a530460d05fb1",
+    "public/engine/transducer.js": "92420d1cecfc2e56f963c2e53c9b7a15d56f31c5c9532bd1ff885b6388f91584",
+    "public/engine/transducer-data.js": "b653b8ec08288d6e70ccb5faaab208a2a2d3eceaec8ffaab298e68203493f390",
+    "public/engine/unit-language.js": "605c40479253ba8ea56e0879fe513b8359128d64023fff47c67fada952bb566b",
+    "public/engine/unit-language-data.js": "72a913deaf5d4ba080d73bfa619ef6a9048813e290dfd9de07ea3bde63e5fc5d",
+    "public/engine/position-data.js": "39702fcbf5893831e06f7c870cfe0bc636f238c6746b8b1ac88075fd5088ef44",
+    "public/engine/core-lexicon.js": "c10b7b78accf5250eba6cfe957eb275656b8d0ce9382c252a78e31321eccca97",
+    "public/engine/morphology.js": "5a87e28588ce4952d967df053609e9ab14cfe5d1a76315024f5f53e75045d1c6",
+    "public/engine/decoder-config.js": "571d3f91346f6deff64f83c6639996a1af5c038d976927bd9f6ea0f9797bc17d"
+  },
+  "developmentEvidence": {
+    "benchmarks/improvement-2.2/baseline-results.json": "7e46ca9ab3ffa2fa6ebc7d2f2ffe03a54ee5686afae1ecf5b0c8191be562f552",
+    "benchmarks/improvement-2.2/regressions.json": "291766505f894060d912d88280f55f320b7fd7abdb646f25bf6000b53baec182",
+    "benchmarks/improvement-2.2/regression-gates.json": "13db9b06230408caecef5a74aa857244136a5e3d93bd62731a75f5f3e11bffb1",
+    "benchmarks/improvement-2.2/vocabulary-provenance.json": "f8151326c0b9ab0aa437735af97a44dae9d4f9be0df5b973249bc57e3d75e106"
+  },
+  "policy": "Final engine frozen after 21 tests, all 23 observed suite/category aggregate gates and offline browser checks. No tuning after new category-probe outputs. Probes are author-known diagnostics, not blind independent annotation or TRAIN-word-disjoint generalization."
+}

@@ -1,0 +1,411 @@
+{
+  "training": {
+    "dataset": "AI4Bharat/Aksharantar",
+    "revision": "e418c1fc928d9f5393af33268472cf20c1891be8",
+    "file": "nep_train.json",
+    "sha256": "55f6ca38b30c6fab0b5b8a11eefd2bb2be3cbce633c93a3b03215ec5675810b4",
+    "acceptedRows": 2387903,
+    "excludedRows": 9511,
+    "sources": {
+      "AK-Freq": 3537,
+      "Wikidata": 2637,
+      "IndicCorp": 2381729
+    },
+    "unitCount": 1334,
+    "method": "Supervised segment alignment from TRAIN only. No Google outputs or evaluation labels."
+  },
+  "boundaryTraining": {
+    "dataset": "AI4Bharat/Aksharantar",
+    "revision": "e418c1fc928d9f5393af33268472cf20c1891be8",
+    "file": "nep_train.json",
+    "sha256": "55f6ca38b30c6fab0b5b8a11eefd2bb2be3cbce633c93a3b03215ec5675810b4",
+    "acceptedRows": 2387903,
+    "excludedRows": 9511,
+    "sources": {
+      "AK-Freq": 3537,
+      "Wikidata": 2637,
+      "IndicCorp": 2381729
+    },
+    "unitCount": 1334,
+    "method": "Supervised segment alignment from TRAIN only. No Google outputs or evaluation labels."
+  },
+  "boundarySelection": {
+    "split": "Aksharantar validation only",
+    "sha256": "9bc1c65df08c5f41eb61ffeaf631bf1bc3820c64ef71ae54b4868c5ac3ea9be7",
+    "population": {
+      "rawRows": 2804,
+      "acceptedRows": 2804,
+      "excluded": {
+        "missing": 0,
+        "roman": 0,
+        "native": 0
+      },
+      "uniqueInputs": 2804,
+      "mergedRows": 0,
+      "multipleReferences": 0
+    },
+    "primaryMetric": "Top-1 exact match; ties top-5 then smaller boundary weight",
+    "trials": [
+      {
+        "positionWeight": 0,
+        "languageWeight": 0.5,
+        "width": 32,
+        "top1": 1777,
+        "top5": 2464,
+        "seconds": 3.88821775
+      },
+      {
+        "positionWeight": 0,
+        "languageWeight": 0.75,
+        "width": 32,
+        "top1": 1817,
+        "top5": 2501,
+        "seconds": 3.929564333
+      },
+      {
+        "positionWeight": 0,
+        "languageWeight": 1,
+        "width": 32,
+        "top1": 1810,
+        "top5": 2508,
+        "seconds": 3.973633040999999
+      },
+      {
+        "positionWeight": 0.25,
+        "languageWeight": 0.5,
+        "width": 32,
+        "top1": 1792,
+        "top5": 2479,
+        "seconds": 3.877606166999998
+      },
+      {
+        "positionWeight": 0.25,
+        "languageWeight": 0.75,
+        "width": 32,
+        "top1": 1826,
+        "top5": 2511,
+        "seconds": 3.939113374999997
+      },
+      {
+        "positionWeight": 0.25,
+        "languageWeight": 1,
+        "width": 32,
+        "top1": 1822,
+        "top5": 2518,
+        "seconds": 4.074842125000003
+      },
+      {
+        "positionWeight": 0.5,
+        "languageWeight": 0.5,
+        "width": 32,
+        "top1": 1796,
+        "top5": 2494,
+        "seconds": 3.8679350830000003
+      },
+      {
+        "positionWeight": 0.5,
+        "languageWeight": 0.75,
+        "width": 32,
+        "top1": 1827,
+        "top5": 2518,
+        "seconds": 3.9333763340000005
+      },
+      {
+        "positionWeight": 0.5,
+        "languageWeight": 1,
+        "width": 32,
+        "top1": 1815,
+        "top5": 2526,
+        "seconds": 4.003270542000005
+      },
+      {
+        "positionWeight": 0.75,
+        "languageWeight": 0.5,
+        "width": 32,
+        "top1": 1790,
+        "top5": 2498,
+        "seconds": 3.8666266660000037
+      },
+      {
+        "positionWeight": 0.75,
+        "languageWeight": 0.75,
+        "width": 32,
+        "top1": 1831,
+        "top5": 2525,
+        "seconds": 3.9310333329999994
+      },
+      {
+        "positionWeight": 0.75,
+        "languageWeight": 1,
+        "width": 32,
+        "top1": 1812,
+        "top5": 2519,
+        "seconds": 3.9668244590000032
+      },
+      {
+        "positionWeight": 1,
+        "languageWeight": 0.5,
+        "width": 32,
+        "top1": 1792,
+        "top5": 2505,
+        "seconds": 3.8773014580000016
+      },
+      {
+        "positionWeight": 1,
+        "languageWeight": 0.75,
+        "width": 32,
+        "top1": 1823,
+        "top5": 2526,
+        "seconds": 3.9576797919999955
+      },
+      {
+        "positionWeight": 1,
+        "languageWeight": 1,
+        "width": 32,
+        "top1": 1811,
+        "top5": 2515,
+        "seconds": 3.9710889590000007
+      }
+    ],
+    "selected": {
+      "width": 32,
+      "languageWeight": 0.75,
+      "positionWeight": 0.75
+    }
+  },
+  "faithfulnessSelection": {
+    "split": "Aksharantar validation only, subject to existing explicit-long-vowel regression contract",
+    "sha256": "9bc1c65df08c5f41eb61ffeaf631bf1bc3820c64ef71ae54b4868c5ac3ea9be7",
+    "population": {
+      "rawRows": 2804,
+      "acceptedRows": 2804,
+      "excluded": {
+        "missing": 0,
+        "roman": 0,
+        "native": 0
+      },
+      "uniqueInputs": 2804,
+      "mergedRows": 0,
+      "multipleReferences": 0
+    },
+    "primaryMetric": "Top-1 exact match among contract-passing trials; ties top-5 then smaller phonetic weight",
+    "trials": [
+      {
+        "width": 32,
+        "languageWeight": 0.75,
+        "positionWeight": 0.75,
+        "phoneticWeight": 0,
+        "top1": 1831,
+        "top5": 2525,
+        "contractOutput": "सुजाताया",
+        "passesContract": false,
+        "seconds": 4.13531475
+      },
+      {
+        "width": 32,
+        "languageWeight": 0.75,
+        "positionWeight": 0.75,
+        "phoneticWeight": 0.5,
+        "top1": 1834,
+        "top5": 2516,
+        "contractOutput": "सुजाताया",
+        "passesContract": false,
+        "seconds": 4.003173375
+      },
+      {
+        "width": 32,
+        "languageWeight": 0.75,
+        "positionWeight": 0.75,
+        "phoneticWeight": 1,
+        "top1": 1832,
+        "top5": 2515,
+        "contractOutput": "सुजाताया",
+        "passesContract": false,
+        "seconds": 4.360916666
+      },
+      {
+        "width": 32,
+        "languageWeight": 0.75,
+        "positionWeight": 0.75,
+        "phoneticWeight": 2,
+        "top1": 1827,
+        "top5": 2502,
+        "contractOutput": "सुजाता",
+        "passesContract": true,
+        "seconds": 4.264427667
+      },
+      {
+        "width": 32,
+        "languageWeight": 0.75,
+        "positionWeight": 0.75,
+        "phoneticWeight": 3,
+        "top1": 1821,
+        "top5": 2487,
+        "contractOutput": "सुजाता",
+        "passesContract": true,
+        "seconds": 4.136603707999999
+      },
+      {
+        "width": 32,
+        "languageWeight": 0.75,
+        "positionWeight": 0.75,
+        "phoneticWeight": 4,
+        "top1": 1816,
+        "top5": 2477,
+        "contractOutput": "सुजाता",
+        "passesContract": true,
+        "seconds": 3.763176792000002
+      }
+    ],
+    "selected": {
+      "width": 32,
+      "languageWeight": 0.75,
+      "positionWeight": 0.75,
+      "phoneticWeight": 2
+    }
+  },
+  "fusionSelection": {
+    "split": "Aksharantar validation only",
+    "sha256": "9bc1c65df08c5f41eb61ffeaf631bf1bc3820c64ef71ae54b4868c5ac3ea9be7",
+    "primaryMetric": "Top-5 exact match subject to no loss in first matches against the same engine without calibrated rule fusion; ties first matches then larger rule offset",
+    "n": 2804,
+    "trials": [
+      {
+        "ruleBias": null,
+        "top1": 1827,
+        "top5": 2502
+      },
+      {
+        "ruleBias": 0.05,
+        "top1": 1827,
+        "top5": 2352
+      },
+      {
+        "ruleBias": 0.1,
+        "top1": 1827,
+        "top5": 2409
+      },
+      {
+        "ruleBias": 0.2,
+        "top1": 1827,
+        "top5": 2459
+      },
+      {
+        "ruleBias": 0.35,
+        "top1": 1827,
+        "top5": 2494
+      },
+      {
+        "ruleBias": 0.5,
+        "top1": 1827,
+        "top5": 2502
+      },
+      {
+        "ruleBias": 1,
+        "top1": 1827,
+        "top5": 2503
+      }
+    ],
+    "selected": {
+      "width": 32,
+      "languageWeight": 0.75,
+      "positionWeight": 0.75,
+      "phoneticWeight": 2,
+      "ruleBias": 1
+    }
+  },
+  "modelBytes": {
+    "public/engine/orthography-data.js": 472278,
+    "public/engine/transducer-data.js": 85476,
+    "public/engine/unit-language-data.js": 3592027,
+    "public/engine/position-data.js": 360896
+  },
+  "googleSnapshots": {
+    "public-test": {
+      "service": "Google Input Tools public suggestion endpoint",
+      "toolCode": "ne-t-i0-und",
+      "startedAt": "2026-11-12T00:19:55.774Z",
+      "completedAt": "2026-11-12T00:21:56.083Z",
+      "sampling": "Proportional source-stratified sample; SHA-256 order within each category; independent of engine output.",
+      "quotas": [
+        {
+          "category": "AK-Freq",
+          "exact": 262.20416156670746,
+          "count": 262
+        },
+        {
+          "category": "AK-NEF",
+          "exact": 102.27466340269278,
+          "count": 102
+        },
+        {
+          "category": "AK-NEI",
+          "exact": 147.01982864137088,
+          "count": 147
+        },
+        {
+          "category": "Multiple sources",
+          "exact": 0.5013463892288862,
+          "count": 1
+        }
+      ],
+      "disclosure": "Public dataset words only. Snapshot is evaluation evidence, never training data. Per-word endpoint behavior may differ from contextual/personalized Google Translate UI.",
+      "failures": 0
+    },
+    "everyday": {
+      "service": "Google Input Tools public suggestion endpoint",
+      "toolCode": "ne-t-i0-und",
+      "startedAt": "2026-11-12T00:36:27.543Z",
+      "completedAt": "2026-11-12T00:37:00.667Z",
+      "sampling": "Proportional source-stratified sample; SHA-256 order within each category; independent of engine output.",
+      "quotas": [
+        {
+          "category": "Everyday",
+          "exact": 32,
+          "count": 32
+        },
+        {
+          "category": "Forms",
+          "exact": 43,
+          "count": 43
+        },
+        {
+          "category": "Names",
+          "exact": 30,
+          "count": 30
+        },
+        {
+          "category": "Verbs",
+          "exact": 43,
+          "count": 43
+        }
+      ],
+      "disclosure": "Public dataset words only. Snapshot is evaluation evidence, never training data. Per-word endpoint behavior may differ from contextual/personalized Google Translate UI.",
+      "failures": 0
+    },
+    "confirmation": {
+      "service": "Google Input Tools per-word public endpoint",
+      "toolCode": "ne-t-i0-und",
+      "startedAt": "2026-11-12T01:56:41.851Z",
+      "completedAt": "2026-11-12T01:56:50.797Z",
+      "disclosure": "Per-word public endpoint, not full contextual/personalized Translate. Google training membership unknown. Project-authored reserved references, never training labels.",
+      "failures": 0
+    },
+    "fresh-regression": {
+      "service": "Google Input Tools public suggestion endpoint",
+      "toolCode": "ne-t-i0-und",
+      "startedAt": "2026-11-12T01:27:59.827Z",
+      "completedAt": "2026-11-12T01:28:19.517Z",
+      "disclosure": "Per-word public endpoint; not a measurement of the full contextual or personalized Google Translate UI. Google training membership is unknown. Authored generic test tokens only; no user drafts. Never training data.",
+      "failures": 0
+    },
+    "categories": {
+      "service": "Google Input Tools per-word public endpoint",
+      "toolCode": "ne-t-i0-und",
+      "startedAt": "2026-11-12T02:55:40.750Z",
+      "completedAt": "2026-11-12T02:56:02.338Z",
+      "disclosure": "Per-word public endpoint, not full contextual/personalized Translate. Google training membership unknown. Project-authored new input probes. Native words may be known; not TRAIN-word-disjoint. Exact input spellings withheld from new curated aliases. Not representative traffic or independent annotation.",
+      "failures": 0
+    }
+  }
+}

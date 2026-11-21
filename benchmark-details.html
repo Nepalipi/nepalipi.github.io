@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" data-theme="paper">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Current Nepalipi results: what improved, what still needs work, and a live check against the loaded engine.">
+  <title>Benchmark details — Nepalipi</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/theme.css">
+  <link rel="stylesheet" href="/benchmark/dashboard.css">
+  <link rel="stylesheet" href="/benchmark/select.css">
+  <link rel="stylesheet" href="/benchmark/appearance.css">
+  <script type="module" src="/benchmark/dashboard.js"></script>
+  <script type="module" src="/benchmark/theme.js"></script>
+</head>
+<body class="dashboard-page">
+  <header class="dashboard-header"><div class="header-start"><a class="dashboard-brand" href="/" aria-label="Nepalipi home"><span class="brand-mark" lang="ne" aria-hidden="true">ने</span>nepalipi</a><nav aria-label="Main navigation"><a href="/">Playground</a><a href="/benchmark.html">Comparison</a></nav></div><div class="header-actions"><div class="appearance" role="group" aria-label="Benchmark appearance"><button type="button" data-theme-choice="paper" aria-pressed="true">Light</button><button type="button" data-theme-choice="ink" aria-pressed="false">Dark</button></div><a class="playground-link" href="/input-demo.html">Try Nepalipi <span aria-hidden="true">↗</span></a></div></header>
+  <main class="dashboard-main">
+    <section class="dashboard-hero" aria-labelledby="page-title">
+      <div><p class="overline">NEPALIPI / QUALITY CHECK</p><h1 id="page-title">Writing benchmark<span>.</span></h1><p class="hero-description">What improved. What works. What still needs a choice.</p></div>
+      <div class="engine-stamp"><div><span>LOADED ENGINE</span><strong id="loaded-version">—</strong></div><div><span>RECORDED ENGINE</span><strong id="recorded-version">—</strong></div><p>Results recorded <time id="recorded-at">—</time></p></div>
+    </section>
+    <section id="freshness" class="freshness" data-state="checking" aria-label="Loaded engine check">
+      <div><strong id="freshness-result" role="status" aria-live="polite">Checking the loaded engine…</strong><p id="freshness-detail">Word suggestions are checked here. Sentence and editor scores come from the saved browser run.</p><p class="reload-note">After code changes, reload to load the latest files.</p></div><div class="freshness-actions"><button id="check-engine" type="button" disabled>Check loaded engine <span aria-hidden="true">↻</span></button><a id="reload-files" href="/benchmark-details.html">Reload latest files</a></div>
+    </section>
+    <p id="old-link-note" class="old-link-note" hidden>This link refers to an older word suite. <a id="old-link" href="/benchmark-history.html">Open those archived results ↗</a></p>
+
+    <section class="source-panel" aria-labelledby="sources-title">
+      <div class="section-top"><div><p class="overline">01 / COMPARE SOURCES</p><h2 id="sources-title">Same words. Different engines.</h2></div><span class="compare-label">Historical diagnostic populations</span></div>
+      <p class="source-intro">Compare our current and older versions with six external sources. Every available source receives the same Roman input and is checked against the same saved spellings.</p>
+      <div class="source-controls"><label>Word set<select id="comparison-set"><button type="button"><selectedcontent></selectedcontent></button></select></label><label>Category<select id="comparison-category"><button type="button"><selectedcontent></selectedcontent></button></select></label><label>Rank by<select id="comparison-metric"><button type="button"><selectedcontent></selectedcontent></button><option value="first">First match · higher is better</option><option value="withinThree">Within three · higher is better</option><option value="withinFive">Within five · higher is better</option><option value="cer">Character error · lower is better</option></select></label></div>
+      <p id="comparison-scope" class="filter-note"></p>
+      <div class="source-table-wrap" tabindex="0" role="region" aria-label="Source comparison table">
+        <table class="source-table"><caption id="comparison-caption"></caption><thead><tr><th scope="col">Rank</th><th scope="col">Source / version</th><th scope="col">First match <span>Higher is better</span></th><th scope="col">Within three <span>Higher is better</span></th><th scope="col">Within five <span>Higher is better</span></th><th scope="col">Character error <span>Lower is better</span></th></tr></thead><tbody id="comparison-rows"></tbody></table>
+      </div>
+      <p id="comparison-summary" class="comparison-summary" role="status" aria-live="polite"></p>
+      <p class="source-caveat"><a href="/benchmark.html">Open the large comparison: 1,500–4,085 inputs per set.</a> <strong>Google Input Tools and Quillpad are saved per-word snapshots from 12 Nov 2026.</strong> These do not test live interfaces or sentence suggestions. nepscript, Lekhika and Nepali Unicoder return one spelling each; their first, within-three and within-five scores are equal.</p>
+      <details class="source-inspector"><summary>Inspect the suggestions behind the scores</summary><div><label>Word in the selected category<select id="comparison-word"><button type="button"><selectedcontent></selectedcontent></button></select></label><p id="comparison-expected"></p><div id="comparison-outcomes"></div></div></details>
+      <details class="source-method"><summary>How to read this comparison</summary><div><p>First match: the first suggestion equals an accepted spelling. Within three: any of the first three unique suggestions equals one. Within five: any of the first five unique suggestions equals one. Counts beneath the match percentages show the denominator. Character error is first-output edit distance divided by reference characters, pooled across the selected words; lower is better and it can exceed 100%.</p><p>Matching uses Unicode NFC and trims surrounding spaces. Errors stay in the captured set’s denominator. Entirely uncaptured sets show “Not captured”. Equal scores share ranks. Category filters recalculate every source on the same subset; the sets overlap, so there is no combined score.</p><p id="comparison-independence"></p><ul id="source-dates"></ul><p>These are previously observed diagnostic words. Exact spelling agreement is narrower than linguistic correctness, particularly for names and valid alternatives. The sentence and editor checks below have no external baseline.</p><div class="evidence-links"><a href="/benchmark/source-comparison-2.4.8-v2.json" download>All sources · JSON</a><a href="/benchmark/within-three-2.4.8-v1.json" download>Within three · JSON</a><a href="/benchmark/within-three-2.4.8-v1.csv" download>Percentages by set/category · CSV</a></div></div></details>
+    </section>
+
+    <section class="results-panel" aria-labelledby="results-title">
+      <div class="section-top"><div><p class="overline">02 / RECORDED RESULTS</p><h2 id="results-title">Choose the checks.</h2></div><span class="compare-label" id="compare-label"></span></div>
+      <div id="set-buttons" class="set-buttons" role="group" aria-label="Check group"></div>
+      <p id="set-description" class="set-description"></p>
+      <div class="score-grid">
+        <button type="button" class="score-card" data-kind="choices" aria-label="Show word checks"><span>Words, first suggestion</span><strong id="word-score-percentage">—</strong><span id="word-score" class="score-count">—</span><small id="word-change"></small></button>
+        <button type="button" class="score-card" data-kind="choices" aria-label="Show words within three"><span>Word available within three</span><strong id="three-score-percentage">—</strong><span id="three-score" class="score-count">—</span><small id="three-change"></small></button>
+        <button type="button" class="score-card" data-kind="choices" aria-label="Show word choices"><span>Word available within five</span><strong id="available-score-percentage">—</strong><span id="available-score" class="score-count">—</span><small id="available-change"></small></button>
+        <button type="button" class="score-card" data-kind="sentences" aria-label="Show sentence checks"><span>Whole sentences</span><strong id="sentence-score-percentage">—</strong><span id="sentence-score" class="score-count">—</span><small id="sentence-change"></small></button>
+      </div>
+      <button type="button" id="workflow-summary" class="workflow-summary" hidden>Editor actions <strong id="workflow-percentage"></strong><span id="workflow-score"></span><span>Show every action check ↗</span></button>
+      <p class="score-definition">pp means percentage points of change from the previous version. A match means the output equals a saved expected spelling. Other returned spellings are not rated. Scores stay separate; these are authored checks, and some names or spellings need review.</p>
+    </section>
+
+    <section class="inspection-panel" aria-labelledby="cases-title">
+      <div class="section-top"><div><p class="overline">03 / THE ACTUAL RESULTS</p><h2 id="cases-title">See the changes and gaps.</h2></div><p id="case-count" role="status"></p></div>
+      <div class="case-controls"><label class="case-search">Find a word or sentence<input id="case-search" type="search" placeholder="Roman, Nepali, or case ID" autocomplete="off"></label><label>Show<select id="result-filter"><button type="button"><selectedcontent></selectedcontent></button><option value="changes">Changes &amp; remaining gaps</option><option value="all">All checks</option><option value="improved">Improved</option><option value="attention">Needs attention</option><option value="matched">Matched reference</option></select></label><label>Type<select id="kind-filter"><button type="button"><selectedcontent></selectedcontent></button><option value="all">Words &amp; sentences</option><option value="choices">Words</option><option value="sentences">Sentences</option><option value="workflows">Editor actions</option></select></label></div>
+      <p class="filter-note">Filters change the list below. Scores above always cover the full selected set.</p>
+      <div id="case-list"></div><p id="empty-results" class="empty-results" hidden>No checks match these filters.</p>
+    </section>
+
+    <section id="try-word" class="try-word" aria-labelledby="probe-title">
+      <div class="section-top"><div><p class="overline">04 / TRY IT YOURSELF</p><h2 id="probe-title">Check a word now.</h2></div><span class="live-label">LIVE · on this device</span></div>
+      <p>This uses the writer’s default suggestions, with saved spelling preferences off. Your input stays in the browser.</p>
+      <div class="probe-row"><label>Roman input<input id="probe-input" type="text" value="pathauchhu" maxlength="64" autocomplete="off" autocapitalize="off" spellcheck="false"></label><div class="probe-examples"><button type="button" data-probe="pathauchhu">pathauchhu</button><button type="button" data-probe="bhayechha">bhayechha</button><button type="button" data-probe="ramaniye">ramaniye</button></div></div>
+      <details class="probe-context"><summary>Add preceding Nepali text</summary><label>Preceding Nepali text<input id="probe-before" type="text" maxlength="256" placeholder="हामी" lang="ne" autocomplete="off" spellcheck="false"></label></details>
+      <ol id="probe-results" lang="ne" aria-label="Live suggestions" aria-live="polite"></ol><p id="probe-note" role="status"></p>
+    </section>
+
+    <details id="evidence" class="evidence"><summary>Sources, downloads &amp; older results <span aria-hidden="true">+</span></summary><div>
+      <p>Improvement checks helped shape the fixes. Confirmation checks were measured after the engine was frozen, with one previously tested word disclosed. Their scores stayed unchanged. Older editor checks are a separate regression set.</p>
+      <div class="evidence-links"><a id="download-usage" download>All everyday results</a><a id="download-notes" download>Exposure &amp; spelling notes</a><a id="download-editor" download>Full editor run</a><a id="download-words" download>Seven word regression sets</a><a href="/extended-benchmark.html">Detailed editor traces ↗</a><a href="/benchmark-history.html">Older benchmark workspace ↗</a></div>
+      <p>The source table compares six external sources with three Writer versions. New Quillpad responses and three additional local engines are recorded separately; existing Google and Writer observations remain unchanged.</p>
+      <div class="verify-commands"><code>npm run audit:usage:verify</code><code>npm run audit:editor:verify</code></div>
+    </div></details>
+    <noscript>JavaScript is required to display the recorded results and run the local engine check.</noscript>
+    <footer><span>Current engine. Original evidence. Visible misses.</span><a href="/">Back to playground ↗</a></footer>
+  </main>
+</body>
+</html>
