@@ -1,5 +1,3 @@
-import { NepaliPi } from './nepalipi.bundle.js';
-
 const $ = id => document.getElementById(id);
 let renderer = 'list';
 const nepaliNumber = value => String(value).replace(/\d/g, digit => '०१२३४५६७८९'[digit]);
@@ -23,7 +21,22 @@ $('copy-install').addEventListener('click', async () => {
 // All elements, markup and classes here belong to the consumer, not the controller.
 const input = $('message');
 const host = $('message-options');
-const controller = NepaliPi(input, { hints: customHints });
+let controller;
+let engineReady;
+
+function loadEngine() {
+  engineReady ??= import('./nepalipi.bundle.js').then(({ NepaliPi }) => {
+    controller = NepaliPi(input, { hints: customHints, enabled: $('enabled').checked });
+    controller.dropdown.update({ container: host, render: renderSuggestions, position: 'caret' });
+    return controller;
+  }).catch(() => {
+    $('engine-status').hidden = false;
+    $('enabled').checked = false;
+    $('enabled').disabled = true;
+    return null;
+  });
+  return engineReady;
+}
 function renderSuggestions(state) {
   attributes(input, controller.getInputAttributes());
   host.hidden = !state.open;
@@ -114,7 +127,6 @@ function renderSuggestions(state) {
     ? state.suggestions.map(item => `${nepaliNumber(item.number)} ${item.label} ${item.text}`).join(', ')
     : `Spellings for ${state.word}: ${state.suggestions.map(item => item.text).join(', ')}`;
 }
-controller.dropdown.update({ container: host, render: renderSuggestions, position: 'caret' });
 
 for (const button of document.querySelectorAll('.renderer-switch button[data-renderer]')) {
   button.addEventListener('click', () => {
@@ -127,7 +139,7 @@ for (const button of document.querySelectorAll('.renderer-switch button[data-ren
     };
     $('markup-label').textContent = `View ${markup[renderer][0].toLowerCase()} markup`;
     $('markup-code').textContent = markup[renderer][1];
-    renderSuggestions(controller.getState());
+    if (controller) renderSuggestions(controller.getState());
   });
 }
 for (const button of document.querySelectorAll('[data-theme-choice]')) {
@@ -137,7 +149,7 @@ for (const button of document.querySelectorAll('[data-theme-choice]')) {
   });
 }
 $('enabled').addEventListener('change', event => {
-  controller.update({ enabled: event.target.checked });
+  controller?.update({ enabled: event.target.checked });
 });
 $('demo-form').addEventListener('submit', event => {
   event.preventDefault();
@@ -146,7 +158,7 @@ $('demo-form').addEventListener('submit', event => {
 });
 $('demo-form').addEventListener('reset', () => {
   $('form-result').hidden = true;
-  controller.update({ enabled: true });
+  controller?.update({ enabled: true });
 });
 const hintRows = $('hint-rows');
 let hintRowNumber = 1;
@@ -174,7 +186,7 @@ $('add-hint').addEventListener('click', () => {
   row.querySelector('[data-hint-roman]').focus();
 });
 
-$('hint-form').addEventListener('submit', event => {
+$('hint-form').addEventListener('submit', async event => {
   event.preventDefault();
   const submittedHints = new Map();
   for (const row of hintRows.children) {
@@ -186,8 +198,13 @@ $('hint-form').addEventListener('submit', event => {
   }
   const next = { ...customHints, ...Object.fromEntries(submittedHints) };
   $('hint-status').hidden = false;
+  const engine = await loadEngine();
+  if (!engine) {
+    $('hint-status').textContent = 'Spelling hints need the Nepali typing engine. Reload to try again.';
+    return;
+  }
   try {
-    controller.setHints(next);
+    engine.setHints(next);
   } catch (error) {
     $('hint-status').textContent = error.message;
     return;
@@ -198,8 +215,12 @@ $('hint-form').addEventListener('submit', event => {
   input.focus({ preventScroll: true });
 });
 $('clear-hints').addEventListener('click', () => {
-  controller.setHints({});
+  controller?.setHints({});
   customHints = {};
   $('hint-status').hidden = false;
   $('hint-status').textContent = 'Hints cleared.';
 });
+
+// Render the page before fetching the transliteration model.
+if (document.readyState === 'complete') loadEngine();
+else window.addEventListener('load', loadEngine, { once: true });

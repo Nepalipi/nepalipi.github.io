@@ -27,6 +27,7 @@
         <div class="lab-bar"><div class="renderer-switch" role="group" aria-label="Suggestion style"><button type="button" data-renderer="list" aria-pressed="true">List</button><button type="button" data-renderer="chips" aria-pressed="false">Chips</button><button type="button" data-renderer="ime" aria-pressed="false">Input Tools</button></div><div class="appearance" role="group" aria-label="Demo appearance"><button type="button" data-theme-choice="paper" aria-pressed="true">Light</button><button type="button" data-theme-choice="ink" aria-pressed="false">Dark</button></div></div>
         <div class="form-side">
           <div class="workspace-heading"><h2><label for="message">Writing area</label></h2><label class="toggle"><input id="enabled" form="demo-form" type="checkbox" checked><span class="toggle-track" aria-hidden="true"></span>Nepali typing</label></div>
+          <p id="engine-status" class="engine-note" role="status" hidden>Nepali suggestions couldn’t start. You can still type or reload to try again.</p>
           <form id="demo-form">
             <div class="field-shell">
               <textarea id="message" name="message" rows="4" spellcheck="false" placeholder="Type namaste nepal…" aria-describedby="typing-help"></textarea>
